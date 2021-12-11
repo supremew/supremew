@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/supremew/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/supremew/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/supremew/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/supremew/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/supremew/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"supremew.github.io","root":"/supremew/","images":"/supremew/images","scheme":"Gemini","darkmode":false,"version":"8.8.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/supremew/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/supremew/js/config.js"></script>
+<meta name="description" content="总的来说， archlinux 的安装还是比较顺利的， 现在来说说在安装过程遇到的几个问题及解决办法。  具体的安装过程得参考 archlinux wiki 在启动U盘的制作过程， 遇到了的问题是 U 盘制作了， 但是在引导启动时老是出问题， 卡住了。 键盘两个灯同时闪烁。出现这样的问题， 果断换一台机子再重新制作。（一定要严重下载镜像的完整性， 出现该问题的原因我想是镜像文件不完整。） 我所安装">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2019-12-25 archlinux 的安装">
+<meta property="og:url" content="https://supremew.github.io/2019/12/25/archlinux-%E7%9A%84%E5%AE%89%E8%A3%85/index.html">
+<meta property="og:site_name" content="八月的风">
+<meta property="og:description" content="总的来说， archlinux 的安装还是比较顺利的， 现在来说说在安装过程遇到的几个问题及解决办法。  具体的安装过程得参考 archlinux wiki 在启动U盘的制作过程， 遇到了的问题是 U 盘制作了， 但是在引导启动时老是出问题， 卡住了。 键盘两个灯同时闪烁。出现这样的问题， 果断换一台机子再重新制作。（一定要严重下载镜像的完整性， 出现该问题的原因我想是镜像文件不完整。） 我所安装">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-12-25T04:09:52.000Z">
+<meta property="article:modified_time" content="2021-12-11T11:02:20.131Z">
+<meta property="article:author" content="八月">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://supremew.github.io/2019/12/25/archlinux-%E7%9A%84%E5%AE%89%E8%A3%85/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://supremew.github.io/2019/12/25/archlinux-%E7%9A%84%E5%AE%89%E8%A3%85/","path":"2019/12/25/archlinux-的安装/","title":"2019-12-25 archlinux 的安装"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>2019-12-25 archlinux 的安装 | 八月的风</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/supremew/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/supremew/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">八月的风</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">玉颗珊珊下月轮，殿前拾得露华新。 至今不会天中事，应是嫦娥掷与人。</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/supremew/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-about"><a href="/supremew/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
+        <li class="menu-item menu-item-tags"><a href="/supremew/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li>
+        <li class="menu-item menu-item-categories"><a href="/supremew/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li>
+        <li class="menu-item menu-item-archives"><a href="/supremew/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">八月</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/supremew/archives/">
+          <span class="site-state-item-count">289</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/supremew/categories/">
+        <span class="site-state-item-count">17</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/supremew/tags/">
+        <span class="site-state-item-count">28</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2019/12/25/archlinux-%E7%9A%84%E5%AE%89%E8%A3%85/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          2019-12-25 archlinux 的安装
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2019-12-25 12:09:52" itemprop="dateCreated datePublished" datetime="2019-12-25T12:09:52+08:00">2019-12-25</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>总的来说， archlinux 的安装还是比较顺利的， 现在来说说在安装过程遇到的几个问题及解决办法。</p>
+<ol>
+<li>具体的安装过程得参考 <a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/Installation_guide_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)">archlinux wiki</a></li>
+<li>在启动U盘的制作过程， 遇到了的问题是 U 盘制作了， 但是在引导启动时老是出问题， 卡住了。 键盘两个灯同时闪烁。出现这样的问题， 果断换一台机子再重新制作。（一定要严重下载镜像的完整性， 出现该问题的原因我想是镜像文件不完整。）</li>
+<li>我所安装 archlinux 的机子为台式机， 外接 usb 的无线网卡， 其芯片 rtl8812au， 在安装无线网卡的过程中遇到了不小的麻烦， 在 <a target="_blank" rel="noopener" href="https://www.github.com/">github</a> 找了很多该芯片的驱动都没有搞好。 搞了一晚上后， 灵光闪现， 意识到不同的linux内核可能需要不同的驱动。 因此在<a target="_blank" rel="noopener" href="https://www.github.com/">github</a>找到了一个作者， 该作者写了好几个版本的驱动， 有 4.3.4 , 5.6.4.1, 等等。 于是我将其都下载下来， 一个一个的试。 找到了适合我网卡的驱动。</li>
+</ol>
+<p>内核版本</p>
+<p>驱动版本</p>
+<p>4.19.91.1 lts</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/aircrack-ng/rtl8812au/tree/v5.1.5">5.1.5</a></p>
+<p>5.4.6.arch1-1</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/aircrack-ng/rtl8812au/tree/v5.2.20">5.2.20</a></p>
+<p>5.4.6-arch3-1</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/aircrack-ng/rtl8812au/tree/v5.6.4.2">5.6.4.2</a></p>
+<blockquote>
+<p>上面是我通过一个一个测试后， 测试出来的对面版本能够使用的 rtl8812au 网卡能能使用的网卡驱动。</p>
+</blockquote>
+<span id="more"></span>
+<ol start="3">
+<li> 安装完后， 在添加 archlinuxcn 源时， 遇到了个问题， 就是在下载软件时提示没有秘钥授权， 安装软件过程中， 当下载了软件在本地后， 提示软件不可信任， 然后推荐卸载。 这主要是因为没有天剑 <a target="_blank" rel="noopener" href="https://www.archlinuxcn.org/">archlinuxcn</a> 的秘钥环。</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; sudo pacman archlinuxcn-keyring</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li> 当解决了无线上网的问题后， 还有个小问题， 那就是在每次联网时都需要自己输入命令， 而且运行命令的 terminal 还不能关闭， 因此诞生了写一个systemd service 文件， 这样每次开机的时候就自动将网络链接上去了。</li>
+</ol>
+<p>还是先说说， 命令行联网的步骤吧。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; sudo pacman -S iw wireless_tools wpa_supplicant</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; ip link <span class="comment"># 看是否有无线网络接口， 如果没有需要解决驱动的问题。</span></span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; <span class="built_in">cd</span> /etc/wpa_supplicant/</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; sudo vim wpa_supplicant.conf</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; cat wpa_supplicant.conf</span><br><span class="line"></span><br><span class="line">ctrl_interface=/run/wpa_supplicant</span><br><span class="line">update_config=1</span><br><span class="line">country=CN</span><br><span class="line"></span><br><span class="line">network=&#123;</span><br><span class="line">    ssid=<span class="string">&quot;xxxxxx&quot;</span> <span class="comment"># 该地方设置你要链接的 wifi 名字， 得注意大小写。</span></span><br><span class="line">    psk=<span class="string">&quot;xxxxxxx&quot;</span> <span class="comment"># 该地方为就是链接 wifi 的密码</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 我的无线网卡接口是 wlp0s20u11, 这个接可以通过 ip link 查找， 一般为 w 开头的为无线接口</span></span><br><span class="line">&gt;&gt;&gt; wpa_supplicant  -i wlp0s20u11 -c /etc/wpa_supplicant/wpa_supplicant.conf</span><br><span class="line"></span><br><span class="line"><span class="comment"># 不出意外的话， 现在就可以上网了。</span></span><br></pre></td></tr></table></figure>
+
+<p>这就是通过命令行工具联网了， 有人会说， 不是有图形窗口工具吗？ 因为我在我的 archlinux 上安装的是 deepin 桌面， 这个桌面可能还不大众化， 因此他的控制中心的网络管理器用不了。还有种可能， 是我刚使用 archlinux ， 不太了解有哪些带有 gui 的网络管理器。 现在就来说说如何在系统启动后， 自动链接无线网络。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; <span class="built_in">cd</span> /etc/systemd/system/</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; sudo touch autologin-wifi.service</span><br></pre></td></tr></table></figure>
+
+<p>其内容为 ：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=Auto login into wifi</span><br><span class="line">#Before=display-manager.service</span><br><span class="line">#After=network.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">ExecStart=/usr/bin/wpa_supplicant  -i wlp0s20u11 -c /etc/wpa_supplicant/wpa_supplicant.conf</span><br><span class="line">Restart=always</span><br><span class="line">IgnoreSIGPIPE=no</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br><span class="line">Alias=autologin-wifi.service</span><br></pre></td></tr></table></figure>
+
+<p>后来， 在安装我的笔记本的 archlinux 时发现了网络的连接方法， 该方法是比较通用， 而且不用写上面的配置文件。 该方法同时解决了 deepin 环境下的网络管理器没有无线链接。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 首先安装 networkmanager iw wpa_supplicant</span></span><br><span class="line">&gt;&gt;&gt; sudo pacman -S iw wpa_supplicant networkmanager</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看是否有网卡驱动， 无线一般是以 w开头的接口， e开头的是直接通过网线链接的， 如果没有还是需要安装相应的驱动， 其方法跟上面讲的一样。</span></span><br><span class="line">&gt;&gt;&gt; ip link</span><br><span class="line"></span><br><span class="line"><span class="comment"># 如果有， 看是否链接上了，</span></span><br><span class="line">&gt;&gt;&gt; ip address</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置开机启动相应的服务。</span></span><br><span class="line">&gt;&gt;&gt; sudo systemctl <span class="built_in">enable</span> NetworkManager</span><br><span class="line">&gt;&gt;&gt; sudo systemctl <span class="built_in">enable</span> wpa_supplicant</span><br><span class="line">&gt;&gt;&gt; sudo reboot</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>只要安装了 networkmanager 后就没有必要安装其他的网络管理器了， networkmager 本来就是管理器。 这主要的原因是我们习惯了图形化管理工具，忽略了 networkmager 本身。 networkmanager 提供了 nmtui 字符终端UI 界面和 nmcli 命令行接口。</p>
+</blockquote>
+<ol start="5">
+<li>关于在 <a target="_blank" rel="noopener" href="https://www.github.com/">github.com</a> 下载代码， clone 代码都是非常的慢， 速度那是相当的感人。下面是我在网上搜索的解决的办法。<ol>
+<li> 首先在 <a target="_blank" rel="noopener" href="https://www.ipaddress.com/">ipaddress</a> 或者 <a target="_blank" rel="noopener" href="https://www.ip138.com/">ip138</a> 上查找 github.com , github.global.ssl.fastly.net 这两个网址的 ip 地址。 需要多查找几次， 找出延迟比较低的 对应 ip 地址。 （但是在这一步中， 我查找了不下 10 次， 但是我得到的地址都是一样的， 都是位于美国的。 我想这也是为什么按照这样的方法， 下载代码或者 clone 代码都还是那么慢的。）</li>
+<li> 修改 hosts 文件 （/etc/hosts）, 因为我通过在网上查找的 ip 地址均是位于美国的地址， 所以我在网上搜索时间最近的关于 github.com 下载速度慢的帖子， 然后就使用其中的地址。 （当然， 需要验证所得到的对应的 ip 地址是否是通的。）修改后， 下载或 clone 代码时的速度应该有一个值提升。</li>
+</ol>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; cat /etc/hosts</span><br><span class="line"><span class="comment"># Static table lookup for hostnames.</span></span><br><span class="line"><span class="comment"># See hosts(5) for details.</span></span><br><span class="line">192.30.253.113  github.com</span><br><span class="line">151.101.185.194 github.global.ssl.fastly.net</span><br><span class="line">192.30.253.120  codeload.github.com</span><br></pre></td></tr></table></figure>
+
+<ol start="6">
+<li> 由于在笔记本上安装 fcitx-sogoupinyin 的时候， 姿势不对导致安装 fcitx-sogoupinyin 不成功。 其正确的姿势为：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; sudo pacman -S fcitx-configtool  fcitx-lilydjwg-git fcitx-qt5 fcitx-sogoupinyin fcitx-ui-light </span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; fcitx-configtool <span class="comment">#添加 sogou 拼音。</span></span><br></pre></td></tr></table></figure>
+
+<p>在使用过程中， 由于自己手痒， 导致了 wps 不能使用中午输入， 这应该是由于配置文件导致的， （在重启进入系统， 中文输入的时候， 候选框只出现了半边候选框， 候选的汉字根本看不到， 因此怀疑是配置文件的问题。）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -Rsn fcitx-configtool fcitx-lilydjwg-git fcitx-qt5 fcitx-sogoupinyin fcitx-ui-light</span><br><span class="line">ps aux grep fcitx</span><br><span class="line">sudo <span class="built_in">kill</span> <span class="comment"># 找到的 关于fcitx 进程</span></span><br><span class="line">ps aux grep sogou</span><br><span class="line">sudo <span class="built_in">kill</span> <span class="comment"># 找到的 sogou 进程</span></span><br><span class="line"><span class="built_in">cd</span> ~/.config</span><br><span class="line">rm -rf fcitx Sogou* sogou*</span><br></pre></td></tr></table></figure>
+
+<p>重启应该就好了， 在之前解决的中文输入法时， 导出的环境变量还是需要。 如在 .bashrc 中加入的变量</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> GTK_IM_MODULE=fcitx</span><br><span class="line"><span class="built_in">export</span> QT_IM_MODULE=fcitx</span><br><span class="line"><span class="built_in">export</span> XMODIFIERS=@im=fcitx</span><br></pre></td></tr></table></figure>
+
+<p>在 .xprofile 中加入的变量导出</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> GTK_IM_MODULE=fcitx</span><br><span class="line"><span class="built_in">export</span> QT_IM_MODULE=fcitx</span><br><span class="line"><span class="built_in">export</span> XMODIFIERS=@im=fcitx</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>在 .pam_environment 的</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">GTK_IM_MODULE=fcitx</span><br><span class="line">QT_IM_MODULE=fcitx</span><br><span class="line">XMODIFIERS=@im=fcitx</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ol start="7">
+<li> 关于在 archlinux 系统的双显卡的笔记本（inter + nvidia) 安装 nvidia 的驱动， 这是一个相当复杂的过程， 这里有原作者的博客 <a target="_blank" rel="noopener" href="https://ezlost.com/archlinux-%E7%AC%94%E8%AE%B0%E6%9C%AC%E5%AE%89%E8%A3%85nvidia%E6%98%BE%E5%8D%A1%E9%A9%B1%E5%8A%A8%E4%B8%8Eintel%E6%98%BE%E5%8D%A1%E9%A9%B1%E5%8A%A8/">archlinux 笔记本安装nvidia显卡驱动与intel显卡驱动</a> 现在我将起复制下来， 以免以后找不到了。</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; sudo pacman -S nvidia nvidia-libgl xorg-xrandr</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; sudo nvidia-xconfig <span class="comment">#该命令会创建 /etc/X11/xorg.conf</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>编辑之前需要查询一些信息.用 <code>lspci grep -E &quot;VGA3D&quot;</code> 来查询 NVIDIA 显卡的 PCI 地址。PCI 地址是提到 NVIDIA 的输出行的前7个字符，看起来像 <em>01:00.0</em> 。在 <em>xorg.conf</em> 中，需转换为 <code>#:#:#</code> 格式；例如 <code>01:00.0</code> 应该写成 <code>1:0:0</code> 。BusID 那里 N 卡一般是 <code>BusID “PCI:1:0:0”</code> 注意格式，<code>00:02.0</code> 这种形式需要转换成 <code>0:2:0</code> 。在 /etc/X11/xorg.conf 最后加入如下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Section &quot;Module&quot;</span><br><span class="line">    Load &quot;modesetting&quot;</span><br><span class="line">EndSection</span><br><span class="line"></span><br><span class="line">Section &quot;Device&quot;</span><br><span class="line">    Identifier &quot;nvidia&quot;</span><br><span class="line">    Driver &quot;nvidia&quot;</span><br><span class="line">    BusID &quot;PCI:1:0:0&quot;</span><br><span class="line">    Option &quot;AllowEmptyInitialConfiguration&quot;</span><br><span class="line">EndSection</span><br></pre></td></tr></table></figure>
+
+<p><strong>没使用窗框管理器的以下内容添加到 ~/.xinitrc 开头:</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">~/.xinitrc</span><br><span class="line">xrandr --setprovideroutputsource modesetting NVIDIA-0</span><br><span class="line">xrandr --auto</span><br></pre></td></tr></table></figure>
+
+<p>使用不同的窗口管理器,要在相应的位置加入这两行</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xrandr --setprovideroutputsource modesetting NVIDIA-0</span><br><span class="line">xrandr --auto</span><br></pre></td></tr></table></figure>
+
+<p>**对于 LightDM **</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line"># /etc/lightdm/display_setup.sh</span><br><span class="line">xrandr --setprovideroutputsource modesetting NVIDIA-0</span><br><span class="line">xrandr --auto</span><br></pre></td></tr></table></figure>
+
+<p>赋予脚本可执行权限:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; chmod +x /etc/lightdm/display_setup.sh</span><br></pre></td></tr></table></figure>
+
+<p>编辑 /etc/lightdm/lightdm.conf 的 [Seat:*] 部分以配置 lightdm 运行这个脚本:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># nano /etc/lightdm/lightdm.conf</span><br><span class="line">[Seat:*]</span><br><span class="line">display-setup-script=/etc/lightdm/display_setup.sh</span><br></pre></td></tr></table></figure>
+
+<p>重启，你的 DM 应该启动了。 但是有可能还是启动不了， 单独运行 display_setup.sh 时， 会提示 <code>can&#39;t open display</code>, 这时需要增加配置文件将 nvidia 设置成主要显卡。参考文章 <a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/NVIDIA_Optimus#Use_NVIDIA_graphics_only">nvidia optimus</a> 在 <em>/etc/X11/xorg.conf.d/</em> 下创建 <em>/etc/X11/xorg.conf.d/10-nvidia-drm-outputclass.conf</em> , 其内容如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">Section &quot;OutputClass&quot;</span><br><span class="line">    Identifier &quot;intel&quot;</span><br><span class="line">    MatchDriver &quot;i915&quot;</span><br><span class="line">    Driver &quot;modesetting&quot;</span><br><span class="line">EndSection</span><br><span class="line"></span><br><span class="line">Section &quot;OutputClass&quot;</span><br><span class="line">    Identifier &quot;nvidia&quot;</span><br><span class="line">    MatchDriver &quot;nvidia-drm&quot;</span><br><span class="line">    Driver &quot;nvidia&quot;</span><br><span class="line">    Option &quot;AllowEmptyInitialConfiguration&quot;</span><br><span class="line">    Option &quot;PrimaryGPU&quot; &quot;yes&quot;</span><br><span class="line">    ModulePath &quot;/usr/lib/nvidia/xorg&quot;</span><br><span class="line">    ModulePath &quot;/usr/lib/xorg/modules&quot;</span><br><span class="line">EndSection</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>对于 SDDM</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># nano /usr/share/sddm/scripts/Xsetup</span><br><span class="line">xrandr --setprovideroutputsource modesetting NVIDIA-0</span><br><span class="line">xrandr --auto</span><br></pre></td></tr></table></figure>
+
+<p><strong>对于GDM</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">/usr/share/gdm/greeter/autostart/optimus.desktop</span><br><span class="line">/etc/xdg/autostart/optimus.desktop</span><br><span class="line">[Desktop Entry]</span><br><span class="line">Type=Application</span><br><span class="line">Name=Optimus</span><br><span class="line">Exec=sh -c &quot;xrandr --setprovideroutputsource modesetting NVIDIA-0; xrandr --auto&quot;</span><br><span class="line">NoDisplay=true</span><br><span class="line">X-GNOME-Autostart-Phase=DisplayServer</span><br></pre></td></tr></table></figure>
+
+<p>确保GDM使用了Xorg模式。 <strong>对于 KDM</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/share/config/kdm/Xsetup</span><br></pre></td></tr></table></figure>
+
+<p>同 <em>sddm</em> 如果重启还是没有进入图形界面,再编辑一下配置文件/etc/X11/xorg.conf 或者在再 /etc/X11/xorg.conf.d 目录 新建文件并编辑</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">nano intel.conf</span><br><span class="line">内容如下，Intel 的 BusID 一般是 BusID “PCI:0:2:0,这里是上面的方式查出来的”</span><br><span class="line"></span><br><span class="line">Section &quot;Device&quot;</span><br><span class="line">    Identifier &quot;intel&quot;</span><br><span class="line">    Driver &quot;modesetting&quot;</span><br><span class="line">    BusID &quot;PCI:0:2:0&quot;</span><br><span class="line">EndSection</span><br></pre></td></tr></table></figure>
+
+<p>重启即可 <strong>检验 3D</strong> 你可通过安装 mesa-demos 并运行以下命令来检验 NVIDIA 是否被使用:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ glxinfo  grep NVIDIA</span><br></pre></td></tr></table></figure>
+
+<ol start="7">
+<li> archlinux 中连接 手机 传递文件还是个技术活啊。</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; sudo pacman -S simple-mtpfs</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; mkdir my-device</span><br><span class="line">&gt;&gt;&gt; simple-mtpfs -l <span class="comment"># 列出 mtp 设备：</span></span><br><span class="line">&gt;&gt;&gt; simple-mtpfs --device 1 my-device </span><br></pre></td></tr></table></figure>
+
+<ol start="8">
+<li> 关于 microcode (微代码) 的更新</li>
+</ol>
+<p>该问题在 archlinux 的 wiki 中已经说得很清楚了。 <a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/Microcode_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)">微代码更新</a></p>
+<ol start="9">
+<li> 如果你安装的 nvidia 专有驱动， 并且也安装了新的微代码。 你可能就会遇到 kwin 的透明效果没有了。 提示错误为</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kwin_core: Compositing is not possible</span><br></pre></td></tr></table></figure>
+
+<p>需要更改 .config/kwinrc 文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">.config/kwinrc</span><br><span class="line">-----------------------------------</span><br><span class="line">[Compositing]</span><br><span class="line">OpenGLIsUnsafe=true</span><br><span class="line"># 将上面的true 更改为 false 就行了</span><br><span class="line"></span><br><span class="line">[Desktops]</span><br><span class="line">Id_1=84c28625-7184-4232-bf70-7f0e70882c8b</span><br><span class="line">Id_2=a7eac20b-05be-4c6c-bf7c-0ca7155bb252</span><br><span class="line"></span><br><span class="line">[Script-closewindowaction]</span><br><span class="line">BorderActivate=</span><br><span class="line"></span><br><span class="line">[Script-runcommandaction]</span><br><span class="line">BorderActivate=</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/supremew/2019/12/23/%E5%86%85%E6%A0%B8%E7%BC%96%E8%AF%91%E4%B8%8E%E5%AE%89%E8%A3%85/" rel="prev" title="2019-12-23 内核编译与安装">
+                  <i class="fa fa-chevron-left"></i> 2019-12-23 内核编译与安装
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/supremew/2019/12/25/%E6%B5%8B%E8%AF%95/" rel="next" title="2019-12-24 测试">
+                  2019-12-24 测试 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments gitalk-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">八月</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/supremew/js/comments.js"></script><script src="/supremew/js/utils.js"></script><script src="/supremew/js/motion.js"></script><script src="/supremew/js/next-boot.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/supremew/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
+
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"supremew","repo":"blogComment","client_id":"b853e46f05a68e5f05be","client_secret":"1802b7cbe5ce5f4a4e2eb2a24cc4e4a7b29a2ed8","admin_user":"supremew","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":null,"js":{"url":"https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js","integrity":"sha256-Pmj85ojLaPOWwRtlMJwmezB/Qg8BzvJp5eTzvXaYAfA="},"path_md5":"c62317d0e0fefaf2943d06be85966d07"}</script>
+<script src="/supremew/js/third-party/comments/gitalk.js"></script>
+
+</body>
+</html>
