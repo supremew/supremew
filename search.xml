@@ -4040,4 +4040,41 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
         <category>日常生活</category>
       </categories>
   </entry>
+  <entry>
+    <title>2021-12-13 git 的默认编辑器的修改</title>
+    <url>/supremew/2021/12/13/git-%E7%9A%84%E9%BB%98%E8%AE%A4%E7%BC%96%E8%BE%91%E5%99%A8%E7%9A%84%E4%BF%AE%E6%94%B9/</url>
+    <content><![CDATA[<h4 id="git-commit"><a href="#git-commit" class="headerlink" title="git commit"></a>git commit</h4><p>此时是进入GUN nano编辑器。在这里可以添加你的commit imformation 然后ctrl+o,回车保存，再ctrl+x退出。 因为对Nano编辑器很不熟悉，在这里我想将默认编辑器改为vim。打开.git/config文件，在core中添加 editor=vim即可。<br>或者运行命令 <code>git config –global core.editor vim</code> 修改更加方便。</p>
+<h4 id="git-commit-a"><a href="#git-commit-a" class="headerlink" title="git commit -a"></a>git commit -a</h4><p>把所有add了的文件都加入commit，然后进入编辑器编辑commit信息。</p>
+<h4 id="git-commit-m-“commit-imformation”"><a href="#git-commit-m-“commit-imformation”" class="headerlink" title="git commit -m  “commit imformation”"></a>git commit -m  “commit imformation”</h4><p>直接在后面添加commit 信息然后提交commit，与gitcommit相比快捷方便，但是就是commit信息格式无法控制。</p>
+<h4 id="git-commit-–amend"><a href="#git-commit-–amend" class="headerlink" title="git commit –amend"></a>git commit –amend</h4><p>修改最后一次commit的信息。</p>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2021-12-23 archlinux 升级后，启动 lightdm 失败</title>
+    <url>/supremew/2021/12/23/archlinux-%E5%8D%87%E7%BA%A7%E5%90%8E%EF%BC%8C%E5%90%AF%E5%8A%A8-lightdm-%E5%A4%B1%E8%B4%A5/</url>
+    <content><![CDATA[<p>先来说说， 如何出现 lightdm 启动失败的问题的过程。</p>
+<ol>
+<li>在发现 qutebrowser 浏览器有新版本后， 于是单独升级了 qutebrowser.</li>
+<li>升级 qutebrowser 后， 发现 qutebrowser 不能用了， 估计是新版本的 qutebrowser 使用了新版本的某一个 python 包， 为了偷懒解决该问题。</li>
+<li>于是对系统进行了全面的升级， <code>sudo pacman -Syu</code></li>
+<li>在重启后，发现图形界面不出来了， 一查启动过程中的错误。 <code>sudo systemctl jounalctl -b -p err</code></li>
+<li>才发现 lightdm 启动失败了。</li>
+</ol>
+<p>一般情况下， lightdm 启动不了是显卡驱动的问题， 于是查了下 nvidia 模块 <code>lsmod |grep nvidia</code>，果然没有 nvidia 模块， 但是通过查看 nvidia 安装情况 <code>pacman -Q|grep nvidia</code>，是安装了。 于是上 archlinux 的 wiki 查了一下关于 nvidia 的资料， 发现 nvidia 驱动在新版本中不再支持 780 的显卡了， 和 780 显卡需要安装另外一个安装包。 nvidia-77xx-dkms</p>
+<p>按照说明安装了 nvidia-77xx-mks <code>yaourt -S nvidia-470xx-dkms</code>, 最终得以解决。</p>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>archlinux</tag>
+        <tag>lightdm</tag>
+      </tags>
+  </entry>
 </search>

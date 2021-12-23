@@ -155,7 +155,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/supremew/archives/">
-          <span class="site-state-item-count">289</span>
+          <span class="site-state-item-count">291</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -166,7 +166,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/supremew/tags/">
-        <span class="site-state-item-count">28</span>
+        <span class="site-state-item-count">30</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -195,6 +195,186 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2021/08/25/spyder-%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2021/08/25/spyder-%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/" class="post-title-link" itemprop="url">spyder 的安装以及中文输入的解决办法</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-08-25 15:46:08" itemprop="dateCreated datePublished" datetime="2021-08-25T15:46:08+08:00">2021-08-25</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h5 id="spyder-的安装。"><a href="#spyder-的安装。" class="headerlink" title="spyder 的安装。"></a>spyder 的安装。</h5><h6 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -S spyder</span><br></pre></td></tr></table></figure>
+
+<p>但是 <em>pacman</em>　安装的 spyder 的版本为 <em>spyder 5.0.1</em> ，版本较低，　并且在安装的时候需要对 <em>python-decorator</em> 进行降级处理。</p>
+<h6 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pip install spyder</span><br></pre></td></tr></table></figure>
+
+<p>该方法安装 spyder 又怕将安装不必要的依赖，影响系统依赖。 <em><strong>可能我过度担心了</strong></em></p>
+<p>通过验证， 确实会破坏系统依赖关系。比如， 在我的系统上 <strong>pyqt5</strong></p>
+<p>我就没有想明白， 明明通过 pip list 能够看到系统已经有了 pyqt5, 但是在安装 spyder 时， 他为什么还要再安装 pyqt5 (并且该软件包还自带 Qt5，该 QT5 为简易版的，我需要的是系统自带的，功能齐全的 qt5)呢。</p>
+<h6 id="方法三"><a href="#方法三" class="headerlink" title="方法三"></a>方法三</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir spyder</span><br><span class="line">cd spyder</span><br><span class="line">pipenv install spyder</span><br></pre></td></tr></table></figure>
+
+<p>应用虚拟环境进行安装，这样就好的多了。</p>
+<h5 id="中文输入的解决"><a href="#中文输入的解决" class="headerlink" title="中文输入的解决"></a>中文输入的解决</h5><p>因为 spyder 的 gui 依赖于 pyqt5 ，　而用 pipenv 安装 spyder 时，自己安装了一个 pyqt5, 但是该 pyqt5 包含有自己的 qt 版本，　而在这个 Qt 版本中没有对中文输入法 fcitx 进行支持，　因此在 spyder 中不能输入中文。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">pipenv --venv</span><br><span class="line">cd /home/archlinux/.local/share/virtualenvs/spyder-GwpD1Fqa</span><br><span class="line">cd lib/python3.9/site-packages/</span><br><span class="line">rm -rf PyQt5*</span><br><span class="line">ln -s PyQt5</span><br><span class="line">ln -s PQt5* *</span><br></pre></td></tr></table></figure>
+<p>最终映射效果为</p>
+<p><img src="/supremew/2021/08/25/spyder-%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/1.png"></p>
+<h5 id="启动不了"><a href="#启动不了" class="headerlink" title="启动不了"></a>启动不了</h5><p>如果在启动 spyder 时， 出现了如下的问题</p>
+<p><img src="/supremew/2021/08/25/spyder-%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/2.png"></p>
+<p>那是因为安装了多个版本 spyder 后， 导致部分文件没有完全的替换， 导致了不同版本的文件混用，而出现的问题。 具体是哪些文件我是不清楚。<br>下面是我的解决办法， 土办法，累人哈。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">locate spyder &gt; 1.txt</span><br><span class="line">vim 1.txt #删除自己不想删除的文件， 这里主要是一些对个人较为重要的文件。</span><br><span class="line">rm rf $(&lt;1.txt)</span><br><span class="line">重新安装 spyder</span><br></pre></td></tr></table></figure>
+
+<h5 id="最新安装方法"><a href="#最新安装方法" class="headerlink" title="最新安装方法"></a>最新安装方法</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># 获得最新的源代码</span><br><span class="line">git clone https://gitee.com/mirrors/Spyder</span><br><span class="line"># 回到最新稳定版本 v5.1.1, 因通过验证 v5.1.1 bug 最少。</span><br><span class="line">git reset --hard v5.1.1</span><br><span class="line">locate spyder &gt; 1.txt</span><br><span class="line"># 编辑 1.txt, 将不想删除的文件名删除.</span><br><span class="line">vim 1.txt</span><br><span class="line">rm -rf $(&lt;1.txt)</span><br><span class="line"># 修改 setup.py ， 将 pyqt5 的版本后面的 &lt; 改为 &gt;=</span><br><span class="line"># 将 pyqtwebengine 后的 &lt;  改为 &gt;=</span><br><span class="line">python setup.py build</span><br><span class="line">python setup.py install --record installFilesRecord.txt --user</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2021/08/22/%E6%B5%8B%E8%AF%95%E4%BA%8C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2021/08/22/%E6%B5%8B%E8%AF%95%E4%BA%8C/" class="post-title-link" itemprop="url">2021-08-22 测试二</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-08-22 00:04:42" itemprop="dateCreated datePublished" datetime="2021-08-22T00:04:42+08:00">2021-08-22</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>测试后期发表。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -850,201 +1030,8 @@
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2021/07/23/%E7%94%B5%E6%B8%97%E6%9E%90%E6%8A%80%E6%9C%AF%E7%9A%84%E5%BA%94%E7%94%A8/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2021/07/23/%E7%94%B5%E6%B8%97%E6%9E%90%E6%8A%80%E6%9C%AF%E7%9A%84%E5%BA%94%E7%94%A8/" class="post-title-link" itemprop="url">电渗析技术的应用</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-07-23 10:48:37" itemprop="dateCreated datePublished" datetime="2021-07-23T10:48:37+08:00">2021-07-23</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/%E8%86%9C%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">膜技术</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h4 id="双极膜"><a href="#双极膜" class="headerlink" title="双极膜"></a>双极膜</h4><ul>
-<li>在低电压下将水分裂为酸 (H＋)和碱(OH－)。</li>
-<li><em>因没有电极反应而不产生氧化还原反应。因此没有副产物的产生。</em> (这一点描述错误，　实际上电极上是有氧化还原反应的)</li>
-<li>采用单一工序从无机盐、有机酸盐生成酸和碱。可控制酸和碱的浓度。</li>
-<li>与电解法不同，由于每个槽不需要电极，因此所产生的气体很少。可以减少废液量。</li>
-<li>由于无需再生工序，因此可以长期连续运行。</li>
-</ul>
-<h5 id="两室双极膜"><a href="#两室双极膜" class="headerlink" title="两室双极膜"></a>两室双极膜</h5><ul>
-<li>从有机酸盐生产有机酸</li>
-<li>从氨基酸盐生产氨基酸</li>
-</ul>
-<h5 id="三室双极膜"><a href="#三室双极膜" class="headerlink" title="三室双极膜"></a>三室双极膜</h5><ul>
-<li>从盐废液生产酸和碱</li>
-<li>从无机盐生产酸和碱</li>
-</ul>
-<h4 id="电渗析"><a href="#电渗析" class="headerlink" title="电渗析"></a>电渗析</h4><ul>
-<li>从海水生产食盐</li>
-<li>酱油的脱盐</li>
-<li>低聚糖的脱盐</li>
-<li>最终处理场所浸出液的脱盐、浓缩</li>
-<li>工序废液的脱盐、浓缩</li>
-<li>铝合金窗框酸洗废液的回收</li>
-<li>碱废液的回收</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2021/07/15/%E5%8F%8C%E6%9E%81%E8%86%9C%E7%A2%B1%E6%B6%B2%E7%A1%AB%E9%85%B8%E6%A0%B9%E5%BC%82%E5%B8%B8%E7%A0%94%E7%A9%B6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2021/07/15/%E5%8F%8C%E6%9E%81%E8%86%9C%E7%A2%B1%E6%B6%B2%E7%A1%AB%E9%85%B8%E6%A0%B9%E5%BC%82%E5%B8%B8%E7%A0%94%E7%A9%B6/" class="post-title-link" itemprop="url">2021-07-15 双极膜碱液硫酸根异常研究</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-07-15 14:53:38" itemprop="dateCreated datePublished" datetime="2021-07-15T14:53:38+08:00">2021-07-15</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>硫酸根 5000+ ppm 异常， 平时正常境况下的硫酸根为 1000 ~ 2000 ppm，对双极膜出现的这样的情况进行研究。　</p>
-<ol>
-<li>分拆双极膜膜堆，　检查阳膜、双极膜是否与破损。　检查破损的方法，手电筒照射待检查的膜，让光透过照射在白色的墙壁上，观察是否有一样。　检查结果为，　<strong>膜没有异常破损</strong>。</li>
-<li>检查盐室隔板通道，　发现盐室隔板有少许堵塞的现象。　据精盐判断硫酸根与其没有太大的关联。</li>
-<li>仔细回想后，　发现极水中混有稀硫酸溶液，　这会不会是导致硫酸根超高的原因呢？</li>
-</ol>
-<p>处置办法：</p>
-<ol>
-<li>首先将极水、碱启动溶液重新配置。</li>
-<li>再次做实验。</li>
-</ol>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/supremew/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/supremew/">1</a><span class="page-number current">2</span><a class="page-number" href="/supremew/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/supremew/page/29/">29</a><a class="extend next" rel="next" href="/supremew/page/3/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/supremew/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/supremew/">1</a><span class="page-number current">2</span><a class="page-number" href="/supremew/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/supremew/page/30/">30</a><a class="extend next" rel="next" href="/supremew/page/3/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 </div>

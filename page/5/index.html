@@ -155,7 +155,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/supremew/archives/">
-          <span class="site-state-item-count">289</span>
+          <span class="site-state-item-count">291</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -166,7 +166,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/supremew/tags/">
-        <span class="site-state-item-count">28</span>
+        <span class="site-state-item-count">30</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -195,6 +195,187 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2020/06/23/archlinux-%E4%B8%AD%E6%96%87%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2020/06/23/archlinux-%E4%B8%AD%E6%96%87%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">2020-06-26 archlinux 中文问题</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2020-06-23 19:50:37" itemprop="dateCreated datePublished" datetime="2020-06-23T19:50:37+08:00">2020-06-23</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>首先说， 在 archlinux 的 wiki 中已经说的很清楚了， 但是在实际操作中还是会遇到中文的问题 archlinux 中安装了 deepin deepin - extra 在终端中粘贴入中文， 不显示中文， 在vim 中粘贴入中文显示问号， 检查终端设置是正常的， vim 设置也是正常的， 看了 wiki 后， 觉着是 locale 的问题， 现在就说一哈解决办法。 再终端中执行 locale ， 看是否是与模拟终端中执行的结果相同。</p>
+<ol>
+<li> 我在 /etc/locale.conf 中设置成</li>
+</ol>
+<p>LANG=en_us. UTF-8</p>
+<ol start="2">
+<li>在终端中执行 locale，基本输出结果都符合预期。</li>
+<li>在deepin 的虚拟终端中执行 locale，输出结果与预期不一致。</li>
+<li>分析， 在进入 deepin 之前 设置对的， 而在 进入deepin 之后是错的， 因此估计是 用户文件的问题。(/home/用户名)</li>
+<li>先删除用户及用户文件， 重新建立用户及用户文件。</li>
+</ol>
+<p>userdel -r archlinux user add -m archlinux</p>
+<ol start="6">
+<li> 检测， 问题解决</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2019/12/25/%E6%B5%8B%E8%AF%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2019/12/25/%E6%B5%8B%E8%AF%95/" class="post-title-link" itemprop="url">2019-12-24 测试</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2019-12-25 12:45:32" itemprop="dateCreated datePublished" datetime="2019-12-25T12:45:32+08:00">2019-12-25</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>document.write(“ -editor插件开发\n -思维导字\n -构思如何开发 3m\n -查看新插件的提交代码修改量\n -查看修改文件列表\n -比对单个文件主要修改位置\n -插件开发格式要求\n -测试 6m\n”);</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/supremew/2019/12/25/%E6%B5%8B%E8%AF%95/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -908,185 +1089,8 @@
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2019/08/27/vim-%E7%9A%84%E5%86%99markdown-%E6%96%87%E6%A1%A3%E7%9A%84-vim-oss-image-uploader-%E6%8F%92%E4%BB%B6%E8%B0%83%E8%AF%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2019/08/27/vim-%E7%9A%84%E5%86%99markdown-%E6%96%87%E6%A1%A3%E7%9A%84-vim-oss-image-uploader-%E6%8F%92%E4%BB%B6%E8%B0%83%E8%AF%95/" class="post-title-link" itemprop="url">2019-08-29 vim 的写markdown 文档的 vim-oss-image-uploader 插件调试</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2019-08-27 10:36:20" itemprop="dateCreated datePublished" datetime="2019-08-27T10:36:20+08:00">2019-08-27</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/vim-gvim/" itemprop="url" rel="index"><span itemprop="name">vim/gvim</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>这几天在调试 wordpress 的图床， 经过半天的调试， 已经把 wordpress 的图床调试成功了（其图床是采用七牛云储存的）。</p>
-<ul>
-<li>  七牛云储存</li>
-<li>  vim-oss-image-uploader 的使用
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/supremew/2019/08/27/vim-%E7%9A%84%E5%86%99markdown-%E6%96%87%E6%A1%A3%E7%9A%84-vim-oss-image-uploader-%E6%8F%92%E4%BB%B6%E8%B0%83%E8%AF%95/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2019/08/26/%E6%B5%8B%E8%AF%95-markdown-%E8%AF%AD%E6%B3%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2019/08/26/%E6%B5%8B%E8%AF%95-markdown-%E8%AF%AD%E6%B3%95/" class="post-title-link" itemprop="url">2019-08-26 测试 markdown 语法</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2019-08-26 20:11:04" itemprop="dateCreated datePublished" datetime="2019-08-26T20:11:04+08:00">2019-08-26</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>这就是传说中的白塔。 <img src="http://mt.supermew.top/test/IMG_20180818_083845.jpg-markdown_image"></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/supremew/2019/08/26/%E6%B5%8B%E8%AF%95-markdown-%E8%AF%AD%E6%B3%95/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/supremew/page/4/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/supremew/">1</a><span class="space">&hellip;</span><a class="page-number" href="/supremew/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/supremew/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/supremew/page/29/">29</a><a class="extend next" rel="next" href="/supremew/page/6/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/supremew/page/4/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/supremew/">1</a><span class="space">&hellip;</span><a class="page-number" href="/supremew/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/supremew/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/supremew/page/30/">30</a><a class="extend next" rel="next" href="/supremew/page/6/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 </div>

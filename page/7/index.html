@@ -155,7 +155,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/supremew/archives/">
-          <span class="site-state-item-count">289</span>
+          <span class="site-state-item-count">291</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -166,7 +166,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/supremew/tags/">
-        <span class="site-state-item-count">28</span>
+        <span class="site-state-item-count">30</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -195,6 +195,184 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2018/08/24/qutebrowser-%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2018/08/24/qutebrowser-%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/" class="post-title-link" itemprop="url">2018-08-24 qutebrowser 的安装与使用</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2018-08-24 15:48:55" itemprop="dateCreated datePublished" datetime="2018-08-24T15:48:55+08:00">2018-08-24</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <ol>
+<li> 首先去 github.com 下载源代码， 可以通过下面的命令进行获得源代马并进行安装。</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">mkdir qutebrowser</span><br><span class="line">cd qutebrowser</span><br><span class="line">git init</span><br><span class="line">git fetch --recu https://github.com/</span><br><span class="line">git checkout FETCH_HEAD</span><br><span class="line">git checkout -b master</span><br><span class="line">git remote add origin https://github.com/</span><br><span class="line">git branck --set-upstream=origin/master master</span><br><span class="line">python3 scripts/asciidoc2html.py</span><br><span class="line">python3 setup.py build</span><br><span class="line">python3 setup.py install --user --record install_files.txt</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li> qutebrowser 默认使用 qtwebengine 引擎进行显示网页， 然而现在 qutebrowser 要求最低使用 qt 11.1.1, pyqt 11.1.2 因此需要安装 PyQt5, 默认安装的PyQt5 是不能使用中文输入法的， 尤其是 fcitx 因此需要手动调整。</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pip3 install PyQt5 --user</span><br><span class="line">cp /usr/lib/x86_64_gnu_linux/qt5/plugins/../libfcitxplatforminput.so .local/lib/python3/site/../qt/plugins/platforminput/</span><br><span class="line">chmod +x libfcitxplatorminput.so</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li> 到 adobe-flash 官网下载 chromium 版的flashplayer 的tar.gz 文件</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -xzvf flash-player-linux.tar.gz /usr/lib/adobe-flashplugin/</span><br></pre></td></tr></table></figure>
+
+<p><em>特别强调</em> 目前pyqt 11.1.2, qt 11.1.1 还有部分问题， 比如在 youku.com 上播放视频时， qutebrowser 不能够正常的获得视频地址， 还有在播放 adobe flash 视频时不能将视频全屏播放（听说是因为adobe flash 即将推出历史舞台了， 因此 qt webengine 引擎不打算支持了。） 因此为了能够正常的使用还是建议一下版本。 * CPython: 3.6.5 * Qt: 5.9.5 * PyQt: 5.10.1 * qutebrowser 1.4.2</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2018/06/05/unicode-%E7%BC%96%E7%A0%81%E7%9A%84%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2018/06/05/unicode-%E7%BC%96%E7%A0%81%E7%9A%84%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">2018-06-05 unicode 编码的问题</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2018-06-05 21:15:33" itemprop="dateCreated datePublished" datetime="2018-06-05T21:15:33+08:00">2018-06-05</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>最近几天， 被 unicode 编码给折磨惨了， 如今知道是什么原因 。。 我用了 wordpress json api 插件， 开启了 wordpress 的 json api, 我通过 libcurl 得到的 json 中的中文 都以 \uXXXX 这样的形式表示的。 在今天看帮助文档的时候， 发现了这是 json api 的输出控制了的， 是故意让它输出这样的 unicode 编码， 以提高谦容性。 可以在发 url中加入这样的参数， 就可以让它以 utf-8 的格式输出 ， 而非 unicode escape 编码。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://www.example.com/?jsong=get_post&amp;post_id=1234&amp;json_unescaped_unicode</span><br></pre></td></tr></table></figure>
+
+<p>这里， 我称像 \uXXXX 这样的unicode码为 unicode escape 码。 这样的码是 javascript / json 的默认形式， linux 下 的printf 也能直接的输出 。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -888,187 +1066,8 @@
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2017/12/21/%E5%87%A0%E7%A7%8D%E5%8D%A4%E6%B0%B4%E6%8F%90%E9%94%82%E6%96%B9%E6%B3%95%E7%9A%84%E5%A4%A7%E8%87%B4%E6%AF%94%E8%BE%83/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2017/12/21/%E5%87%A0%E7%A7%8D%E5%8D%A4%E6%B0%B4%E6%8F%90%E9%94%82%E6%96%B9%E6%B3%95%E7%9A%84%E5%A4%A7%E8%87%B4%E6%AF%94%E8%BE%83/" class="post-title-link" itemprop="url">2017-12-20 几种卤水提锂方法的大致比较</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2017-12-21 09:50:53" itemprop="dateCreated datePublished" datetime="2017-12-21T09:50:53+08:00">2017-12-21</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <ol>
-<li> <strong>煅烧法</strong> 煅烧分离法以中信国安为代表，主要的优点是能够分离高镁锂比的卤水成分， 且有利于综合利用锂镁等资源， 原料消耗少； 但镁的提取使流程复杂， 设备腐蚀严重， 需要蒸发的水量较大、 能源消耗大， 在生产实际当中尾气方面出现严重的环境污染问题。 青海国安采用的提升老卤浓度的办法， 由于镁盐沉淀夹带影响， 回收率将受到影响。 另外， 公司的发电和煅烧全部采用天然气， 天然气成本仍将提升。</li>
-<li> <strong>膜法</strong> 膜法以青海锂业为代表， 目前青海锂业 3000t/y 碳酸锂装置还在调试中， 其工艺路线是利用多级膜分离技术， 将老卤中镁： 锂比由 20∶1， 提高到 1∶2 左右。 存在的主要问题是在反渗透浓缩过程中， 浓相部分盐的析出不好控制， 容易堵塞或损坏膜， 需要进一步扩大操作参数范围， 稳定工艺条件。</li>
-<li> <strong>脂吸附法</strong> 吸附法的技术难度一直没有完全突破。 目前吸附法主要应用于像察尔汗盐湖这样锂含量、 浓度最低的一些盐湖。 该方法以蓝科锂业为代表， 其工艺包括树脂吸附， 洗脱， 浓缩， 膜分离和碳化等过程。 树脂吸附主要的问题是水耗， 树脂消耗和动力消耗很大， 同时由于树脂对温度大幅变化适应性不够， 导致树脂破碎等问题还在解决中。</li>
-<li> <strong>太阳池法</strong> 太阳池浓缩法为西藏矿业在扎布耶盐湖所应用。 扎布耶盐湖为天然碳酸盐湖， 镁锂比全球最低， 资源极佳， 工艺比较可靠。但扎布耶离白银距离远， 运输时间长， 且扎布耶水电路都不通， 基础设施很差， 产能提升需要大量资金投入。</li>
-</ol>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2017/12/11/%E9%87%87%E7%94%A8%E9%94%B0%E9%85%B8%E9%94%82%E7%94%B5%E5%AF%B9%E8%BF%9B%E8%A1%8C%E5%8D%A4%E6%B0%B4%E6%8F%90%E9%94%82/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2017/12/11/%E9%87%87%E7%94%A8%E9%94%B0%E9%85%B8%E9%94%82%E7%94%B5%E5%AF%B9%E8%BF%9B%E8%A1%8C%E5%8D%A4%E6%B0%B4%E6%8F%90%E9%94%82/" class="post-title-link" itemprop="url">2017-12-11 采用锰酸锂电对进行卤水提锂</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2017-12-11 15:00:09" itemprop="dateCreated datePublished" datetime="2017-12-11T15:00:09+08:00">2017-12-11</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="文章信息"><a href="#文章信息" class="headerlink" title="文章信息"></a>文章信息</h3><h4 id="文章-doi"><a href="#文章-doi" class="headerlink" title="文章 doi"></a>文章 doi</h4><p><strong>doi:</strong> 10.1016/j.electacta.2017.08.178</p>
-<h4 id="文章出处"><a href="#文章出处" class="headerlink" title="文章出处"></a>文章出处</h4><p>由河北工业大学大学写的。</p>
-<h3 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h3><ol>
-<li> LiMn2O4 是通过高温固相合成的方法合成。80% LiMn2O4, 10% 碳黑，10% 聚四氟乙烯混合，用少许酒精调成浆料均匀涂在 35mmX35mm 的碳衣上，然后在 70℃ 下进行烘干。</li>
-<li> Li1-xMn2O4 是通过电化学的方法合成的。将 LiMn2O4 作为阳极，将 AgCl 电极作为阴极，将 0.05mol/L 的 KCl 溶液作为电解液进行，在恒压 1.2v 下进行电解得到。</li>
-<li> 采用该材料在 25℃, 1.2v 下，1g LiMn2O4 可以吸附 34mg 锂。</li>
-<li> 该材料还可以将卤水中的 Na Mg Ca 减少 300 70 100 倍。具体数据如下表。</li>
-<li> 每提取 1g 锂耗电。
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/supremew/2017/12/11/%E9%87%87%E7%94%A8%E9%94%B0%E9%85%B8%E9%94%82%E7%94%B5%E5%AF%B9%E8%BF%9B%E8%A1%8C%E5%8D%A4%E6%B0%B4%E6%8F%90%E9%94%82/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/supremew/page/6/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/supremew/">1</a><span class="space">&hellip;</span><a class="page-number" href="/supremew/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/supremew/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/supremew/page/29/">29</a><a class="extend next" rel="next" href="/supremew/page/8/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/supremew/page/6/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/supremew/">1</a><span class="space">&hellip;</span><a class="page-number" href="/supremew/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/supremew/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/supremew/page/30/">30</a><a class="extend next" rel="next" href="/supremew/page/8/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 </div>

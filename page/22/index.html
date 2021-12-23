@@ -155,7 +155,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/supremew/archives/">
-          <span class="site-state-item-count">289</span>
+          <span class="site-state-item-count">291</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -166,7 +166,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/supremew/tags/">
-        <span class="site-state-item-count">28</span>
+        <span class="site-state-item-count">30</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -195,6 +195,166 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2014/05/07/php%E4%B8%AD%E4%BD%BF%E7%94%A8dom%E5%AF%B9xml%E8%BF%9B%E8%A1%8C%E6%93%8D%E4%BD%9C%E6%97%B6%EF%BC%8C-getelementbyid-%E4%B8%8D%E8%83%BD%E4%BD%BF%E7%94%A8%E7%9A%84%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2014/05/07/php%E4%B8%AD%E4%BD%BF%E7%94%A8dom%E5%AF%B9xml%E8%BF%9B%E8%A1%8C%E6%93%8D%E4%BD%9C%E6%97%B6%EF%BC%8C-getelementbyid-%E4%B8%8D%E8%83%BD%E4%BD%BF%E7%94%A8%E7%9A%84%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">2014-05-07  php中使用dom对xml进行操作时， getElementById 不能使用的问题</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2014-05-07 16:28:30" itemprop="dateCreated datePublished" datetime="2014-05-07T16:28:30+08:00">2014-05-07</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>这个问题， 还是用了很长得时间才解决的， 主要是在xml中要有文档定义， 将id定义成ID类型， 你的xml才能如下面这样写。 filename:testing.xml <code>&lt;!DOCTYPE book [ &lt;!ELEMENT book (title, author)&gt; &lt;!ELEMENT title (#PCDATA)&gt; &lt;!ELEMENT author (#PCDATA)&gt; &lt;!ATTLIST title id ID IMPLIED&gt; &lt;!ATTLIST author id ID IMPLIED&gt; ]&gt; this is a title the author of the book</code> 然后你才能在php程序中这样应用。 load(“testing.xml”); $titleNode = $doc-&gt;getElementById(“title”); echo “the title of the book is “ . $titleNode-&gt;nodeValue; ?&gt; 先面， 我就像测试一下， 用dom创建得xml会不会要求这样呢？ 我想会的。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2014/05/07/php%E4%B8%AD%E5%8F%98%E9%87%8F%E5%BE%97%E4%BD%9C%E7%94%A8%E8%8C%83%E5%9B%B4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2014/05/07/php%E4%B8%AD%E5%8F%98%E9%87%8F%E5%BE%97%E4%BD%9C%E7%94%A8%E8%8C%83%E5%9B%B4/" class="post-title-link" itemprop="url">2014-05-07  php中变量得作用范围</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2014-05-07 16:11:05" itemprop="dateCreated datePublished" datetime="2014-05-07T16:11:05+08:00">2014-05-07</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>由于以前学习了， 一段时间得c语言， 一直认为在php中全局变量在函数中也是自动生效得， 哪知不是， 如果要生效得话， 需要用global这个关键子得。<a target="_blank" rel="noopener" href="http://www.php.net/manual/zh/language.variables.scope.php">关于变量得范围</a> 这个也解决了， 我前天在include文件中得一个函数使用全局变量， 没有成功， 而返回了一个空值。最初我认为， 在被include得文件中申明得变量不能在这个被include得文件中得函数中应用， 结果不是这样得。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -834,167 +994,8 @@
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2014/02/21/%E7%A3%A8%E6%96%99/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2014/02/21/%E7%A3%A8%E6%96%99/" class="post-title-link" itemprop="url">2014-02-21 磨料</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2014-02-21 08:27:44" itemprop="dateCreated datePublished" datetime="2014-02-21T08:27:44+08:00">2014-02-21</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>由于， 昨天磨料后， 剩下的碳酸锂不多了， 所以今天， 就只有减少了量， 进行磨料。 今天， 找领导帮我， 在化验室那里， 弄了些99%以上的粉过的碳酸锂。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2014/02/21/%E4%BB%8A%E5%A4%A9%E4%BD%93%E9%87%8D%E5%A4%9A%E5%B0%91%EF%BC%9F/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2014/02/21/%E4%BB%8A%E5%A4%A9%E4%BD%93%E9%87%8D%E5%A4%9A%E5%B0%91%EF%BC%9F/" class="post-title-link" itemprop="url">今天体重多少？</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2014-02-21 08:18:04" itemprop="dateCreated datePublished" datetime="2014-02-21T08:18:04+08:00">2014-02-21</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/supremew/page/21/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/supremew/">1</a><span class="space">&hellip;</span><a class="page-number" href="/supremew/page/21/">21</a><span class="page-number current">22</span><a class="page-number" href="/supremew/page/23/">23</a><span class="space">&hellip;</span><a class="page-number" href="/supremew/page/29/">29</a><a class="extend next" rel="next" href="/supremew/page/23/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/supremew/page/21/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/supremew/">1</a><span class="space">&hellip;</span><a class="page-number" href="/supremew/page/21/">21</a><span class="page-number current">22</span><a class="page-number" href="/supremew/page/23/">23</a><span class="space">&hellip;</span><a class="page-number" href="/supremew/page/30/">30</a><a class="extend next" rel="next" href="/supremew/page/23/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 </div>
