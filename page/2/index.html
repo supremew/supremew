@@ -155,7 +155,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/supremew/archives/">
-          <span class="site-state-item-count">291</span>
+          <span class="site-state-item-count">295</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -166,7 +166,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/supremew/tags/">
-        <span class="site-state-item-count">30</span>
+        <span class="site-state-item-count">37</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -195,6 +195,366 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2021/09/08/python-%E7%B1%BB%E5%B1%9E%E6%80%A7%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E7%9A%84%E5%8C%BA%E5%88%AB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2021/09/08/python-%E7%B1%BB%E5%B1%9E%E6%80%A7%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E7%9A%84%E5%8C%BA%E5%88%AB/" class="post-title-link" itemprop="url">2021-09-08 python 类属性和对象属性的区别</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-09-08 10:47:23" itemprop="dateCreated datePublished" datetime="2021-09-08T10:47:23+08:00">2021-09-08</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>之前对 python 的类属性和对象属性理解的不是准确，以致写出的代码有小 bug。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">a</span>:</span></span><br><span class="line">	names = []</span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">		self.b = []</span><br></pre></td></tr></table></figure>
+
+<p>上面的类 a 中的 names 为类属性， 当对类 a 进行实例化后的对象， 就继承了类属性。如果在后期对 name 属性进行了修改， 在后面再进行实例化的话， 新的 object 也会继承该修改。 如下代码</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">x = a()</span><br><span class="line">a.names.append(<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">b = a() <span class="comment"># 这时 b.names 就会是 [1],</span></span><br><span class="line"></span><br><span class="line">b.names.append(<span class="number">2</span>) </span><br><span class="line"></span><br><span class="line">c = a() <span class="comment"># 这时 c.names 就会是 [1,2]</span></span><br></pre></td></tr></table></figure>
+
+<p>而实例(object)属性，是只单独属于实例。</p>
+<pre><code>xy = a()
+xy.b.append[1]
+
+xz = a() # 这时 xz.b 依然为 [], 空的数组。
+``
+</code></pre>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2021/09/03/vimspector-%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2021/09/03/vimspector-%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/" class="post-title-link" itemprop="url">2021-09-03 vimspector 安装与使用</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-09-03 10:10:29" itemprop="dateCreated datePublished" datetime="2021-09-03T10:10:29+08:00">2021-09-03</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h4 id="vimspector-的安装"><a href="#vimspector-的安装" class="headerlink" title="vimspector 的安装"></a>vimspector 的安装</h4><ol>
+<li>如果是 vim-plug 管理 vim 插件的， 就简单的编辑 ~/.vimrc。在相应的位置增加如下行。</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Plug &#x27;git@gitee.com:supermew/vimspector&#x27;, &#123; &#x27;for&#x27;:&#x27;python&#x27;  &#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>启动 vim ， 并运行 :PlugInstall</li>
+</ol>
+<h4 id="vimspector-的适配器安装"><a href="#vimspector-的适配器安装" class="headerlink" title="vimspector 的适配器安装"></a>vimspector 的适配器安装</h4><p>在 vim 中直接运行 `VimspectorInstall debugpy’</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:VimspectorInstall debugpy</span><br></pre></td></tr></table></figure>
+
+<h4 id="vimspector-的调试配置"><a href="#vimspector-的调试配置" class="headerlink" title="vimspector 的调试配置"></a>vimspector 的调试配置</h4><p>下面是我的调试配置， 因为我的使用情况较为简单， 如有需要在适当的调整。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">~/.vim/plugged/vimspector/configurations/linux/python/debugpy.json</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">	&quot;configurations&quot;: &#123;</span><br><span class="line">		&quot;launch-current-file&quot;:&#123;</span><br><span class="line">			&quot;adapter&quot;: &quot;debugpy&quot;,</span><br><span class="line">			&quot;configuration&quot;: &#123;</span><br><span class="line">				&quot;name&quot;:&quot;launch-current-file: launch&quot;,</span><br><span class="line">				&quot;type&quot;:    &quot;debug&quot;,</span><br><span class="line">				&quot;request&quot;: &quot;launch&quot;,</span><br><span class="line">				&quot;cwd&quot;: &quot;$&#123;workspaceRoot&#125;&quot;,</span><br><span class="line">				&quot;python&quot;:&quot;/usr/bin/python3&quot;,</span><br><span class="line">				&quot;stopOnEntry&quot;:true,</span><br><span class="line">				&quot;console&quot;:&quot;externalTerminal&quot;,</span><br><span class="line">				&quot;debugOptions&quot;:[],</span><br><span class="line">				&quot;program&quot;: &quot;$&#123;file&#125;&quot;,</span><br><span class="line">				&quot;breakpointers&quot;: &#123;</span><br><span class="line">					&quot;exception&quot;: &#123;</span><br><span class="line">						&quot;python_throw&quot;: &quot;Y&quot;,</span><br><span class="line">						&quot;python_catch&quot;: &quot;N&quot;</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2021/08/27/%E9%B1%BC%E6%9D%86%E7%9A%84%E9%80%89%E6%8B%A9/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2021/08/27/%E9%B1%BC%E6%9D%86%E7%9A%84%E9%80%89%E6%8B%A9/" class="post-title-link" itemprop="url">2021-08-27 鱼杆的选择</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-08-27 11:06:10" itemprop="dateCreated datePublished" datetime="2021-08-27T11:06:10+08:00">2021-08-27</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>目前市面上主要有 37、28、19 调鱼杆(这三种调性的鱼杆均属于硬钓竿， 46 或 55 控鱼性很差基本被淘汰)， 选择什么样的鱼杆主要是看钓鱼场景以及钓鱼让人的经验。</p>
+<p>37 调对线组的保护比较到位，不容易切线，起鱼时更容易将杆立起来。适合新手或鱼情较为复杂的场景, 比较适合野钓。</p>
+<p>28 调具有起鱼快速、控鱼有力的有时，可使用长竿短线、垂线钓法，适用于竞技赛中快速垂钓以及遛鱼，也适用于有水草以及障碍物的水域中使用，可以令鱼快速出水入护，适合钓大鱼时使用。但是这种调性的钓竿韧性较差，易发生断竿的现象，这也是其缺点所在。 比较适合有一定的钓鱼经验的人使用。</p>
+<p>19 调材质好，碳纤维含量比28钓略高，竿体轻便、竿身挺直，钓大鱼起鱼快，但需有一定技巧，否则特别容易断竿，小点的鱼直接可以飞，所以很适合打比赛，休闲野钓不太适合。 只有钓鱼高手能够操控。</p>
+<p>19 以上适合调性与 19 调接近， 但是由于杆非常硬，没有缓冲余地，因此这需要钓鱼大神来操控。</p>
+<p><img src="/supremew/2021/08/27/%E9%B1%BC%E6%9D%86%E7%9A%84%E9%80%89%E6%8B%A9/1.jpeg"></p>
+<p>通过以上的对比， 本人选择 37 调鱼杆（我说呢，为什么最近老是跑鱼，我使用的是 19 调6.3m 的鱼杆）。　对于 19 钓鱼杆的话，可以加大线号，或可以直接采用大马力线作为主线或子线。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2021/08/26/%E7%A7%8B%E9%9B%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2021/08/26/%E7%A7%8B%E9%9B%A8/" class="post-title-link" itemprop="url">2021-08-26 秋雨</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-08-26 09:28:00" itemprop="dateCreated datePublished" datetime="2021-08-26T09:28:00+08:00">2021-08-26</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>秋雨不像春的蒙蒙细雨，<br>也不像夏的嚎啕大雨，<br>秋雨飘飘洒洒，<br>像一片幕布，<br>无边无际，<br>朦朦胧胧。</p>
+<p>秋雨是五彩缤纷的，<br>在稻田里，<br>秋雨是金黄色的;<br>在洒落的土地上，<br>秋雨是红火的;<br>在山上，秋雨是浓绿的。</p>
+<p>秋雨如烟如雾， 无声地飘洒在那空地的瓦栎堆里、枯枝败叶上，淋湿了地，淋湿了房，淋湿了树。</p>
+<p>秋天的雨，是一把钥匙。 它带着清凉和温柔，轻轻地，轻轻地，趁你没留意，把秋天的大门打开了。</p>
+<p>也许因为是秋雨吧，所以雨滴总是带着一丝淡淡的哀愁。 忽然感到无比的思念，思念去年那一厂秋雨，思念那雨中萧瑟的背影，思念那令人心寒的笑容。</p>
+<p>我喜爱秋雨， 更喜爱在秋雨中漫步。 秋雨瑟瑟，在雨中感受秋天的诗情画意，却有别样的情趣。 秋雨不像春雨那样的温和， 不像夏雨那样的急骤，秋雨的雨点很细，牛毛细雨洒在身上如玉般凉爽宜人。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -684,334 +1044,6 @@
     <div class="post-body" itemprop="articleBody">
           <p>惜我往矣，<br>杨柳依依，<br>今我来思，<br>雨雪霏霏，<br>行道迟迟，<br>载渴载饥,<br>我心伤悲，<br>上天莫知。</p>
 <p><img src="/supremew/2021/08/20/%E6%9D%A8%E6%9F%B3%E4%BE%9D%E4%BE%9D/1.jpg"></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2021/08/15/%E9%92%93%E9%B1%BC%E5%BF%83%E5%BE%97/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2021/08/15/%E9%92%93%E9%B1%BC%E5%BF%83%E5%BE%97/" class="post-title-link" itemprop="url">2021-08-15 钓鱼心得</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-08-15 11:42:10" itemprop="dateCreated datePublished" datetime="2021-08-15T11:42:10+08:00">2021-08-15</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>这里说的钓鱼心得主要是一些失败的心得。</p>
-<ol>
-<li>子线断了导致中了大鱼后， 子线瞬间断线。 这里得到一个教训为， 直线或者主线有损伤的话， 就应该更换。</li>
-<li>杆稍的线因为中大鱼而脱线。 这得到一个教训为， 杆稍一定要用太空豆的绑法， 不能简单的应付了事。</li>
-</ol>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2021/08/13/%E6%B5%85%E7%A7%8B/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2021/08/13/%E6%B5%85%E7%A7%8B/" class="post-title-link" itemprop="url">2021-08-13 浅秋</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-08-13 11:49:50" itemprop="dateCreated datePublished" datetime="2021-08-13T11:49:50+08:00">2021-08-13</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>浅秋，<br>薄念，<br>风却懂。</p>
-<p>你看!<br>匆匆一年又是冬，<br>岁月不堪数，<br>故人不如初。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2021/07/23/%E4%B8%89%E5%AE%A4%E5%8F%8C%E6%9E%81%E8%86%9C/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2021/07/23/%E4%B8%89%E5%AE%A4%E5%8F%8C%E6%9E%81%E8%86%9C/" class="post-title-link" itemprop="url">2021-07-23 三室双极膜</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-07-23 11:23:19" itemprop="dateCreated datePublished" datetime="2021-07-23T11:23:19+08:00">2021-07-23</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/%E8%86%9C%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">膜技术</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>三室双极膜是指含有三个腔室，其中包括酸、碱、盐室。盐室在阴膜、阳膜之间，　酸室是在阴膜与双极膜之间，　碱室是在阳膜与双极膜之间。　下图为硫酸钠的三室双极膜的示意图。</p>
-<p><img src="/supremew/2021/07/23/%E4%B8%89%E5%AE%A4%E5%8F%8C%E6%9E%81%E8%86%9C/1.png"></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2021/07/23/%E4%B8%A4%E5%AE%A4%E5%8F%8C%E6%9E%81%E8%86%9C/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2021/07/23/%E4%B8%A4%E5%AE%A4%E5%8F%8C%E6%9E%81%E8%86%9C/" class="post-title-link" itemprop="url">2021-07-23 两室双极膜</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-07-23 11:06:55" itemprop="dateCreated datePublished" datetime="2021-07-23T11:06:55+08:00">2021-07-23</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/%E8%86%9C%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">膜技术</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p><img src="/supremew/2021/07/23/%E4%B8%A4%E5%AE%A4%E5%8F%8C%E6%9E%81%E8%86%9C/1.png"></p>
-<p>双极膜产生的氢离子进入酸室与有机酸离子结合成有机酸，　有机酸盐离子与氢离子的结合能力较强（形成氢氧共价键，而很难被电离），　并且有机酸的分子较大而被阻留在了酸室。</p>
-<p>双极膜产生的氢氧根离子在电场力的推动下进入碱室，与从酸室过来的阳离子结合成碱液。</p>
 
       
     </div>
