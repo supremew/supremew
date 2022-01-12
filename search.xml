@@ -4067,7 +4067,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
 <li>才发现 lightdm 启动失败了。</li>
 </ol>
 <p>一般情况下， lightdm 启动不了是显卡驱动的问题， 于是查了下 nvidia 模块 <code>lsmod |grep nvidia</code>，果然没有 nvidia 模块， 但是通过查看 nvidia 安装情况 <code>pacman -Q|grep nvidia</code>，是安装了。 于是上 archlinux 的 wiki 查了一下关于 nvidia 的资料， 发现 nvidia 驱动在新版本中不再支持 780 的显卡了， 和 780 显卡需要安装另外一个安装包。 nvidia-77xx-dkms</p>
-<p>按照说明安装了 nvidia-77xx-mks <code>yaourt -S nvidia-470xx-dkms</code>, 最终得以解决。</p>
+<p>按照说明安装了 nvidia-470xx-dkms <code>yaourt -S nvidia-470xx-dkms</code>, 最终得以解决。</p>
 ]]></content>
       <categories>
         <category>日常生活</category>
@@ -4160,6 +4160,51 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
         <tag>日常生活</tag>
         <tag>诗词</tag>
         <tag>梅花</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2022-01-03 archlinux 无线网络频繁断网</title>
+    <url>/supremew/2022/01/03/archlinux-%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C%E9%A2%91%E7%B9%81%E6%96%AD%E7%BD%91/</url>
+    <content><![CDATA[<p>最近发现无线网络老是断网，经过多方查找，未能找到明确的原因以及解决办法，　今天闲来无事尝试解决，　没想到还真让我给解决了，　现在几下解决该问题的办法与步骤。</p>
+<ol>
+<li>确保 dhcpcd 服务正常启动，并且要保证是随着机器启动时启动。</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl <span class="built_in">enable</span> dhcpcd</span><br><span class="line">sudo systemctl restart dhcpcd</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>创建 <code>/etc/systemd/system/wpa_supplicant.service</code> , 其内容如下。</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=WPA supplicant</span><br><span class="line">Before=network.target</span><br><span class="line">Wants=network.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type=forking</span><br><span class="line">ExecStart=/usr/bin/wpa_supplicant -B -i wlp3s0 -s -O /run/wpa_supplicant -c/etc/wpa_supplicant/wpa_supplicant.conf</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>启动该服务</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl reenable wpa_supplicant</span><br><span class="line">sudo systemd start wpa_supplicant</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>archlinux</tag>
+        <tag>wpa\_supplicant</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>平凡的世界</title>
+    <url>/supremew/2022/01/12/%E5%B9%B3%E5%87%A1%E7%9A%84%E4%B8%96%E7%95%8C/</url>
+    <content><![CDATA[<p>晓霞，我像理你了。</p>
+<p>张利，我也想起了。</p>
+<p>张利， 今天我又看平凡的世界了，虽然看着电视剧，但是也依稀回到了我们一起看这小说的那段时光， 想着想着，我哭了。 张利， 不知道你现在过得怎么样了， 你还好吗？ 真的希望能够再见到了， 尽管我知道现在已经为人母了，但是我还是抑制不住想你。 我也从来没有怨过你。。。。</p>
+<p>张利， 我真的想你了。。。</p>
+<p>我去过我们曾经一起走过的没一条路， 这路大多改变了， 但是我想你的依然改变不了。</p>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>日常生活</tag>
+        <tag>平凡的世界</tag>
+        <tag>张利</tag>
       </tags>
   </entry>
 </search>

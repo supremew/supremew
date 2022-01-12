@@ -155,7 +155,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/supremew/archives/">
-          <span class="site-state-item-count">296</span>
+          <span class="site-state-item-count">298</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -166,7 +166,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/supremew/tags/">
-        <span class="site-state-item-count">38</span>
+        <span class="site-state-item-count">41</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -195,6 +195,197 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2018/06/02/cmake-%E7%9A%84-pkg-config-%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98%E3%80%82/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2018/06/02/cmake-%E7%9A%84-pkg-config-%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98%E3%80%82/" class="post-title-link" itemprop="url">2018-06-02 cmake 的 pkg-config 使用问题。</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2018-06-02 20:10:38" itemprop="dateCreated datePublished" datetime="2018-06-02T20:10:38+08:00">2018-06-02</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>由于历史的原因， 不是所有库都有相关的 **.cmake 文件， 因此不能用 find_package 函数。有的时候需要通过 pkg-config 工具实现。 如下例的使用.</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">find_package</span>(PkgConfig REQUIRED)</span><br><span class="line"><span class="keyword">if</span> (PKGCONFIG_FOUND)</span><br><span class="line">    <span class="keyword">message</span> (<span class="string">&quot;Find pkg-config module.&quot;</span>)</span><br><span class="line"><span class="keyword">endif</span> (PKGCONFIG_FOUND)</span><br><span class="line"></span><br><span class="line">pkg_check_modules (JSON_C REQUIRED json-c)</span><br><span class="line"><span class="keyword">if</span> (JSON_C_FOUND) </span><br><span class="line">    <span class="comment">#message (&quot;the json-c version:$&#123;JSON_C_VERSION&#125;&quot;)</span></span><br><span class="line">    <span class="comment">#message (&quot;the prefix-directory of the module $&#123;JSON_C_PREFIX&#125;&quot;)</span></span><br><span class="line">    <span class="comment">#message (&quot;JSON_C&#x27;s libraries is $&#123;JSON_C_LIBRARIES&#125;&quot;)</span></span><br><span class="line">    <span class="keyword">set</span> (EXTRA_LIBS <span class="variable">$&#123;EXTRA_LIBS&#125;</span> <span class="variable">$&#123;JSON_C_LIBRARIES&#125;</span>)</span><br><span class="line">    <span class="comment">#message (&quot;JSON_C&#x27;s head file directories is $&#123;JSON_C_INCLUDE_DIRS&#125;&quot;)</span></span><br><span class="line">    <span class="keyword">set</span> (INCLUDE_DIRS <span class="variable">$&#123;INCLUDE_DIRS&#125;</span> <span class="variable">$&#123;JSON_C_INCLUDE_DIRS&#125;</span>)</span><br><span class="line"><span class="keyword">endif</span> (JSON_C_FOUND)</span><br></pre></td></tr></table></figure>
+
+<p>其中</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">find_package</span>(PkgConfig REQUIRED)</span><br><span class="line"><span class="keyword">if</span> (PKGCONFIG_FOUND)</span><br><span class="line">    <span class="keyword">message</span> (<span class="string">&quot;Find pkg-config module.&quot;</span>)</span><br><span class="line"><span class="keyword">endif</span> (PKGCONFIG_FOUND)</span><br></pre></td></tr></table></figure>
+
+<p>是为了增加 cmake 的 pkg-config 模块， 并由 pkg-config 提供 pkg_check_modules 和 pkg_search_modules 函数来实现相关功能。 find_package 是由 cmake 提供的函数， 由该函数提供加载外部的包（当然也包括外部库）。其用法如下：</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">find_package</span>(&lt;package&gt; [version] [EXACT] [QUIET] [MODULE]</span><br><span class="line">             [REQUIRED] [[COMPONENTS] [components...]]</span><br><span class="line">             [OPTIONAL_COMPONENTS components...]</span><br><span class="line">             [NO_POLICY_SCOPE])</span><br></pre></td></tr></table></figure>
+
+<p>他通过下列的函数进行反馈。 ```cmake-变量描述 ${PACKAGE_FOUND} # 反馈是否找到了相关的包或库。 ${PACKAGE_EXECUTABLE} # 返回 package的路径。 ${PACKAGE_VERSION_STRING} # 返回 package 的本版信息。 <pre class="line-numbers prism-highlight" data-start="1"><code class="language-null"><br />由 pkg-config 模块提供的 pkg_check_modules 模块， 实现了其中类似 find_package 函数的功能。下面就简单介绍下： ```cmake pkg_check_modules(<PREFIX> [REQUIRED] [QUIET] [NO_CMAKE_PATH] [NO_CMAKE_ENVIRONMENT_PATH] <MODULE> [<PACKAGE>] ...) pkg_check_modules 是通过下列的一些变量返回信息。</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;PREFIX&gt;_FOUND          <span class="comment"># 返回是否找到 package</span></span><br><span class="line">&lt;PREFIX&gt;_LIBRARIES      <span class="comment"># 返回 package 的名称， 可以用到 ld 上 -lpackage </span></span><br><span class="line">&lt;PREFIX&gt;_LIBRARY_DIRS       <span class="comment"># 返回 package 的库名文件夹名， 可以用于 ld 戓 gcc 的 -L 标记。</span></span><br><span class="line">&lt;PREFIX&gt;_LDFLAGS        <span class="comment"># 返回所有的连接的必要标记。</span></span><br><span class="line">&lt;PREFIX&gt;_LDFLAGS_OTHER      <span class="comment"># 返回其它的连接标记</span></span><br><span class="line">&lt;PREFIX&gt;_INCLUDE_DIRS       <span class="comment"># 返回头文件所在文件夹， 可以用在 gcc -I 标记后。</span></span><br><span class="line">&lt;PREFIX&gt;_CFLAGS         <span class="comment"># 返回所有必要的 CFLAGS。</span></span><br><span class="line">&lt;PREFIX&gt;_CFLAGS_OTHER       <span class="comment"># 返回其它的 CFLAGS。</span></span><br></pre></td></tr></table></figure>
+
+<p>有一些特殊的变量前缀依赖给出的模块数。当仅有一个模块给出时，<PREFIX> 保持不变。当有多个模块时，前缀将变为 <PREFIX>_<MODNAME> 。如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg_check_modules (FOO glib-2.0&gt;=2.10 gtk+-2.0)</span><br></pre></td></tr></table></figure>
+
+<p>请求 glib2 和 gtk2， 会定义出如下变量 $&#123; FOO_glib-2.0_VERSION&#125; 其值为 2.10.3 和 $&#123; FOO_gtk+-2.0_VERSION&#125; 其值为 2.8 等。<code>FOO_glib-2.0_LIBRARIES=glib2-0;**</code> 和 <code>FOO_glib_STATIC_LIBRARIES=**;**</code></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2018/02/21/uefi%E6%A8%A1%E5%BC%8F%E4%B8%8B%E5%AE%89%E8%A3%85ubuntu17-10-%E8%AF%A6%E7%BB%86%E8%AE%B0%E5%BD%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2018/02/21/uefi%E6%A8%A1%E5%BC%8F%E4%B8%8B%E5%AE%89%E8%A3%85ubuntu17-10-%E8%AF%A6%E7%BB%86%E8%AE%B0%E5%BD%95/" class="post-title-link" itemprop="url">2018-02-21 uefi模式下安装ubuntu17.10 详细记录</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2018-02-21 10:28:24" itemprop="dateCreated datePublished" datetime="2018-02-21T10:28:24+08:00">2018-02-21</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>目前越来越多的笔记本， 或者是台式机都支持uefi模式， 甚至很多已经默认在uefi模式下工作， 有的已经不在兼容传统模式了。现我就将我在新买的联想本本上折腾安装ubuntu17.10的过程记录下来， 希望能够帮助后来人。（网上很多教程， 但是大部分的教程都是将你往坑里面带的， 但是我希望这教程不会将你带入坑！）</p>
+<ol>
+<li> 配置优盘， 准备一个至少4g的优盘。 采用gdisk或者fdisk分区工具将u盘的分区表改成gpt格式， 并创建两个分区（u盘总计两个分区）， 第一个分区格式为fat32， 第二个分区为fat32（这个分区也可以是ntfs格式的）——-注意分区表格式一定得是gpt， 第一个分区的文件系统格式必须是vfat也就是fat32。 我采用的分区工具是fdisk， 现我将具体命令列出， 供参考。</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 由于我只有一个机械硬盘， 因此我的u盘设备就是/dev/sdb， 如果你不放心可以用 sudo fdisk -l  查看一下。</span></span><br><span class="line">sudo fdisk /dev/sdb</span><br><span class="line">        g <span class="comment">#创建一个gpt格式的分区表</span></span><br><span class="line">        n<span class="comment">#添加一个新的分区</span></span><br><span class="line">             <span class="comment">#采用默认值直接回车</span></span><br><span class="line">            +1000M</span><br><span class="line">        n</span><br><span class="line">             <span class="comment">#采用默认值直接回车</span></span><br><span class="line">             w</span><br><span class="line">sudo mkfs -t vfat /dev/sdb1</span><br><span class="line">sudo mkfs -t vfat /dev/sdb2</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>下载ubuntu 17.10， 这里我下到的官方版， ubuntu-17.10.1-desktop-amd64.iso， 现我将其放置于我的u盘的第二个分区里面的根目录下面。用解压工具winrar或者ultraiso等解压该iso文件并将其中的boot/ 和 efi/ 文件夹复制到u盘的第一个目录去； 然后将ubuntu-17.10.1-desktop-amd64.iso复制到u盘的第二个分区根目录下。 （说明下： 由于历史原因， 在windowns下面是看不到u盘的第二个分区， 这个时候你可以用分区工具gdisk工具将其复制到第二个分区， 具体操作我就不多说了。 在ubuntu下的话， 可以用mount来挂载u 盘的分区到指定文件夹下面.）</li>
+<li>重启系统, 我的本本是按F2, 进入bios， 然后禁用security boot， 再按 f10 保存退出， 然后狂按f12。选择u盘启动， 进行grub2. 然后按c, 进入grub2命令行模式， 采用命令引导。</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">loopback loop (hd0,2)/ubuntu-17.10.1-desktop-amd64.iso <span class="comment">#这里的(hd0,2),和文件名得根据你自己的实际情况进行设置。</span></span><br><span class="line">linux (loop)/casper/vmlinuz.efi boot=casper iso-scan/filename=/ubuntu-17.10.1-desktop-amd64.iso</span><br><span class="line">intrid (loop)/casper/intrid.lz</span><br><span class="line">boot</span><br><span class="line"></span><br><span class="line"><span class="comment">#注意命令得输入正确， 否则后启动不了。</span></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>等后ubuntu加载, 后面就是一路next， 不过在分区时， 一定要注意不要将你的windows的分区以及其备分分区覆盖。一定要创建一个efi系统分区， 否则会启动不了的； 还择启动器时要选择你的磁盘，我的是/dev/sda, sda后面还能有数字。（分区说明， 现在已经没有必要像以前那样分很多分区了， 那已经成为了过去。 我就分了3个分区， / 根分区， /home 分区， efi类型的分区。）</li>
+<li>一路next</li>
+</ol>
+<p>如果在安装过程中遇到什么问题可以给我发邮件， 我会尽量帮助你的。 <a href="mailto:&#57;&#x34;&#53;&#48;&#49;&#53;&#x36;&#x34;&#64;&#x71;&#113;&#46;&#99;&#111;&#109;">&#57;&#x34;&#53;&#48;&#49;&#53;&#x36;&#x34;&#64;&#x71;&#113;&#46;&#99;&#111;&#109;</a></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -870,180 +1061,6 @@
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2017/12/08/%CE%B2%E5%8F%8C%E9%85%AE%E6%8F%90%E5%8F%96%E7%A2%B1%E6%80%A7%E5%8D%A4%E6%B0%B4%E4%B8%AD%E7%9A%84%E9%94%82/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2017/12/08/%CE%B2%E5%8F%8C%E9%85%AE%E6%8F%90%E5%8F%96%E7%A2%B1%E6%80%A7%E5%8D%A4%E6%B0%B4%E4%B8%AD%E7%9A%84%E9%94%82/" class="post-title-link" itemprop="url">2017-12-08 β双酮提取碱性卤水中的锂</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2017-12-08 13:46:46" itemprop="dateCreated datePublished" datetime="2017-12-08T13:46:46+08:00">2017-12-08</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4><p><strong>该文中所用卤水不是高镁锂比的卤水，参考价值并不高.</strong> 在该文中，通过比较了提锂的辅助萃取剂和稀释剂，最终确定了以 <strong>羟基苯并三唑 - 氧化三辛基膦 - 煤油</strong> 为萃取体系来进行萃取提锂。 提取过程中，以 <strong>0.4mol 羟基苯并三唑 -0.3mol/L 氧化三辛基膦 - 煤油</strong> 为萃取体系，要达到提取 95% 的锂需要 3 步提取。1mol/L HCl 作为洗涤剂，3mol/L HCl 作为反萃剂。 经过多次试验，表明各个步骤需要的次数如下</p>
-<ol>
-<li> 萃取需要 3 次。</li>
-<li> 洗涤需要 1 次。</li>
-<li> 反萃需要 2 次。</li>
-<li> 再生需要 1 次。</li>
-</ol>
-<p>再生这一步耗时比较长，需要大约 30h , 才能使萃取剂恢复到稳定状态。采用该文中的方法，锂的平均提取率可以达到 96% 左右，反萃出来的溶液中含锂达到了 15g/L, 并且其中杂质均小于 1g/L. <strong>该文 doi:</strong> 10.1016/j.hydromet.2017.10.029</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2017/12/06/%E7%A7%91%E5%AD%A6%E6%96%87%E7%8C%AE%E6%90%9C%E7%B4%A2%E5%92%8C%E4%B8%8B%E8%BD%BD/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2017/12/06/%E7%A7%91%E5%AD%A6%E6%96%87%E7%8C%AE%E6%90%9C%E7%B4%A2%E5%92%8C%E4%B8%8B%E8%BD%BD/" class="post-title-link" itemprop="url">2017-12-06 科学文献搜索和下载</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2017-12-06 17:13:03" itemprop="dateCreated datePublished" datetime="2017-12-06T17:13:03+08:00">2017-12-06</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="科学文献的搜索"><a href="#科学文献的搜索" class="headerlink" title="科学文献的搜索"></a>科学文献的搜索</h3><h4 id="采用-google-文献搜索"><a href="#采用-google-文献搜索" class="headerlink" title="采用 google 文献搜索"></a>采用 google 文献搜索</h4><p>由于我们国家对 google 的封锁，导致国内的文献检索成为了困难，因此目前我们采用 google 的文献搜索，只能使用 google 文献的镜像站点进行检索。 在百度上搜索 <strong>google 镜像</strong> , 可以找到相应的网站。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/supremew/2017/12/06/%E7%A7%91%E5%AD%A6%E6%96%87%E7%8C%AE%E6%90%9C%E7%B4%A2%E5%92%8C%E4%B8%8B%E8%BD%BD/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
     <a class="extend prev" rel="prev" href="/supremew/page/7/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/supremew/">1</a><span class="space">&hellip;</span><a class="page-number" href="/supremew/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/supremew/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/supremew/page/30/">30</a><a class="extend next" rel="next" href="/supremew/page/9/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
@@ -1057,7 +1074,7 @@
 
 <div class="copyright">
   &copy; 
-  <span itemprop="copyrightYear">2021</span>
+  <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
