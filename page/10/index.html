@@ -155,7 +155,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/supremew/archives/">
-          <span class="site-state-item-count">298</span>
+          <span class="site-state-item-count">299</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -166,7 +166,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/supremew/tags/">
-        <span class="site-state-item-count">41</span>
+        <span class="site-state-item-count">44</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -195,6 +195,90 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2017/10/19/vimrepress-%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2017/10/19/vimrepress-%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">2017-10-19 vimrepress 的一些问题</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2017-10-19 14:51:04" itemprop="dateCreated datePublished" datetime="2017-10-19T14:51:04+08:00">2017-10-19</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h3 id="vimrepress-的概述"><a href="#vimrepress-的概述" class="headerlink" title="vimrepress 的概述"></a>vimrepress 的概述</h3><p>vimrepress 这个插件主要是用于管理 wordpress 博客，据介绍他可以新建 post, page, 删除 post, page. 但是就目前的使用的情况，并不是这样，目前就只有新建 post, page 能够有效，其他的功能都无效。</p>
+<h3 id="vimrepress-还需要修正一下代码"><a href="#vimrepress-还需要修正一下代码" class="headerlink" title="vimrepress 还需要修正一下代码"></a>vimrepress 还需要修正一下代码</h3><p>要想使用新建功能，还得需要修正一下代码才行。需要将 plugin 下 blog.vim 文件中的 blog_guess_open(what) 中以下代码删除。</p>
+<p>for i, p in enumerate(vim.eval(“VIMPRESS”)):<br>    if what.startswith(p[“blog_url”]):<br>        blog_index = i</p>
+<p>只要删除了上面的代码后就能正常使用了。</p>
+<h3 id="vimrepress-修改已有的文章"><a href="#vimrepress-修改已有的文章" class="headerlink" title="vimrepress 修改已有的文章"></a>vimrepress 修改已有的文章</h3><p>对已有的文章进行再次编辑，然后通过 :BlogSave publish 进行保存修改，会提示：不能将文章置顶的错误。我起初以为该错位会导致文章更新不成功，但是后来发现文章确实被更新了，唯一的缺点就是不能将文章置顶。这个错误对于我个人来说是可以忍受的。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -934,93 +1018,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/supremew/2017/08/12/%E6%8F%92%E5%85%A5%E7%94%B5%E5%AD%90%E8%A1%A8%E6%A0%BC/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2017/08/12/ubuntu-%E7%9A%84%E6%A1%8C%E9%9D%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E5%9D%8F%E6%8E%89%E4%BA%86%E3%80%82/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2017/08/12/ubuntu-%E7%9A%84%E6%A1%8C%E9%9D%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E5%9D%8F%E6%8E%89%E4%BA%86%E3%80%82/" class="post-title-link" itemprop="url">2017-08-12 ubuntu 的桌面管理系统坏掉了。</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2017-08-12 20:47:54" itemprop="dateCreated datePublished" datetime="2017-08-12T20:47:54+08:00">2017-08-12</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/ubuntu/" itemprop="url" rel="index"><span itemprop="name">ubuntu</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>昨天晚上， 为了删除wine wine-stable wine* 什么的， 不知道怎么就unity就坏了， 出现的问题是在登陆界面输入密码那个界面循环。通过尝试了很多方法， 都没有解决（包括.xAuth)。 后来一想， 不就unity坏了吗， 我只需要重新安装unity就行了， 下面就是按照这个思路来解决这个问题的。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/supremew/2017/08/12/ubuntu-%E7%9A%84%E6%A1%8C%E9%9D%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E5%9D%8F%E6%8E%89%E4%BA%86%E3%80%82/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>

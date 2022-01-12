@@ -155,7 +155,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/supremew/archives/">
-          <span class="site-state-item-count">298</span>
+          <span class="site-state-item-count">299</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -166,7 +166,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/supremew/tags/">
-        <span class="site-state-item-count">41</span>
+        <span class="site-state-item-count">44</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -195,6 +195,109 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2019/12/25/archlinux-%E7%9A%84%E5%AE%89%E8%A3%85/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2019/12/25/archlinux-%E7%9A%84%E5%AE%89%E8%A3%85/" class="post-title-link" itemprop="url">2019-12-25 archlinux 的安装</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2019-12-25 12:09:52" itemprop="dateCreated datePublished" datetime="2019-12-25T12:09:52+08:00">2019-12-25</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>总的来说， archlinux 的安装还是比较顺利的， 现在来说说在安装过程遇到的几个问题及解决办法。</p>
+<ol>
+<li>具体的安装过程得参考 <a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/Installation_guide_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)">archlinux wiki</a></li>
+<li>在启动U盘的制作过程， 遇到了的问题是 U 盘制作了， 但是在引导启动时老是出问题， 卡住了。 键盘两个灯同时闪烁。出现这样的问题， 果断换一台机子再重新制作。（一定要严重下载镜像的完整性， 出现该问题的原因我想是镜像文件不完整。）</li>
+<li>我所安装 archlinux 的机子为台式机， 外接 usb 的无线网卡， 其芯片 rtl8812au， 在安装无线网卡的过程中遇到了不小的麻烦， 在 <a target="_blank" rel="noopener" href="https://www.github.com/">github</a> 找了很多该芯片的驱动都没有搞好。 搞了一晚上后， 灵光闪现， 意识到不同的linux内核可能需要不同的驱动。 因此在<a target="_blank" rel="noopener" href="https://www.github.com/">github</a>找到了一个作者， 该作者写了好几个版本的驱动， 有 4.3.4 , 5.6.4.1, 等等。 于是我将其都下载下来， 一个一个的试。 找到了适合我网卡的驱动。</li>
+</ol>
+<p>内核版本</p>
+<p>驱动版本</p>
+<p>4.19.91.1 lts</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/aircrack-ng/rtl8812au/tree/v5.1.5">5.1.5</a></p>
+<p>5.4.6.arch1-1</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/aircrack-ng/rtl8812au/tree/v5.2.20">5.2.20</a></p>
+<p>5.4.6-arch3-1</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/aircrack-ng/rtl8812au/tree/v5.6.4.2">5.6.4.2</a></p>
+<blockquote>
+<p>上面是我通过一个一个测试后， 测试出来的对面版本能够使用的 rtl8812au 网卡能能使用的网卡驱动。</p>
+</blockquote>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/supremew/2019/12/25/archlinux-%E7%9A%84%E5%AE%89%E8%A3%85/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -960,93 +1063,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/supremew/2019/08/26/%E6%B5%8B%E8%AF%95-markdown-%E8%AF%AD%E6%B3%95/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2019/08/26/1770/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2019/08/26/1770/" class="post-title-link" itemprop="url">2019-08-23 水磨古镇玩</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2019-08-26 12:03:40" itemprop="dateCreated datePublished" datetime="2019-08-26T12:03:40+08:00">2019-08-26</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p><img src="http://tuchuang.supermew.top/IMG_20180819_081158.jpg"> <a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%B0%B4%E7%A3%A8%E5%8F%A4%E9%95%87/6798252?fr=aladdin">水磨古镇</a> 位于四川省汶川县南部的岷江支流寿溪河畔，早在商代就享有“长寿之乡”的美誉，时称老人村，后更名为水磨。国家5A级风景区。2010年，水磨古镇被全球人居环境论坛理事会和联合国人居署《全球最佳范例》杂志评为“全球灾后重建最佳范例”，被第三届世界文化旅游论坛组委会授予“中国精品文化旅游景区”称号。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/supremew/2019/08/26/1770/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>

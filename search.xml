@@ -4190,7 +4190,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
       </tags>
   </entry>
   <entry>
-    <title>平凡的世界</title>
+    <title>2022-01-12 平凡的世界</title>
     <url>/supremew/2022/01/12/%E5%B9%B3%E5%87%A1%E7%9A%84%E4%B8%96%E7%95%8C/</url>
     <content><![CDATA[<p>晓霞，我像你了。</p>
 <p>张利，我也想你了。</p>
@@ -4205,6 +4205,22 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
         <tag>日常生活</tag>
         <tag>平凡的世界</tag>
         <tag>张利</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2022-01-12 我的坟墓</title>
+    <url>/supremew/2022/01/12/%E6%88%91%E7%9A%84%E5%9D%9F%E5%A2%93/</url>
+    <content><![CDATA[<p>我的坟墓， 我的墓因该是这样的。</p>
+<p>一个小瓦房， 瓦房的前面有几棵梨树， 而我的墓就因该在这几棵的中间， 不需要墓碑， 不需要任何标志。</p>
+<p>我想啊， 每逢春天，烟雨蒙浓的小雨中，梨花盛开， 远远望去，白蒙蒙的一片，什么也看不见， 丝丝细雨飘在这几棵梨树上， 滋滋的滋润着。。。。</p>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>我的坟墓</tag>
+        <tag>梨花</tag>
+        <tag>梨树</tag>
       </tags>
   </entry>
 </search>
