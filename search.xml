@@ -4224,7 +4224,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
       </tags>
   </entry>
   <entry>
-    <title>python3 匿名函数</title>
+    <title>p2022-01-26 ython3 匿名函数</title>
     <url>/supremew/2022/01/26/python3-%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0/</url>
     <content><![CDATA[<p>python3 中的匿名函数是通过 lambda 关键字实现的， 使用匿名函数有如下有点：</p>
 <ul>
