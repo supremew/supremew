@@ -155,7 +155,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/supremew/archives/">
-          <span class="site-state-item-count">299</span>
+          <span class="site-state-item-count">300</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -166,7 +166,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/supremew/tags/">
-        <span class="site-state-item-count">44</span>
+        <span class="site-state-item-count">46</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -195,6 +195,89 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2021/12/13/git-%E7%9A%84%E9%BB%98%E8%AE%A4%E7%BC%96%E8%BE%91%E5%99%A8%E7%9A%84%E4%BF%AE%E6%94%B9/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2021/12/13/git-%E7%9A%84%E9%BB%98%E8%AE%A4%E7%BC%96%E8%BE%91%E5%99%A8%E7%9A%84%E4%BF%AE%E6%94%B9/" class="post-title-link" itemprop="url">2021-12-13 git 的默认编辑器的修改</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-12-13 09:14:05" itemprop="dateCreated datePublished" datetime="2021-12-13T09:14:05+08:00">2021-12-13</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-12-23 22:28:32" itemprop="dateModified" datetime="2021-12-23T22:28:32+08:00">2021-12-23</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h4 id="git-commit"><a href="#git-commit" class="headerlink" title="git commit"></a>git commit</h4><p>此时是进入GUN nano编辑器。在这里可以添加你的commit imformation 然后ctrl+o,回车保存，再ctrl+x退出。 因为对Nano编辑器很不熟悉，在这里我想将默认编辑器改为vim。打开.git/config文件，在core中添加 editor=vim即可。<br>或者运行命令 <code>git config –global core.editor vim</code> 修改更加方便。</p>
+<h4 id="git-commit-a"><a href="#git-commit-a" class="headerlink" title="git commit -a"></a>git commit -a</h4><p>把所有add了的文件都加入commit，然后进入编辑器编辑commit信息。</p>
+<h4 id="git-commit-m-“commit-imformation”"><a href="#git-commit-m-“commit-imformation”" class="headerlink" title="git commit -m  “commit imformation”"></a>git commit -m  “commit imformation”</h4><p>直接在后面添加commit 信息然后提交commit，与gitcommit相比快捷方便，但是就是commit信息格式无法控制。</p>
+<h4 id="git-commit-–amend"><a href="#git-commit-–amend" class="headerlink" title="git commit –amend"></a>git commit –amend</h4><p>修改最后一次commit的信息。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -992,86 +1075,6 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">locate spyder &gt; 1.txt</span><br><span class="line">vim 1.txt #删除自己不想删除的文件， 这里主要是一些对个人较为重要的文件。</span><br><span class="line">rm rf $(&lt;1.txt)</span><br><span class="line">重新安装 spyder</span><br></pre></td></tr></table></figure>
 
 <h5 id="最新安装方法"><a href="#最新安装方法" class="headerlink" title="最新安装方法"></a>最新安装方法</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># 获得最新的源代码</span><br><span class="line">git clone https://gitee.com/mirrors/Spyder</span><br><span class="line"># 回到最新稳定版本 v5.1.1, 因通过验证 v5.1.1 bug 最少。</span><br><span class="line">git reset --hard v5.1.1</span><br><span class="line">locate spyder &gt; 1.txt</span><br><span class="line"># 编辑 1.txt, 将不想删除的文件名删除.</span><br><span class="line">vim 1.txt</span><br><span class="line">rm -rf $(&lt;1.txt)</span><br><span class="line"># 修改 setup.py ， 将 pyqt5 的版本后面的 &lt; 改为 &gt;=</span><br><span class="line"># 将 pyqtwebengine 后的 &lt;  改为 &gt;=</span><br><span class="line">python setup.py build</span><br><span class="line">python setup.py install --record installFilesRecord.txt --user</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2021/08/22/%E6%B5%8B%E8%AF%95%E4%BA%8C/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2021/08/22/%E6%B5%8B%E8%AF%95%E4%BA%8C/" class="post-title-link" itemprop="url">2021-08-22 测试二</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-08-22 00:04:42" itemprop="dateCreated datePublished" datetime="2021-08-22T00:04:42+08:00">2021-08-22</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>测试后期发表。</p>
 
       
     </div>

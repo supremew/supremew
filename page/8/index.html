@@ -155,7 +155,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/supremew/archives/">
-          <span class="site-state-item-count">299</span>
+          <span class="site-state-item-count">300</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -166,7 +166,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/supremew/tags/">
-        <span class="site-state-item-count">44</span>
+        <span class="site-state-item-count">46</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -195,6 +195,89 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2018/06/05/unicode-%E7%BC%96%E7%A0%81%E7%9A%84%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2018/06/05/unicode-%E7%BC%96%E7%A0%81%E7%9A%84%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">2018-06-05 unicode 编码的问题</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2018-06-05 21:15:33" itemprop="dateCreated datePublished" datetime="2018-06-05T21:15:33+08:00">2018-06-05</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>最近几天， 被 unicode 编码给折磨惨了， 如今知道是什么原因 。。 我用了 wordpress json api 插件， 开启了 wordpress 的 json api, 我通过 libcurl 得到的 json 中的中文 都以 \uXXXX 这样的形式表示的。 在今天看帮助文档的时候， 发现了这是 json api 的输出控制了的， 是故意让它输出这样的 unicode 编码， 以提高谦容性。 可以在发 url中加入这样的参数， 就可以让它以 utf-8 的格式输出 ， 而非 unicode escape 编码。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://www.example.com/?jsong=get_post&amp;post_id=1234&amp;json_unescaped_unicode</span><br></pre></td></tr></table></figure>
+
+<p>这里， 我称像 \uXXXX 这样的unicode码为 unicode escape 码。 这样的码是 javascript / json 的默认形式， linux 下 的printf 也能直接的输出 。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -956,100 +1039,6 @@
 <li> <strong>太阳池法</strong> 太阳池浓缩法为西藏矿业在扎布耶盐湖所应用。 扎布耶盐湖为天然碳酸盐湖， 镁锂比全球最低， 资源极佳， 工艺比较可靠。但扎布耶离白银距离远， 运输时间长， 且扎布耶水电路都不通， 基础设施很差， 产能提升需要大量资金投入。</li>
 </ol>
 
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2017/12/11/%E9%87%87%E7%94%A8%E9%94%B0%E9%85%B8%E9%94%82%E7%94%B5%E5%AF%B9%E8%BF%9B%E8%A1%8C%E5%8D%A4%E6%B0%B4%E6%8F%90%E9%94%82/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2017/12/11/%E9%87%87%E7%94%A8%E9%94%B0%E9%85%B8%E9%94%82%E7%94%B5%E5%AF%B9%E8%BF%9B%E8%A1%8C%E5%8D%A4%E6%B0%B4%E6%8F%90%E9%94%82/" class="post-title-link" itemprop="url">2017-12-11 采用锰酸锂电对进行卤水提锂</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2017-12-11 15:00:09" itemprop="dateCreated datePublished" datetime="2017-12-11T15:00:09+08:00">2017-12-11</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="文章信息"><a href="#文章信息" class="headerlink" title="文章信息"></a>文章信息</h3><h4 id="文章-doi"><a href="#文章-doi" class="headerlink" title="文章 doi"></a>文章 doi</h4><p><strong>doi:</strong> 10.1016/j.electacta.2017.08.178</p>
-<h4 id="文章出处"><a href="#文章出处" class="headerlink" title="文章出处"></a>文章出处</h4><p>由河北工业大学大学写的。</p>
-<h3 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h3><ol>
-<li> LiMn2O4 是通过高温固相合成的方法合成。80% LiMn2O4, 10% 碳黑，10% 聚四氟乙烯混合，用少许酒精调成浆料均匀涂在 35mmX35mm 的碳衣上，然后在 70℃ 下进行烘干。</li>
-<li> Li1-xMn2O4 是通过电化学的方法合成的。将 LiMn2O4 作为阳极，将 AgCl 电极作为阴极，将 0.05mol/L 的 KCl 溶液作为电解液进行，在恒压 1.2v 下进行电解得到。</li>
-<li> 采用该材料在 25℃, 1.2v 下，1g LiMn2O4 可以吸附 34mg 锂。</li>
-<li> 该材料还可以将卤水中的 Na Mg Ca 减少 300 70 100 倍。具体数据如下表。</li>
-<li> 每提取 1g 锂耗电。
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/supremew/2017/12/11/%E9%87%87%E7%94%A8%E9%94%B0%E9%85%B8%E9%94%82%E7%94%B5%E5%AF%B9%E8%BF%9B%E8%A1%8C%E5%8D%A4%E6%B0%B4%E6%8F%90%E9%94%82/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
       
     </div>
 
