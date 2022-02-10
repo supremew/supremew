@@ -155,18 +155,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/supremew/archives/">
-          <span class="site-state-item-count">301</span>
+          <span class="site-state-item-count">302</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/supremew/categories/">
-        <span class="site-state-item-count">17</span>
+        <span class="site-state-item-count">18</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/supremew/tags/">
-        <span class="site-state-item-count">47</span>
+        <span class="site-state-item-count">49</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -195,6 +195,94 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2022/02/10/AttributeError-module-main-has-no-attribute-file/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2022/02/10/AttributeError-module-main-has-no-attribute-file/" class="post-title-link" itemprop="url">AttributeError: module __main__ has no attribute __file__</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-02-10 09:15:46 / Modified: 10:04:25" itemprop="dateCreated datePublished" datetime="2022-02-10T09:15:46+08:00">2022-02-10</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+          , 
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>在打一个 python 软件包时出现了问题。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m build</span><br></pre></td></tr></table></figure>
+<p>产生了如下错误。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">finding specification module for pip AttributerError: module &#x27;__main__&#x27; has no attribute &#x27;__file__&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>在 google 下面搜寻后得到的答案是因为 setuptools 的版本问题，才会导致该错误的。 但对于我的情况确不是这样。在一次不经意间， 在 python 交互式中运行了 <code>import pip</code> 出现了错误， 错误消息如下。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; import pip</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</span><br><span class="line">  File &quot;&lt;frozen importlib._bootstrap&gt;&quot;, line 1027, in _find_and_load</span><br><span class="line">  File &quot;&lt;frozen importlib._bootstrap&gt;&quot;, line 1002, in _find_and_load_unlocked</span><br><span class="line">  File &quot;&lt;frozen importlib._bootstrap&gt;&quot;, line 945, in _find_spec</span><br><span class="line">  File &quot;/home/archlinux/.local/lib/python3.10/site-packages/_distutils_hack/__init__.py&quot;, line 83, in find_spec</span><br><span class="line">    return method()</span><br><span class="line">  File &quot;/home/archlinux/.local/lib/python3.10/site-packages/_distutils_hack/__init__.py&quot;, line 119, in spec_for_pip</span><br><span class="line">    if self.is_get_pip():</span><br><span class="line">  File &quot;/home/archlinux/.local/lib/python3.10/site-packages/_distutils_hack/__init__.py&quot;, line 141, in is_get_pip</span><br><span class="line">    return os.path.basename(__main__.__file__) == &#x27;get-pip.py&#x27;</span><br><span class="line">AttributeError: module &#x27;__main__&#x27; has no attribute &#x27;__file__&#x27;. Did you mean: &#x27;__name__&#x27;?</span><br></pre></td></tr></table></figure>
+
+<p>从中发现了更多的信息， 信息中得知 pip 引用了不正确的 python 包， 如 <code>_distutils_hack</code>, 因此估计是这个包的问题， 我尝试进入 <code>/home/archlinux/.local/lib/python3.10/site-packages</code> 后直接删除了该目录下所有软件包。（这个文件夹，我只有两个文件夹，一个文件。 我能确定这个文嘉夹中出现的包均不是我自己需要的，所以我直接删除了。）</p>
+<p>再次进入 python , 输入 <code>import pip</code> ，没有任何错误消息， 天下太平。 </p>
+<p>在尝试打包, <code>python -m build</code> 没有出现任何问题。 成功解决。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -891,83 +979,6 @@
 <p>白露沾野草，时节忽复易。秋蝉鸣树间，玄鸟逝安适？</p>
 <p>昔我同门友，高举振六翮。不念携手好，弃我如遗迹。</p>
 <p>南箕北有斗，牵牛不负扼。良无盘石固，虚名复何益？</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2021/12/26/%E6%B6%89%E6%B1%9F%E9%87%87%E8%8A%99%E8%93%89/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2021/12/26/%E6%B6%89%E6%B1%9F%E9%87%87%E8%8A%99%E8%93%89/" class="post-title-link" itemprop="url">2021-12-26 涉江采芙蓉</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-12-26 09:53:05 / Modified: 09:55:19" itemprop="dateCreated datePublished" datetime="2021-12-26T09:53:05+08:00">2021-12-26</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>涉江采芙蓉，兰泽多芳草。</p>
-<p>采之欲遗谁，所思在远道。</p>
-<p>还顾望旧乡，长路漫浩浩。</p>
-<p>同心而离居，忧伤以终老。 </p>
 
       
     </div>
