@@ -4301,7 +4301,10 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">map ex console extract%space</span><br><span class="line">map ec console compress%space</span><br><span class="line">``</span><br><span class="line"></span><br><span class="line">#### git status</span><br><span class="line"></span><br><span class="line">在 rc.conf 中将设置如下</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>set vcs_aware true </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">#### 给 ranger 添上必要的图标</span><br><span class="line"></span><br><span class="line">* Install a Nerd Font compatible font or patch your own, then set your terminal font</span><br><span class="line"></span><br><span class="line">* Clone:</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>git clone <a href="https://github.com/cdump/ranger-devicons2">https://github.com/cdump/ranger-devicons2</a> ~/.config/ranger/plugins/devicons2</p>
 <pre><code>
+* Add/change default_linemode devicons2 in your ~/.config/ranger/rc.conf
 </code></pre>
 ]]></content>
       <categories>
