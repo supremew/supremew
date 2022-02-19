@@ -155,7 +155,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/supremew/archives/">
-          <span class="site-state-item-count">302</span>
+          <span class="site-state-item-count">303</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -166,7 +166,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/supremew/tags/">
-        <span class="site-state-item-count">49</span>
+        <span class="site-state-item-count">50</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -195,6 +195,96 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2021/02/22/getaddrinfo-eai-again-%E9%94%99%E8%AF%AF%E7%9A%84%E4%B8%80%E4%B8%AA%E5%8F%AF%E8%83%BD%E5%8E%9F%E5%9B%A0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2021/02/22/getaddrinfo-eai-again-%E9%94%99%E8%AF%AF%E7%9A%84%E4%B8%80%E4%B8%AA%E5%8F%AF%E8%83%BD%E5%8E%9F%E5%9B%A0/" class="post-title-link" itemprop="url">2021-02-22 getaddrinfo EAI_AGAIN 错误的一个可能原因</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-02-22 17:45:56" itemprop="dateCreated datePublished" datetime="2021-02-22T17:45:56+08:00">2021-02-22</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>Linux系统，刚装好没多久，运行Node.js程序倒是看起来没啥问题，只是浏览器上打不开对应地址，然后过一会程序报错退出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Error: getaddrinfo EAI_AGAIN localhost.localdomain</span><br></pre></td></tr></table></figure>
+
+<p>查了一下,是因为DNS问题。想了很久才明白是因为这个系统没有主机名，所以只要给系统加上主机名，就OK了。</p>
+<blockquote>
+<p>我的是因为 <strong>/etc/hostname</strong> 文件中的 <strong>主机名</strong> 与 <strong>/etc/hosts</strong> 文件中的 <strong>主机名</strong> 不同。</p>
+</blockquote>
+<p>添加主机名的方法（懒人方法）： 下面是我的 <strong>/etc/hostname</strong> 文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">myhostname</span><br></pre></td></tr></table></figure>
+
+<p>下面是我 <strong>/etc/hosts</strong> 文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># /etc/hosts</span><br><span class="line"># Static table lookup for hostnames.</span><br><span class="line"># See hosts(5) for details.</span><br><span class="line">127.0.0.1   localhost</span><br><span class="line">::1     localhost</span><br><span class="line">127.0.1.1   myhostname</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -964,96 +1054,6 @@ pip install -r requirements.txt
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/supremew/2020/08/22/%E7%BA%B3%E6%BB%A4%E8%86%9C%E7%9A%84%E6%B8%85%E6%B4%97%E8%A7%84%E7%A8%8B/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2020/07/29/qutebrowser-%E4%B8%8D%E8%83%BD%E6%92%AD%E6%94%BE-drm-%E5%86%85%E5%AE%B9%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2020/07/29/qutebrowser-%E4%B8%8D%E8%83%BD%E6%92%AD%E6%94%BE-drm-%E5%86%85%E5%AE%B9%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/" class="post-title-link" itemprop="url">2020-07-29 qutebrowser 不能播放 drm 内容的解决办法</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2020-07-29 01:05:17" itemprop="dateCreated datePublished" datetime="2020-07-29T01:05:17+08:00">2020-07-29</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <ol>
-<li>我系统基本情况<ul>
-<li>  我的系统， 安装的是源里面的 nvidia 驱动</li>
-<li>screenfectch 输出  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">[archlinux@myhostname ~]$ screenfetch</span><br><span class="line">           -`                 </span><br><span class="line">          .o+`                 archlinux@myhostname</span><br><span class="line">         `ooo/                 OS: Arch Linux </span><br><span class="line">        `+oooo:                Kernel: x86_64 Linux 5.7.7-arch1-1</span><br><span class="line">       `+oooooo:               Uptime: 10m</span><br><span class="line">       -+oooooo+:              Packages: 802</span><br><span class="line">     `/:-:++oooo+:             Shell: bash 5.0.17</span><br><span class="line">    `/++++/+++++++:            Resolution: 1920x1080</span><br><span class="line">   `/++++++++++++++:           DE: GNOME</span><br><span class="line">  `/+++ooooooooooooo/`         WM: KWin</span><br><span class="line"> ./ooosssso++osssssso+`        GTK Theme: Adwaita [GTK2/3]</span><br><span class="line">.oossssso-````/ossssss+`       Icon Theme: Adwaita</span><br><span class="line">-osssssso.      :ssssssso.      Font: Cantarell 11</span><br><span class="line">:osssssss/        osssso+++.     Disk: 35G / 882G (5%)</span><br><span class="line">/ossssssss/        +ssssooo/-     CPU: Intel Core i7-4770K @ 8x 3.9GHz [42.0°C]</span><br><span class="line">`/ossssso+/:-        -:/+osssso+-   GPU: GeForce GTX 780</span><br><span class="line">`+sso+:-`                 `.-/+oso:  RAM: 2719MiB / 7897MiB</span><br><span class="line">`++:.                           `-/+/</span><br><span class="line">.`                                 `/</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/supremew/2020/07/29/qutebrowser-%E4%B8%8D%E8%83%BD%E6%92%AD%E6%94%BE-drm-%E5%86%85%E5%AE%B9%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>

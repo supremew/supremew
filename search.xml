@@ -4281,4 +4281,34 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
         <tag>__file__</tag>
       </tags>
   </entry>
+  <entry>
+    <title>ranger 配置</title>
+    <url>/supremew/2022/02/19/ranger-%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h4 id="只能修改文件夹-cw"><a href="#只能修改文件夹-cw" class="headerlink" title="只能修改文件夹 cw"></a>只能修改文件夹 cw</h4><p>在 rc.conf 中找到 <code>map cw ...</code> 这一行， 注释掉， 加入如下行：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">map cw eval fm.execute_console(&quot;bulkrename&quot;) if fm.thisdir.marked_items else fm.open_console(&quot;rename &quot;)</span><br></pre></td></tr></table></figure>
+
+<h4 id="图片的预览"><a href="#图片的预览" class="headerlink" title="图片的预览"></a>图片的预览</h4><ul>
+<li>安装 w3m</li>
+<li>在 rc.conf 文件中到找 <code>set preview_images false</code>, 将其修改为<code>set preview_images true</code><br>如果图片预览遇到问题.<br><a href="https://github.com/alacritty/alacritty/issues/1021#issuecomment-494718591">alacritty issues 1021</a><br><a href="https://github.com/ranger/ranger/wiki/Image-Previews#with-ueberzug">ueberzug image-Preview</a></li>
+</ul>
+<h4 id="解压-压缩文件"><a href="#解压-压缩文件" class="headerlink" title="解压/压缩文件"></a>解压/压缩文件</h4><ul>
+<li>安装 ranger-archives.git 到 <code>~/.config/ranger/plugin</code></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd ~/.config/ranger/plugins</span><br><span class="line">git clone https://github.com/maximtrp/ranger-archives.git</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>在 rc.conf 文件中加入</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">map ex console extract%space</span><br><span class="line">map ec console compress%space</span><br><span class="line">``</span><br><span class="line"></span><br><span class="line">#### git status</span><br><span class="line"></span><br><span class="line">在 rc.conf 中将设置如下</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>set vcs_aware true </p>
+<pre><code>
+</code></pre>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>ranger</tag>
+      </tags>
+  </entry>
 </search>

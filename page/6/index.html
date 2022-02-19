@@ -155,7 +155,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/supremew/archives/">
-          <span class="site-state-item-count">302</span>
+          <span class="site-state-item-count">303</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -166,7 +166,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/supremew/tags/">
-        <span class="site-state-item-count">49</span>
+        <span class="site-state-item-count">50</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -195,6 +195,96 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2020/07/29/qutebrowser-%E4%B8%8D%E8%83%BD%E6%92%AD%E6%94%BE-drm-%E5%86%85%E5%AE%B9%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2020/07/29/qutebrowser-%E4%B8%8D%E8%83%BD%E6%92%AD%E6%94%BE-drm-%E5%86%85%E5%AE%B9%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/" class="post-title-link" itemprop="url">2020-07-29 qutebrowser 不能播放 drm 内容的解决办法</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2020-07-29 01:05:17" itemprop="dateCreated datePublished" datetime="2020-07-29T01:05:17+08:00">2020-07-29</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <ol>
+<li>我系统基本情况<ul>
+<li>  我的系统， 安装的是源里面的 nvidia 驱动</li>
+<li>screenfectch 输出  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">[archlinux@myhostname ~]$ screenfetch</span><br><span class="line">           -`                 </span><br><span class="line">          .o+`                 archlinux@myhostname</span><br><span class="line">         `ooo/                 OS: Arch Linux </span><br><span class="line">        `+oooo:                Kernel: x86_64 Linux 5.7.7-arch1-1</span><br><span class="line">       `+oooooo:               Uptime: 10m</span><br><span class="line">       -+oooooo+:              Packages: 802</span><br><span class="line">     `/:-:++oooo+:             Shell: bash 5.0.17</span><br><span class="line">    `/++++/+++++++:            Resolution: 1920x1080</span><br><span class="line">   `/++++++++++++++:           DE: GNOME</span><br><span class="line">  `/+++ooooooooooooo/`         WM: KWin</span><br><span class="line"> ./ooosssso++osssssso+`        GTK Theme: Adwaita [GTK2/3]</span><br><span class="line">.oossssso-````/ossssss+`       Icon Theme: Adwaita</span><br><span class="line">-osssssso.      :ssssssso.      Font: Cantarell 11</span><br><span class="line">:osssssss/        osssso+++.     Disk: 35G / 882G (5%)</span><br><span class="line">/ossssssss/        +ssssooo/-     CPU: Intel Core i7-4770K @ 8x 3.9GHz [42.0°C]</span><br><span class="line">`/ossssso+/:-        -:/+osssso+-   GPU: GeForce GTX 780</span><br><span class="line">`+sso+:-`                 `.-/+oso:  RAM: 2719MiB / 7897MiB</span><br><span class="line">`++:.                           `-/+/</span><br><span class="line">.`                                 `/</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/supremew/2020/07/29/qutebrowser-%E4%B8%8D%E8%83%BD%E6%92%AD%E6%94%BE-drm-%E5%86%85%E5%AE%B9%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -987,93 +1077,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/supremew/2019/09/06/%E6%B5%8B%E8%AF%95-makedown-%E7%BC%96%E8%BE%91%E5%99%A8/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2019/09/03/%E5%A4%A9%E5%BA%9C%E5%B9%BF%E5%9C%BA%E4%B8%80%E6%B8%B8/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2019/09/03/%E5%A4%A9%E5%BA%9C%E5%B9%BF%E5%9C%BA%E4%B8%80%E6%B8%B8/" class="post-title-link" itemprop="url">2019-09-02 天府广场一游</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2019-09-03 14:01:30" itemprop="dateCreated datePublished" datetime="2019-09-03T14:01:30+08:00">2019-09-03</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>天府广场照片， 从照片效果来看， 天气不怎么好哦。 <img src="http://tuchuang.supermew.top/366927968.jpg-WordpressWater" alt="图1"> <img src="http://tuchuang.supermew.top/630746806.jpg-WordpressWater" alt="图2"></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/supremew/2019/09/03/%E5%A4%A9%E5%BA%9C%E5%B9%BF%E5%9C%BA%E4%B8%80%E6%B8%B8/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>

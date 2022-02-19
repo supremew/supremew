@@ -155,7 +155,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/supremew/archives/">
-          <span class="site-state-item-count">302</span>
+          <span class="site-state-item-count">303</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -166,7 +166,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/supremew/tags/">
-        <span class="site-state-item-count">49</span>
+        <span class="site-state-item-count">50</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -195,6 +195,98 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2022/02/19/ranger-%E9%85%8D%E7%BD%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2022/02/19/ranger-%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">ranger 配置</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-02-19 17:54:34 / Modified: 18:50:07" itemprop="dateCreated datePublished" datetime="2022-02-19T17:54:34+08:00">2022-02-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h4 id="只能修改文件夹-cw"><a href="#只能修改文件夹-cw" class="headerlink" title="只能修改文件夹 cw"></a>只能修改文件夹 cw</h4><p>在 rc.conf 中找到 <code>map cw ...</code> 这一行， 注释掉， 加入如下行：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">map cw eval fm.execute_console(&quot;bulkrename&quot;) if fm.thisdir.marked_items else fm.open_console(&quot;rename &quot;)</span><br></pre></td></tr></table></figure>
+
+<h4 id="图片的预览"><a href="#图片的预览" class="headerlink" title="图片的预览"></a>图片的预览</h4><ul>
+<li>安装 w3m</li>
+<li>在 rc.conf 文件中到找 <code>set preview_images false</code>, 将其修改为<code>set preview_images true</code><br>如果图片预览遇到问题.<br><a target="_blank" rel="noopener" href="https://github.com/alacritty/alacritty/issues/1021#issuecomment-494718591">alacritty issues 1021</a><br><a target="_blank" rel="noopener" href="https://github.com/ranger/ranger/wiki/Image-Previews#with-ueberzug">ueberzug image-Preview</a></li>
+</ul>
+<h4 id="解压-压缩文件"><a href="#解压-压缩文件" class="headerlink" title="解压/压缩文件"></a>解压/压缩文件</h4><ul>
+<li>安装 ranger-archives.git 到 <code>~/.config/ranger/plugin</code></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.config/ranger/plugins</span><br><span class="line">git clone https://github.com/maximtrp/ranger-archives.git</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>在 rc.conf 文件中加入</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">map ex console extract%space</span><br><span class="line">map ec console compress%space</span><br><span class="line">``</span><br><span class="line"></span><br><span class="line">#### git status</span><br><span class="line"></span><br><span class="line">在 rc.conf 中将设置如下</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>set vcs_aware true </p>
+<pre><code>
+</code></pre>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -902,83 +994,6 @@
 <p>皎皎河汉女。</p>
 <p>纤纤擢素手，</p>
 <p>札札弄机杼。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2021/12/26/%E6%98%8E%E6%9C%88%E7%9A%8E%E5%A4%9C%E5%85%89/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2021/12/26/%E6%98%8E%E6%9C%88%E7%9A%8E%E5%A4%9C%E5%85%89/" class="post-title-link" itemprop="url">2021-12-26 明月皎夜光</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-12-26 09:56:03 / Modified: 09:57:36" itemprop="dateCreated datePublished" datetime="2021-12-26T09:56:03+08:00">2021-12-26</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>明月皎夜光，促织鸣东壁。玉衡指孟冬，众星何历历。</p>
-<p>白露沾野草，时节忽复易。秋蝉鸣树间，玄鸟逝安适？</p>
-<p>昔我同门友，高举振六翮。不念携手好，弃我如遗迹。</p>
-<p>南箕北有斗，牵牛不负扼。良无盘石固，虚名复何益？</p>
 
       
     </div>
