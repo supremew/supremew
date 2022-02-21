@@ -155,7 +155,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/supremew/archives/">
-          <span class="site-state-item-count">303</span>
+          <span class="site-state-item-count">304</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -166,7 +166,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/supremew/tags/">
-        <span class="site-state-item-count">50</span>
+        <span class="site-state-item-count">51</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -195,6 +195,94 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2022/02/21/vim-%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2022/02/21/vim-%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">vim 中文乱码问题</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-02-21 21:15:45 / Modified: 21:42:47" itemprop="dateCreated datePublished" datetime="2022-02-21T21:15:45+08:00">2022-02-21</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>在 vim 中出现中文乱码的问题是比较正常的， 现在来分析 vim 中会出现乱码的原因。</p>
+<p>vim 变量的意义:</p>
+<ul>
+<li>encoding : vim 内部采用的编码。 一般情况下为 utf-8</li>
+<li>termencoding : 终端采用的编码, 这时我的终端是指 alacritty. 意思是 vim 将处理后的数据发送到终端时的数据编码。 假如 vim 处理得到的数据的编码是 utf-8, 但是终端希望得到的数据为 GB2312 编码， 这时就可以设置 termencoding 为 GB2312, vim 就会将处理好的数据(utf-8 编码的)转换为 GB2312 的后，再发送给终端。</li>
+<li>fileencoding : vim 写文件时需要将内部处理后的数据(utf-8) 转换为文件的储存编码。</li>
+</ul>
+<p>vim 中的这三的默认值:</p>
+<ul>
+<li>encoding: 系统当前的 locale, 一般情况下 linux 系统均采用的是 utf-8</li>
+<li>fileencoding: vim 在打开文件时自动辨认其编码， fileencoding 就为辨认的值。 如果为空则保存文件时采用 encoding 指定的编码，如果 encoding 没有修改，则为当前系统的 locale 指定的编码。</li>
+<li>termencoding: 默认为空, 也就是输出到终端不进行编码转换。</li>
+</ul>
+<p>对于这样的情况, 系统 locale 是 utf-8 （很多 linux 系统默认的 locale 形式），编辑的文档是 GB2312 或 GBK 形式的（Windows记事本 默认保存形式，大部分编辑器也默认保存为这个形式，所以最常见），终端类型utf-8（也就是假定客户端是putty类的unicode软件）则 vim 打开文档后，encoding=utf-8（locale决定的），fileencoding=latin1（自动编码判断机制不准导致的），termencoding=空（默认无需转换term编码），显示文件为乱码。</p>
+<p>解决办法为， 首先要修正 fileencoding 为 cp936 或者 euc-cn （二者一样的，只不过叫法不同），注意修正的方法不是:set fileencoding=cp936，这只是将文件保存为cp936，正确的方法是重新以cp936的编码方式加载文件为:edit ++enc=cp936，可以简写为:e ++enc=cp936。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -920,83 +1008,6 @@
 <p>不知江月待何人，但见长江送流水。白云一片去悠悠，青枫浦上不胜愁。</p>
 <p>谁家今夜扁舟子？何处相思明月楼？可怜楼上月徘徊，应照离人妆镜台。</p>
 <p>玉户帘中卷不去，捣衣砧上拂还来。此时相望不相闻，愿逐月华流照君。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2021/12/26/%E8%BF%A2%E8%BF%A2%E7%89%B5%E7%89%9B%E6%98%9F/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2021/12/26/%E8%BF%A2%E8%BF%A2%E7%89%B5%E7%89%9B%E6%98%9F/" class="post-title-link" itemprop="url">2021-12-26 迢迢牵牛星</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-12-26 09:58:26 / Modified: 09:59:49" itemprop="dateCreated datePublished" datetime="2021-12-26T09:58:26+08:00">2021-12-26</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>迢迢牵牛星，</p>
-<p>皎皎河汉女。</p>
-<p>纤纤擢素手，</p>
-<p>札札弄机杼。</p>
 
       
     </div>

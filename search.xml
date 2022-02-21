@@ -10,15 +10,6 @@
       </categories>
   </entry>
   <entry>
-    <title>2017-05-22 看一看， 流流口水</title>
-    <url>/supremew/2017/05/22/1049/</url>
-    <content><![CDATA[<p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495462678888&di=f646aba1af849a4c7db222362cece502&imgtype=0&src=http://www.bz55.com/uploads/allimg/121019/1-121019100228.jpg"></p>
-]]></content>
-      <categories>
-        <category>日常生活</category>
-      </categories>
-  </entry>
-  <entry>
     <title>2016-06-14 碳酸亚铁母液除铁处理</title>
     <url>/supremew/2017/06/14/1120/</url>
     <content><![CDATA[<h1 id="碳酸亚铁母液处理"><a href="#碳酸亚铁母液处理" class="headerlink" title="碳酸亚铁母液处理"></a>碳酸亚铁母液处理</h1><h2 id="方案一"><a href="#方案一" class="headerlink" title="方案一"></a>方案一</h2><ol>
@@ -68,6 +59,15 @@
 </li>
 <li>操作 2.1 将样品 0614-1-1 量取 500ml； 2.2 加入 5ml 双氧水， 搅拌 2h， 静止 2h； 2.3 滤纸过滤后得到样品 0614-1-3</li>
 </ol>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>2017-05-22 看一看， 流流口水</title>
+    <url>/supremew/2017/05/22/1049/</url>
+    <content><![CDATA[<p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495462678888&di=f646aba1af849a4c7db222362cece502&imgtype=0&src=http://www.bz55.com/uploads/allimg/121019/1-121019100228.jpg"></p>
 ]]></content>
       <categories>
         <category>日常生活</category>
@@ -134,7 +134,7 @@
   <entry>
     <title>2015-03-12 163邮箱</title>
     <url>/supremew/2015/03/12/163%E9%82%AE%E7%AE%B1/</url>
-    <content><![CDATA[<p><a href="mailto:&#109;&#x79;&#103;&#x61;&#109;&#109;&#x40;&#49;&#x36;&#x33;&#x2e;&#99;&#x6f;&#x6d;">&#109;&#x79;&#103;&#x61;&#109;&#109;&#x40;&#49;&#x36;&#x33;&#x2e;&#99;&#x6f;&#x6d;</a> wxl123456</p>
+    <content><![CDATA[<p><a href="mailto:&#109;&#x79;&#103;&#97;&#109;&#x6d;&#64;&#49;&#x36;&#x33;&#x2e;&#x63;&#x6f;&#109;">&#109;&#x79;&#103;&#97;&#109;&#x6d;&#64;&#49;&#x36;&#x33;&#x2e;&#x63;&#x6f;&#109;</a> wxl123456</p>
 ]]></content>
       <categories>
         <category>日常生活</category>
@@ -2347,7 +2347,7 @@ dieIfFaultOccured(&amp;env);
 <li>等后ubuntu加载, 后面就是一路next， 不过在分区时， 一定要注意不要将你的windows的分区以及其备分分区覆盖。一定要创建一个efi系统分区， 否则会启动不了的； 还择启动器时要选择你的磁盘，我的是/dev/sda, sda后面还能有数字。（分区说明， 现在已经没有必要像以前那样分很多分区了， 那已经成为了过去。 我就分了3个分区， / 根分区， /home 分区， efi类型的分区。）</li>
 <li>一路next</li>
 </ol>
-<p>如果在安装过程中遇到什么问题可以给我发邮件， 我会尽量帮助你的。 <a href="mailto:&#57;&#x34;&#53;&#48;&#49;&#53;&#x36;&#x34;&#64;&#x71;&#113;&#46;&#99;&#111;&#109;">&#57;&#x34;&#53;&#48;&#49;&#53;&#x36;&#x34;&#64;&#x71;&#113;&#46;&#99;&#111;&#109;</a></p>
+<p>如果在安装过程中遇到什么问题可以给我发邮件， 我会尽量帮助你的。 <a href="mailto:&#x39;&#x34;&#53;&#48;&#49;&#53;&#x36;&#52;&#64;&#x71;&#x71;&#x2e;&#x63;&#111;&#109;">&#x39;&#x34;&#53;&#48;&#49;&#53;&#x36;&#52;&#64;&#x71;&#x71;&#x2e;&#x63;&#111;&#109;</a></p>
 ]]></content>
       <categories>
         <category>日常生活</category>
@@ -3571,11 +3571,312 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
       </tags>
   </entry>
   <entry>
+    <title>2021-12-13 git 的默认编辑器的修改</title>
+    <url>/supremew/2021/12/13/git-%E7%9A%84%E9%BB%98%E8%AE%A4%E7%BC%96%E8%BE%91%E5%99%A8%E7%9A%84%E4%BF%AE%E6%94%B9/</url>
+    <content><![CDATA[<h4 id="git-commit"><a href="#git-commit" class="headerlink" title="git commit"></a>git commit</h4><p>此时是进入GUN nano编辑器。在这里可以添加你的commit imformation 然后ctrl+o,回车保存，再ctrl+x退出。 因为对Nano编辑器很不熟悉，在这里我想将默认编辑器改为vim。打开.git/config文件，在core中添加 editor=vim即可。<br>或者运行命令 <code>git config –global core.editor vim</code> 修改更加方便。</p>
+<h4 id="git-commit-a"><a href="#git-commit-a" class="headerlink" title="git commit -a"></a>git commit -a</h4><p>把所有add了的文件都加入commit，然后进入编辑器编辑commit信息。</p>
+<h4 id="git-commit-m-“commit-imformation”"><a href="#git-commit-m-“commit-imformation”" class="headerlink" title="git commit -m  “commit imformation”"></a>git commit -m  “commit imformation”</h4><p>直接在后面添加commit 信息然后提交commit，与gitcommit相比快捷方便，但是就是commit信息格式无法控制。</p>
+<h4 id="git-commit-–amend"><a href="#git-commit-–amend" class="headerlink" title="git commit –amend"></a>git commit –amend</h4><p>修改最后一次commit的信息。</p>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2021-12-23 archlinux 升级后，启动 lightdm 失败</title>
+    <url>/supremew/2021/12/23/archlinux-%E5%8D%87%E7%BA%A7%E5%90%8E%EF%BC%8C%E5%90%AF%E5%8A%A8-lightdm-%E5%A4%B1%E8%B4%A5/</url>
+    <content><![CDATA[<p>先来说说， 如何出现 lightdm 启动失败的问题的过程。</p>
+<ol>
+<li>在发现 qutebrowser 浏览器有新版本后， 于是单独升级了 qutebrowser.</li>
+<li>升级 qutebrowser 后， 发现 qutebrowser 不能用了， 估计是新版本的 qutebrowser 使用了新版本的某一个 python 包， 为了偷懒解决该问题。</li>
+<li>于是对系统进行了全面的升级， <code>sudo pacman -Syu</code></li>
+<li>在重启后，发现图形界面不出来了， 一查启动过程中的错误。 <code>sudo systemctl jounalctl -b -p err</code></li>
+<li>才发现 lightdm 启动失败了。</li>
+</ol>
+<p>一般情况下， lightdm 启动不了是显卡驱动的问题， 于是查了下 nvidia 模块 <code>lsmod |grep nvidia</code>，果然没有 nvidia 模块， 但是通过查看 nvidia 安装情况 <code>pacman -Q|grep nvidia</code>，是安装了。 于是上 archlinux 的 wiki 查了一下关于 nvidia 的资料， 发现 nvidia 驱动在新版本中不再支持 780 的显卡了， 和 780 显卡需要安装另外一个安装包。 nvidia-77xx-dkms</p>
+<p>按照说明安装了 nvidia-470xx-dkms <code>yaourt -S nvidia-470xx-dkms</code>, 最终得以解决。</p>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>archlinux</tag>
+        <tag>lightdm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2021-12-26 明月皎夜光</title>
+    <url>/supremew/2021/12/26/%E6%98%8E%E6%9C%88%E7%9A%8E%E5%A4%9C%E5%85%89/</url>
+    <content><![CDATA[<p>明月皎夜光，促织鸣东壁。玉衡指孟冬，众星何历历。</p>
+<p>白露沾野草，时节忽复易。秋蝉鸣树间，玄鸟逝安适？</p>
+<p>昔我同门友，高举振六翮。不念携手好，弃我如遗迹。</p>
+<p>南箕北有斗，牵牛不负扼。良无盘石固，虚名复何益？</p>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>日常生活</tag>
+        <tag>诗词</tag>
+        <tag>明月皎夜光</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2021-12-26 春江花月夜</title>
+    <url>/supremew/2021/12/26/%E6%98%A5%E6%B1%9F%E8%8A%B1%E6%9C%88%E5%A4%9C/</url>
+    <content><![CDATA[<p>江畔何人初见月？江月何年初照人？人生代代无穷已，江月年年望相似。</p>
+<p>不知江月待何人，但见长江送流水。白云一片去悠悠，青枫浦上不胜愁。</p>
+<p>谁家今夜扁舟子？何处相思明月楼？可怜楼上月徘徊，应照离人妆镜台。</p>
+<p>玉户帘中卷不去，捣衣砧上拂还来。此时相望不相闻，愿逐月华流照君。</p>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>日常生活</tag>
+        <tag>诗词</tag>
+        <tag>春江花月夜</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2021-12-26 涉江采芙蓉</title>
+    <url>/supremew/2021/12/26/%E6%B6%89%E6%B1%9F%E9%87%87%E8%8A%99%E8%93%89/</url>
+    <content><![CDATA[<p>涉江采芙蓉，兰泽多芳草。</p>
+<p>采之欲遗谁，所思在远道。</p>
+<p>还顾望旧乡，长路漫浩浩。</p>
+<p>同心而离居，忧伤以终老。 </p>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>日常生活</tag>
+        <tag>大明风华</tag>
+        <tag>涉江采芙蓉</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2021-12-26 迢迢牵牛星</title>
+    <url>/supremew/2021/12/26/%E8%BF%A2%E8%BF%A2%E7%89%B5%E7%89%9B%E6%98%9F/</url>
+    <content><![CDATA[<p>迢迢牵牛星，</p>
+<p>皎皎河汉女。</p>
+<p>纤纤擢素手，</p>
+<p>札札弄机杼。</p>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>日常生活</tag>
+        <tag>诗词</tag>
+        <tag>迢迢牵牛星</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2021-12-27 梅花</title>
+    <url>/supremew/2021/12/27/%E6%A2%85%E8%8A%B1/</url>
+    <content><![CDATA[<p>梅花爱雪雪不知，</p>
+<p>开在雪中做情痴。</p>
+<p>芳心醉落三千辦，</p>
+<p>片片乡魂皆成思。</p>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>日常生活</tag>
+        <tag>诗词</tag>
+        <tag>梅花</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2022-01-03 archlinux 无线网络频繁断网</title>
+    <url>/supremew/2022/01/03/archlinux-%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C%E9%A2%91%E7%B9%81%E6%96%AD%E7%BD%91/</url>
+    <content><![CDATA[<p>最近发现无线网络老是断网，经过多方查找，未能找到明确的原因以及解决办法，　今天闲来无事尝试解决，　没想到还真让我给解决了，　现在几下解决该问题的办法与步骤。</p>
+<ol>
+<li>确保 dhcpcd 服务正常启动，并且要保证是随着机器启动时启动。</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl <span class="built_in">enable</span> dhcpcd</span><br><span class="line">sudo systemctl restart dhcpcd</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>创建 <code>/etc/systemd/system/wpa_supplicant.service</code> , 其内容如下。</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=WPA supplicant</span><br><span class="line">Before=network.target</span><br><span class="line">Wants=network.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type=forking</span><br><span class="line">ExecStart=/usr/bin/wpa_supplicant -B -i wlp3s0 -s -O /run/wpa_supplicant -c/etc/wpa_supplicant/wpa_supplicant.conf</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>启动该服务</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl reenable wpa_supplicant</span><br><span class="line">sudo systemd start wpa_supplicant</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>archlinux</tag>
+        <tag>wpa\_supplicant</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2022-01-12 平凡的世界</title>
+    <url>/supremew/2022/01/12/%E5%B9%B3%E5%87%A1%E7%9A%84%E4%B8%96%E7%95%8C/</url>
+    <content><![CDATA[<p>晓霞，我像你了。</p>
+<p>张利，我也想你了。</p>
+<p>张利， 今天我又看《平凡的世界》了，虽然看着电视剧，但是也依稀回到了我们一起看这小说的那段时光， 想着想着，我哭了。 张利， 不知道你现在过得怎么样了， 你还好吗？ 真的希望能够再见到你， 尽管我知道现在已经为人母了，但是我还是抑制不住想你。 我也从来没有怨过你。。。。</p>
+<p>张利， 我真的想你了。。。</p>
+<p>我去过我们曾经一起走过的每一条路， 这路大多都变了， 但是我想你的却改变不了。</p>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>日常生活</tag>
+        <tag>平凡的世界</tag>
+        <tag>张利</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2022-01-12 我的坟墓</title>
+    <url>/supremew/2022/01/12/%E6%88%91%E7%9A%84%E5%9D%9F%E5%A2%93/</url>
+    <content><![CDATA[<p>我的坟墓， 我的墓因该是这样的。</p>
+<p>一个小瓦房， 瓦房的前面有几棵梨树， 而我的墓就因该在这几棵的中间， 不需要墓碑， 不需要任何标志。</p>
+<p>我想啊， 每逢春天，烟雨蒙浓的小雨中，梨花盛开， 远远望去，白蒙蒙的一片，什么也看不见， 丝丝细雨飘在这几棵梨树上， 滋滋的滋润着。。。。</p>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>我的坟墓</tag>
+        <tag>梨花</tag>
+        <tag>梨树</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2022-01-26 python3 匿名函数</title>
+    <url>/supremew/2022/01/26/python3-%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<p>python3 中的匿名函数是通过 lambda 关键字实现的， 使用匿名函数有如下有点：</p>
+<ul>
+<li>匿名函数没有名称，因此定义函数时，不需要费力给函数取个名字。</li>
+<li>匿名函数中可以直接访问外部变量，不用通过参数传递。</li>
+<li>匿名函数主要应用在逻辑关系较为简单的情况下。</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">In [1]: a = 1</span><br><span class="line"></span><br><span class="line">In [2]: b = 1</span><br><span class="line"></span><br><span class="line">In [3]: f = lambda: a * b</span><br><span class="line"></span><br><span class="line">In [4]: f()</span><br><span class="line">Out[4]: 1</span><br><span class="line"></span><br><span class="line">In [5]: b = 2</span><br><span class="line"></span><br><span class="line">In [6]: f()</span><br><span class="line">Out[6]: 2</span><br><span class="line"></span><br><span class="line">In [7]: a = 88</span><br><span class="line"></span><br><span class="line">In [8]: f()</span><br><span class="line">Out[8]: 176</span><br><span class="line"></span><br><span class="line">In [9]:</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>python3</tag>
+        <tag>匿名函数</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2022-02-06 这难道就是春雨</title>
+    <url>/supremew/2022/02/06/%E8%BF%99%E9%9A%BE%E9%81%93%E5%B0%B1%E6%98%AF%E6%98%A5%E9%9B%A8/</url>
+    <content><![CDATA[<p>窗外雨雾蒙蒙的，还在下着小雨， 听着车轮压在湿润的公路上发出索索的声响。 </p>
+<p>这难道是就是今年的第一场春雨吗？</p>
+<p>但是看着远处的李子树或梨树并没有开花或是发芽， 桃树也没有开花，这就让人感觉很是困惑。</p>
+<p>不过冷确实有点冷， 昨晚没注意还冷感冒了，今天白天气温还有点低，略带一点风，这难道就是传说中的春寒料峭吗？</p>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>春雨</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AttributeError: module __main__ has no attribute __file__</title>
+    <url>/supremew/2022/02/10/AttributeError-module-main-has-no-attribute-file/</url>
+    <content><![CDATA[<p>在打一个 python 软件包时出现了问题。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python -m build</span><br></pre></td></tr></table></figure>
+<p>产生了如下错误。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">finding specification module for pip AttributerError: module &#x27;__main__&#x27; has no attribute &#x27;__file__&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>在 google 下面搜寻后得到的答案是因为 setuptools 的版本问题，才会导致该错误的。 但对于我的情况确不是这样。在一次不经意间， 在 python 交互式中运行了 <code>import pip</code> 出现了错误， 错误消息如下。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; import pip</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</span><br><span class="line">  File &quot;&lt;frozen importlib._bootstrap&gt;&quot;, line 1027, in _find_and_load</span><br><span class="line">  File &quot;&lt;frozen importlib._bootstrap&gt;&quot;, line 1002, in _find_and_load_unlocked</span><br><span class="line">  File &quot;&lt;frozen importlib._bootstrap&gt;&quot;, line 945, in _find_spec</span><br><span class="line">  File &quot;/home/archlinux/.local/lib/python3.10/site-packages/_distutils_hack/__init__.py&quot;, line 83, in find_spec</span><br><span class="line">    return method()</span><br><span class="line">  File &quot;/home/archlinux/.local/lib/python3.10/site-packages/_distutils_hack/__init__.py&quot;, line 119, in spec_for_pip</span><br><span class="line">    if self.is_get_pip():</span><br><span class="line">  File &quot;/home/archlinux/.local/lib/python3.10/site-packages/_distutils_hack/__init__.py&quot;, line 141, in is_get_pip</span><br><span class="line">    return os.path.basename(__main__.__file__) == &#x27;get-pip.py&#x27;</span><br><span class="line">AttributeError: module &#x27;__main__&#x27; has no attribute &#x27;__file__&#x27;. Did you mean: &#x27;__name__&#x27;?</span><br></pre></td></tr></table></figure>
+
+<p>从中发现了更多的信息， 信息中得知 pip 引用了不正确的 python 包， 如 <code>_distutils_hack</code>, 因此估计是这个包的问题， 我尝试进入 <code>/home/archlinux/.local/lib/python3.10/site-packages</code> 后直接删除了该目录下所有软件包。（这个文件夹，我只有两个文件夹，一个文件。 我能确定这个文嘉夹中出现的包均不是我自己需要的，所以我直接删除了。）</p>
+<p>再次进入 python , 输入 <code>import pip</code> ，没有任何错误消息， 天下太平。 </p>
+<p>在尝试打包, <code>python -m build</code> 没有出现任何问题。 成功解决。</p>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>__main__</tag>
+        <tag>__file__</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ranger 配置</title>
+    <url>/supremew/2022/02/19/ranger-%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h4 id="只能修改文件夹-cw"><a href="#只能修改文件夹-cw" class="headerlink" title="只能修改文件夹 cw"></a>只能修改文件夹 cw</h4><p>在 rc.conf 中找到 <code>map cw ...</code> 这一行， 注释掉， 加入如下行：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">map cw eval fm.execute_console(&quot;bulkrename&quot;) if fm.thisdir.marked_items else fm.open_console(&quot;rename &quot;)</span><br></pre></td></tr></table></figure>
+
+<h4 id="图片的预览"><a href="#图片的预览" class="headerlink" title="图片的预览"></a>图片的预览</h4><ul>
+<li>安装 w3m</li>
+<li>在 rc.conf 文件中到找 <code>set preview_images false</code>, 将其修改为<code>set preview_images true</code><br>如果图片预览遇到问题.<br><a href="https://github.com/alacritty/alacritty/issues/1021#issuecomment-494718591">alacritty issues 1021</a><br><a href="https://github.com/ranger/ranger/wiki/Image-Previews#with-ueberzug">ueberzug image-Preview</a></li>
+</ul>
+<h4 id="解压-压缩文件"><a href="#解压-压缩文件" class="headerlink" title="解压/压缩文件"></a>解压/压缩文件</h4><ul>
+<li>安装 ranger-archives.git 到 <code>~/.config/ranger/plugin</code></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd ~/.config/ranger/plugins</span><br><span class="line">git clone https://github.com/maximtrp/ranger-archives.git</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>在 rc.conf 文件中加入</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">map ex console extract%space</span><br><span class="line">map ec console compress%space</span><br><span class="line">``</span><br><span class="line"></span><br><span class="line">#### git status</span><br><span class="line"></span><br><span class="line">在 rc.conf 中将设置如下</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>set vcs_aware true </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">#### 给 ranger 添上必要的图标</span><br><span class="line"></span><br><span class="line">* Install a Nerd Font compatible font or patch your own, then set your terminal font</span><br><span class="line"></span><br><span class="line">* Clone:</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>git clone <a href="https://github.com/cdump/ranger-devicons2">https://github.com/cdump/ranger-devicons2</a> ~/.config/ranger/plugins/devicons2</p>
+<pre><code>
+* Add/change default_linemode devicons2 in your ~/.config/ranger/rc.conf
+</code></pre>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>ranger</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vim 中文乱码问题</title>
+    <url>/supremew/2022/02/21/vim-%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<p>在 vim 中出现中文乱码的问题是比较正常的， 现在来分析 vim 中会出现乱码的原因。</p>
+<p>vim 变量的意义:</p>
+<ul>
+<li>encoding : vim 内部采用的编码。 一般情况下为 utf-8</li>
+<li>termencoding : 终端采用的编码, 这时我的终端是指 alacritty. 意思是 vim 将处理后的数据发送到终端时的数据编码。 假如 vim 处理得到的数据的编码是 utf-8, 但是终端希望得到的数据为 GB2312 编码， 这时就可以设置 termencoding 为 GB2312, vim 就会将处理好的数据(utf-8 编码的)转换为 GB2312 的后，再发送给终端。</li>
+<li>fileencoding : vim 写文件时需要将内部处理后的数据(utf-8) 转换为文件的储存编码。</li>
+</ul>
+<p>vim 中的这三的默认值:</p>
+<ul>
+<li>encoding: 系统当前的 locale, 一般情况下 linux 系统均采用的是 utf-8</li>
+<li>fileencoding: vim 在打开文件时自动辨认其编码， fileencoding 就为辨认的值。 如果为空则保存文件时采用 encoding 指定的编码，如果 encoding 没有修改，则为当前系统的 locale 指定的编码。</li>
+<li>termencoding: 默认为空, 也就是输出到终端不进行编码转换。</li>
+</ul>
+<p>对于这样的情况, 系统 locale 是 utf-8 （很多 linux 系统默认的 locale 形式），编辑的文档是 GB2312 或 GBK 形式的（Windows记事本 默认保存形式，大部分编辑器也默认保存为这个形式，所以最常见），终端类型utf-8（也就是假定客户端是putty类的unicode软件）则 vim 打开文档后，encoding=utf-8（locale决定的），fileencoding=latin1（自动编码判断机制不准导致的），termencoding=空（默认无需转换term编码），显示文件为乱码。</p>
+<p>解决办法为， 首先要修正 fileencoding 为 cp936 或者 euc-cn （二者一样的，只不过叫法不同），注意修正的方法不是:set fileencoding=cp936，这只是将文件保存为cp936，正确的方法是重新以cp936的编码方式加载文件为:edit ++enc=cp936，可以简写为:e ++enc=cp936。</p>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+        <tag>vim 中文问题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2017-03-13-1 Linux Desktop Entry 文件深入解析</title>
     <url>/supremew/2017/03/13/986/</url>
     <content><![CDATA[<p>Linux Desktop Entry 文件深入解析 『日期：2011-08-10] 来源：IBM 作者：龚奕平 ——————————————————————————– 1．Desktop Entry 文件标准简介 在 Windows 平台上，用户可以通过点击位于桌面或菜单上的快捷方式轻松打开目标应用程 序。现代 Linux 桌面系统也提供了此项功能。目前，Linux KDE 和 Linux GNOME 桌面系统 都使用 Desktop Entry 文件标准来描述程序启动配置信息。Desktop Entry 文件标准是由 FreeDesktop.org（<a href="http://freedesktop.org/wiki/%EF%BC%89">http://freedesktop.org/wiki/）</a> 制定的，目前最新的版本是”Desktop Entry Specification 1.0”[1]。 2．Desktop Entry 文件 Desktop Entry 文件以”.desktop”为后缀名。以 Linux GNOME 桌面系统为例，用户打开应 用程序浏览器后（见图 1）会看见很多应用程序快捷方式。事实上，每个应用程序快捷方式 都和一个 Desktop Entry 文件相对应。这些 Desktop Entry 文件通常被存放在 /usr/share/applications/ /opt/gnome/share/applications/ 等目录下。从文件浏览器进 入这些目录，点击相应的 Desktop Entry 文件同样可以启动相对应的应用程序。 假设当前”/usr/share/applications/“目录下有一文件”cbt.desktop”，用任意文件编辑软 件（如 vi 或 gedit）打开”cbt.desktop”，将得到如下内容：</p>
 <span id="more"></span>
-<p>清单 1 “cbt.desktop”文件内容 [Desktop Entry] Version = 1.0 Encoding = UTF-8 Name = Quick Start Tour GenericName = User Tutorial Comment = Computer Based Training tutorial to \ guide and help you learn how to use the Desktop Exec = gnome-open /usr/share/doc/manual/sled-gnome-cbt_en/index.html Icon = cbt StartupNotify = true Terminal = false Type = Application Categories = GNOME;Application;Documentation; OnlyShowIn = GNOME; X-SUSE-translate = true Name[cs] = Rychlá prohlídka systému Comment[cs] = V?ukov? program seznamující u?ivatele se základy pracovního prost?edí GenericName[cs] = U?ivatelsk? tutoriál Name[hu] = Rendszerbemutató Comment[hu] = A munkaállomés használatát bemutató segédlet GenericName[hu] = Felhasználói segédlet 本文将在下一节中结合上述”cbt.desktop”文件内容重点解析 Desktop Entry 的文件结构。 读者可以从中深入领会上述各条语句的具体含义。 3．Desktop Entry 文件结构 Desktop Entry 文件通常以字符串”[Desktop Entry]“开始。由清单可以得知，Desktop Entry 文件的内容是由若干{关键字，数值}配对的 Entry 组成的。例如，”Version”就是一 个关键字，关键字”Version”对应的数值是”1.0”。Desktop Entry 文件标准定义了一系列标 准关键字。标准关键字分为必选和可选两种：必选标准关键字必须在 .desktop 文件中被定 义；而可选关键字则不必。以下是对重点关键字的解析。 “Version” 『可选』 该数值指定了当前 Desktop Entry 文件所遵循的 Desktop Entry 文件标准版本。 “Encoding”： [1.0 版本不推荐使用』 该数值指定了当前 Desktop Entry 文件中特定字符串所使用的编 码方式。尽管 Desktop Entry 文件标准 1.0 不再推荐使用该关键字，但由于历史原因该关 键字仍然广泛出现在现有的 Desktop Entry 文件中。 “Name”：『必选』 该数值指定了相关应用程序的名称。其中，快捷方式的显示名称由关键字”Name”的数值所决 定，快捷方式所使用的图标由下文中将要介绍的关键字”Icon”的数值来决定。当然，这些定 义在应用程序浏览器中同样适用。 关键字”GenericName”：『可选』 该数值指定了相关应用程序的通用名称。 关键字”Comment”：『可选』 该数值是对当前 Desktop Entry 的简单描述。 关键字”Type”：『必选』 关键字”Type”定义了 Desktop Entry 文件的类型。常见的”Type”数值是”Application”和 “Link”。”Type = Application”表示当前 Desktop Entry 文件指向了一个应用程序；而 “Type = Link”表示当前 Desktop Entry 文件指向了一个 URL (Uniform Resource Locator)。 关键字”Exec”：『可选』 关键字”Exec”只有在”Type”类型是”Application”时才有意义。”Exec”的数值定义了启动指 定应用程序所要执行的命令，在此命令是可以带参数的。在本例中，关键字”Exec”的数值是 字符串”gnome-open /usr/share/doc/manual/sled-gnome-cbt_en/index.html”。在 shell 中输入该字符串并按回车键同样可以启动指定应用程序。 关键字”URL”：『可选』 关键字”URL”只有在”Type”类型是”Link”时才有意义。”URL”的数值定义了该 Desktop Entry 文件指向的 URL。 关键字”Icon”：『可选』 该数值定义了当前 Desktop Entry 文件在应用程序浏览器或是在文件浏览器中所显示的图 标。如果关键字”Icon”的数值是以绝对路径的格式给出，那么其数值所指定图标文件将被使 用；反之，Linux 系统将使用”Icon Theme Specification”[2] 在系统指定图标目录下定位 所需要使用的图标文件。比如在本例中关键字”Icon”的数值是”cbt”，它实际对应着系统指 定图标目录下的图片文件”cbt.png”cbt.png 。 关键字”StartupNotify”：『可选』 关键字”StartupNotify”的数值是布尔值（true 或是 false）。该关键字只有在”Type”类型 是”Application”时才有意义。其数值的含义由规范”Startup Notification Protocol Specifications”[3] 定义，在此不再详述。 关键字”Terminal”：『可选』和”StartupNotify”一样，关键字”StartupNotify”的数值也是 布尔值，并且该关键字只有在”Type”类型是”Application”时才有意义。其数值指出了相关 应用程序（即关键字”Exec”的数值）是否需要在终端窗口中运行。本文将在下一节中给出关 键字”Terminal”的具体使用方法。 关键字”Categories”：『可选』关键字”Categories”只有在”Type”类型是”Application”时 才有意义。”Categories”的数值指出了相关应用程序在菜单中显示的类别。具体菜单分类由 规范”Desktop Specification Menu”具体定。 关键字”OnlyShowIn”和”NotShowIn”：『可选』 这两个关键字分别定义了当前 Desktop Entry 是否在特定 Linux 桌面系统（例如：Linux GNOME 或 Linux KDE）下显示（由”OnlyShowIn”定义），或不显示（由”NotShowIn”定义） 。具体定义请参考”Desktop Specification Menu”[4]。 关键字”X-SuSE-translate”：[SUSE Linux 特有』 关键字”X-SuSE-translate”是 SUSE Linux（<a href="http://www.novell.com/linux/%EF%BC%89%E7%89%B9%E6%9C%89%E7%9A%84%E3%80%82">http://www.novell.com/linux/）特有的。</a> “X-SuSE-translate”符合 SUSE RPM Package 风格。”X-SuSE-translate”数值表示是否要对 关键字”Name”和”GenericName”进行翻译。详情请参考”SUSE Package Conventions”[5]。 本地化关键字”[LOCALE]“ 根据”Desktop Entry Specification”规范 [1]，在关键字后加上字符串”[LOCALE]“就可以 对该关键字进行特定的本地化定义。”LOCALE”的合法取值为： LOCALE= lang_COUNTRY.ENCODING@MODIFIER 在此，域”_COUNTRY”，”.ENCODING”和”@MODIFIER”是可以被忽略的。当指定 Desktop Entry 文件被解析时，解析器应当根据当前 POSIX locale 来正确获取本地化的关键字数值。例如 清单 1 就分别定义了在”cs”和”hu”语言环境下关键字”Name”，”Comment” 和”GenericName” 的不同数值。其余关键字除了上述在清单 1 中出现的关键字外，”Desktop Entry Specification”还定义了”Hidden”，”TryExec”，”MimeType”等可选关键字。用户可以根据 需要进行选取。 4．分析运行 Desktop Entry 文件 Desktop Entry 文件是一种常见的 Linux 文件格式，很多 Linux 程序需要对该种文件提供 支持。在此，本文给出分析运行 Desktop Entry 文件的基本编成思路。 4.1 分析 Desktop Entry 文件内容 操作 Desktop Entry 文件的第一步是获取文件的内容。假设有一 Desktop Entry 文件，其 路径信息存储在变量 pPath 中： 关于作者 龚奕平，软件工程师，IBM 中国软件开发中心 WPLC 部。现主要从事 Notes Linux 产品的 研究及开发。研究兴趣包括 Windows 应用程序跨平台移植、GDI 开发、网络设备开发和调 度算法研究。联系方式：<a href="mailto:&#x67;&#111;&#110;&#x67;&#121;&#x70;&#64;&#99;&#x6e;&#x2e;&#105;&#x62;&#x6d;&#46;&#99;&#x6f;&#109;">&#x67;&#111;&#110;&#x67;&#121;&#x70;&#64;&#99;&#x6e;&#x2e;&#105;&#x62;&#x6d;&#46;&#99;&#x6f;&#109;</a>. <a href="https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html">desktop entry 标准</a></p>
+<p>清单 1 “cbt.desktop”文件内容 [Desktop Entry] Version = 1.0 Encoding = UTF-8 Name = Quick Start Tour GenericName = User Tutorial Comment = Computer Based Training tutorial to \ guide and help you learn how to use the Desktop Exec = gnome-open /usr/share/doc/manual/sled-gnome-cbt_en/index.html Icon = cbt StartupNotify = true Terminal = false Type = Application Categories = GNOME;Application;Documentation; OnlyShowIn = GNOME; X-SUSE-translate = true Name[cs] = Rychlá prohlídka systému Comment[cs] = V?ukov? program seznamující u?ivatele se základy pracovního prost?edí GenericName[cs] = U?ivatelsk? tutoriál Name[hu] = Rendszerbemutató Comment[hu] = A munkaállomés használatát bemutató segédlet GenericName[hu] = Felhasználói segédlet 本文将在下一节中结合上述”cbt.desktop”文件内容重点解析 Desktop Entry 的文件结构。 读者可以从中深入领会上述各条语句的具体含义。 3．Desktop Entry 文件结构 Desktop Entry 文件通常以字符串”[Desktop Entry]“开始。由清单可以得知，Desktop Entry 文件的内容是由若干{关键字，数值}配对的 Entry 组成的。例如，”Version”就是一 个关键字，关键字”Version”对应的数值是”1.0”。Desktop Entry 文件标准定义了一系列标 准关键字。标准关键字分为必选和可选两种：必选标准关键字必须在 .desktop 文件中被定 义；而可选关键字则不必。以下是对重点关键字的解析。 “Version” 『可选』 该数值指定了当前 Desktop Entry 文件所遵循的 Desktop Entry 文件标准版本。 “Encoding”： [1.0 版本不推荐使用』 该数值指定了当前 Desktop Entry 文件中特定字符串所使用的编 码方式。尽管 Desktop Entry 文件标准 1.0 不再推荐使用该关键字，但由于历史原因该关 键字仍然广泛出现在现有的 Desktop Entry 文件中。 “Name”：『必选』 该数值指定了相关应用程序的名称。其中，快捷方式的显示名称由关键字”Name”的数值所决 定，快捷方式所使用的图标由下文中将要介绍的关键字”Icon”的数值来决定。当然，这些定 义在应用程序浏览器中同样适用。 关键字”GenericName”：『可选』 该数值指定了相关应用程序的通用名称。 关键字”Comment”：『可选』 该数值是对当前 Desktop Entry 的简单描述。 关键字”Type”：『必选』 关键字”Type”定义了 Desktop Entry 文件的类型。常见的”Type”数值是”Application”和 “Link”。”Type = Application”表示当前 Desktop Entry 文件指向了一个应用程序；而 “Type = Link”表示当前 Desktop Entry 文件指向了一个 URL (Uniform Resource Locator)。 关键字”Exec”：『可选』 关键字”Exec”只有在”Type”类型是”Application”时才有意义。”Exec”的数值定义了启动指 定应用程序所要执行的命令，在此命令是可以带参数的。在本例中，关键字”Exec”的数值是 字符串”gnome-open /usr/share/doc/manual/sled-gnome-cbt_en/index.html”。在 shell 中输入该字符串并按回车键同样可以启动指定应用程序。 关键字”URL”：『可选』 关键字”URL”只有在”Type”类型是”Link”时才有意义。”URL”的数值定义了该 Desktop Entry 文件指向的 URL。 关键字”Icon”：『可选』 该数值定义了当前 Desktop Entry 文件在应用程序浏览器或是在文件浏览器中所显示的图 标。如果关键字”Icon”的数值是以绝对路径的格式给出，那么其数值所指定图标文件将被使 用；反之，Linux 系统将使用”Icon Theme Specification”[2] 在系统指定图标目录下定位 所需要使用的图标文件。比如在本例中关键字”Icon”的数值是”cbt”，它实际对应着系统指 定图标目录下的图片文件”cbt.png”cbt.png 。 关键字”StartupNotify”：『可选』 关键字”StartupNotify”的数值是布尔值（true 或是 false）。该关键字只有在”Type”类型 是”Application”时才有意义。其数值的含义由规范”Startup Notification Protocol Specifications”[3] 定义，在此不再详述。 关键字”Terminal”：『可选』和”StartupNotify”一样，关键字”StartupNotify”的数值也是 布尔值，并且该关键字只有在”Type”类型是”Application”时才有意义。其数值指出了相关 应用程序（即关键字”Exec”的数值）是否需要在终端窗口中运行。本文将在下一节中给出关 键字”Terminal”的具体使用方法。 关键字”Categories”：『可选』关键字”Categories”只有在”Type”类型是”Application”时 才有意义。”Categories”的数值指出了相关应用程序在菜单中显示的类别。具体菜单分类由 规范”Desktop Specification Menu”具体定。 关键字”OnlyShowIn”和”NotShowIn”：『可选』 这两个关键字分别定义了当前 Desktop Entry 是否在特定 Linux 桌面系统（例如：Linux GNOME 或 Linux KDE）下显示（由”OnlyShowIn”定义），或不显示（由”NotShowIn”定义） 。具体定义请参考”Desktop Specification Menu”[4]。 关键字”X-SuSE-translate”：[SUSE Linux 特有』 关键字”X-SuSE-translate”是 SUSE Linux（<a href="http://www.novell.com/linux/%EF%BC%89%E7%89%B9%E6%9C%89%E7%9A%84%E3%80%82">http://www.novell.com/linux/）特有的。</a> “X-SuSE-translate”符合 SUSE RPM Package 风格。”X-SuSE-translate”数值表示是否要对 关键字”Name”和”GenericName”进行翻译。详情请参考”SUSE Package Conventions”[5]。 本地化关键字”[LOCALE]“ 根据”Desktop Entry Specification”规范 [1]，在关键字后加上字符串”[LOCALE]“就可以 对该关键字进行特定的本地化定义。”LOCALE”的合法取值为： LOCALE= lang_COUNTRY.ENCODING@MODIFIER 在此，域”_COUNTRY”，”.ENCODING”和”@MODIFIER”是可以被忽略的。当指定 Desktop Entry 文件被解析时，解析器应当根据当前 POSIX locale 来正确获取本地化的关键字数值。例如 清单 1 就分别定义了在”cs”和”hu”语言环境下关键字”Name”，”Comment” 和”GenericName” 的不同数值。其余关键字除了上述在清单 1 中出现的关键字外，”Desktop Entry Specification”还定义了”Hidden”，”TryExec”，”MimeType”等可选关键字。用户可以根据 需要进行选取。 4．分析运行 Desktop Entry 文件 Desktop Entry 文件是一种常见的 Linux 文件格式，很多 Linux 程序需要对该种文件提供 支持。在此，本文给出分析运行 Desktop Entry 文件的基本编成思路。 4.1 分析 Desktop Entry 文件内容 操作 Desktop Entry 文件的第一步是获取文件的内容。假设有一 Desktop Entry 文件，其 路径信息存储在变量 pPath 中： 关于作者 龚奕平，软件工程师，IBM 中国软件开发中心 WPLC 部。现主要从事 Notes Linux 产品的 研究及开发。研究兴趣包括 Windows 应用程序跨平台移植、GDI 开发、网络设备开发和调 度算法研究。联系方式：<a href="mailto:&#103;&#111;&#x6e;&#x67;&#121;&#x70;&#x40;&#x63;&#110;&#x2e;&#x69;&#x62;&#x6d;&#x2e;&#x63;&#111;&#109;">&#103;&#111;&#x6e;&#x67;&#121;&#x70;&#x40;&#x63;&#110;&#x2e;&#x69;&#x62;&#x6d;&#x2e;&#x63;&#111;&#109;</a>. <a href="https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html">desktop entry 标准</a></p>
 ]]></content>
       <categories>
         <category>ubuntu</category>
@@ -4039,279 +4340,5 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
       <categories>
         <category>日常生活</category>
       </categories>
-  </entry>
-  <entry>
-    <title>2021-12-13 git 的默认编辑器的修改</title>
-    <url>/supremew/2021/12/13/git-%E7%9A%84%E9%BB%98%E8%AE%A4%E7%BC%96%E8%BE%91%E5%99%A8%E7%9A%84%E4%BF%AE%E6%94%B9/</url>
-    <content><![CDATA[<h4 id="git-commit"><a href="#git-commit" class="headerlink" title="git commit"></a>git commit</h4><p>此时是进入GUN nano编辑器。在这里可以添加你的commit imformation 然后ctrl+o,回车保存，再ctrl+x退出。 因为对Nano编辑器很不熟悉，在这里我想将默认编辑器改为vim。打开.git/config文件，在core中添加 editor=vim即可。<br>或者运行命令 <code>git config –global core.editor vim</code> 修改更加方便。</p>
-<h4 id="git-commit-a"><a href="#git-commit-a" class="headerlink" title="git commit -a"></a>git commit -a</h4><p>把所有add了的文件都加入commit，然后进入编辑器编辑commit信息。</p>
-<h4 id="git-commit-m-“commit-imformation”"><a href="#git-commit-m-“commit-imformation”" class="headerlink" title="git commit -m  “commit imformation”"></a>git commit -m  “commit imformation”</h4><p>直接在后面添加commit 信息然后提交commit，与gitcommit相比快捷方便，但是就是commit信息格式无法控制。</p>
-<h4 id="git-commit-–amend"><a href="#git-commit-–amend" class="headerlink" title="git commit –amend"></a>git commit –amend</h4><p>修改最后一次commit的信息。</p>
-]]></content>
-      <categories>
-        <category>日常生活</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2021-12-23 archlinux 升级后，启动 lightdm 失败</title>
-    <url>/supremew/2021/12/23/archlinux-%E5%8D%87%E7%BA%A7%E5%90%8E%EF%BC%8C%E5%90%AF%E5%8A%A8-lightdm-%E5%A4%B1%E8%B4%A5/</url>
-    <content><![CDATA[<p>先来说说， 如何出现 lightdm 启动失败的问题的过程。</p>
-<ol>
-<li>在发现 qutebrowser 浏览器有新版本后， 于是单独升级了 qutebrowser.</li>
-<li>升级 qutebrowser 后， 发现 qutebrowser 不能用了， 估计是新版本的 qutebrowser 使用了新版本的某一个 python 包， 为了偷懒解决该问题。</li>
-<li>于是对系统进行了全面的升级， <code>sudo pacman -Syu</code></li>
-<li>在重启后，发现图形界面不出来了， 一查启动过程中的错误。 <code>sudo systemctl jounalctl -b -p err</code></li>
-<li>才发现 lightdm 启动失败了。</li>
-</ol>
-<p>一般情况下， lightdm 启动不了是显卡驱动的问题， 于是查了下 nvidia 模块 <code>lsmod |grep nvidia</code>，果然没有 nvidia 模块， 但是通过查看 nvidia 安装情况 <code>pacman -Q|grep nvidia</code>，是安装了。 于是上 archlinux 的 wiki 查了一下关于 nvidia 的资料， 发现 nvidia 驱动在新版本中不再支持 780 的显卡了， 和 780 显卡需要安装另外一个安装包。 nvidia-77xx-dkms</p>
-<p>按照说明安装了 nvidia-470xx-dkms <code>yaourt -S nvidia-470xx-dkms</code>, 最终得以解决。</p>
-]]></content>
-      <categories>
-        <category>日常生活</category>
-      </categories>
-      <tags>
-        <tag>archlinux</tag>
-        <tag>lightdm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2021-12-26 明月皎夜光</title>
-    <url>/supremew/2021/12/26/%E6%98%8E%E6%9C%88%E7%9A%8E%E5%A4%9C%E5%85%89/</url>
-    <content><![CDATA[<p>明月皎夜光，促织鸣东壁。玉衡指孟冬，众星何历历。</p>
-<p>白露沾野草，时节忽复易。秋蝉鸣树间，玄鸟逝安适？</p>
-<p>昔我同门友，高举振六翮。不念携手好，弃我如遗迹。</p>
-<p>南箕北有斗，牵牛不负扼。良无盘石固，虚名复何益？</p>
-]]></content>
-      <categories>
-        <category>日常生活</category>
-      </categories>
-      <tags>
-        <tag>日常生活</tag>
-        <tag>诗词</tag>
-        <tag>明月皎夜光</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2021-12-26 春江花月夜</title>
-    <url>/supremew/2021/12/26/%E6%98%A5%E6%B1%9F%E8%8A%B1%E6%9C%88%E5%A4%9C/</url>
-    <content><![CDATA[<p>江畔何人初见月？江月何年初照人？人生代代无穷已，江月年年望相似。</p>
-<p>不知江月待何人，但见长江送流水。白云一片去悠悠，青枫浦上不胜愁。</p>
-<p>谁家今夜扁舟子？何处相思明月楼？可怜楼上月徘徊，应照离人妆镜台。</p>
-<p>玉户帘中卷不去，捣衣砧上拂还来。此时相望不相闻，愿逐月华流照君。</p>
-]]></content>
-      <categories>
-        <category>日常生活</category>
-      </categories>
-      <tags>
-        <tag>日常生活</tag>
-        <tag>诗词</tag>
-        <tag>春江花月夜</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2021-12-26 涉江采芙蓉</title>
-    <url>/supremew/2021/12/26/%E6%B6%89%E6%B1%9F%E9%87%87%E8%8A%99%E8%93%89/</url>
-    <content><![CDATA[<p>涉江采芙蓉，兰泽多芳草。</p>
-<p>采之欲遗谁，所思在远道。</p>
-<p>还顾望旧乡，长路漫浩浩。</p>
-<p>同心而离居，忧伤以终老。 </p>
-]]></content>
-      <categories>
-        <category>日常生活</category>
-      </categories>
-      <tags>
-        <tag>日常生活</tag>
-        <tag>大明风华</tag>
-        <tag>涉江采芙蓉</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2021-12-26 迢迢牵牛星</title>
-    <url>/supremew/2021/12/26/%E8%BF%A2%E8%BF%A2%E7%89%B5%E7%89%9B%E6%98%9F/</url>
-    <content><![CDATA[<p>迢迢牵牛星，</p>
-<p>皎皎河汉女。</p>
-<p>纤纤擢素手，</p>
-<p>札札弄机杼。</p>
-]]></content>
-      <categories>
-        <category>日常生活</category>
-      </categories>
-      <tags>
-        <tag>日常生活</tag>
-        <tag>诗词</tag>
-        <tag>迢迢牵牛星</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2021-12-27 梅花</title>
-    <url>/supremew/2021/12/27/%E6%A2%85%E8%8A%B1/</url>
-    <content><![CDATA[<p>梅花爱雪雪不知，</p>
-<p>开在雪中做情痴。</p>
-<p>芳心醉落三千辦，</p>
-<p>片片乡魂皆成思。</p>
-]]></content>
-      <categories>
-        <category>日常生活</category>
-      </categories>
-      <tags>
-        <tag>日常生活</tag>
-        <tag>诗词</tag>
-        <tag>梅花</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2022-01-03 archlinux 无线网络频繁断网</title>
-    <url>/supremew/2022/01/03/archlinux-%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C%E9%A2%91%E7%B9%81%E6%96%AD%E7%BD%91/</url>
-    <content><![CDATA[<p>最近发现无线网络老是断网，经过多方查找，未能找到明确的原因以及解决办法，　今天闲来无事尝试解决，　没想到还真让我给解决了，　现在几下解决该问题的办法与步骤。</p>
-<ol>
-<li>确保 dhcpcd 服务正常启动，并且要保证是随着机器启动时启动。</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl <span class="built_in">enable</span> dhcpcd</span><br><span class="line">sudo systemctl restart dhcpcd</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>创建 <code>/etc/systemd/system/wpa_supplicant.service</code> , 其内容如下。</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=WPA supplicant</span><br><span class="line">Before=network.target</span><br><span class="line">Wants=network.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type=forking</span><br><span class="line">ExecStart=/usr/bin/wpa_supplicant -B -i wlp3s0 -s -O /run/wpa_supplicant -c/etc/wpa_supplicant/wpa_supplicant.conf</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>启动该服务</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl reenable wpa_supplicant</span><br><span class="line">sudo systemd start wpa_supplicant</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>日常生活</category>
-      </categories>
-      <tags>
-        <tag>archlinux</tag>
-        <tag>wpa\_supplicant</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2022-01-12 平凡的世界</title>
-    <url>/supremew/2022/01/12/%E5%B9%B3%E5%87%A1%E7%9A%84%E4%B8%96%E7%95%8C/</url>
-    <content><![CDATA[<p>晓霞，我像你了。</p>
-<p>张利，我也想你了。</p>
-<p>张利， 今天我又看《平凡的世界》了，虽然看着电视剧，但是也依稀回到了我们一起看这小说的那段时光， 想着想着，我哭了。 张利， 不知道你现在过得怎么样了， 你还好吗？ 真的希望能够再见到你， 尽管我知道现在已经为人母了，但是我还是抑制不住想你。 我也从来没有怨过你。。。。</p>
-<p>张利， 我真的想你了。。。</p>
-<p>我去过我们曾经一起走过的每一条路， 这路大多都变了， 但是我想你的却改变不了。</p>
-]]></content>
-      <categories>
-        <category>日常生活</category>
-      </categories>
-      <tags>
-        <tag>日常生活</tag>
-        <tag>平凡的世界</tag>
-        <tag>张利</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2022-01-12 我的坟墓</title>
-    <url>/supremew/2022/01/12/%E6%88%91%E7%9A%84%E5%9D%9F%E5%A2%93/</url>
-    <content><![CDATA[<p>我的坟墓， 我的墓因该是这样的。</p>
-<p>一个小瓦房， 瓦房的前面有几棵梨树， 而我的墓就因该在这几棵的中间， 不需要墓碑， 不需要任何标志。</p>
-<p>我想啊， 每逢春天，烟雨蒙浓的小雨中，梨花盛开， 远远望去，白蒙蒙的一片，什么也看不见， 丝丝细雨飘在这几棵梨树上， 滋滋的滋润着。。。。</p>
-]]></content>
-      <categories>
-        <category>日常生活</category>
-      </categories>
-      <tags>
-        <tag>我的坟墓</tag>
-        <tag>梨花</tag>
-        <tag>梨树</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2022-01-26 python3 匿名函数</title>
-    <url>/supremew/2022/01/26/python3-%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0/</url>
-    <content><![CDATA[<p>python3 中的匿名函数是通过 lambda 关键字实现的， 使用匿名函数有如下有点：</p>
-<ul>
-<li>匿名函数没有名称，因此定义函数时，不需要费力给函数取个名字。</li>
-<li>匿名函数中可以直接访问外部变量，不用通过参数传递。</li>
-<li>匿名函数主要应用在逻辑关系较为简单的情况下。</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">In [1]: a = 1</span><br><span class="line"></span><br><span class="line">In [2]: b = 1</span><br><span class="line"></span><br><span class="line">In [3]: f = lambda: a * b</span><br><span class="line"></span><br><span class="line">In [4]: f()</span><br><span class="line">Out[4]: 1</span><br><span class="line"></span><br><span class="line">In [5]: b = 2</span><br><span class="line"></span><br><span class="line">In [6]: f()</span><br><span class="line">Out[6]: 2</span><br><span class="line"></span><br><span class="line">In [7]: a = 88</span><br><span class="line"></span><br><span class="line">In [8]: f()</span><br><span class="line">Out[8]: 176</span><br><span class="line"></span><br><span class="line">In [9]:</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>日常生活</category>
-      </categories>
-      <tags>
-        <tag>python3</tag>
-        <tag>匿名函数</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2022-02-06 这难道就是春雨</title>
-    <url>/supremew/2022/02/06/%E8%BF%99%E9%9A%BE%E9%81%93%E5%B0%B1%E6%98%AF%E6%98%A5%E9%9B%A8/</url>
-    <content><![CDATA[<p>窗外雨雾蒙蒙的，还在下着小雨， 听着车轮压在湿润的公路上发出索索的声响。 </p>
-<p>这难道是就是今年的第一场春雨吗？</p>
-<p>但是看着远处的李子树或梨树并没有开花或是发芽， 桃树也没有开花，这就让人感觉很是困惑。</p>
-<p>不过冷确实有点冷， 昨晚没注意还冷感冒了，今天白天气温还有点低，略带一点风，这难道就是传说中的春寒料峭吗？</p>
-]]></content>
-      <categories>
-        <category>日常生活</category>
-      </categories>
-      <tags>
-        <tag>春雨</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>AttributeError: module __main__ has no attribute __file__</title>
-    <url>/supremew/2022/02/10/AttributeError-module-main-has-no-attribute-file/</url>
-    <content><![CDATA[<p>在打一个 python 软件包时出现了问题。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python -m build</span><br></pre></td></tr></table></figure>
-<p>产生了如下错误。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">finding specification module for pip AttributerError: module &#x27;__main__&#x27; has no attribute &#x27;__file__&#x27;</span><br></pre></td></tr></table></figure>
-
-<p>在 google 下面搜寻后得到的答案是因为 setuptools 的版本问题，才会导致该错误的。 但对于我的情况确不是这样。在一次不经意间， 在 python 交互式中运行了 <code>import pip</code> 出现了错误， 错误消息如下。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; import pip</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</span><br><span class="line">  File &quot;&lt;frozen importlib._bootstrap&gt;&quot;, line 1027, in _find_and_load</span><br><span class="line">  File &quot;&lt;frozen importlib._bootstrap&gt;&quot;, line 1002, in _find_and_load_unlocked</span><br><span class="line">  File &quot;&lt;frozen importlib._bootstrap&gt;&quot;, line 945, in _find_spec</span><br><span class="line">  File &quot;/home/archlinux/.local/lib/python3.10/site-packages/_distutils_hack/__init__.py&quot;, line 83, in find_spec</span><br><span class="line">    return method()</span><br><span class="line">  File &quot;/home/archlinux/.local/lib/python3.10/site-packages/_distutils_hack/__init__.py&quot;, line 119, in spec_for_pip</span><br><span class="line">    if self.is_get_pip():</span><br><span class="line">  File &quot;/home/archlinux/.local/lib/python3.10/site-packages/_distutils_hack/__init__.py&quot;, line 141, in is_get_pip</span><br><span class="line">    return os.path.basename(__main__.__file__) == &#x27;get-pip.py&#x27;</span><br><span class="line">AttributeError: module &#x27;__main__&#x27; has no attribute &#x27;__file__&#x27;. Did you mean: &#x27;__name__&#x27;?</span><br></pre></td></tr></table></figure>
-
-<p>从中发现了更多的信息， 信息中得知 pip 引用了不正确的 python 包， 如 <code>_distutils_hack</code>, 因此估计是这个包的问题， 我尝试进入 <code>/home/archlinux/.local/lib/python3.10/site-packages</code> 后直接删除了该目录下所有软件包。（这个文件夹，我只有两个文件夹，一个文件。 我能确定这个文嘉夹中出现的包均不是我自己需要的，所以我直接删除了。）</p>
-<p>再次进入 python , 输入 <code>import pip</code> ，没有任何错误消息， 天下太平。 </p>
-<p>在尝试打包, <code>python -m build</code> 没有出现任何问题。 成功解决。</p>
-]]></content>
-      <categories>
-        <category>日常生活</category>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>__main__</tag>
-        <tag>__file__</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ranger 配置</title>
-    <url>/supremew/2022/02/19/ranger-%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<h4 id="只能修改文件夹-cw"><a href="#只能修改文件夹-cw" class="headerlink" title="只能修改文件夹 cw"></a>只能修改文件夹 cw</h4><p>在 rc.conf 中找到 <code>map cw ...</code> 这一行， 注释掉， 加入如下行：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">map cw eval fm.execute_console(&quot;bulkrename&quot;) if fm.thisdir.marked_items else fm.open_console(&quot;rename &quot;)</span><br></pre></td></tr></table></figure>
-
-<h4 id="图片的预览"><a href="#图片的预览" class="headerlink" title="图片的预览"></a>图片的预览</h4><ul>
-<li>安装 w3m</li>
-<li>在 rc.conf 文件中到找 <code>set preview_images false</code>, 将其修改为<code>set preview_images true</code><br>如果图片预览遇到问题.<br><a href="https://github.com/alacritty/alacritty/issues/1021#issuecomment-494718591">alacritty issues 1021</a><br><a href="https://github.com/ranger/ranger/wiki/Image-Previews#with-ueberzug">ueberzug image-Preview</a></li>
-</ul>
-<h4 id="解压-压缩文件"><a href="#解压-压缩文件" class="headerlink" title="解压/压缩文件"></a>解压/压缩文件</h4><ul>
-<li>安装 ranger-archives.git 到 <code>~/.config/ranger/plugin</code></li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd ~/.config/ranger/plugins</span><br><span class="line">git clone https://github.com/maximtrp/ranger-archives.git</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>在 rc.conf 文件中加入</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">map ex console extract%space</span><br><span class="line">map ec console compress%space</span><br><span class="line">``</span><br><span class="line"></span><br><span class="line">#### git status</span><br><span class="line"></span><br><span class="line">在 rc.conf 中将设置如下</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>set vcs_aware true </p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">#### 给 ranger 添上必要的图标</span><br><span class="line"></span><br><span class="line">* Install a Nerd Font compatible font or patch your own, then set your terminal font</span><br><span class="line"></span><br><span class="line">* Clone:</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>git clone <a href="https://github.com/cdump/ranger-devicons2">https://github.com/cdump/ranger-devicons2</a> ~/.config/ranger/plugins/devicons2</p>
-<pre><code>
-* Add/change default_linemode devicons2 in your ~/.config/ranger/rc.conf
-</code></pre>
-]]></content>
-      <categories>
-        <category>日常生活</category>
-      </categories>
-      <tags>
-        <tag>ranger</tag>
-      </tags>
   </entry>
 </search>
