@@ -1,25 +1,21 @@
+
+
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
-<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.4.2">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/supremew/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/supremew/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/supremew/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/supremew/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/supremew/css/main.css">
-
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
-
-<script class="next-config" data-name="main" type="application/json">{"hostname":"supremew.github.io","root":"/supremew/","images":"/supremew/images","scheme":"Muse","darkmode":false,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/supremew/js/config.js"></script>
-
+  <link rel="apple-touch-icon" sizes="76x76" href="/supremew/img/fluid.png">
+  <link rel="icon" href="/supremew/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="八月">
+  <meta name="keywords" content="">
+  
     <meta name="description" content="我系统基本情况   我的系统， 安装的是源里面的 nvidia 驱动 screenfectch 输出  1234567891011121314151617181920[archlinux@myhostname ~]$ screenfetch           -&#96;                           .o+&#96;                 archlinux@myhostna">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2020-07-29 qutebrowser 不能播放 drm 内容的解决办法">
@@ -30,209 +26,253 @@
 <meta property="article:published_time" content="2020-07-28T17:05:17.000Z">
 <meta property="article:modified_time" content="2021-12-11T11:02:20.131Z">
 <meta property="article:author" content="八月">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>2020-07-29 qutebrowser 不能播放 drm 内容的解决办法 - 八月的风</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
-<link rel="canonical" href="https://supremew.github.io/2020/07/29/qutebrowser-%E4%B8%8D%E8%83%BD%E6%92%AD%E6%94%BE-drm-%E5%86%85%E5%AE%B9%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/">
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://supremew.github.io/2020/07/29/qutebrowser-%E4%B8%8D%E8%83%BD%E6%92%AD%E6%94%BE-drm-%E5%86%85%E5%AE%B9%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/","path":"2020/07/29/qutebrowser-不能播放-drm-内容的解决办法/","title":"2020-07-29 qutebrowser 不能播放 drm 内容的解决办法"}</script>
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
 
-<script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>2020-07-29 qutebrowser 不能播放 drm 内容的解决办法 | 八月的风</title>
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/supremew/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/supremew/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/supremew/css/highlight-dark.css" />
   
 
 
 
 
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"supremew.github.io","root":"/supremew/","version":"1.9.1","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/supremew/local-search.xml"};
 
-  <noscript>
-    <link rel="stylesheet" href="/supremew/css/noscript.css">
-  </noscript>
-</head>
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/supremew/js/utils.js" ></script>
+  <script  src="/supremew/js/color-schema.js" ></script>
 
-<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
-  <div class="headband"></div>
+  
+<meta name="generator" content="Hexo 5.4.2"></head>
 
-  <main class="main">
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏" role="button">
-    </div>
-  </div>
 
-  <div class="site-meta">
+<body>
+  
 
-    <a href="/supremew/" class="brand" rel="start">
-      <i class="logo-line"></i>
-      <p class="site-title">八月的风</p>
-      <i class="logo-line"></i>
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/supremew/">
+      <strong>Fluid</strong>
     </a>
-      <p class="site-subtitle" itemprop="description">玉颗珊珊下月轮，殿前拾得露华新。 至今不会天中事，应是嫦娥掷与人。</p>
-  </div>
 
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-    </div>
-  </div>
-</div>
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
 
-
-
-
-
-
-
-</div>
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
         
-  
-  <div class="toggle sidebar-toggle" role="button">
-    <span class="toggle-line"></span>
-    <span class="toggle-line"></span>
-    <span class="toggle-line"></span>
-  </div>
-
-  <aside class="sidebar">
-
-    <div class="sidebar-inner sidebar-overview-active">
-      <ul class="sidebar-nav">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/supremew/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/supremew/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/supremew/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/supremew/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/supremew/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
       </ul>
-
-      <div class="sidebar-panel-container">
-        <!--noindex-->
-        <div class="post-toc-wrap sidebar-panel">
-        </div>
-        <!--/noindex-->
-
-        <div class="site-overview-wrap sidebar-panel">
-          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">八月</p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-<div class="site-state-wrap site-overview-item animated">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-        <a href="/supremew/archives/">
-          <span class="site-state-item-count">310</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-          <a href="/supremew/categories/">
-        <span class="site-state-item-count">18</span>
-        <span class="site-state-item-name">分类</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-          <a href="/supremew/tags/">
-        <span class="site-state-item-count">57</span>
-        <span class="site-state-item-name">标签</span></a>
-      </div>
-  </nav>
-</div>
-
-
-
-        </div>
-      </div>
     </div>
-  </aside>
-  <div class="sidebar-dimmer"></div>
+  </div>
+</nav>
 
+  
 
-    </header>
+<div id="banner" class="banner" parallax=true
+     style="background: url('/supremew/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="2020-07-29 qutebrowser 不能播放 drm 内容的解决办法"></span>
+          
+        </div>
 
+        
+          
+  <div class="mt-3">
     
-  <div class="back-to-top" role="button" aria-label="返回顶部">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2020-07-29 01:05" pubdate>
+          2020年7月29日 凌晨
+        </time>
+      </span>
+    
   </div>
 
-<noscript>
-  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
-</noscript>
-
-
-    <div class="main-inner post posts-expand">
-
-
-  
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2020/07/29/qutebrowser-%E4%B8%8D%E8%83%BD%E6%92%AD%E6%94%BE-drm-%E5%86%85%E5%AE%B9%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="2020-07-29 qutebrowser 不能播放 drm 内容的解决办法 | 八月的风">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          2020-07-29 qutebrowser 不能播放 drm 内容的解决办法
-        </h1>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          4.2k 字
+        
       </span>
-      <span class="post-meta-item-text">发表于</span>
+    
 
-      <time title="创建时间：2020-07-29 01:05:17" itemprop="dateCreated datePublished" datetime="2020-07-29T01:05:17+08:00">2020-07-29</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          36 分钟
+        
       </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
-        </span>
-    </span>
+    
 
-  
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
 </div>
 
-        </div>
-      </header>
+</div>
 
+  </header>
+
+  <main>
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
-        <ol>
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">2020-07-29 qutebrowser 不能播放 drm 内容的解决办法</h1>
+            
+            <div class="markdown-body">
+              
+              <ol>
 <li>我系统基本情况<ul>
 <li>  我的系统， 安装的是源里面的 nvidia 驱动</li>
-<li>screenfectch 输出  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">[archlinux@myhostname ~]$ screenfetch</span><br><span class="line">           -`                 </span><br><span class="line">          .o+`                 archlinux@myhostname</span><br><span class="line">         `ooo/                 OS: Arch Linux </span><br><span class="line">        `+oooo:                Kernel: x86_64 Linux 5.7.7-arch1-1</span><br><span class="line">       `+oooooo:               Uptime: 10m</span><br><span class="line">       -+oooooo+:              Packages: 802</span><br><span class="line">     `/:-:++oooo+:             Shell: bash 5.0.17</span><br><span class="line">    `/++++/+++++++:            Resolution: 1920x1080</span><br><span class="line">   `/++++++++++++++:           DE: GNOME</span><br><span class="line">  `/+++ooooooooooooo/`         WM: KWin</span><br><span class="line"> ./ooosssso++osssssso+`        GTK Theme: Adwaita [GTK2/3]</span><br><span class="line">.oossssso-````/ossssss+`       Icon Theme: Adwaita</span><br><span class="line">-osssssso.      :ssssssso.      Font: Cantarell 11</span><br><span class="line">:osssssss/        osssso+++.     Disk: 35G / 882G (5%)</span><br><span class="line">/ossssssss/        +ssssooo/-     CPU: Intel Core i7-4770K @ 8x 3.9GHz [42.0°C]</span><br><span class="line">`/ossssso+/:-        -:/+osssso+-   GPU: GeForce GTX 780</span><br><span class="line">`+sso+:-`                 `.-/+oso:  RAM: 2719MiB / 7897MiB</span><br><span class="line">`++:.                           `-/+/</span><br><span class="line">.`                                 `/</span><br></pre></td></tr></table></figure>
+<li>screenfectch 输出  <figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs ruby">[archlinux<span class="hljs-variable">@myhostname</span> ~]<span class="hljs-variable">$ </span>screenfetch<br>           -<span class="hljs-string">`                 </span><br><span class="hljs-string">          .o+`</span>                 archlinux<span class="hljs-variable">@myhostname</span><br>         <span class="hljs-string">`ooo/                 OS: Arch Linux </span><br><span class="hljs-string">        `</span>+<span class="hljs-symbol">oooo:</span>                <span class="hljs-symbol">Kernel:</span> x86_64 Linux <span class="hljs-number">5.7</span>.<span class="hljs-number">7</span>-arch1-<span class="hljs-number">1</span><br>       <span class="hljs-string">`+oooooo:               Uptime: 10m</span><br><span class="hljs-string">       -+oooooo+:              Packages: 802</span><br><span class="hljs-string">     `</span>/<span class="hljs-symbol">:-</span><span class="hljs-symbol">:++oooo+</span>:             <span class="hljs-symbol">Shell:</span> bash <span class="hljs-number">5.0</span>.<span class="hljs-number">17</span><br>    <span class="hljs-string">`/++++/+++++++:            Resolution: 1920x1080</span><br><span class="hljs-string">   `</span>/++++++++++++++:           <span class="hljs-variable constant_">DE</span>: <span class="hljs-variable constant_">GNOME</span><br>  <span class="hljs-string">`/+++ooooooooooooo/`</span>         <span class="hljs-variable constant_">WM</span>: KWin<br> ./ooosssso++osssssso+<span class="hljs-string">`        GTK Theme: Adwaita [GTK2/3]</span><br><span class="hljs-string">.oossssso-`</span><span class="hljs-string">``</span><span class="hljs-string">`/ossssss+`</span>       Icon <span class="hljs-symbol">Theme:</span> Adwaita<br>-osssssso.      <span class="hljs-symbol">:ssssssso</span>.      <span class="hljs-symbol">Font:</span> Cantarell <span class="hljs-number">11</span><br><span class="hljs-symbol">:osssssss/</span>        osssso+++.     <span class="hljs-symbol">Disk:</span> 35G / 882G (<span class="hljs-number">5</span>%)<br>/ossssssss/        +ssssooo/-     <span class="hljs-variable constant_">CPU</span>: Intel Core i7-4770K @ 8x <span class="hljs-number">3</span>.9GHz [<span class="hljs-number">42.0</span>°C]<br><span class="hljs-string">`/ossssso+/:-        -:/+osssso+-   GPU: GeForce GTX 780</span><br><span class="hljs-string">`</span>+sso+<span class="hljs-symbol">:-<span class="hljs-string">`                 `</span></span>.-<span class="hljs-regexp">/+oso:  RAM: 2719MiB /</span> 7897MiB<br><span class="hljs-string">`++:.                           `</span>-<span class="hljs-regexp">/+/</span><br>.<span class="hljs-string">`                                 `</span>/<br></code></pre></td></tr></table></figure>
 <span id="more"></span></li>
 </ul>
 </li>
@@ -241,29 +281,29 @@
 <li>解决办法<ol>
 <li> 首先安装 chromium-widevine</li>
 </ol>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[archlinux@myhostname ~]$ yaourt -S chromium-widevine</span><br></pre></td></tr></table></figure>
+  <figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs crystal">[archlinux<span class="hljs-variable">@myhostname</span> ~]<span class="hljs-variable">$ </span>yaourt -S chromium-widevine<br></code></pre></td></tr></table></figure>
 <ol start="2">
 <li> 创建 <code>/etc/pacman.d/hooks/nvidia.hook</code></li>
 </ol>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">[archlinux@myhostname ~]$ cat /etc/pacman.d/hooks/nvidia.hook</span><br><span class="line">[Trigger]</span><br><span class="line">Operation=Install</span><br><span class="line">Operation=Upgrade</span><br><span class="line">Operation=Remove</span><br><span class="line">Type=Package</span><br><span class="line">Target=nvidia</span><br><span class="line">Target=linux</span><br><span class="line"># Change the linux part above and in the Exec line if a different kernel is used</span><br><span class="line"></span><br><span class="line">[Action]</span><br><span class="line">Description=Update Nvidia module in initcpio</span><br><span class="line">Depends=mkinitcpio</span><br><span class="line">When=PostTransaction</span><br><span class="line">NeedsTargets</span><br><span class="line">Exec=/bin/sh -c &#x27;while read -r trg; do case $trg in linux) exit 0; esac; done; /usr/bin/mkinitcpio -P&#x27;</span><br></pre></td></tr></table></figure>
+  <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs routeros">[archlinux@myhostname ~]$ cat /etc/pacman.d/hooks/nvidia.hook<br>[Trigger]<br><span class="hljs-attribute">Operation</span>=Install<br><span class="hljs-attribute">Operation</span>=Upgrade<br><span class="hljs-attribute">Operation</span>=Remove<br><span class="hljs-attribute">Type</span>=Package<br><span class="hljs-attribute">Target</span>=nvidia<br><span class="hljs-attribute">Target</span>=linux<br><span class="hljs-comment"># Change the linux part above and in the Exec line if a different kernel is used</span><br><br>[Action]<br><span class="hljs-attribute">Description</span>=Update Nvidia module <span class="hljs-keyword">in</span> initcpio<br><span class="hljs-attribute">Depends</span>=mkinitcpio<br><span class="hljs-attribute">When</span>=PostTransaction<br>NeedsTargets<br><span class="hljs-attribute">Exec</span>=/bin/sh -c <span class="hljs-string">&#x27;while read -r trg; do case $trg in linux) exit 0; esac; done; /usr/bin/mkinitcpio -P&#x27;</span><br></code></pre></td></tr></table></figure>
 <ol start="3">
-<li>在 <code>/etc/mkinitcpio.conf</code> 文件中的 <em>MODULES=()</em> 行的括号中加入 <strong>nvidia nvidia_modeset nvidia_uvm nvidia_drm</strong> , 如下所示： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line"># vim:set ft=sh</span><br><span class="line"># MODULES</span><br><span class="line"># The following modules are loaded before any boot hooks are</span><br><span class="line"># run.  Advanced users may wish to specify all system modules</span><br><span class="line"># in this array.  For instance:</span><br><span class="line">#     MODULES=(piix ide_disk reiserfs)</span><br><span class="line">MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)</span><br><span class="line"></span><br><span class="line"># BINARIES</span><br><span class="line"># This setting includes any additional binaries a given user may</span><br><span class="line"># wish into the CPIO image.  This is run last, so it may be used to</span><br><span class="line"># override the actual binaries included by a given hook</span><br><span class="line"># BINARIES are dependency parsed, so you may safely ignore libraries</span><br><span class="line">BINARIES=()</span><br><span class="line"></span><br><span class="line"># FILES</span><br><span class="line"># This setting is similar to BINARIES above, however, files are added</span><br><span class="line"># as-is and are not parsed in any way.  This is useful for config files.</span><br><span class="line">FILES=()</span><br><span class="line"></span><br><span class="line"># HOOKS</span><br><span class="line"># This is the most important setting in this file.  The HOOKS control the</span><br><span class="line"># modules and scripts added to the image, and what happens at boot time.</span><br><span class="line"># Order is important, and it is recommended that you do not change the</span><br><span class="line"># order in which HOOKS are added.  Run &#x27;mkinitcpio -H &lt;hook name&gt;&#x27; for</span><br><span class="line"># help on a given hook.</span><br><span class="line"># &#x27;base&#x27; is _required_ unless you know precisely what you are doing.</span><br><span class="line"># &#x27;udev&#x27; is _required_ in order to automatically load modules</span><br><span class="line"># &#x27;filesystems&#x27; is _required_ unless you specify your fs modules in MODULES</span><br><span class="line"># Examples:</span><br><span class="line">##   This setup specifies all modules in the MODULES setting above.</span><br><span class="line">##   No raid, lvm2, or encrypted root is needed.</span><br><span class="line">#    HOOKS=(base)</span><br><span class="line">#</span><br><span class="line">##   This setup will autodetect all modules for your system and should</span><br><span class="line">##   work as a sane default</span><br><span class="line">#    HOOKS=(base udev autodetect block filesystems)</span><br><span class="line">#</span><br><span class="line">##   This setup will generate a &#x27;full&#x27; image which supports most systems.</span><br><span class="line">##   No autodetection is done.</span><br><span class="line">#    HOOKS=(base udev block filesystems)</span><br><span class="line">#</span><br><span class="line">##   This setup assembles a pata mdadm array with an encrypted root FS.</span><br><span class="line">##   Note: See &#x27;mkinitcpio -H mdadm&#x27; for more information on raid devices.</span><br><span class="line">#    HOOKS=(base udev block mdadm encrypt filesystems)</span><br><span class="line">#</span><br><span class="line">##   This setup loads an lvm2 volume group on a usb device.</span><br><span class="line">#    HOOKS=(base udev block lvm2 filesystems)</span><br><span class="line">#</span><br><span class="line">##   NOTE: If you have /usr on a separate partition, you MUST include the</span><br><span class="line">#    usr, fsck and shutdown hooks.</span><br><span class="line">HOOKS=(base udev autodetect modconf block filesystems keyboard fsck)</span><br><span class="line"></span><br><span class="line"># COMPRESSION</span><br><span class="line"># Use this to compress the initramfs image. By default, gzip compression</span><br><span class="line"># is used. Use &#x27;cat&#x27; to create an uncompressed image.</span><br><span class="line">#COMPRESSION=&quot;gzip&quot;</span><br><span class="line">#COMPRESSION=&quot;bzip2&quot;</span><br><span class="line">#COMPRESSION=&quot;lzma&quot;</span><br><span class="line">#COMPRESSION=&quot;xz&quot;</span><br><span class="line">#COMPRESSION=&quot;lzop&quot;</span><br><span class="line">#COMPRESSION=&quot;lz4&quot;</span><br><span class="line"></span><br><span class="line"># COMPRESSION_OPTIONS</span><br><span class="line"># Additional options for the compressor</span><br><span class="line">#COMPRESSION_OPTIONS=()</span><br></pre></td></tr></table></figure>
+<li>在 <code>/etc/mkinitcpio.conf</code> 文件中的 <em>MODULES=()</em> 行的括号中加入 <strong>nvidia nvidia_modeset nvidia_uvm nvidia_drm</strong> , 如下所示： <figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><code class="hljs ini"><span class="hljs-comment"># vim:set ft=sh</span><br><span class="hljs-comment"># MODULES</span><br><span class="hljs-comment"># The following modules are loaded before any boot hooks are</span><br><span class="hljs-comment"># run.  Advanced users may wish to specify all system modules</span><br><span class="hljs-comment"># in this array.  For instance:</span><br><span class="hljs-comment">#     MODULES=(piix ide_disk reiserfs)</span><br><span class="hljs-attr">MODULES</span>=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)<br><br><span class="hljs-comment"># BINARIES</span><br><span class="hljs-comment"># This setting includes any additional binaries a given user may</span><br><span class="hljs-comment"># wish into the CPIO image.  This is run last, so it may be used to</span><br><span class="hljs-comment"># override the actual binaries included by a given hook</span><br><span class="hljs-comment"># BINARIES are dependency parsed, so you may safely ignore libraries</span><br><span class="hljs-attr">BINARIES</span>=()<br><br><span class="hljs-comment"># FILES</span><br><span class="hljs-comment"># This setting is similar to BINARIES above, however, files are added</span><br><span class="hljs-comment"># as-is and are not parsed in any way.  This is useful for config files.</span><br><span class="hljs-attr">FILES</span>=()<br><br><span class="hljs-comment"># HOOKS</span><br><span class="hljs-comment"># This is the most important setting in this file.  The HOOKS control the</span><br><span class="hljs-comment"># modules and scripts added to the image, and what happens at boot time.</span><br><span class="hljs-comment"># Order is important, and it is recommended that you do not change the</span><br><span class="hljs-comment"># order in which HOOKS are added.  Run &#x27;mkinitcpio -H &lt;hook name&gt;&#x27; for</span><br><span class="hljs-comment"># help on a given hook.</span><br><span class="hljs-comment"># &#x27;base&#x27; is _required_ unless you know precisely what you are doing.</span><br><span class="hljs-comment"># &#x27;udev&#x27; is _required_ in order to automatically load modules</span><br><span class="hljs-comment"># &#x27;filesystems&#x27; is _required_ unless you specify your fs modules in MODULES</span><br><span class="hljs-comment"># Examples:</span><br><span class="hljs-comment">##   This setup specifies all modules in the MODULES setting above.</span><br><span class="hljs-comment">##   No raid, lvm2, or encrypted root is needed.</span><br><span class="hljs-comment">#    HOOKS=(base)</span><br><span class="hljs-comment">#</span><br><span class="hljs-comment">##   This setup will autodetect all modules for your system and should</span><br><span class="hljs-comment">##   work as a sane default</span><br><span class="hljs-comment">#    HOOKS=(base udev autodetect block filesystems)</span><br><span class="hljs-comment">#</span><br><span class="hljs-comment">##   This setup will generate a &#x27;full&#x27; image which supports most systems.</span><br><span class="hljs-comment">##   No autodetection is done.</span><br><span class="hljs-comment">#    HOOKS=(base udev block filesystems)</span><br><span class="hljs-comment">#</span><br><span class="hljs-comment">##   This setup assembles a pata mdadm array with an encrypted root FS.</span><br><span class="hljs-comment">##   <span class="hljs-doctag">Note:</span> See &#x27;mkinitcpio -H mdadm&#x27; for more information on raid devices.</span><br><span class="hljs-comment">#    HOOKS=(base udev block mdadm encrypt filesystems)</span><br><span class="hljs-comment">#</span><br><span class="hljs-comment">##   This setup loads an lvm2 volume group on a usb device.</span><br><span class="hljs-comment">#    HOOKS=(base udev block lvm2 filesystems)</span><br><span class="hljs-comment">#</span><br><span class="hljs-comment">##   <span class="hljs-doctag">NOTE:</span> If you have /usr on a separate partition, you MUST include the</span><br><span class="hljs-comment">#    usr, fsck and shutdown hooks.</span><br><span class="hljs-attr">HOOKS</span>=(base udev autodetect modconf block filesystems keyboard fsck)<br><br><span class="hljs-comment"># COMPRESSION</span><br><span class="hljs-comment"># Use this to compress the initramfs image. By default, gzip compression</span><br><span class="hljs-comment"># is used. Use &#x27;cat&#x27; to create an uncompressed image.</span><br><span class="hljs-comment">#COMPRESSION=&quot;gzip&quot;</span><br><span class="hljs-comment">#COMPRESSION=&quot;bzip2&quot;</span><br><span class="hljs-comment">#COMPRESSION=&quot;lzma&quot;</span><br><span class="hljs-comment">#COMPRESSION=&quot;xz&quot;</span><br><span class="hljs-comment">#COMPRESSION=&quot;lzop&quot;</span><br><span class="hljs-comment">#COMPRESSION=&quot;lz4&quot;</span><br><br><span class="hljs-comment"># COMPRESSION_OPTIONS</span><br><span class="hljs-comment"># Additional options for the compressor</span><br><span class="hljs-comment">#COMPRESSION_OPTIONS=()</span><br></code></pre></td></tr></table></figure>
 <ol start="4">
 <li> 在 <code>/etc/default/grub</code> 中的第六行中加入 <strong>nvidia-drm.modeset=1</strong>, 如如下展示：</li>
 </ol>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GRUB_CMDLINE_LINUX_DEFAULT=&quot;nvidia-drm.modeset=1 loglevel=3 quiet&quot;</span><br></pre></td></tr></table></figure>
+ <figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ini"><span class="hljs-attr">GRUB_CMDLINE_LINUX_DEFAULT</span>=<span class="hljs-string">&quot;nvidia-drm.modeset=1 loglevel=3 quiet&quot;</span><br></code></pre></td></tr></table></figure>
 <ol start="5">
 <li> 运行grub-mkconfig</li>
 </ol>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[archlinux@myhostname ~]$ sudo grub-mkconfig -o /boot/grub/grub.cfg </span><br></pre></td></tr></table></figure>
+ <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">[archlinux@myhostname ~]$ sudo grub-mkconfig -o <span class="hljs-regexp">/boot/g</span>rub/grub.cfg <br></code></pre></td></tr></table></figure>
 <ol start="6">
 <li> 最后得注意， 在进行第三步时运行</li>
 </ol>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[archlinux@myhostname ~]$ sudo mkinitcpio -P</span><br></pre></td></tr></table></figure>
+ <figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs crystal">[archlinux<span class="hljs-variable">@myhostname</span> ~]<span class="hljs-variable">$ </span>sudo mkinitcpio -P<br></code></pre></td></tr></table></figure>
 <ol start="7">
 <li> 重启， 并设置 content.headers.user_agent 参数， 在qutebrowser 中运行如下命令</li>
 </ol>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:set content.headers.user_agent &#x27;Mozilla/5.0 (&#123;os_info&#125;) AppleWebKit/&#123;webkit_version&#125; (KHTML, like Gecko) &#123;qt_key&#125;/&#123;qt_version&#125; &#123;upstream_browser_key&#125;/&#123;upstream_browser_version&#125; Safari/&#123;webkit_version&#125;&#x27;</span><br></pre></td></tr></table></figure>
+ <figure class="highlight dust"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs dust"><span class="language-xml">:set content.headers.user_agent &#x27;Mozilla/5.0 (</span><span class="hljs-template-variable">&#123;os_info&#125;</span><span class="language-xml">) AppleWebKit/</span><span class="hljs-template-variable">&#123;webkit_version&#125;</span><span class="language-xml"> (KHTML, like Gecko) </span><span class="hljs-template-variable">&#123;qt_key&#125;</span><span class="language-xml">/</span><span class="hljs-template-variable">&#123;qt_version&#125;</span><span class="language-xml"> </span><span class="hljs-template-variable">&#123;upstream_browser_key&#125;</span><span class="language-xml">/</span><span class="hljs-template-variable">&#123;upstream_browser_version&#125;</span><span class="language-xml"> Safari/</span><span class="hljs-template-variable">&#123;webkit_version&#125;</span><span class="language-xml">&#x27;</span><br></code></pre></td></tr></table></figure>
 <ol start="8">
 <li> 最后就可以在 qutebrowser 中播放 drm 内容了。</li>
 </ol>
@@ -272,73 +312,398 @@
 </li>
 </ul>
 
-    </div>
+              
+            </div>
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
 
+<span class="category-chains">
+  
+  
     
-    
-    
-
-    <footer class="post-footer">
-
+      <span class="category-chain">
         
+  <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" class="category-chain-item">日常生活</a>
+  
+  
 
-          <div class="post-nav">
-            <div class="post-nav-item">
-                <a href="/supremew/2020/07/13/%E6%B5%8B%E8%AF%95%E7%BD%91%E7%AB%99/" rel="prev" title="2020-07-13 测试网站">
-                  <i class="fa fa-chevron-left"></i> 2020-07-13 测试网站
-                </a>
-            </div>
-            <div class="post-nav-item">
-                <a href="/supremew/2020/08/22/%E7%BA%B3%E6%BB%A4%E8%86%9C%E7%9A%84%E6%B8%85%E6%B4%97%E8%A7%84%E7%A8%8B/" rel="next" title="2020-08-22 纳滤膜的清洗规程">
-                  2020-08-22 纳滤膜的清洗规程 <i class="fa fa-chevron-right"></i>
-                </a>
-            </div>
-          </div>
-    </footer>
-  </article>
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
 </div>
 
 
+              
+  
 
-
-
-
-</div>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-inner">
-
-
-<div class="copyright">
-  &copy; 
-  <span itemprop="copyrightYear">2022</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">八月</span>
-</div>
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>2020-07-29 qutebrowser 不能播放 drm 内容的解决办法</div>
+      <div>https://supremew.github.io/2020/07/29/qutebrowser-不能播放-drm-内容的解决办法/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>八月</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2020年7月29日</div>
+        </div>
+      
+      
+      <div class="license-meta-item">
+        <div>许可协议</div>
+        <div>
+          
+            
+            
+              <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+              <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                <i class="iconfont icon-by"></i>
+              </span>
+              </a>
+            
+          
+        </div>
+      </div>
+    </div>
+    <div class="license-icon iconfont"></div>
   </div>
 
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/supremew/2020/08/22/%E7%BA%B3%E6%BB%A4%E8%86%9C%E7%9A%84%E6%B8%85%E6%B4%97%E8%A7%84%E7%A8%8B/" title="2020-08-22 纳滤膜的清洗规程">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">2020-08-22 纳滤膜的清洗规程</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/supremew/2020/07/13/%E6%B5%8B%E8%AF%95%E7%BD%91%E7%AB%99/" title="2020-07-13 测试网站">
+                        <span class="hidden-mobile">2020-07-13 测试网站</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
     </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
   </footer>
 
+  <!-- Scripts -->
   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
-<script src="/supremew/js/comments.js"></script><script src="/supremew/js/utils.js"></script><script src="/supremew/js/motion.js"></script><script src="/supremew/js/schemes/muse.js"></script><script src="/supremew/js/next-boot.js"></script>
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
 
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/supremew/js/events.js" ></script>
+<script  src="/supremew/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+  
+    <script  src="/supremew/js/img-lazyload.js" ></script>
   
 
 
 
 
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      headingSelector : CONFIG.toc.headingSelector || 'h1,h2,h3,h4,h5,h6',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      collapseDepth   : CONFIG.toc.collapseDepth || 0,
+      scrollSmooth    : true,
+      headingsOffset  : -boardTop
+    });
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+  });
+</script>
+
+
+  <script>
+  (function() {
+    var enableLang = CONFIG.code_language.enable && CONFIG.code_language.default;
+    var enableCopy = CONFIG.copy_btn;
+    if (!enableLang && !enableCopy) {
+      return;
+    }
+
+    function getBgClass(ele) {
+      return Fluid.utils.getBackgroundLightness(ele) >= 0 ? 'code-widget-light' : 'code-widget-dark';
+    }
+
+    var copyTmpl = '';
+    copyTmpl += '<div class="code-widget">';
+    copyTmpl += 'LANG';
+    copyTmpl += '</div>';
+    jQuery('.markdown-body pre').each(function() {
+      var $pre = jQuery(this);
+      if ($pre.find('code.mermaid').length > 0) {
+        return;
+      }
+      if ($pre.find('span.line').length > 0) {
+        return;
+      }
+
+      var lang = '';
+
+      if (enableLang) {
+        lang = CONFIG.code_language.default;
+        if ($pre[0].children.length > 0 && $pre[0].children[0].classList.length >= 2 && $pre.children().hasClass('hljs')) {
+          lang = $pre[0].children[0].classList[1];
+        } else if ($pre[0].getAttribute('data-language')) {
+          lang = $pre[0].getAttribute('data-language');
+        } else if ($pre.parent().hasClass('sourceCode') && $pre[0].children.length > 0 && $pre[0].children[0].classList.length >= 2) {
+          lang = $pre[0].children[0].classList[1];
+          $pre.parent().addClass('code-wrapper');
+        } else if ($pre.parent().hasClass('markdown-body') && $pre[0].classList.length === 0) {
+          $pre.wrap('<div class="code-wrapper"></div>');
+        }
+        lang = lang.toUpperCase().replace('NONE', CONFIG.code_language.default);
+      }
+      $pre.append(copyTmpl.replace('LANG', lang).replace('code-widget">',
+        getBgClass($pre[0]) + (enableCopy ? ' code-widget copy-btn" data-clipboard-snippet><i class="iconfont icon-copy"></i>' : ' code-widget">')));
+
+      if (enableCopy) {
+        Fluid.utils.createScript('https://lib.baomitu.com/clipboard.js/2.0.10/clipboard.min.js', function() {
+          var clipboard = new window.ClipboardJS('.copy-btn', {
+            target: function(trigger) {
+              var nodes = trigger.parentNode.childNodes;
+              for (var i = 0; i < nodes.length; i++) {
+                if (nodes[i].tagName === 'CODE') {
+                  return nodes[i];
+                }
+              }
+            }
+          });
+          clipboard.on('success', function(e) {
+            e.clearSelection();
+            e.trigger.innerHTML = e.trigger.innerHTML.replace('icon-copy', 'icon-success');
+            setTimeout(function() {
+              e.trigger.innerHTML = e.trigger.innerHTML.replace('icon-success', 'icon-copy');
+            }, 2000);
+          });
+        });
+      }
+    });
+  })();
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/supremew/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/supremew/js/boot.js" ></script>
+
 
   
 
-
-
-
-
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
 </body>
 </html>
