@@ -156,7 +156,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/supremew/archives/">
-          <span class="site-state-item-count">307</span>
+          <span class="site-state-item-count">310</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -167,7 +167,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/supremew/tags/">
-        <span class="site-state-item-count">55</span>
+        <span class="site-state-item-count">57</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -196,6 +196,299 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2021/01/20/archlinux-%E6%89%93%E5%8D%B0%E6%9C%BA%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+      <meta itemprop="description" content="">
+    </span>
+    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 八月的风">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2021/01/20/archlinux-%E6%89%93%E5%8D%B0%E6%9C%BA%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/" class="post-title-link" itemprop="url">2021-01-20 archlinux 打印机的安装与使用</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-01-20 15:04:50" itemprop="dateCreated datePublished" datetime="2021-01-20T15:04:50+08:00">2021-01-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>由于长时间的使用 archlinux 办公， 习惯了archlinux 的操作方式， 之前一直打印资料都是将资料发送到朋友那里，让其帮忙打印， 但是最近需要自己打印资料后， 发现打印资料还挺困难的。 现在将解决办法记录余下。</p>
+<ol>
+<li> 安装 cups (<strong>common unix print system</strong>)</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">archlinux &gt;&gt;&gt; sudo pacman -S cups  </span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li> 安装驱动， 因为办公室的打印机为 hp laserjet 1010 打印机。</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">archlinux &gt;&gt;&gt; sudo pacman -S hplip</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li> 启动 cups 服务， 并激活随开机启动。</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">archlinux &gt;&gt;&gt; sudo systemctl start cups</span><br><span class="line">archlinux &gt;&gt;&gt; sudo systemctl enable cups</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>设置打印机， 浏览器访问 <a target="_blank" rel="noopener" href="https://localhost:631/">localhost:631</a> ，选择 <strong>Administrator</strong> –&gt; <strong>add printer</strong> (这里需要输入 user, password。 user 采用 ‘root’, password 为 root 密码) , 选择 <strong>hp LaserJet 1010</strong></li>
+<li> 设置完毕。</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2020/11/08/archlinux-%E5%AE%89%E8%A3%85-i3-%E8%BF%87%E7%A8%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+      <meta itemprop="description" content="">
+    </span>
+    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 八月的风">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2020/11/08/archlinux-%E5%AE%89%E8%A3%85-i3-%E8%BF%87%E7%A8%8B/" class="post-title-link" itemprop="url">2020-11-08 archlinux 安装 i3 过程</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2020-11-08 20:46:49" itemprop="dateCreated datePublished" datetime="2020-11-08T20:46:49+08:00">2020-11-08</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>下面是安装办法</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S lightdm accountsservice lightdm-gtk-greeter xorg-server-xephyr</span><br><span class="line">sudo pacman -S i3-gaps</span><br><span class="line">sudo pacman -S feh ranger</span><br><span class="line">sudo pacman -S variety</span><br></pre></td></tr></table></figure>
+
+<p>接下来说说一些简单配置 <strong>i3 的一些简单配置</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># 设置默认虚拟终端</span><br><span class="line">bindsym $mod+Return exec alacritty</span><br><span class="line"></span><br><span class="line"># 设置自动启动</span><br><span class="line">exec_always --no-startup-id ~/.config/i3/polybar.sh &amp;</span><br><span class="line">exec_always --no-startup-id picom -b -c &amp;</span><br><span class="line">exec_always  --no-startup-id variety</span><br><span class="line">exec_always --no-startup-id fcitx5</span><br><span class="line"></span><br><span class="line"># amixer 设置音量控制按键，键盘自带的按键用不了，暂不知道怎么弄。</span><br><span class="line">bindsym $mod+F3 exec amixer set Master 5%+</span><br><span class="line">bindsym $mod+F2 exec amixer set Master 5%-</span><br><span class="line">bindsym $mod+F1 exec amixer set Master toggle</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>i3 的壁纸设置问题<ul>
+<li>  不安装登陆管理器，直接通过 startx 来启动 i3 ， 其壁纸只能通过 feh 来设置。 就算安装了 variety 这样的专门的壁纸管理器都不行。 暂时不知道问题处在哪里。</li>
+<li>  通过管理器启动 i3 是可以通过 variety 自动下载壁纸和更换壁纸的。我是采用 lightdm 登陆管理器的。 在安装 lihgtdm 时， 一定要将 lightdm 的可选依赖包安装上， 要不 lightdm 启动不了。</li>
+</ul>
+</li>
+<li>dmenu 的学习</li>
+<li> ranger 的学习</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2020/10/14/archlinux-%E4%B8%8D%E8%83%BD%E8%87%AA%E5%8A%A8%E8%AF%86%E5%88%AB%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA-mtp/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+      <meta itemprop="description" content="">
+    </span>
+    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 八月的风">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2020/10/14/archlinux-%E4%B8%8D%E8%83%BD%E8%87%AA%E5%8A%A8%E8%AF%86%E5%88%AB%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA-mtp/" class="post-title-link" itemprop="url">2020-10-14 archlinux 不能自动识别安卓手机/mtp</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2020-10-14 11:51:32" itemprop="dateCreated datePublished" datetime="2020-10-14T11:51:32+08:00">2020-10-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>安装如下软件包，重启后就行</p>
+<ul>
+<li>  gvfs-mtp</li>
+<li>  libmtp</li>
+<li>  mtpfs</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -829,312 +1122,6 @@ pip install -r requirements.txt
 <li> 检测， 问题解决</li>
 </ol>
 
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2019/12/25/%E6%B5%8B%E8%AF%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-      <meta itemprop="description" content="">
-    </span>
-    
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 八月的风">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2019/12/25/%E6%B5%8B%E8%AF%95/" class="post-title-link" itemprop="url">2019-12-24 测试</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2019-12-25 12:45:32" itemprop="dateCreated datePublished" datetime="2019-12-25T12:45:32+08:00">2019-12-25</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>document.write(“ -editor插件开发\n -思维导字\n -构思如何开发 3m\n -查看新插件的提交代码修改量\n -查看修改文件列表\n -比对单个文件主要修改位置\n -插件开发格式要求\n -测试 6m\n”);</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/supremew/2019/12/25/%E6%B5%8B%E8%AF%95/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2019/12/25/archlinux-%E7%9A%84%E5%AE%89%E8%A3%85/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-      <meta itemprop="description" content="">
-    </span>
-    
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 八月的风">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2019/12/25/archlinux-%E7%9A%84%E5%AE%89%E8%A3%85/" class="post-title-link" itemprop="url">2019-12-25 archlinux 的安装</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2019-12-25 12:09:52" itemprop="dateCreated datePublished" datetime="2019-12-25T12:09:52+08:00">2019-12-25</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>总的来说， archlinux 的安装还是比较顺利的， 现在来说说在安装过程遇到的几个问题及解决办法。</p>
-<ol>
-<li>具体的安装过程得参考 <a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/Installation_guide_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)">archlinux wiki</a></li>
-<li>在启动U盘的制作过程， 遇到了的问题是 U 盘制作了， 但是在引导启动时老是出问题， 卡住了。 键盘两个灯同时闪烁。出现这样的问题， 果断换一台机子再重新制作。（一定要严重下载镜像的完整性， 出现该问题的原因我想是镜像文件不完整。）</li>
-<li>我所安装 archlinux 的机子为台式机， 外接 usb 的无线网卡， 其芯片 rtl8812au， 在安装无线网卡的过程中遇到了不小的麻烦， 在 <a target="_blank" rel="noopener" href="https://www.github.com/">github</a> 找了很多该芯片的驱动都没有搞好。 搞了一晚上后， 灵光闪现， 意识到不同的linux内核可能需要不同的驱动。 因此在<a target="_blank" rel="noopener" href="https://www.github.com/">github</a>找到了一个作者， 该作者写了好几个版本的驱动， 有 4.3.4 , 5.6.4.1, 等等。 于是我将其都下载下来， 一个一个的试。 找到了适合我网卡的驱动。</li>
-</ol>
-<p>内核版本</p>
-<p>驱动版本</p>
-<p>4.19.91.1 lts</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/aircrack-ng/rtl8812au/tree/v5.1.5">5.1.5</a></p>
-<p>5.4.6.arch1-1</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/aircrack-ng/rtl8812au/tree/v5.2.20">5.2.20</a></p>
-<p>5.4.6-arch3-1</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/aircrack-ng/rtl8812au/tree/v5.6.4.2">5.6.4.2</a></p>
-<blockquote>
-<p>上面是我通过一个一个测试后， 测试出来的对面版本能够使用的 rtl8812au 网卡能能使用的网卡驱动。</p>
-</blockquote>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/supremew/2019/12/25/archlinux-%E7%9A%84%E5%AE%89%E8%A3%85/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2019/12/23/%E5%86%85%E6%A0%B8%E7%BC%96%E8%AF%91%E4%B8%8E%E5%AE%89%E8%A3%85/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-      <meta itemprop="description" content="">
-    </span>
-    
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 八月的风">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2019/12/23/%E5%86%85%E6%A0%B8%E7%BC%96%E8%AF%91%E4%B8%8E%E5%AE%89%E8%A3%85/" class="post-title-link" itemprop="url">2019-12-23 内核编译与安装</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2019-12-23 14:46:24" itemprop="dateCreated datePublished" datetime="2019-12-23T14:46:24+08:00">2019-12-23</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <ol>
-<li> 内核配置</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make menuconfig</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>注意：</p>
-<blockquote>
-<p>内核编译安装完成后， 需要安装闭源的显卡驱动的话， 这里建议直接不编译安装 nouveau 模块。</p>
-</blockquote>
-</blockquote>
-<ol start="2">
-<li> 编译</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">make </span><br><span class="line">make modules</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/supremew/2019/12/23/%E5%86%85%E6%A0%B8%E7%BC%96%E8%AF%91%E4%B8%8E%E5%AE%89%E8%A3%85/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
       
     </div>
 

@@ -156,7 +156,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/supremew/archives/">
-          <span class="site-state-item-count">307</span>
+          <span class="site-state-item-count">310</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -167,7 +167,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/supremew/tags/">
-        <span class="site-state-item-count">55</span>
+        <span class="site-state-item-count">57</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -196,6 +196,285 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2018/06/05/unicode-%E7%BC%96%E7%A0%81%E7%9A%84%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+      <meta itemprop="description" content="">
+    </span>
+    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 八月的风">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2018/06/05/unicode-%E7%BC%96%E7%A0%81%E7%9A%84%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">2018-06-05 unicode 编码的问题</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2018-06-05 21:15:33" itemprop="dateCreated datePublished" datetime="2018-06-05T21:15:33+08:00">2018-06-05</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>最近几天， 被 unicode 编码给折磨惨了， 如今知道是什么原因 。。 我用了 wordpress json api 插件， 开启了 wordpress 的 json api, 我通过 libcurl 得到的 json 中的中文 都以 \uXXXX 这样的形式表示的。 在今天看帮助文档的时候， 发现了这是 json api 的输出控制了的， 是故意让它输出这样的 unicode 编码， 以提高谦容性。 可以在发 url中加入这样的参数， 就可以让它以 utf-8 的格式输出 ， 而非 unicode escape 编码。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://www.example.com/?jsong=get_post&amp;post_id=1234&amp;json_unescaped_unicode</span><br></pre></td></tr></table></figure>
+
+<p>这里， 我称像 \uXXXX 这样的unicode码为 unicode escape 码。 这样的码是 javascript / json 的默认形式， linux 下 的printf 也能直接的输出 。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2018/06/03/%E5%9C%A8%E7%BC%96%E5%86%99-cmakelists-txt-%E8%BF%87%E7%A8%8B%E4%B8%AD%E6%96%B0%E6%89%8B%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+      <meta itemprop="description" content="">
+    </span>
+    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 八月的风">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2018/06/03/%E5%9C%A8%E7%BC%96%E5%86%99-cmakelists-txt-%E8%BF%87%E7%A8%8B%E4%B8%AD%E6%96%B0%E6%89%8B%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">2018-06-03 在编写 CMakeLists.txt 过程中新手遇到的问题</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2018-06-03 20:31:00" itemprop="dateCreated datePublished" datetime="2018-06-03T20:31:00+08:00">2018-06-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>在使用 <code>add_excutable()</code> 和 <code>target_link_libraries1()</code> 中容易漏写 target 名称。比如我想编译的目标是aa， 新手会这样写</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">add_excutable(aa b.c c.c )</span><br><span class="line"><span class="keyword">target_link_libraries</span>(a b)</span><br></pre></td></tr></table></figure>
+
+<p>这样就会出来如下错误。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">CMake Error at src/CMakeLists.txt:16 (target_link_libraries):</span><br><span class="line">  Cannot specify link libraries for target &quot;**&quot; which is not built by</span><br><span class="line">  this project.</span><br></pre></td></tr></table></figure>
+
+<p>正确的写法如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">add_excutable(aa b.c c.c)</span><br><span class="line">target_link_libraries(aa a b)</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2018/06/02/cmake-%E7%9A%84-pkg-config-%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98%E3%80%82/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/supremew/images/avatar.gif">
+      <meta itemprop="name" content="八月">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="八月的风">
+      <meta itemprop="description" content="">
+    </span>
+    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 八月的风">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/supremew/2018/06/02/cmake-%E7%9A%84-pkg-config-%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98%E3%80%82/" class="post-title-link" itemprop="url">2018-06-02 cmake 的 pkg-config 使用问题。</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2018-06-02 20:10:38" itemprop="dateCreated datePublished" datetime="2018-06-02T20:10:38+08:00">2018-06-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>由于历史的原因， 不是所有库都有相关的 **.cmake 文件， 因此不能用 find_package 函数。有的时候需要通过 pkg-config 工具实现。 如下例的使用.</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">find_package</span>(PkgConfig REQUIRED)</span><br><span class="line"><span class="keyword">if</span> (PKGCONFIG_FOUND)</span><br><span class="line">    <span class="keyword">message</span> (<span class="string">&quot;Find pkg-config module.&quot;</span>)</span><br><span class="line"><span class="keyword">endif</span> (PKGCONFIG_FOUND)</span><br><span class="line"></span><br><span class="line">pkg_check_modules (JSON_C REQUIRED json-c)</span><br><span class="line"><span class="keyword">if</span> (JSON_C_FOUND) </span><br><span class="line">    <span class="comment">#message (&quot;the json-c version:$&#123;JSON_C_VERSION&#125;&quot;)</span></span><br><span class="line">    <span class="comment">#message (&quot;the prefix-directory of the module $&#123;JSON_C_PREFIX&#125;&quot;)</span></span><br><span class="line">    <span class="comment">#message (&quot;JSON_C&#x27;s libraries is $&#123;JSON_C_LIBRARIES&#125;&quot;)</span></span><br><span class="line">    <span class="keyword">set</span> (EXTRA_LIBS <span class="variable">$&#123;EXTRA_LIBS&#125;</span> <span class="variable">$&#123;JSON_C_LIBRARIES&#125;</span>)</span><br><span class="line">    <span class="comment">#message (&quot;JSON_C&#x27;s head file directories is $&#123;JSON_C_INCLUDE_DIRS&#125;&quot;)</span></span><br><span class="line">    <span class="keyword">set</span> (INCLUDE_DIRS <span class="variable">$&#123;INCLUDE_DIRS&#125;</span> <span class="variable">$&#123;JSON_C_INCLUDE_DIRS&#125;</span>)</span><br><span class="line"><span class="keyword">endif</span> (JSON_C_FOUND)</span><br></pre></td></tr></table></figure>
+
+<p>其中</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">find_package</span>(PkgConfig REQUIRED)</span><br><span class="line"><span class="keyword">if</span> (PKGCONFIG_FOUND)</span><br><span class="line">    <span class="keyword">message</span> (<span class="string">&quot;Find pkg-config module.&quot;</span>)</span><br><span class="line"><span class="keyword">endif</span> (PKGCONFIG_FOUND)</span><br></pre></td></tr></table></figure>
+
+<p>是为了增加 cmake 的 pkg-config 模块， 并由 pkg-config 提供 pkg_check_modules 和 pkg_search_modules 函数来实现相关功能。 find_package 是由 cmake 提供的函数， 由该函数提供加载外部的包（当然也包括外部库）。其用法如下：</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">find_package</span>(&lt;package&gt; [version] [EXACT] [QUIET] [MODULE]</span><br><span class="line">             [REQUIRED] [[COMPONENTS] [components...]]</span><br><span class="line">             [OPTIONAL_COMPONENTS components...]</span><br><span class="line">             [NO_POLICY_SCOPE])</span><br></pre></td></tr></table></figure>
+
+<p>他通过下列的函数进行反馈。 ```cmake-变量描述 ${PACKAGE_FOUND} # 反馈是否找到了相关的包或库。 ${PACKAGE_EXECUTABLE} # 返回 package的路径。 ${PACKAGE_VERSION_STRING} # 返回 package 的本版信息。 <pre class="line-numbers prism-highlight" data-start="1"><code class="language-null"><br />由 pkg-config 模块提供的 pkg_check_modules 模块， 实现了其中类似 find_package 函数的功能。下面就简单介绍下： ```cmake pkg_check_modules(<PREFIX> [REQUIRED] [QUIET] [NO_CMAKE_PATH] [NO_CMAKE_ENVIRONMENT_PATH] <MODULE> [<PACKAGE>] ...) pkg_check_modules 是通过下列的一些变量返回信息。</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;PREFIX&gt;_FOUND          <span class="comment"># 返回是否找到 package</span></span><br><span class="line">&lt;PREFIX&gt;_LIBRARIES      <span class="comment"># 返回 package 的名称， 可以用到 ld 上 -lpackage </span></span><br><span class="line">&lt;PREFIX&gt;_LIBRARY_DIRS       <span class="comment"># 返回 package 的库名文件夹名， 可以用于 ld 戓 gcc 的 -L 标记。</span></span><br><span class="line">&lt;PREFIX&gt;_LDFLAGS        <span class="comment"># 返回所有的连接的必要标记。</span></span><br><span class="line">&lt;PREFIX&gt;_LDFLAGS_OTHER      <span class="comment"># 返回其它的连接标记</span></span><br><span class="line">&lt;PREFIX&gt;_INCLUDE_DIRS       <span class="comment"># 返回头文件所在文件夹， 可以用在 gcc -I 标记后。</span></span><br><span class="line">&lt;PREFIX&gt;_CFLAGS         <span class="comment"># 返回所有必要的 CFLAGS。</span></span><br><span class="line">&lt;PREFIX&gt;_CFLAGS_OTHER       <span class="comment"># 返回其它的 CFLAGS。</span></span><br></pre></td></tr></table></figure>
+
+<p>有一些特殊的变量前缀依赖给出的模块数。当仅有一个模块给出时，<PREFIX> 保持不变。当有多个模块时，前缀将变为 <PREFIX>_<MODNAME> 。如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg_check_modules (FOO glib-2.0&gt;=2.10 gtk+-2.0)</span><br></pre></td></tr></table></figure>
+
+<p>请求 glib2 和 gtk2， 会定义出如下变量 $&#123; FOO_glib-2.0_VERSION&#125; 其值为 2.10.3 和 $&#123; FOO_gtk+-2.0_VERSION&#125; 其值为 2.8 等。<code>FOO_glib-2.0_LIBRARIES=glib2-0;**</code> 和 <code>FOO_glib_STATIC_LIBRARIES=**;**</code></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -810,282 +1089,6 @@
 <li> <strong>脂吸附法</strong> 吸附法的技术难度一直没有完全突破。 目前吸附法主要应用于像察尔汗盐湖这样锂含量、 浓度最低的一些盐湖。 该方法以蓝科锂业为代表， 其工艺包括树脂吸附， 洗脱， 浓缩， 膜分离和碳化等过程。 树脂吸附主要的问题是水耗， 树脂消耗和动力消耗很大， 同时由于树脂对温度大幅变化适应性不够， 导致树脂破碎等问题还在解决中。</li>
 <li> <strong>太阳池法</strong> 太阳池浓缩法为西藏矿业在扎布耶盐湖所应用。 扎布耶盐湖为天然碳酸盐湖， 镁锂比全球最低， 资源极佳， 工艺比较可靠。但扎布耶离白银距离远， 运输时间长， 且扎布耶水电路都不通， 基础设施很差， 产能提升需要大量资金投入。</li>
 </ol>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2017/12/11/%E9%87%87%E7%94%A8%E9%94%B0%E9%85%B8%E9%94%82%E7%94%B5%E5%AF%B9%E8%BF%9B%E8%A1%8C%E5%8D%A4%E6%B0%B4%E6%8F%90%E9%94%82/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-      <meta itemprop="description" content="">
-    </span>
-    
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 八月的风">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2017/12/11/%E9%87%87%E7%94%A8%E9%94%B0%E9%85%B8%E9%94%82%E7%94%B5%E5%AF%B9%E8%BF%9B%E8%A1%8C%E5%8D%A4%E6%B0%B4%E6%8F%90%E9%94%82/" class="post-title-link" itemprop="url">2017-12-11 采用锰酸锂电对进行卤水提锂</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2017-12-11 15:00:09" itemprop="dateCreated datePublished" datetime="2017-12-11T15:00:09+08:00">2017-12-11</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="文章信息"><a href="#文章信息" class="headerlink" title="文章信息"></a>文章信息</h3><h4 id="文章-doi"><a href="#文章-doi" class="headerlink" title="文章 doi"></a>文章 doi</h4><p><strong>doi:</strong> 10.1016/j.electacta.2017.08.178</p>
-<h4 id="文章出处"><a href="#文章出处" class="headerlink" title="文章出处"></a>文章出处</h4><p>由河北工业大学大学写的。</p>
-<h3 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h3><ol>
-<li> LiMn2O4 是通过高温固相合成的方法合成。80% LiMn2O4, 10% 碳黑，10% 聚四氟乙烯混合，用少许酒精调成浆料均匀涂在 35mmX35mm 的碳衣上，然后在 70℃ 下进行烘干。</li>
-<li> Li1-xMn2O4 是通过电化学的方法合成的。将 LiMn2O4 作为阳极，将 AgCl 电极作为阴极，将 0.05mol/L 的 KCl 溶液作为电解液进行，在恒压 1.2v 下进行电解得到。</li>
-<li> 采用该材料在 25℃, 1.2v 下，1g LiMn2O4 可以吸附 34mg 锂。</li>
-<li> 该材料还可以将卤水中的 Na Mg Ca 减少 300 70 100 倍。具体数据如下表。</li>
-<li> 每提取 1g 锂耗电。
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/supremew/2017/12/11/%E9%87%87%E7%94%A8%E9%94%B0%E9%85%B8%E9%94%82%E7%94%B5%E5%AF%B9%E8%BF%9B%E8%A1%8C%E5%8D%A4%E6%B0%B4%E6%8F%90%E9%94%82/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2017/12/08/%E8%A2%AB%E5%B5%8C%E5%85%A5%E9%93%81%E7%9A%84%E9%94%82%E7%A6%BB%E5%AD%90%E7%AD%9B/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-      <meta itemprop="description" content="">
-    </span>
-    
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 八月的风">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2017/12/08/%E8%A2%AB%E5%B5%8C%E5%85%A5%E9%93%81%E7%9A%84%E9%94%82%E7%A6%BB%E5%AD%90%E7%AD%9B/" class="post-title-link" itemprop="url">2017-12-08 被嵌入铁的锂离子筛</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2017-12-08 14:03:16" itemprop="dateCreated datePublished" datetime="2017-12-08T14:03:16+08:00">2017-12-08</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4><p>该文中合成了一种被嵌入了铁的太酸锂作为卤水中提取锂的锂离子筛进行卤水提锂，该种离子筛能够在含 1.8g/L 的氢氧化锂溶液 (ph 12) 中选择性的吸附锂，离子筛的吸附能力为 53mg/g . 个人认为这种材料最大只能应用于锂的富集。 <strong>该文的 doi:</strong> 10.1016/j.cej.2017.09.055</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://supremew.github.io/2017/12/08/%CE%B2%E5%8F%8C%E9%85%AE%E6%8F%90%E5%8F%96%E7%A2%B1%E6%80%A7%E5%8D%A4%E6%B0%B4%E4%B8%AD%E7%9A%84%E9%94%82/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/supremew/images/avatar.gif">
-      <meta itemprop="name" content="八月">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="八月的风">
-      <meta itemprop="description" content="">
-    </span>
-    
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 八月的风">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/supremew/2017/12/08/%CE%B2%E5%8F%8C%E9%85%AE%E6%8F%90%E5%8F%96%E7%A2%B1%E6%80%A7%E5%8D%A4%E6%B0%B4%E4%B8%AD%E7%9A%84%E9%94%82/" class="post-title-link" itemprop="url">2017-12-08 β双酮提取碱性卤水中的锂</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2017-12-08 13:46:46" itemprop="dateCreated datePublished" datetime="2017-12-08T13:46:46+08:00">2017-12-08</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2021-12-11 19:02:20" itemprop="dateModified" datetime="2021-12-11T19:02:20+08:00">2021-12-11</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/supremew/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">日常生活</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4><p><strong>该文中所用卤水不是高镁锂比的卤水，参考价值并不高.</strong> 在该文中，通过比较了提锂的辅助萃取剂和稀释剂，最终确定了以 <strong>羟基苯并三唑 - 氧化三辛基膦 - 煤油</strong> 为萃取体系来进行萃取提锂。 提取过程中，以 <strong>0.4mol 羟基苯并三唑 -0.3mol/L 氧化三辛基膦 - 煤油</strong> 为萃取体系，要达到提取 95% 的锂需要 3 步提取。1mol/L HCl 作为洗涤剂，3mol/L HCl 作为反萃剂。 经过多次试验，表明各个步骤需要的次数如下</p>
-<ol>
-<li> 萃取需要 3 次。</li>
-<li> 洗涤需要 1 次。</li>
-<li> 反萃需要 2 次。</li>
-<li> 再生需要 1 次。</li>
-</ol>
-<p>再生这一步耗时比较长，需要大约 30h , 才能使萃取剂恢复到稳定状态。采用该文中的方法，锂的平均提取率可以达到 96% 左右，反萃出来的溶液中含锂达到了 15g/L, 并且其中杂质均小于 1g/L. <strong>该文 doi:</strong> 10.1016/j.hydromet.2017.10.029</p>
 
       
     </div>
