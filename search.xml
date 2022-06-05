@@ -4419,7 +4419,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
       </categories>
   </entry>
   <entry>
-    <title>archlinux 本地话设置</title>
+    <title>2022-06-05 archlinux 本地话设置</title>
     <url>/supremew/2022/06/05/archlinux-%E6%9C%AC%E5%9C%B0%E8%AF%9D%E8%AE%BE%E7%BD%AE/</url>
     <content><![CDATA[<p>完美支持 <em>archlinux</em> 中文环境，但是以英文显示界面。</p>
 <p>/etc/locale.conf:</p>
