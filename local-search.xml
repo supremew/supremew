@@ -4,6 +4,27 @@
   
   
   <entry>
+    <title>pacman 或 aura 安装不成功，提示包已锁定</title>
+    <link href="/supremew/2022/06/06/pacman-%E6%88%96-aura-%E5%AE%89%E8%A3%85%E4%B8%8D%E6%88%90%E5%8A%9F%EF%BC%8C%E6%8F%90%E7%A4%BA%E5%8C%85%E5%B7%B2%E9%94%81%E5%AE%9A/"/>
+    <url>/supremew/2022/06/06/pacman-%E6%88%96-aura-%E5%AE%89%E8%A3%85%E4%B8%8D%E6%88%90%E5%8A%9F%EF%BC%8C%E6%8F%90%E7%A4%BA%E5%8C%85%E5%B7%B2%E9%94%81%E5%AE%9A/</url>
+    
+    <content type="html"><![CDATA[<p>在采用 aura 安装软件时提示，包锁定。 <a href="https://wiki.archlinux.org/title/Pacman#%22Failed_to_init_transaction_(unable_to_lock_database)%22_error">解决办法</a></p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs awk">fuser <span class="hljs-regexp">/var/</span>lib<span class="hljs-regexp">/pacman/</span>db.lck<br>sudo rm <span class="hljs-regexp">/var/</span>lib<span class="hljs-regexp">/pacman/</span>db.lck<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>pacman</category>
+      
+      <category>aura</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>2022-06-05 archlinux 本地话设置</title>
     <link href="/supremew/2022/06/05/archlinux-%E6%9C%AC%E5%9C%B0%E8%AF%9D%E8%AE%BE%E7%BD%AE/"/>
     <url>/supremew/2022/06/05/archlinux-%E6%9C%AC%E5%9C%B0%E8%AF%9D%E8%AE%BE%E7%BD%AE/</url>
