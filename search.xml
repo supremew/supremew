@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>2017-05-22 Markdown 的学习利用</title>
-    <url>/supremew/2017/05/22/1036/</url>
+    <url>/2017/05/22/1036/</url>
     <content><![CDATA[<h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><p>我们去哪里工, 今天打游戏吗? 这是我的第一次使用Markdown博文. 这是下一段, 看看能不能行啊!</p>
 <h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><h3 id="这是三级标题"><a href="#这是三级标题" class="headerlink" title="这是三级标题"></a>这是三级标题</h3><h4 id="这是四级-标题"><a href="#这是四级-标题" class="headerlink" title="这是四级# 标题"></a>这是四级# 标题</h4><h5 id="这是五级标题"><a href="#这是五级标题" class="headerlink" title="这是五级标题"></a>这是五级标题</h5><h6 id="这是六级标题"><a href="#这是六级标题" class="headerlink" title="这是六级标题"></a>这是六级标题</h6>]]></content>
       <categories>
@@ -11,7 +11,7 @@
   </entry>
   <entry>
     <title>2017-05-22 看一看， 流流口水</title>
-    <url>/supremew/2017/05/22/1049/</url>
+    <url>/2017/05/22/1049/</url>
     <content><![CDATA[<p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495462678888&di=f646aba1af849a4c7db222362cece502&imgtype=0&src=http://www.bz55.com/uploads/allimg/121019/1-121019100228.jpg"></p>
 ]]></content>
       <categories>
@@ -20,7 +20,7 @@
   </entry>
   <entry>
     <title>2016-06-14 碳酸亚铁母液除铁处理</title>
-    <url>/supremew/2017/06/14/1120/</url>
+    <url>/2017/06/14/1120/</url>
     <content><![CDATA[<h1 id="碳酸亚铁母液处理"><a href="#碳酸亚铁母液处理" class="headerlink" title="碳酸亚铁母液处理"></a>碳酸亚铁母液处理</h1><h2 id="方案一"><a href="#方案一" class="headerlink" title="方案一"></a>方案一</h2><ol>
 <li><p>原料 1.1 碳酸亚铁母液</p>
 <ul>
@@ -75,7 +75,7 @@
   </entry>
   <entry>
     <title>20170619-20170623 日志</title>
-    <url>/supremew/2017/06/19/1170/</url>
+    <url>/2017/06/19/1170/</url>
     <content><![CDATA[<p>[toc]</p>
 <hr>
 <h2 id="星期一"><a href="#星期一" class="headerlink" title="星期一"></a>星期一</h2><p><strong>日期：</strong> 2017-06-19<br><strong>作者：</strong> 王兴龙<br><strong>记录：</strong></p>
@@ -98,7 +98,7 @@
   </entry>
   <entry>
     <title>2017-08-10  找到了在post中插入pdf文件的方式。</title>
-    <url>/supremew/2017/08/10/1271/</url>
+    <url>/2017/08/10/1271/</url>
     <content><![CDATA[<h3 id="插入方法概述"><a href="#插入方法概述" class="headerlink" title="插入方法概述"></a>插入方法概述</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs null">&lt;pdf-embedder url=&quot;http://supermew.qiniudn.com/Vim.pdf&quot;&gt;<br>其中的尖括号需要换成方括号， 这里不好表示， 因此这里用尖括号来表示<br></code></pre></td></tr></table></figure>
 <span id="more"></span>
 <p>[pdf-embedder url=”<a href="http://supermew.qiniudn.com/Vim.pdf&quot;/]">http://supermew.qiniudn.com/Vim.pdf&quot;\]</a></p>
@@ -109,7 +109,7 @@
   </entry>
   <entry>
     <title>2017-09-15 测试视频</title>
-    <url>/supremew/2017/09/05/1382/</url>
+    <url>/2017/09/05/1382/</url>
     <content><![CDATA[<h3 id="还以为不能用markdown-o"><a href="#还以为不能用markdown-o" class="headerlink" title="还以为不能用markdown o ."></a>还以为不能用markdown o .</h3><h3 id="测试视频"><a href="#测试视频" class="headerlink" title="测试视频"></a>测试视频</h3><p>该浏览器不支持 html5 的 video 标签该浏览器不支持 html5 的 video 标签 this paraph is created by vimpress!</p>
 ]]></content>
       <categories>
@@ -118,7 +118,7 @@
   </entry>
   <entry>
     <title>2017-12-29 关于采用vim的排版系统进行xml排版</title>
-    <url>/supremew/2017/12/29/1556/</url>
+    <url>/2017/12/29/1556/</url>
     <content><![CDATA[<h3 id="关于采用vim的排版系统进行xml排版"><a href="#关于采用vim的排版系统进行xml排版" class="headerlink" title="关于采用vim的排版系统进行xml排版"></a>关于采用vim的排版系统进行xml排版</h3><p>前段时间我在win7下面使用vim8.0， 能够采用vim的排版系统进行排版， 但是今天我在 ubuntu 17.10下面进行排版时， 就不能顺利进行排版， 经过多方查找发现了问题， 现记录如下：</p>
 <ol>
 <li> 用vim打开将要排版的文件， 假如这里拟对xx.xml文件进行排版。</li>
@@ -133,7 +133,7 @@
   </entry>
   <entry>
     <title>2015-03-12 163邮箱</title>
-    <url>/supremew/2015/03/12/163%E9%82%AE%E7%AE%B1/</url>
+    <url>/2015/03/12/163%E9%82%AE%E7%AE%B1/</url>
     <content><![CDATA[<p><a href="mailto:&#x6d;&#x79;&#x67;&#x61;&#109;&#x6d;&#64;&#x31;&#x36;&#51;&#46;&#x63;&#x6f;&#109;">&#x6d;&#x79;&#x67;&#x61;&#109;&#x6d;&#64;&#x31;&#x36;&#51;&#46;&#x63;&#x6f;&#109;</a> wxl123456</p>
 ]]></content>
       <categories>
@@ -142,7 +142,7 @@
   </entry>
   <entry>
     <title>2019-08-23 水磨古镇玩</title>
-    <url>/supremew/2019/08/26/1770/</url>
+    <url>/2019/08/26/1770/</url>
     <content><![CDATA[<p><img src="http://tuchuang.supermew.top/IMG_20180819_081158.jpg"> <a href="https://baike.baidu.com/item/%E6%B0%B4%E7%A3%A8%E5%8F%A4%E9%95%87/6798252?fr=aladdin">水磨古镇</a> 位于四川省汶川县南部的岷江支流寿溪河畔，早在商代就享有“长寿之乡”的美誉，时称老人村，后更名为水磨。国家5A级风景区。2010年，水磨古镇被全球人居环境论坛理事会和联合国人居署《全球最佳范例》杂志评为“全球灾后重建最佳范例”，被第三届世界文化旅游论坛组委会授予“中国精品文化旅游景区”称号。</p>
 <span id="more"></span>
 <p>2018 年 8 月 18 ， 我跟几个朋友来到了水磨古镇游玩. 下面是我们当时拍的一些照片， 今天把他发出来， 是为了测试一下将 <a href="https://www.qiniu.com/">七牛云</a> 作为 <a href="https://baike.baidu.com/item/WordPress">wordpress</a> 的图床来使用效果， 顺便测试一下他的水印， 他的缩略图功能。 <img src="http://tuchuang.supermew.top/IMG_20180818_161200.jpg-WordpressThumbnail"> 上面的图片是图过<a href="https://www.qiniu.com/">七牛</a> 的缩略图功能处理得到的， 这样看 <a href="https://baike.baidu.com/item/WordPress">wordpress</a> 使用七牛的缩略图功能是可以的。</p>
@@ -157,7 +157,7 @@
   </entry>
   <entry>
     <title>2021-02-24 pacman 安装过程中出现　ldconfig: file xxx is truncated</title>
-    <url>/supremew/2021/02/24/1930/</url>
+    <url>/2021/02/24/1930/</url>
     <content><![CDATA[<p>在通过　pacman 安装软件包时，经常出现如下提示。</p>
 <figure class="highlight apache"><table><tr><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">ldconfig</span>: file /usr/lib/libwebkit2gtk-<span class="hljs-number">4</span>.<span class="hljs-number">0</span>.so.<span class="hljs-number">37</span> is truncated<br><span class="hljs-attribute">ldconfig</span>: file /usr/lib/libwebkit2gtk-<span class="hljs-number">4</span>.<span class="hljs-number">0</span>.so.<span class="hljs-number">37</span>.<span class="hljs-number">49</span>.<span class="hljs-number">9</span> is truncated<br><span class="hljs-attribute">ldconfig</span>: file /usr/lib/libwebkit2gtk-<span class="hljs-number">4</span>.<span class="hljs-number">0</span>.so is truncated<br></code></pre></td></tr></table></figure>
 
@@ -169,7 +169,7 @@
   </entry>
   <entry>
     <title>2013-07-05 实验记录</title>
-    <url>/supremew/2013/07/05/%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95/</url>
+    <url>/2013/07/05/%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<p>2可pvp 溶入400毫升水， 加入37克葡萄糖， 加入100毫升硫酸铜溶液浓度为80克每升。14.5克氢氧化钠溶入100毫升水，逐滴加入上述溶液， 升温到80度，并保温80-90,溶液成砖红色，加入自制成核剂10毫升，加入175毫升水溶入37克vc的溶液 published by wordpress for android</p>
 ]]></content>
       <categories>
@@ -178,7 +178,7 @@
   </entry>
   <entry>
     <title>2013-07-11 实验记录</title>
-    <url>/supremew/2013/07/11/%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95/</url>
+    <url>/2013/07/11/%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<p>400毫升水溶解37克葡萄糖， 加入120毫升硫酸铜溶液(70克铜/升)， 升温到80度， 加入氢氧化钠14.5克+100毫升水， 保温80-90, 溶液成砖红色时，加入水合肼溶液20毫升水合肼+100毫升水， 保温80-90， 反应1小时， 得到红黑色的粉体溶液， 清洗后 published by wordpress for android</p>
 ]]></content>
       <categories>
@@ -190,7 +190,7 @@
   </entry>
   <entry>
     <title>2013-07-12 实验记录</title>
-    <url>/supremew/2013/07/12/%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95/</url>
+    <url>/2013/07/12/%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<p>400毫升水溶解2克pvp, 溶解37克葡萄糖。 14.5克氢氧化钠溶解在100毫升水中， 常温下逐滴加入上面的溶液，。<br>从电镜图片看，500nm, 有微小球颗粒构成球形。</p>
 <p><a href="http://supermew.ixiezi.com/files/2013/07/130712-5.jpg"><img src="http://supermew.ixiezi.com/files/2013/07/130712-5-300x225.jpg" alt="130712-5"></a></p>
 <p><a href="http://supermew.ixiezi.com/files/2013/07/130712-4.jpg"><img src="http://supermew.ixiezi.com/files/2013/07/130712-4-300x225.jpg" alt="130712-4"></a></p>
@@ -205,7 +205,7 @@
   </entry>
   <entry>
     <title>2013-07-15 实验记录</title>
-    <url>/supremew/2013/07/15/%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95/</url>
+    <url>/2013/07/15/%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<p>400毫升水溶解2克pvp, 加入120毫升硫酸铜溶液，滴加几滴氢氧化钠，加入10毫升成核剂，<br>滴入100毫升水加14.5可氢氧化钠的溶液，升温到80， 升温前ph11, 升温后的ph 9。 加入30毫升水合肼100毫升水稀释溶液。 反应1小时后，溶液成黑红色。 用倾斜法，洗料。洗料用的水2升中加入10毫升pvp 溶液， 6毫升水合肼。有板结现象， 在下次洗料的溶液中加入一定量的碳酸氢铵， 据了解碳酸氢铵在60度就能分解完全。<br>从电镜图片看，粒度300nm, 微小小球构成球形。</p>
 <p><a href="http://supermew.ixiezi.com/files/2013/07/130715-5.jpg"><img src="http://supermew.ixiezi.com/files/2013/07/130715-5-300x225.jpg" alt="130715-5"></a></p>
 <p><a href="http://supermew.ixiezi.com/files/2013/07/130715-4.jpg"><img src="http://supermew.ixiezi.com/files/2013/07/130715-4-300x225.jpg" alt="130715-4"></a></p>
@@ -220,7 +220,7 @@
   </entry>
   <entry>
     <title>2013-07-16 实验记录</title>
-    <url>/supremew/2013/07/16/%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95/</url>
+    <url>/2013/07/16/%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<p>400毫升水+pvp2可+120毫升硫酸铜， 升温80, 加入14.5克氢氧化钠+100毫升水， 溶液砖红色，加10毫升硝酸银，加30毫升水合肼+100毫升水合肼。</p>
 <p>从电镜图片看， 粒度500nm, 稍大一点的微球颗粒构成球形。</p>
 <p><a href="http://supermew.ixiezi.com/files/2013/07/130716-5.jpg"><img src="http://supermew.ixiezi.com/files/2013/07/130716-5-300x225.jpg" alt="130716-5"></a></p>
@@ -236,7 +236,7 @@
   </entry>
   <entry>
     <title>2013-07-17-01 实验记录</title>
-    <url>/supremew/2013/07/17/01-%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95/</url>
+    <url>/2013/07/17/01-%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<p>200毫升水加入2克pvp, 加入70克葡萄糖， 24硫酸铜0毫升， 升温到80， 加入29克氢氧化钠+100毫升水， 到砖红色， 加入10毫升硝酸银， 再加入60毫升水合肼+100毫升。 现象， 出现了铜镜现象。 想是粒子成片状。 published by wordpress for android</p>
 ]]></content>
       <categories>
@@ -245,7 +245,7 @@
   </entry>
   <entry>
     <title>2013-07-22 实验记录</title>
-    <url>/supremew/2013/07/22/%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95/</url>
+    <url>/2013/07/22/%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<p>2克pvp,溶解于380毫升水中，加入37克葡萄糖 ， 加入120毫升硫酸铜，升温80度， 加入14.5克氢氧化钠+50毫升水， 待溶液成砖红色， ph为9, 加入10毫升成核剂， 待其反应完全， 用2升水+6毫升水合肼+67克碳氨 洗涤样品。 span class=”post_sig”published by wordpress for android /span</p>
 ]]></content>
       <categories>
@@ -254,7 +254,7 @@
   </entry>
   <entry>
     <title>2013-07-23 实验记录</title>
-    <url>/supremew/2013/07/23/%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95/</url>
+    <url>/2013/07/23/%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<p>2克十二烷基磺酸钠， 加入溶解在380毫升水中，37克葡萄糖，加入120毫升硫酸铜， 滴入50毫升水+14.5克氢氧化钠， 加热到80，砖红色，加入10毫升硝酸银，加入145毫水+30毫升水合肼。<br>没有铜镜现象。</p>
 <p><a href="http://supermew.ixiezi.com/files/2013/07/130716-4.jpg">http://supermew.ixiezi.com/files/2013/07/130716-4.jpg</a></p>
 <p>span class=”post_sig”published by wordpress for android /span</p>
@@ -265,7 +265,7 @@
   </entry>
   <entry>
     <title>2013-07-24 关于打游戏的决定</title>
-    <url>/supremew/2013/07/24/%E5%85%B3%E4%BA%8E%E6%89%93%E6%B8%B8%E6%88%8F%E7%9A%84%E5%86%B3%E5%AE%9A/</url>
+    <url>/2013/07/24/%E5%85%B3%E4%BA%8E%E6%89%93%E6%B8%B8%E6%88%8F%E7%9A%84%E5%86%B3%E5%AE%9A/</url>
     <content><![CDATA[<p>从今天开始， 到考试前不再打游戏，把打游戏的时间全部用于看书复习。 span class=”post_sig”published by wordpress for android /span</p>
 ]]></content>
       <categories>
@@ -274,7 +274,7 @@
   </entry>
   <entry>
     <title>2013-07-24 实验记录</title>
-    <url>/supremew/2013/07/24/%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95/</url>
+    <url>/2013/07/24/%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<p>实验一: 380毫升水, 2克pvp, 120毫升硫酸铜 ，10毫升硝酸银， 30毫升水合肼+145毫升水 380毫升水+120毫升硫酸铜， 溶解2克pvp, 加入10毫升硝酸银， 蓝色略带一点黄色， 升温到65度， 成墨绿色， 并且有明显的沉淀(发现恒压滴液漏斗有漏液到烧杯)， 升温到84， 滴入30毫升水合肼+145毫升水。保温在80-90度之间 2分钟后，温度80, 捎带黑色，有变清的趋势; 6分钟后， 温度80, 黑色加剧， 带一点黄色; 9分钟后，温度77， 黑色加剧， 杯壁未侵入溶液的捎带绿色沉淀，中间有少许黄色的泡沫; 13分钟后， 温度82, 现象与上面相同， ph3; 21分钟后，温度80， 黑色加剧，ph4; 25分钟后，温度83,  黑色捎带一点红色，ph5, 表面红棕色泡沫较多，ph5; 44:分钟后，温度70, 红棕色， ph z6.5 不8表面红棕色泡沫减少， ； 46分钟后,温度78, 深红棕色，表面有少许白色泡沫 ph6.5；60分钟后， 温度80， 红棕色， 有大量气泡， 杯壁上有有铜镜现象， 未侵入溶液的有黑色颗粒。 现象总结 ，团聚有点严重， 铜粒子， 颗粒紧密， 洗料时发现还得加入碳氨 !–more– span class=”post_sig”published by wordpress for android /span</p>
 ]]></content>
       <categories>
@@ -283,7 +283,7 @@
   </entry>
   <entry>
     <title>2013-07-25 实验记录</title>
-    <url>/supremew/2013/07/25/%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95/</url>
+    <url>/2013/07/25/%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<p>通过前几次的实验，发现是很难摆脱出现铜镜现象的，团聚很严重的，一时找不到合适的分散剂，和反润湿剂， 所以已经放弃了有氢氧化铜合成铜， 通过前几次的实验还发现其实水合肼的需求量还是不算高， 我以为水合肼反应， 氮是被氧化为氮气的。 380毫升水溶解37克的葡萄糖， 加入120毫升的硫酸铜， 然后升温到80， 加入14.5克氢氧化钠和50毫升的水， 这时的温度为85， ph9， 待溶液成砖红色时， 加入20毫升的水合肼，155毫升水， 测ph 10, 但是保温很长时间都不完全反应， 所以我想氧化亚铜与水合肼反应的碱度要求比较高， 甚至在后来我把温度升到90基本没有很好的反应， 后来我把ph调到了13以后， 很快就反应了。 span class=”post_sig”published by wordpress for android /span</p>
 ]]></content>
       <categories>
@@ -292,7 +292,7 @@
   </entry>
   <entry>
     <title>2013-08-07 实验记录</title>
-    <url>/supremew/2013/08/07/%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95/</url>
+    <url>/2013/08/07/%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<p>28克镍粉（这镍粉是以前包裹过硬脂酸的，其碳含量为）,  用丙酮洗过， 然后在含有20可抗坏血酸，20毫升的丙酮溶液中，保温80， 保温30分钟。然后用丙酮洗净，再在2%的硬脂酸丙酮溶液中， 搅拌半个小时，拿出，在真空烘箱中， 130烘干。 span class=”post_sig”published by wordpress for android /span</p>
 ]]></content>
       <categories>
@@ -301,7 +301,7 @@
   </entry>
   <entry>
     <title>2013-11-12 关于造粒的一些资料</title>
-    <url>/supremew/2013/11/12/%E5%85%B3%E4%BA%8E%E9%80%A0%E7%B2%92%E7%9A%84%E4%B8%80%E4%BA%9B%E8%B5%84%E6%96%99/</url>
+    <url>/2013/11/12/%E5%85%B3%E4%BA%8E%E9%80%A0%E7%B2%92%E7%9A%84%E4%B8%80%E4%BA%9B%E8%B5%84%E6%96%99/</url>
     <content><![CDATA[<p>相关资料，<a href="http://china.nowec.com/supply/detail/24005023.html">http://china.nowec.com/supply/detail/24005023.html</a> 从这资料上看， 我从中看到了， 他有加热装置， 空压机， 流化床。 于是，本人打算在业余时间了解一下关于流化床在造粒方面的应用， 并在了解一下他的基本原理。 published by wordpress for android</p>
 ]]></content>
       <categories>
@@ -310,7 +310,7 @@
   </entry>
   <entry>
     <title>2013-11-12 烧料领悟</title>
-    <url>/supremew/2013/11/12/%E7%83%A7%E6%96%99%E9%A2%86%E6%82%9F/</url>
+    <url>/2013/11/12/%E7%83%A7%E6%96%99%E9%A2%86%E6%82%9F/</url>
     <content><![CDATA[<p>李云峰提出， 在喷料过程中出现的棉花状的，丝状的东西， 可能是因为冷却太快， 使外面的冷却了，但是里面的东西还没有冷却下来， 喷气的作用下使东西拉成丝或棉花状。 本人觉得非常有道理， 所以记录下来了。 张强提出， 有可能温度过低， 原因是， 在从烧料炉中出来，温度降得太多， 而导致了丝状的东西太多， 这一点，跟李云峰提到的原因有一些相识。 所以本人还是记录了下来。其实在这里，我就起到了一个记录的作用，并没有提出有用的东西。 published by wordpress for android</p>
 ]]></content>
       <categories>
@@ -319,7 +319,7 @@
   </entry>
   <entry>
     <title>2013-11-15 关于从主机屋搬家到freewebhosting的原因</title>
-    <url>/supremew/2013/11/15/%E5%85%B3%E4%BA%8E%E4%BB%8E%E4%B8%BB%E6%9C%BA%E5%B1%8B%E6%90%AC%E5%AE%B6%E5%88%B0freewebhosting%E7%9A%84%E5%8E%9F%E5%9B%A0/</url>
+    <url>/2013/11/15/%E5%85%B3%E4%BA%8E%E4%BB%8E%E4%B8%BB%E6%9C%BA%E5%B1%8B%E6%90%AC%E5%AE%B6%E5%88%B0freewebhosting%E7%9A%84%E5%8E%9F%E5%9B%A0/</url>
     <content><![CDATA[<p>只要考虑到， 主机屋给的一个域名， 不好记， 太复杂了。而freewebhostingarea提供了一个二级域名， 并且非常简单， 所以我搬家了。 以前的爱写字， 托管的博客， 在不给钱的情况下，是不能对数据库的数据备份的，要想对博客备份是比较困难， 也就造成了，以后假如说要搬家， 是比较麻烦的， 直接通过备份数据库是比较简单，并且相当的高效。而采用wordpress 自带的博客备份插件是导出是比较快，简单，但是要导入数据就比较麻烦了。 最后我了解到，主机屋提供的免费空间还是可以的，他还支持在线解压压缩， 很多提供免费的空间的运营商都不会提供在线解压 压缩，就为了让你选择他们的有偿服务， 但是主机屋没有提供一个很好的二级域名， 所以我还是选择了国外的免费空间，他们提供的二级域名是比较简单的， 不如我的域名就是supermew.eu5.org， 我是选择了freewwbhostingarea，的欧洲服务器， 他的美国服务器好像不好使用，有很多限制，但是他放在德国的服务器是相当的不错的，就是目前我选择的这个服务器。 哦忘了， 主机屋的网速是相当的快的， ping 40左右， 而我现在用的是三百多， 但是对于我这种对博客性能要求不是很高的人来说是一个不错的选择。 published by wordpress for android</p>
 ]]></content>
       <categories>
@@ -328,7 +328,7 @@
   </entry>
   <entry>
     <title>2013-11-15 关于造粒的计划</title>
-    <url>/supremew/2013/11/15/%E5%85%B3%E4%BA%8E%E9%80%A0%E7%B2%92%E7%9A%84%E8%AE%A1%E5%88%92/</url>
+    <url>/2013/11/15/%E5%85%B3%E4%BA%8E%E9%80%A0%E7%B2%92%E7%9A%84%E8%AE%A1%E5%88%92/</url>
     <content><![CDATA[<p>现在，确定了气压， 温度， 料。 接下来， 在确定缝隙的大小。 我想，通过这样的方法确定下来的条件不是最好的条件，因为这些条件不是跟造粒合格率成相关关系，而是成综合的影响。 因此我这样说。 published by wordpress for android</p>
 ]]></content>
       <categories>
@@ -337,7 +337,7 @@
   </entry>
   <entry>
     <title>2013-11-21 wordpress移动手机不能发帖</title>
-    <url>/supremew/2013/11/22/wordpress%E7%A7%BB%E5%8A%A8%E6%89%8B%E6%9C%BA%E4%B8%8D%E8%83%BD%E5%8F%91%E5%B8%96/</url>
+    <url>/2013/11/22/wordpress%E7%A7%BB%E5%8A%A8%E6%89%8B%E6%9C%BA%E4%B8%8D%E8%83%BD%E5%8F%91%E5%B8%96/</url>
     <content><![CDATA[<p>昨天，发现不能用wordpress客户端通过移动发博客， 通过很多的尝试，发现这是移动接入点的问题。 昨天本人尝试在服务器重新安装wordpress博客程序， 在手机端重新安装客户端， 结果都没有解决  最后发现通过wifi可以发博客， 最后确定是移动网络的问题， 想了想，尝试换一个接入点， 结果我从cmnet换到了3gnet，最后能够发博客了。 最后了解了一下， 有可能移动把原来的cmnet改成了原来的cmwap，也就可能让原来的cmnet变成了受限制的cmwap. 通过测试， 发现移动的接入点中，就cmnet接入点不能发布博客，其他的接入点都能发布博客，但是我还没有测试cmwap.从测试中了解到了，不管使用移动的什么接入点， 他都给的一个局域网地址，而不像以前，是给的公网地址。</p>
 ]]></content>
       <categories>
@@ -346,7 +346,7 @@
   </entry>
   <entry>
     <title>2013-11-22 关于wordpress的看法</title>
-    <url>/supremew/2013/11/22/%E5%85%B3%E4%BA%8Ewordpress%E7%9A%84%E7%9C%8B%E6%B3%95/</url>
+    <url>/2013/11/22/%E5%85%B3%E4%BA%8Ewordpress%E7%9A%84%E7%9C%8B%E6%B3%95/</url>
     <content><![CDATA[<p>以前，在网上看到，别人说wordpress如何如何好， 于是出于新鲜， 自己也想弄一个wordpress博客来用，但是在网上找了很长时间，也没有找出一个比较好的wordpress博客托管商，最后找到了爱写字，虽然他免费，但是有广告，而且不能备份，如要备份，去广告，都要给钱，于是终于放弃了找托管商， 自己去找了一个免费的空间提供商， 自己建了一个博客，没有广告，可以备份，自己想干什么就干什么多好啊。</p>
 ]]></content>
       <categories>
@@ -355,7 +355,7 @@
   </entry>
   <entry>
     <title>2013-11-22 阴天</title>
-    <url>/supremew/2013/11/22/%E9%98%B4%E5%A4%A9/</url>
+    <url>/2013/11/22/%E9%98%B4%E5%A4%A9/</url>
     <content><![CDATA[<p>昨天， 朋友童装店开张， 去庆祝， 干礼200, 买花80， 晚上吃饭，打牌输掉50， 借给李云峰200。 <a href="http://supermew.eu5.org/wordpress/wp-content/uploads/2013/11/wpid-wp-1384579049173.jpg"><img src="http://supermew.eu5.org/wordpress/wp-content/uploads/2013/11/wpid-wp-1384579049173.jpg?w=640" alt="image" title="wpid-wp-1384579049173.jpg"></a></p>
 ]]></content>
       <categories>
@@ -364,7 +364,7 @@
   </entry>
   <entry>
     <title>2013-12-02 今天回来上班了</title>
-    <url>/supremew/2013/12/02/%E4%BB%8A%E5%A4%A9%E5%9B%9E%E6%9D%A5%E4%B8%8A%E7%8F%AD%E4%BA%86/</url>
+    <url>/2013/12/02/%E4%BB%8A%E5%A4%A9%E5%9B%9E%E6%9D%A5%E4%B8%8A%E7%8F%AD%E4%BA%86/</url>
     <content><![CDATA[<p>今天回来上班了， 发现大家都有异样的眼光。 我想是不是因为我自己的主观感觉。</p>
 ]]></content>
       <categories>
@@ -373,7 +373,7 @@
   </entry>
   <entry>
     <title>2013-12-09 人的变化</title>
-    <url>/supremew/2013/12/09/%E4%BA%BA%E7%9A%84%E5%8F%98%E5%8C%96/</url>
+    <url>/2013/12/09/%E4%BA%BA%E7%9A%84%E5%8F%98%E5%8C%96/</url>
     <content><![CDATA[<p>从以前到目前， 很多人认为， 我们是师徒， 我也比较认可。 但是经过， 上周星期五后， 发现我的师傅，孟强这个人态度变了， 从分析来看， 有且只有一个原因， 那就是，在星期五的时候，可能我给的那个红包没有达到他心目中的那个目标。 如果是这个原因的话， 应该算是我的失误吧。</p>
 ]]></content>
       <categories>
@@ -382,7 +382,7 @@
   </entry>
   <entry>
     <title>2013-12-09 关于钱的问题</title>
-    <url>/supremew/2013/12/09/%E5%85%B3%E4%BA%8E%E9%92%B1%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <url>/2013/12/09/%E5%85%B3%E4%BA%8E%E9%92%B1%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>现在， 不知道是什么原因，导致我，更愿意相信陌生人呢？ 不管在今年， 还是在去年， 当我的同事，跟我说起要借钱， 我一般不怎么考虑就答应了， 金额从几块到上万的数目，我都能决定下来。 但是最近， 我妹妹给我说，她要给她的小孩上户，需要钱， 打算向我借钱。说实话，她借的钱不是很多。但从心理上来说，我不愿意借给她。下面我就说说自己的一些想法。 从我看来， 将钱借给熟人比借给亲人好， 因为，借给陌生人， 容易收回一点。 而借给亲人的话， 可能会出现不好收回的现象， 当自己需要用钱时， 又不好开口说，要收回借出的钱。陌生人的话， 我可以理直气壮的去收回。 而在亲人那，就不好开口了，这有可能会影响到自己在亲人心理的形象。 作为亲人，也有可能会出现这样的情况， 我借你的钱，是看得起你， 你拿一点钱给我用是应当的， 你还有脸拿回去？ 我想这是很多亲人，会这样的想的。 但对我来， 这钱是经过很长时间积累起来的， 是自己省吃俭用来的， 借出去，是给朋友或亲人，解决问题的， 并不是送出作为礼物。</p>
 ]]></content>
       <categories>
@@ -391,7 +391,7 @@
   </entry>
   <entry>
     <title>2013-12-10 上班没事做好无聊</title>
-    <url>/supremew/2013/12/10/%E4%B8%8A%E7%8F%AD%E6%B2%A1%E4%BA%8B%E5%81%9A%E5%A5%BD%E6%97%A0%E8%81%8A/</url>
+    <url>/2013/12/10/%E4%B8%8A%E7%8F%AD%E6%B2%A1%E4%BA%8B%E5%81%9A%E5%A5%BD%E6%97%A0%E8%81%8A/</url>
     <content><![CDATA[<p>天天，上班就等下班， 太无聊哦， 没意思的。</p>
 ]]></content>
       <categories>
@@ -400,7 +400,7 @@
   </entry>
   <entry>
     <title>2013-12-10 镍粉0610制备过程</title>
-    <url>/supremew/2013/12/10/%E9%95%8D%E7%B2%890610%E5%88%B6%E5%A4%87%E8%BF%87%E7%A8%8B/</url>
+    <url>/2013/12/10/%E9%95%8D%E7%B2%890610%E5%88%B6%E5%A4%87%E8%BF%87%E7%A8%8B/</url>
     <content><![CDATA[<p>这里说的0610, 是指的是600-1000纳米的镍粉。</p>
 ]]></content>
       <categories>
@@ -409,7 +409,7 @@
   </entry>
   <entry>
     <title>2013-12-11 网络访问问题</title>
-    <url>/supremew/2013/12/12/%E7%BD%91%E7%BB%9C%E8%AE%BF%E9%97%AE%E9%97%AE%E9%A2%98/</url>
+    <url>/2013/12/12/%E7%BD%91%E7%BB%9C%E8%AE%BF%E9%97%AE%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>晚上， 一个同事找我给他修电脑。我去看了，是上不到网， 经过用ping 网关， 外网域名， 外网域名的ip， 发现她的电脑跟外网是通的， 就是不能用域名访问网站。 然后， 基本断定是域名解析不到，造成的。 然后用nslookup 命令得知没有域名服务器来解析域名， 通过多次在网络上查询解决办法， 没有找到， 最后我抱着试一试的态度， 重新安装了网络发布协议， 和tcp/ip协议， 然后ping 外网域名 结果通了。 这里想再次了解网络诊断命令。nslookup有必要了解下， <a href="http://m.baidu.com/from=2001c/bd_page_type=1/ssid=0/uid=0/pu=usm%400%2Csz%401320_1003%2Cta%40iphone_2_4.1_1_9.4/w=0_10_nslookup%E5%91%BD%E4%BB%A4/t=iphone/l=3/tc?baiduid=85D1C0984595D5C71ED55FEFDA64E853&ref=www_iphone&lid=9950122393936264069&vit=osres&tj=www_normal_2_0_10&m=8&srd=1&cltj=cloud_title&dict=20&sec=34826&di=557da0dbf11ecb0b&src=http://arch.pconline.com.cn/pcedu/soft/wl/assist/10307/193330_4.html">nslookup使用详解</a></p>
 ]]></content>
       <categories>
@@ -418,7 +418,7 @@
   </entry>
   <entry>
     <title>2013-12-15 硼酸锂在不同温度下失水极限</title>
-    <url>/supremew/2013/12/13/%E7%A1%BC%E9%85%B8%E9%94%82%E5%9C%A8%E4%B8%8D%E5%90%8C%E6%B8%A9%E5%BA%A6%E4%B8%8B%E5%A4%B1%E6%B0%B4%E6%9E%81%E9%99%90/</url>
+    <url>/2013/12/13/%E7%A1%BC%E9%85%B8%E9%94%82%E5%9C%A8%E4%B8%8D%E5%90%8C%E6%B8%A9%E5%BA%A6%E4%B8%8B%E5%A4%B1%E6%B0%B4%E6%9E%81%E9%99%90/</url>
     <content><![CDATA[<p>目的， 研究硼酸锂在不同温度下失水极限， 大约多长时间能够达到这个极限。 目前， 就只有偏硼酸锂，没有四硼酸锂， 因此先用偏硼酸锂来做实验。 1. 根据tga数据找出了几个值得去做的点。 120℃， 160℃， 200℃， 250℃， 300℃， 350℃， 400℃。 2.取得离心机直接帅出的料， 水分: 3.设定温控仪120, 放入13厘米的偏硼酸锂。 9:08 120 1.432//9:32 160//10:08 120 1.427//11:08 140 1.403//12:41 140 1.369//13:48 140 1.356//14:48 180 1.344//15:48 140 1.329//16:48 180 1.322//8:15 140 1.249//9:10 160 1.244 设定温控仪160℃，</p>
 ]]></content>
       <categories>
@@ -427,7 +427,7 @@
   </entry>
   <entry>
     <title>2013-12-27 砂磨查找资料</title>
-    <url>/supremew/2013/12/30/%E7%A0%82%E7%A3%A8%E6%9F%A5%E6%89%BE%E8%B5%84%E6%96%99/</url>
+    <url>/2013/12/30/%E7%A0%82%E7%A3%A8%E6%9F%A5%E6%89%BE%E8%B5%84%E6%96%99/</url>
     <content><![CDATA[<p>星期五，资料汇总， 周报一起交于领导。 上海儒特比较积极， 而且给我发过资料。</p>
 ]]></content>
       <categories>
@@ -436,7 +436,7 @@
   </entry>
   <entry>
     <title>2013-12-29 电信太不像话了</title>
-    <url>/supremew/2013/12/30/%E7%94%B5%E4%BF%A1%E5%A4%AA%E4%B8%8D%E5%83%8F%E8%AF%9D%E4%BA%86/</url>
+    <url>/2013/12/30/%E7%94%B5%E4%BF%A1%E5%A4%AA%E4%B8%8D%E5%83%8F%E8%AF%9D%E4%BA%86/</url>
     <content><![CDATA[<p>妈个逼， 老子报个故障， 都半个多月了， 都还没有给我们解决。</p>
 ]]></content>
       <categories>
@@ -445,7 +445,7 @@
   </entry>
   <entry>
     <title>2013-12-9 培养记账的习惯</title>
-    <url>/supremew/2013/12/09/2013-12-9-%E5%9F%B9%E5%85%BB%E8%AE%B0%E8%B4%A6%E7%9A%84%E4%B9%A0%E6%83%AF/</url>
+    <url>/2013/12/09/2013-12-9-%E5%9F%B9%E5%85%BB%E8%AE%B0%E8%B4%A6%E7%9A%84%E4%B9%A0%E6%83%AF/</url>
     <content><![CDATA[<p>现在，我开始，在培养自己记账的习惯。 争取以后养成一个，好习惯。能够有计划的做事，有计划的生活。</p>
 ]]></content>
       <categories>
@@ -454,7 +454,7 @@
   </entry>
   <entry>
     <title>2014-01-06 关于记账的习惯</title>
-    <url>/supremew/2014/01/06/%E5%85%B3%E4%BA%8E%E8%AE%B0%E8%B4%A6%E7%9A%84%E4%B9%A0%E6%83%AF/</url>
+    <url>/2014/01/06/%E5%85%B3%E4%BA%8E%E8%AE%B0%E8%B4%A6%E7%9A%84%E4%B9%A0%E6%83%AF/</url>
     <content><![CDATA[<p>哎哟， 记账的习惯， 还是没有养成， 记了几天的帐， 还是未能坚持下去。 意志力不坚定啊。</p>
 ]]></content>
       <categories>
@@ -463,7 +463,7 @@
   </entry>
   <entry>
     <title>2014-01-08 考试成绩出了</title>
-    <url>/supremew/2014/01/08/%E8%80%83%E8%AF%95%E6%88%90%E7%BB%A9%E5%87%BA%E4%BA%86/</url>
+    <url>/2014/01/08/%E8%80%83%E8%AF%95%E6%88%90%E7%BB%A9%E5%87%BA%E4%BA%86/</url>
     <content><![CDATA[<p>今天早上， 我吃早饭时， 看了一下四川人事考试网的成绩公布， 发现注册化工工程师的成绩已经出来了， 我基础考了60， 专业基础考了75. 听说历届合格线都是132， 那么，我过的几率是相当的大的。 因此，我今天在当当网上买了130的书  打算先好好的学习画图。</p>
 ]]></content>
       <categories>
@@ -472,7 +472,7 @@
   </entry>
   <entry>
     <title>2014-01-31 怎么变化好大啊</title>
-    <url>/supremew/2014/01/31/%E6%80%8E%E4%B9%88%E5%8F%98%E5%8C%96%E5%A5%BD%E5%A4%A7%E5%95%8A/</url>
+    <url>/2014/01/31/%E6%80%8E%E4%B9%88%E5%8F%98%E5%8C%96%E5%A5%BD%E5%A4%A7%E5%95%8A/</url>
     <content><![CDATA[<p>久了没跟以前的同学， 朋友联系了， 今天晚上没事上网看动态， 发现很多人都已经结婚了， 然而我还是一个没人要的光棍哦， 好难受哦。。。。</p>
 ]]></content>
       <categories>
@@ -481,7 +481,7 @@
   </entry>
   <entry>
     <title>2014-02-03 今天晚上做梦了</title>
-    <url>/supremew/2014/02/03/%E4%BB%8A%E5%A4%A9%E6%99%9A%E4%B8%8A%E5%81%9A%E6%A2%A6%E4%BA%86/</url>
+    <url>/2014/02/03/%E4%BB%8A%E5%A4%A9%E6%99%9A%E4%B8%8A%E5%81%9A%E6%A2%A6%E4%BA%86/</url>
     <content><![CDATA[<p>今天晚上， 做梦了， 梦见了以前的朋友张利， 梦见她做了我的女朋友， 那把我给高兴得， 醒了过来， 才知道， 那是做梦。 到今天， 我都还惦记着他。 这已经过去了10年， 更何况已经结婚了啊。</p>
 ]]></content>
       <categories>
@@ -490,7 +490,7 @@
   </entry>
   <entry>
     <title>今天， 你记账了吗？</title>
-    <url>/supremew/2014/02/08/%E4%BB%8A%E5%A4%A9%EF%BC%8C-%E4%BD%A0%E8%AE%B0%E8%B4%A6%E4%BA%86%E5%90%97%EF%BC%9F/</url>
+    <url>/2014/02/08/%E4%BB%8A%E5%A4%A9%EF%BC%8C-%E4%BD%A0%E8%AE%B0%E8%B4%A6%E4%BA%86%E5%90%97%EF%BC%9F/</url>
     <content><![CDATA[<p>在2014年， 一定要把记账这个习惯养成。 每天在这个帖子下记录下， 今天你记账了吗？</p>
 ]]></content>
       <categories>
@@ -499,7 +499,7 @@
   </entry>
   <entry>
     <title>2014-02-12 磨料</title>
-    <url>/supremew/2014/02/12/%E7%A3%A8%E6%96%99/</url>
+    <url>/2014/02/12/%E7%A3%A8%E6%96%99/</url>
     <content><![CDATA[<p>fp 磷酸亚铁 250 np 磷酸二氢铵 67.31 lic 碳酸锂 60.33 pva 聚乙烯醇 30 fs 聚乙二醇1.03 m 二氧化钛 5.02</p>
 ]]></content>
       <categories>
@@ -508,7 +508,7 @@
   </entry>
   <entry>
     <title>2014-02-14 磨料</title>
-    <url>/supremew/2014/02/14/%E7%A3%A8%E6%96%99/</url>
+    <url>/2014/02/14/%E7%A3%A8%E6%96%99/</url>
     <content><![CDATA[<p>早上， 班文俊自己称料，加料顺序不一样。 我的加料顺序， 磷酸亚铁， 磷酸二氢铵， 消泡剂， 碳酸锂， 聚乙烯醇， 二氧化钛， 聚乙二醇。 他的加料顺序， 磷酸二氢铵溶于沙磨缸中， 然后将剩下的原料混合一起， 加入沙磨缸。 加料完成， 8:45,</p>
 ]]></content>
       <categories>
@@ -517,7 +517,7 @@
   </entry>
   <entry>
     <title>2014-02-21 磨料</title>
-    <url>/supremew/2014/02/21/%E7%A3%A8%E6%96%99/</url>
+    <url>/2014/02/21/%E7%A3%A8%E6%96%99/</url>
     <content><![CDATA[<p>由于， 昨天磨料后， 剩下的碳酸锂不多了， 所以今天， 就只有减少了量， 进行磨料。 今天， 找领导帮我， 在化验室那里， 弄了些99%以上的粉过的碳酸锂。</p>
 ]]></content>
       <categories>
@@ -526,7 +526,7 @@
   </entry>
   <entry>
     <title>2014-02-26 测量生产设备尺寸</title>
-    <url>/supremew/2014/02/26/%E6%B5%8B%E9%87%8F%E7%94%9F%E4%BA%A7%E8%AE%BE%E5%A4%87%E5%B0%BA%E5%AF%B8/</url>
+    <url>/2014/02/26/%E6%B5%8B%E9%87%8F%E7%94%9F%E4%BA%A7%E8%AE%BE%E5%A4%87%E5%B0%BA%E5%AF%B8/</url>
     <content><![CDATA[<p>今天， 帮领导测量生产设备尺寸， 为厂房改建做前期准备工作。</p>
 ]]></content>
       <categories>
@@ -535,7 +535,7 @@
   </entry>
   <entry>
     <title>2014-02-27 讨论了， 除锰的方法。</title>
-    <url>/supremew/2014/02/27/%E8%AE%A8%E8%AE%BA%E4%BA%86%EF%BC%8C-%E9%99%A4%E9%94%B0%E7%9A%84%E6%96%B9%E6%B3%95%E3%80%82/</url>
+    <url>/2014/02/27/%E8%AE%A8%E8%AE%BA%E4%BA%86%EF%BC%8C-%E9%99%A4%E9%94%B0%E7%9A%84%E6%96%B9%E6%B3%95%E3%80%82/</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>日常生活</category>
@@ -543,7 +543,7 @@
   </entry>
   <entry>
     <title>2014-03-04  化工制图学习， 发现放空管的问题</title>
-    <url>/supremew/2014/03/04/%E5%8C%96%E5%B7%A5%E5%88%B6%E5%9B%BE%E5%AD%A6%E4%B9%A0%EF%BC%8C-%E5%8F%91%E7%8E%B0%E6%94%BE%E7%A9%BA%E7%AE%A1%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <url>/2014/03/04/%E5%8C%96%E5%B7%A5%E5%88%B6%E5%9B%BE%E5%AD%A6%E4%B9%A0%EF%BC%8C-%E5%8F%91%E7%8E%B0%E6%94%BE%E7%A9%BA%E7%AE%A1%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>在书上的图中， 可以看到如果在放空管上安装有多个设备或反应器， 我们， 应该在每个设备的出口处， 安装一个缓冲器， 以免其中的形成交叉污染， 影响产品的质量。</p>
 ]]></content>
       <categories>
@@ -552,7 +552,7 @@
   </entry>
   <entry>
     <title>2014-04-22  今天收集的图片</title>
-    <url>/supremew/2014/04/22/%E4%BB%8A%E5%A4%A9%E6%94%B6%E9%9B%86%E7%9A%84%E5%9B%BE%E7%89%87/</url>
+    <url>/2014/04/22/%E4%BB%8A%E5%A4%A9%E6%94%B6%E9%9B%86%E7%9A%84%E5%9B%BE%E7%89%87/</url>
     <content><![CDATA[<p><img src="http://supermew.u.qiniudn.com/%E7%9C%8B%E4%BD%A0%E4%BB%AC%E8%BF%98%E6%95%A2%E5%96%9D%E9%85%92.jpg" alt="看你呀， 还喝酒"> <img src="http://supermew.u.qiniudn.com/%E8%AF%B1%E6%83%91.jpg" alt="这就是诱惑"> <img src="http://supermew.u.qiniudn.com/%E7%BE%8E%E5%A5%B3.jpg" alt="这才是想要的美女"></p>
 ]]></content>
       <categories>
@@ -561,7 +561,7 @@
   </entry>
   <entry>
     <title>2014-04-24 小菜苗</title>
-    <url>/supremew/2014/04/24/%E5%B0%8F%E8%8F%9C%E8%8B%97/</url>
+    <url>/2014/04/24/%E5%B0%8F%E8%8F%9C%E8%8B%97/</url>
     <content><![CDATA[<p><img src="http://supermew.u.qiniudn.com/%E5%B0%8F%E8%8F%9C%E8%8B%97.jpg" alt="小菜苗"></p>
 ]]></content>
       <categories>
@@ -570,7 +570,7 @@
   </entry>
   <entry>
     <title>2014-05-07  php中使用dom对xml进行操作时， getElementById 不能使用的问题</title>
-    <url>/supremew/2014/05/07/php%E4%B8%AD%E4%BD%BF%E7%94%A8dom%E5%AF%B9xml%E8%BF%9B%E8%A1%8C%E6%93%8D%E4%BD%9C%E6%97%B6%EF%BC%8C-getelementbyid-%E4%B8%8D%E8%83%BD%E4%BD%BF%E7%94%A8%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <url>/2014/05/07/php%E4%B8%AD%E4%BD%BF%E7%94%A8dom%E5%AF%B9xml%E8%BF%9B%E8%A1%8C%E6%93%8D%E4%BD%9C%E6%97%B6%EF%BC%8C-getelementbyid-%E4%B8%8D%E8%83%BD%E4%BD%BF%E7%94%A8%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>这个问题， 还是用了很长得时间才解决的， 主要是在xml中要有文档定义， 将id定义成ID类型， 你的xml才能如下面这样写。 filename:testing.xml <code>&lt;!DOCTYPE book [ &lt;!ELEMENT book (title, author)&gt; &lt;!ELEMENT title (#PCDATA)&gt; &lt;!ELEMENT author (#PCDATA)&gt; &lt;!ATTLIST title id ID IMPLIED&gt; &lt;!ATTLIST author id ID IMPLIED&gt; ]&gt; this is a title the author of the book</code> 然后你才能在php程序中这样应用。 load(“testing.xml”); $titleNode = $doc-&gt;getElementById(“title”); echo “the title of the book is “ . $titleNode-&gt;nodeValue; ?&gt; 先面， 我就像测试一下， 用dom创建得xml会不会要求这样呢？ 我想会的。</p>
 ]]></content>
       <categories>
@@ -579,7 +579,7 @@
   </entry>
   <entry>
     <title>2014-05-07  php中变量得作用范围</title>
-    <url>/supremew/2014/05/07/php%E4%B8%AD%E5%8F%98%E9%87%8F%E5%BE%97%E4%BD%9C%E7%94%A8%E8%8C%83%E5%9B%B4/</url>
+    <url>/2014/05/07/php%E4%B8%AD%E5%8F%98%E9%87%8F%E5%BE%97%E4%BD%9C%E7%94%A8%E8%8C%83%E5%9B%B4/</url>
     <content><![CDATA[<p>由于以前学习了， 一段时间得c语言， 一直认为在php中全局变量在函数中也是自动生效得， 哪知不是， 如果要生效得话， 需要用global这个关键子得。<a href="http://www.php.net/manual/zh/language.variables.scope.php">关于变量得范围</a> 这个也解决了， 我前天在include文件中得一个函数使用全局变量， 没有成功， 而返回了一个空值。最初我认为， 在被include得文件中申明得变量不能在这个被include得文件中得函数中应用， 结果不是这样得。</p>
 ]]></content>
       <categories>
@@ -588,7 +588,7 @@
   </entry>
   <entry>
     <title>2014-06-13 新决定</title>
-    <url>/supremew/2014/06/13/%E6%96%B0%E5%86%B3%E5%AE%9A/</url>
+    <url>/2014/06/13/%E6%96%B0%E5%86%B3%E5%AE%9A/</url>
     <content><![CDATA[<p>从今天开始， 全力以赴， 复习准备考试， 不打游戏， 不看关于编程的网页等资料。</p>
 ]]></content>
       <categories>
@@ -597,7 +597,7 @@
   </entry>
   <entry>
     <title>2014-07-09 磷酸锰铁（(fe0.8mn0.2)3(po4)2）</title>
-    <url>/supremew/2014/07/09/%E7%A3%B7%E9%85%B8%E9%94%B0%E9%93%81%EF%BC%88fe0-8mn0-23po42%EF%BC%89/</url>
+    <url>/2014/07/09/%E7%A3%B7%E9%85%B8%E9%94%B0%E9%93%81%EF%BC%88fe0-8mn0-23po42%EF%BC%89/</url>
     <content><![CDATA[<p>今天作了ph4的， 将100毫升的预备溶液， 用400毫升水稀释， 然后将溶液调节到4, 将理论需要磷酸二氢铵用100毫升水溶解， 将ph调到4， 然后将其混合， 让其反应。 现象， 溶液由透明逐渐变为浑浊， 略显白色， 让其反应1个小时， 然后静止一个晚上， 第二天继续调节ph， 将其调节到8左右。</p>
 ]]></content>
       <categories>
@@ -606,7 +606,7 @@
   </entry>
   <entry>
     <title>2014-08-25 电脑开不了全效</title>
-    <url>/supremew/2014/08/25/%E7%94%B5%E8%84%91%E5%BC%80%E4%B8%8D%E4%BA%86%E5%85%A8%E6%95%88/</url>
+    <url>/2014/08/25/%E7%94%B5%E8%84%91%E5%BC%80%E4%B8%8D%E4%BA%86%E5%85%A8%E6%95%88/</url>
     <content><![CDATA[<p>我的配制 显卡， 七彩虹 igame 780 主板， 华硕 z87-c cpu， i7 4770k ┈ 坦克世界特效全开， 在40 50侦左右， 而且伴有坦克世界程序不时的未响应。 有大神帮忙解决了。 有可能是驱动的问题， 换了英伟达的驱动， 因为七彩虹是代工生产了英伟达的产品， 然后打上了自己的牌子。 而且七彩虹官方的驱动更新大多是在英伟达更新半年或者一年以后才更新的。  其实七彩虹的驱动就是英伟达的驱动。</p>
 ]]></content>
       <categories>
@@ -615,7 +615,7 @@
   </entry>
   <entry>
     <title>2014-10-10  钢铁酸洗废液结晶出的硫酸亚铁提纯</title>
-    <url>/supremew/2014/10/10/%E9%92%A2%E9%93%81%E9%85%B8%E6%B4%97%E5%BA%9F%E6%B6%B2%E7%BB%93%E6%99%B6%E5%87%BA%E7%9A%84%E7%A1%AB%E9%85%B8%E4%BA%9A%E9%93%81%E6%8F%90%E7%BA%AF/</url>
+    <url>/2014/10/10/%E9%92%A2%E9%93%81%E9%85%B8%E6%B4%97%E5%BA%9F%E6%B6%B2%E7%BB%93%E6%99%B6%E5%87%BA%E7%9A%84%E7%A1%AB%E9%85%B8%E4%BA%9A%E9%93%81%E6%8F%90%E7%BA%AF/</url>
     <content><![CDATA[<p>原料大约500克左右， 实验方案为班文俊设计。</p>
 ]]></content>
       <categories>
@@ -624,7 +624,7 @@
   </entry>
   <entry>
     <title>2014-10-22 采用硫化亚铁硫酸亚铁中的锌</title>
-    <url>/supremew/2014/10/22/%E9%87%87%E7%94%A8%E7%A1%AB%E5%8C%96%E4%BA%9A%E9%93%81%E7%A1%AB%E9%85%B8%E4%BA%9A%E9%93%81%E4%B8%AD%E7%9A%84%E9%94%8C/</url>
+    <url>/2014/10/22/%E9%87%87%E7%94%A8%E7%A1%AB%E5%8C%96%E4%BA%9A%E9%93%81%E7%A1%AB%E9%85%B8%E4%BA%9A%E9%93%81%E4%B8%AD%E7%9A%84%E9%94%8C/</url>
     <content><![CDATA[<p>从理论上来讲， 用硫化氢气体可以除去硫酸亚铁中的锌， 但是实验室的条件不能用硫化氢气体， 采用硫化钠呢， 反应太慢了， 因此采用硫化亚铁来用。  硫化亚铁反应慢， 可以达到缓慢释放硫化氢气体的目的。</p>
 ]]></content>
       <categories>
@@ -633,7 +633,7 @@
   </entry>
   <entry>
     <title>2014-10-27 提纯硫酸亚铁</title>
-    <url>/supremew/2014/10/28/%E6%8F%90%E7%BA%AF%E7%A1%AB%E9%85%B8%E4%BA%9A%E9%93%81/</url>
+    <url>/2014/10/28/%E6%8F%90%E7%BA%AF%E7%A1%AB%E9%85%B8%E4%BA%9A%E9%93%81/</url>
     <content><![CDATA[<p>通过硫化亚铁除去锌， 在其中加入活性炭效果要好很多。</p>
 ]]></content>
       <categories>
@@ -642,7 +642,7 @@
   </entry>
   <entry>
     <title>2014-10-28 坦克世界闪退的问题</title>
-    <url>/supremew/2014/10/28/%E5%9D%A6%E5%85%8B%E4%B8%96%E7%95%8C%E9%97%AA%E9%80%80%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <url>/2014/10/28/%E5%9D%A6%E5%85%8B%E4%B8%96%E7%95%8C%E9%97%AA%E9%80%80%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>昨天意见游戏一会就闪退一下， 不知道这是为什么。</p>
 ]]></content>
       <categories>
@@ -651,7 +651,7 @@
   </entry>
   <entry>
     <title>2014-10-28 硫酸亚铁提纯</title>
-    <url>/supremew/2014/10/28/%E7%A1%AB%E9%85%B8%E4%BA%9A%E9%93%81%E6%8F%90%E7%BA%AF/</url>
+    <url>/2014/10/28/%E7%A1%AB%E9%85%B8%E4%BA%9A%E9%93%81%E6%8F%90%E7%BA%AF/</url>
     <content><![CDATA[<p>目前锌已经达到了44微克每毫升</p>
 ]]></content>
       <categories>
@@ -660,7 +660,7 @@
   </entry>
   <entry>
     <title>2014-12-29 手机浏览器主页被篡改</title>
-    <url>/supremew/2014/12/29/%E6%89%8B%E6%9C%BA%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%BB%E9%A1%B5%E8%A2%AB%E7%AF%A1%E6%94%B9/</url>
+    <url>/2014/12/29/%E6%89%8B%E6%9C%BA%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%BB%E9%A1%B5%E8%A2%AB%E7%AF%A1%E6%94%B9/</url>
     <content><![CDATA[<p>本人用go桌面， 的默认图标进我的默认浏览器uc， 进去后是一个不知名的导航页。 我百度了一下还真有解决办法， 可以直接将那个默认图标给删除了， 然后再添加uc， 再进uc的图标改成go的默认浏览器图标。</p>
 ]]></content>
       <categories>
@@ -669,7 +669,7 @@
   </entry>
   <entry>
     <title>2014-12-29 电脑用gost装机后， 原来的分区顺序变了</title>
-    <url>/supremew/2014/12/29/%E7%94%B5%E8%84%91%E7%94%A8gost%E8%A3%85%E6%9C%BA%E5%90%8E%EF%BC%8C-%E5%8E%9F%E6%9D%A5%E7%9A%84%E5%88%86%E5%8C%BA%E9%A1%BA%E5%BA%8F%E5%8F%98%E4%BA%86/</url>
+    <url>/2014/12/29/%E7%94%B5%E8%84%91%E7%94%A8gost%E8%A3%85%E6%9C%BA%E5%90%8E%EF%BC%8C-%E5%8E%9F%E6%9D%A5%E7%9A%84%E5%88%86%E5%8C%BA%E9%A1%BA%E5%BA%8F%E5%8F%98%E4%BA%86/</url>
     <content><![CDATA[<p>通过gost重新安装win7后， 原来的分区变了。 通过系统自带的磁盘管理软件进行分区更改时， 需要先将分区删除， 然后再重新建。  这里说的删除分区不是说将分区的数据给删了。 而是卸下，  然后重新挂上。  在这个过程中， 有一个分区是不能卸下的， 他有主页面， 必须将主页面删了才行。  这个是在 我的电脑 属性中的 性能 里， 虚拟内存里面进行设置， 将这个功能关了就可以进行设置了。</p>
 ]]></content>
       <categories>
@@ -678,7 +678,7 @@
   </entry>
   <entry>
     <title>2015-01-20 天气好</title>
-    <url>/supremew/2015/01/20/%E5%A4%A9%E6%B0%94%E5%A5%BD/</url>
+    <url>/2015/01/20/%E5%A4%A9%E6%B0%94%E5%A5%BD/</url>
     <content><![CDATA[<p>最近一个月来， 没有工作安排了， 大家都很消极了。</p>
 ]]></content>
       <categories>
@@ -687,7 +687,7 @@
   </entry>
   <entry>
     <title>2015-01-27 大牛电信 移动 4g</title>
-    <url>/supremew/2015/01/27/%E5%A4%A7%E7%89%9B%E7%94%B5%E4%BF%A1-%E7%A7%BB%E5%8A%A8-4g/</url>
+    <url>/2015/01/27/%E5%A4%A7%E7%89%9B%E7%94%B5%E4%BF%A1-%E7%A7%BB%E5%8A%A8-4g/</url>
     <content><![CDATA[<p>进入大牛工程模式方法 *#*#4636#*#* 在首选网络里选择相应的网络。 在卡1电信卡关闭状态下， 可以将首选网络设成lte， td-scdma，gsm. 我个人觉得在移动4g信号比较弱的地方， 手机不能自动正确的选择移动网络， 所以需要我们手动选择网络， 我相信在4g网络比较好的情况下手机应该可以很好的自动为我们切换到4g网络。</p>
 ]]></content>
       <categories>
@@ -696,7 +696,7 @@
   </entry>
   <entry>
     <title>2015-01-28 美系重坦e5</title>
-    <url>/supremew/2015/01/28/%E7%BE%8E%E7%B3%BB%E9%87%8D%E5%9D%A6e5/</url>
+    <url>/2015/01/28/%E7%BE%8E%E7%B3%BB%E9%87%8D%E5%9D%A6e5/</url>
     <content><![CDATA[<p>今天下午不知道哪个神经出问题了， 充了450元， 直接点出了e5</p>
 ]]></content>
       <categories>
@@ -705,7 +705,7 @@
   </entry>
   <entry>
     <title>2015-01-29 今天突然想出50b。</title>
-    <url>/supremew/2015/01/29/%E4%BB%8A%E5%A4%A9%E7%AA%81%E7%84%B6%E6%83%B3%E5%87%BA50b%E3%80%82/</url>
+    <url>/2015/01/29/%E4%BB%8A%E5%A4%A9%E7%AA%81%E7%84%B6%E6%83%B3%E5%87%BA50b%E3%80%82/</url>
     <content><![CDATA[<p>今天突然心血来潮， 想出一台50b。 目前已经到5级车了。</p>
 ]]></content>
       <categories>
@@ -714,7 +714,7 @@
   </entry>
   <entry>
     <title>2015-01-30 清理库房</title>
-    <url>/supremew/2015/01/30/%E6%B8%85%E7%90%86%E5%BA%93%E6%88%BF/</url>
+    <url>/2015/01/30/%E6%B8%85%E7%90%86%E5%BA%93%E6%88%BF/</url>
     <content><![CDATA[<p>今天按照领导的意思， 将库房整理了， 并对其进行了统计。 对于通氨房是否也要整理， 几个领导商量后决定不整理。</p>
 ]]></content>
       <categories>
@@ -723,7 +723,7 @@
   </entry>
   <entry>
     <title>2015-02-05 努比亚z7max首选网络不能手动选择了</title>
-    <url>/supremew/2015/02/05/%E5%8A%AA%E6%AF%94%E4%BA%9Az7max%E9%A6%96%E9%80%89%E7%BD%91%E7%BB%9C%E4%B8%8D%E8%83%BD%E6%89%8B%E5%8A%A8%E9%80%89%E6%8B%A9%E4%BA%86/</url>
+    <url>/2015/02/05/%E5%8A%AA%E6%AF%94%E4%BA%9Az7max%E9%A6%96%E9%80%89%E7%BD%91%E7%BB%9C%E4%B8%8D%E8%83%BD%E6%89%8B%E5%8A%A8%E9%80%89%E6%8B%A9%E4%BA%86/</url>
     <content><![CDATA[<p>如题， 首选网络以前可以选择的， 经过尝试， 发现这个时候可以先启动卡1电信卡， 然后浏览一下网页， 再次关闭卡1电信卡， 然后就可以在工程模式下对首选网络进行手动选择。  不在会固定在gsm only了。</p>
 ]]></content>
       <categories>
@@ -732,7 +732,7 @@
   </entry>
   <entry>
     <title>2015-02-05 没事干， 给手机升级了</title>
-    <url>/supremew/2015/02/05/%E6%B2%A1%E4%BA%8B%E5%B9%B2%EF%BC%8C-%E7%BB%99%E6%89%8B%E6%9C%BA%E5%8D%87%E7%BA%A7%E4%BA%86/</url>
+    <url>/2015/02/05/%E6%B2%A1%E4%BA%8B%E5%B9%B2%EF%BC%8C-%E7%BB%99%E6%89%8B%E6%9C%BA%E5%8D%87%E7%BA%A7%E4%BA%86/</url>
     <content><![CDATA[<p>今天心血来潮， 给手机把系统升级到了1.64感觉跟以前没什么区别嘛，这都算更新啊。</p>
 ]]></content>
       <categories>
@@ -741,7 +741,7 @@
   </entry>
   <entry>
     <title>2015-03-12 实验续</title>
-    <url>/supremew/2015/03/12/%E5%AE%9E%E9%AA%8C%E7%BB%AD/</url>
+    <url>/2015/03/12/%E5%AE%9E%E9%AA%8C%E7%BB%AD/</url>
     <content><![CDATA[<p>硫酸亚铁 150克， 铁20% 水 500毫升 水浴40°， 溶解完全。 碳酸钠 66克 干料加入上述硫酸亚铁中 真空抽滤， 洗涤3次制成， 加入500毫升水， 制成含铁60克升的浆料。 磷酸 45克， 82%的磷酸 缓慢加入浆料， 其中5克是后来补加的。 反应一段时间后， ph 5 反应抽滤烘干取样。 硫酸根 100ppm， 钠离子 530ppm， 铁 22%</p>
 ]]></content>
       <categories>
@@ -750,7 +750,7 @@
   </entry>
   <entry>
     <title>2015-03-13 实验续</title>
-    <url>/supremew/2015/03/13/%E5%AE%9E%E9%AA%8C%E7%BB%AD/</url>
+    <url>/2015/03/13/%E5%AE%9E%E9%AA%8C%E7%BB%AD/</url>
     <content><![CDATA[<p>整个过程在水浴40°的条件下进行的。 8:41 硫酸亚铁 150克 ， 含铁20% 水500毫升 在200转每分钟搅拌下，搅拌8分钟后溶解完全。 8:49 碳酸钠， 60克 在310转每分钟下， 缓慢加入碳酸钠， 有少许泡沫产生， 液体有点带绿色。 8:56 泡沫消失， 表面有一层带绿色的薄膜， 下层液体呈乳白色， 并调到270转没分钟。 9:09 转速调到230转每分钟 9:24 液体表面的薄膜变成了红棕色， 下层液体还是乳白色。 9:40 开始漂洗5次。 13:00 开始抽滤， 并发现料夜好像比上次有所减少， 并清洗滤饼3次 13:30 用400毫升水将其制成浆料； 在260转每分钟的搅拌下， 缓慢加入42.4克磷酸。 13:52 磷酸加入完全， 有泡沫产生， 将转速调为320转每分钟。 14:04 泡沫消失， 转速调为250转没分钟。 16:00 溶液成浅蓝色， ph 6 16:10 抽滤， 洗涤3次， 烘干送样。抽滤时， 发现烧杯底部有碳酸钠小颗粒。 fe 38.22% 硫酸根 700ppm 钠980ppm</p>
 ]]></content>
       <categories>
@@ -759,7 +759,7 @@
   </entry>
   <entry>
     <title>2015-03-17 实验续</title>
-    <url>/supremew/2015/03/17/%E5%AE%9E%E9%AA%8C%E7%BB%AD-2/</url>
+    <url>/2015/03/17/%E5%AE%9E%E9%AA%8C%E7%BB%AD-2/</url>
     <content><![CDATA[<p>碳酸钠 66克 水 300毫升 在60°下溶解完全 硫酸亚铁 150克 水 500毫升 在60°下溶解完全 将硫酸亚铁溶液加入到碳酸钠溶液中 缓慢加入41.6克磷酸 补加9克磷酸</p>
 ]]></content>
       <categories>
@@ -768,7 +768,7 @@
   </entry>
   <entry>
     <title>2015-03-16 实验续</title>
-    <url>/supremew/2015/03/17/%E5%AE%9E%E9%AA%8C%E7%BB%AD/</url>
+    <url>/2015/03/17/%E5%AE%9E%E9%AA%8C%E7%BB%AD/</url>
     <content><![CDATA[<p>碳酸钠 66克 300毫升水 在60°的情况下溶解完全 硫酸亚铁 150克 500毫升水 在60°的情况下溶解完全 在40的水浴下， 将碳酸钠溶液加入硫酸亚铁中 制成浆后， 加入41.5克磷酸， 然后在补加9克。 铁 33.90% 钠 810ppm 硫酸根 190ppm</p>
 ]]></content>
       <categories>
@@ -777,7 +777,7 @@
   </entry>
   <entry>
     <title>2015-03-28 实验续</title>
-    <url>/supremew/2015/03/28/%E5%AE%9E%E9%AA%8C%E7%BB%AD/</url>
+    <url>/2015/03/28/%E5%AE%9E%E9%AA%8C%E7%BB%AD/</url>
     <content><![CDATA[<p>在关于用碳酸氢钠来替代碳酸氢铵的实验。 在这个过程我已经很好的掌握了其碳酸亚铁的合成， 能够将合成结实的颗粒， 但是没有很好的掌握磷酸亚铁的合成， 不能够合成颗粒结实的， 目前是絮状的。 班文俊也没有合成好的， 看来用碳酸氢钠来合成磷酸亚铁需要重新的摸索。</p>
 ]]></content>
       <categories>
@@ -786,7 +786,7 @@
   </entry>
   <entry>
     <title>2015-03-28 开会感受</title>
-    <url>/supremew/2015/03/28/%E5%BC%80%E4%BC%9A%E6%84%9F%E5%8F%97/</url>
+    <url>/2015/03/28/%E5%BC%80%E4%BC%9A%E6%84%9F%E5%8F%97/</url>
     <content><![CDATA[<p>这次公司在温江箔萃园艺区进行的， 我们两个领导在通知大家开会的时候， 发现有一些不情愿。 这样的会议， 好像就不该我们去的。</p>
 ]]></content>
       <categories>
@@ -795,7 +795,7 @@
   </entry>
   <entry>
     <title>2015-05-13 成交量配合k线</title>
-    <url>/supremew/2015/05/12/%E6%88%90%E4%BA%A4%E9%87%8F%E9%85%8D%E5%90%88k%E7%BA%BF/</url>
+    <url>/2015/05/12/%E6%88%90%E4%BA%A4%E9%87%8F%E9%85%8D%E5%90%88k%E7%BA%BF/</url>
     <content><![CDATA[<p>可以通过成交量来判断一支股票， 的风险性的高低。 如果成交量大了， 应该可以说明这只股票风险性也就大了， 也说明该股票在高位， 当然这个时候的利润也是相当高的。 这个时候， 就可以找个相对好一点的高点卖出。</p>
 ]]></content>
       <categories>
@@ -804,7 +804,7 @@
   </entry>
   <entry>
     <title>2015-05-21 个人对股市的理解</title>
-    <url>/supremew/2015/05/21/%E4%B8%AA%E4%BA%BA%E5%AF%B9%E8%82%A1%E5%B8%82%E7%9A%84%E7%90%86%E8%A7%A3/</url>
+    <url>/2015/05/21/%E4%B8%AA%E4%BA%BA%E5%AF%B9%E8%82%A1%E5%B8%82%E7%9A%84%E7%90%86%E8%A7%A3/</url>
     <content><![CDATA[<p>个人认为， k线配合成交量来， 是非常有用的。比如， 现在我认为成交量很低的时候进入买入股票， 是比较安全的， 但是收益就没有那么高了。 这个时候k线体现出正在调整期， 个人认为应该在调整后期。 股票价格在开始稳步增长时， 成交量就逐渐大了， 当成交量达到一个比较大的量时， 就可以考虑卖掉， 或者只接受长， 不接受跌。 这是一个比较安全的做法。</p>
 ]]></content>
       <categories>
@@ -813,7 +813,7 @@
   </entry>
   <entry>
     <title>2015-05-22 对看好的股票的看法</title>
-    <url>/supremew/2015/05/22/%E5%AF%B9%E7%9C%8B%E5%A5%BD%E7%9A%84%E8%82%A1%E7%A5%A8%E7%9A%84%E7%9C%8B%E6%B3%95/</url>
+    <url>/2015/05/22/%E5%AF%B9%E7%9C%8B%E5%A5%BD%E7%9A%84%E8%82%A1%E7%A5%A8%E7%9A%84%E7%9C%8B%E6%B3%95/</url>
     <content><![CDATA[<p>今天， 我选好的中国建筑， 中国中冶， 中国西电， 当时他们的成交量己经很小， 很长一段时间了。 当时是早上的10点左右， 由于想到要规避当时的市场风险所以没有买。 但是根据他的成交量已经很小， 所以是很安全， 这个也符合我前面的观点。 所以今天有一点后悔。</p>
 ]]></content>
       <categories>
@@ -822,7 +822,7 @@
   </entry>
   <entry>
     <title>2015-05-25 股票心得</title>
-    <url>/supremew/2015/05/25/%E8%82%A1%E7%A5%A8%E5%BF%83%E5%BE%97/</url>
+    <url>/2015/05/25/%E8%82%A1%E7%A5%A8%E5%BF%83%E5%BE%97/</url>
     <content><![CDATA[<p>在上一节说道的用量来判断走势， 我用平均数来判断一天的量， 有问题。 根据这两天的情况来看， 我已经失败了两次了。 总结一下， 通过平均数来判断， 应该乘以个0.5的安全系数。</p>
 ]]></content>
       <categories>
@@ -831,7 +831,7 @@
   </entry>
   <entry>
     <title>2015-05-27 股票心得</title>
-    <url>/supremew/2015/05/27/%E8%82%A1%E7%A5%A8%E5%BF%83%E5%BE%97/</url>
+    <url>/2015/05/27/%E8%82%A1%E7%A5%A8%E5%BF%83%E5%BE%97/</url>
     <content><![CDATA[<p>市盈率还是一个相当重要的指标， 应该配合成交量来看。 低的市盈率上涨空间大一些。</p>
 ]]></content>
       <categories>
@@ -840,7 +840,7 @@
   </entry>
   <entry>
     <title>2015-05-28 股票心得</title>
-    <url>/supremew/2015/05/28/%E8%82%A1%E7%A5%A8%E5%BF%83%E5%BE%97/</url>
+    <url>/2015/05/28/%E8%82%A1%E7%A5%A8%E5%BF%83%E5%BE%97/</url>
     <content><![CDATA[<p>从目前来看， 股市正在牛市末期， 还是应该选择牛股， 抓一抓牛股的尾巴。 才能赚钱， 还有在牛市中你应该去等待某一只股票转化为大牛， 而是应该发现大牛， 就直接上去。 毫不犹豫。</p>
 ]]></content>
       <categories>
@@ -849,7 +849,7 @@
   </entry>
   <entry>
     <title>2015-06-05 股票心得</title>
-    <url>/supremew/2015/06/05/%E8%82%A1%E7%A5%A8%E5%BF%83%E5%BE%97/</url>
+    <url>/2015/06/05/%E8%82%A1%E7%A5%A8%E5%BF%83%E5%BE%97/</url>
     <content><![CDATA[<p>目前， 我开始使用计算机选股了， 多方面考虑， 采用成交量突然变大追涨的方式来选股， 因此还是将进入点设在下午， 来避开一天中的危险时间。 突然变大的成交量，在加上macd的一起选择更好。从今天来看预测成功了 1次</p>
 ]]></content>
       <categories>
@@ -858,7 +858,7 @@
   </entry>
   <entry>
     <title>2015-06-09 股市不能抄底</title>
-    <url>/supremew/2015/06/09/%E8%82%A1%E5%B8%82%E4%B8%8D%E8%83%BD%E6%8A%84%E5%BA%95/</url>
+    <url>/2015/06/09/%E8%82%A1%E5%B8%82%E4%B8%8D%E8%83%BD%E6%8A%84%E5%BA%95/</url>
     <content><![CDATA[<p>抄底很容易被庄家给抄了。</p>
 ]]></content>
       <categories>
@@ -867,7 +867,7 @@
   </entry>
   <entry>
     <title>2015-06-10 同花顺使用心得</title>
-    <url>/supremew/2015/06/10/%E5%90%8C%E8%8A%B1%E9%A1%BA%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</url>
+    <url>/2015/06/10/%E5%90%8C%E8%8A%B1%E9%A1%BA%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</url>
     <content><![CDATA[<p>在用同花顺的条件选股时， 发现选出的股有停牌的， 和创业板的也就是300开头的， 现在几下怎么处理这两种不希望出现的股票。 1:-) 停牌的处理 用date函数取出最近一个交易日的日期， 比如今天是20150608 星期五， 交易开始之前， 他会返回20150607或者停牌前的一个交易日的日期。 如果交易日已经开始或者结束， 他会返回20150608， 以此类推。 如果有只股在当天之前停牌了， 他会返回前一个交易日的日期。 2:-) 创业板的处理 可以用字符串函数取出前3位， 然后与300作比较， 或者是在其中找出300来判断。</p>
 ]]></content>
       <categories>
@@ -876,7 +876,7 @@
   </entry>
   <entry>
     <title>2015-06-16 股票心得</title>
-    <url>/supremew/2015/06/16/%E8%82%A1%E7%A5%A8%E5%BF%83%E5%BE%97/</url>
+    <url>/2015/06/16/%E8%82%A1%E7%A5%A8%E5%BF%83%E5%BE%97/</url>
     <content><![CDATA[<p>前段时间使用了一下， 大智慧， 发现还是没有同花顺好用。 通过星期天的模拟操作， 发现抄波段不行， 很多时候年利润比才10多个点。 所以我还是决定搞超短线。 现在选股标准。 1.小幅跳空高开。 2.预测成交量是前一日的两倍以上。 3.前两日小幅上涨。 4.在第二天尽量以开盘价出。</p>
 ]]></content>
       <categories>
@@ -885,7 +885,7 @@
   </entry>
   <entry>
     <title>2015-06-17 股票心得</title>
-    <url>/supremew/2015/06/17/%E8%82%A1%E7%A5%A8%E5%BF%83%E5%BE%97/</url>
+    <url>/2015/06/17/%E8%82%A1%E7%A5%A8%E5%BF%83%E5%BE%97/</url>
     <content><![CDATA[<p>股票的价格上涨与否， 就像一根弹簧， 压得厉害， 长得越凶。 因此对于长线， 在熊市或震荡期跌的最厉害的， 反弹也就最厉害。 在牛市压得最厉害的， 长得月厉害。 还得有明显的反弹迹象</p>
 ]]></content>
       <categories>
@@ -894,7 +894,7 @@
   </entry>
   <entry>
     <title>2015-07-14 股票心得</title>
-    <url>/supremew/2015/07/14/%E8%82%A1%E7%A5%A8%E5%BF%83%E5%BE%97/</url>
+    <url>/2015/07/14/%E8%82%A1%E7%A5%A8%E5%BF%83%E5%BE%97/</url>
     <content><![CDATA[<p>目前为止， 我理解到， 作为投资分为价值投资， 和价格投资。 价值投资是指价格在价值之下而进行的投资， 价格投资是指价格在价值之上， 而进行的投资。 而价值是怎么确定的呢？ 我们通常是把一种货物在长时间的交易过程中的平均价格看为这种货物的价值。因此像平均线的价格， 在某种意义上能够反应这种货物的价值。</p>
 ]]></content>
       <categories>
@@ -903,7 +903,7 @@
   </entry>
   <entry>
     <title>2015-07-14 股票心得2</title>
-    <url>/supremew/2015/07/14/%E8%82%A1%E7%A5%A8%E5%BF%83%E5%BE%972/</url>
+    <url>/2015/07/14/%E8%82%A1%E7%A5%A8%E5%BF%83%E5%BE%972/</url>
     <content><![CDATA[<p>在抄底过程中， 当成本率达到85时， 必须出， 不出的话危险性很大， 除非是经过大跌很长一段时间， 否则必须出。 因为当达到成本价后很多倍套牢的， 会选择这个时候出。</p>
 ]]></content>
       <categories>
@@ -912,7 +912,7 @@
   </entry>
   <entry>
     <title>2015-07-15 套牢盘和获利盘</title>
-    <url>/supremew/2015/07/15/%E5%A5%97%E7%89%A2%E7%9B%98%E5%92%8C%E8%8E%B7%E5%88%A9%E7%9B%98/</url>
+    <url>/2015/07/15/%E5%A5%97%E7%89%A2%E7%9B%98%E5%92%8C%E8%8E%B7%E5%88%A9%E7%9B%98/</url>
     <content><![CDATA[<p>通常认为， 成交价格在其价值之上的可以成为套牢盘， 成交价格在其价值之下的可以称为获利盘。 因此可以用套牢率来衡量被套多少， 如果一只股其套牢率非常高， 也就是对于价值投资的来说， 获利能力就越强。 在因此可以俩编辑指标， 来衡量。 随着获利盘的增加， 套牢盘的减少， 抛压也随着增加， 这个时候股价的波动就会变得扑朔迷离的， 看不清。 如果有利好消息的出现的话， 股价应该会向高走， 但是随着科学信息技术的发展， 我们获得消息的能力提高的同时， 我们获得假消息的能力也提高了， 再加上庄家可能会在消息来临后进行大洗牌， 洗牌后才有拉伸的可能。因此在这样的情况下， 稳健的投资者会选择离开。 激进行的投资者可能会选择既有利好消息， 也有股价明显下跌的股进行入手， 因为大部分庄家不会把蛋糕分你一份。因此他们会选择在股价跌的最猛的情况下入手。 这样一来， 你的利好消息必须可靠性要高， 否则就是伟大的接盘侠。</p>
 ]]></content>
       <categories>
@@ -921,7 +921,7 @@
   </entry>
   <entry>
     <title>2015-07-26 如何评估一只股票的价值</title>
-    <url>/supremew/2015/07/26/%E5%A6%82%E4%BD%95%E8%AF%84%E4%BC%B0%E4%B8%80%E5%8F%AA%E8%82%A1%E7%A5%A8%E7%9A%84%E4%BB%B7%E5%80%BC/</url>
+    <url>/2015/07/26/%E5%A6%82%E4%BD%95%E8%AF%84%E4%BC%B0%E4%B8%80%E5%8F%AA%E8%82%A1%E7%A5%A8%E7%9A%84%E4%BB%B7%E5%80%BC/</url>
     <content><![CDATA[<p>在前面提到的通过长时间的交易， 来评价一只股票的真实价值。 但是还有没有其他的方法来， 评价一只股票的真实价值。</p>
 ]]></content>
       <categories>
@@ -930,7 +930,7 @@
   </entry>
   <entry>
     <title>2015-07-27 朋友与同事</title>
-    <url>/supremew/2015/07/27/%E6%9C%8B%E5%8F%8B%E4%B8%8E%E5%90%8C%E4%BA%8B/</url>
+    <url>/2015/07/27/%E6%9C%8B%E5%8F%8B%E4%B8%8E%E5%90%8C%E4%BA%8B/</url>
     <content><![CDATA[<p>同事是指在一起上班工作的人， 只是在工作时， 才有交集的。 朋友是指在工作生活中都有交集的人， 且有一定的情感。 同事只会在工作上给与一定的帮助， 并且不能伤害到他自身一点点利益。 朋友呢， 有时候在帮助你时， 伤害到了他一定利益， 而利益也是他乐于付出的。 今天算是明白， 我的两个领导是我的同事， 仅此而已。 今天的事算是我的过错， 是我看错了。以后得改改这个坏毛病。</p>
 ]]></content>
       <categories>
@@ -939,7 +939,7 @@
   </entry>
   <entry>
     <title>2015-07-27 碳酸锂</title>
-    <url>/supremew/2015/07/27/%E7%A2%B3%E9%85%B8%E9%94%82/</url>
+    <url>/2015/07/27/%E7%A2%B3%E9%85%B8%E9%94%82/</url>
     <content><![CDATA[<p>交过报告， 通过qq发送的。</p>
 ]]></content>
       <categories>
@@ -948,7 +948,7 @@
   </entry>
   <entry>
     <title>2015-07-27 股票心得</title>
-    <url>/supremew/2015/07/27/%E8%82%A1%E7%A5%A8%E5%BF%83%E5%BE%97/</url>
+    <url>/2015/07/27/%E8%82%A1%E7%A5%A8%E5%BF%83%E5%BE%97/</url>
     <content><![CDATA[<p>真是验证了， 福兮祸所依， 祸兮福所倚。也说明了否极泰来， 泰极生否。 在上周三周四出了各地保险等要入市， 这周一直接就下跌的厉害， 这应该是各地基金快完成了派发， 而基金等想很快拿回股票， 所以通过媒体来放出好消息完成最后的派发， 也顺势打压。 在跟着imf的利空消息配合， 完成了打压。</p>
 ]]></content>
       <categories>
@@ -957,7 +957,7 @@
   </entry>
   <entry>
     <title>2015-08-09 股票心得记录</title>
-    <url>/supremew/2015/08/09/%E8%82%A1%E7%A5%A8%E5%BF%83%E5%BE%97%E8%AE%B0%E5%BD%95/</url>
+    <url>/2015/08/09/%E8%82%A1%E7%A5%A8%E5%BF%83%E5%BE%97%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<p>越是跌得厉害， 越是有机会， 选择好的股票。</p>
 ]]></content>
       <categories>
@@ -966,7 +966,7 @@
   </entry>
   <entry>
     <title>2015-08-14 股票心得</title>
-    <url>/supremew/2015/08/14/%E8%82%A1%E7%A5%A8%E5%BF%83%E5%BE%97/</url>
+    <url>/2015/08/14/%E8%82%A1%E7%A5%A8%E5%BF%83%E5%BE%97/</url>
     <content><![CDATA[<p>绝对的低价股， 在入手后他可能会随着大盘的涨跌大起大落。 这个时候就得耐得住寂寞。 等到庄家来时， 根本就没有机会上车。 就算没有庄的入住， 长期下去也不会亏的。</p>
 ]]></content>
       <categories>
@@ -975,7 +975,7 @@
   </entry>
   <entry>
     <title>2015-08-28 手机系统软件的删除</title>
-    <url>/supremew/2015/08/28/%E6%89%8B%E6%9C%BA%E7%B3%BB%E7%BB%9F%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%88%A0%E9%99%A4/</url>
+    <url>/2015/08/28/%E6%89%8B%E6%9C%BA%E7%B3%BB%E7%BB%9F%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%88%A0%E9%99%A4/</url>
     <content><![CDATA[<p>手机型号， z7 max 系统， 官方版本 安卓5.1.1 v3.55 要删除浏览器， 视界， 等系统软件可以先获得root权限， 然后安装lbe， 然后开启主动防御， 再进行系统软件的删除。</p>
 ]]></content>
       <categories>
@@ -984,7 +984,7 @@
   </entry>
   <entry>
     <title>2015-10-23 新能源汽车受重视</title>
-    <url>/supremew/2015/10/23/%E6%96%B0%E8%83%BD%E6%BA%90%E6%B1%BD%E8%BD%A6%E5%8F%97%E9%87%8D%E8%A7%86/</url>
+    <url>/2015/10/23/%E6%96%B0%E8%83%BD%E6%BA%90%E6%B1%BD%E8%BD%A6%E5%8F%97%E9%87%8D%E8%A7%86/</url>
     <content><![CDATA[<p>10月23中国人民日报， 提出重视性新能源汽车， 重k线来看9月15号开始， 新能源有起色。</p>
 ]]></content>
       <categories>
@@ -993,7 +993,7 @@
   </entry>
   <entry>
     <title>2016-01-19 股票心得</title>
-    <url>/supremew/2016/01/19/%E8%82%A1%E7%A5%A8%E5%BF%83%E5%BE%97/</url>
+    <url>/2016/01/19/%E8%82%A1%E7%A5%A8%E5%BF%83%E5%BE%97/</url>
     <content><![CDATA[<p>懂得知足。 现在定下一条规则: 大盘跌3个点， 跑。 板块指数跌4个点， 跑。 个股跌5个点， 跑。 个股连续跌5个点， 跑。</p>
 ]]></content>
       <categories>
@@ -1002,7 +1002,7 @@
   </entry>
   <entry>
     <title>2016-01-21 股票心得</title>
-    <url>/supremew/2016/01/21/%E8%82%A1%E7%A5%A8%E5%BF%83%E5%BE%97/</url>
+    <url>/2016/01/21/%E8%82%A1%E7%A5%A8%E5%BF%83%E5%BE%97/</url>
     <content><![CDATA[<p>散户， 在没有大资金， 没有提前消息和先进的理论知识的情况下， 如何才能在股市中取得收益呢？ 最简单的一点， 就是顺势而为， 大环境。 目前， 全球的经济已经紧密的连续在一起了， 特别是前三大经济体， 美国， 日本， 中国。 在中国股市上， 做多， 最起码， 这三大股指不应该跌， 然后再够进热门优质股。 持股待涨。</p>
 ]]></content>
       <categories>
@@ -1011,7 +1011,7 @@
   </entry>
   <entry>
     <title>2016-08-18 努比亚手机刷机技巧</title>
-    <url>/supremew/2016/08/18/%E5%8A%AA%E6%AF%94%E4%BA%9A%E6%89%8B%E6%9C%BA%E5%88%B7%E6%9C%BA%E6%8A%80%E5%B7%A7/</url>
+    <url>/2016/08/18/%E5%8A%AA%E6%AF%94%E4%BA%9A%E6%89%8B%E6%9C%BA%E5%88%B7%E6%9C%BA%E6%8A%80%E5%B7%A7/</url>
     <content><![CDATA[<p>在给努比亚手机进行刷机升级时， 应该尽量用其官方的recover， 以提高刷机成功率。 当然如果是耍第三方制作或修改的刷机包时， 就应该采用第三方的recover， 比如沉默之星说修改的。 这里试着发布一张图片<img src="http://supermew.qiniudn.com/%E5%B0%8F%E8%8F%9C%E8%8B%97.jpg"> <a href="http://supermew.qiniudn.com/%E5%85%B0%E5%8D%9A%E5%9F%BA%E9%87%8C.jpg"><img src="http://supermew.qiniudn.com/%E5%85%B0%E5%8D%9A%E5%9F%BA%E9%87%8C.jpg" alt="兰博基里"></a><a href="http://supermew.qiniudn.com/%E9%A9%AC%E8%93%89.jpg"><img src="http://supermew.qiniudn.com/%E9%A9%AC%E8%93%89.jpg" alt="马蓉"></a></p>
 ]]></content>
       <categories>
@@ -1020,7 +1020,7 @@
   </entry>
   <entry>
     <title>2016-08-20 poco相机</title>
-    <url>/supremew/2016/08/20/poco%E7%9B%B8%E6%9C%BA/</url>
+    <url>/2016/08/20/poco%E7%9B%B8%E6%9C%BA/</url>
     <content><![CDATA[<p>这也他妈的扯淡吧， 老子以前注册过poco账号的， 那只进去的时候没有看清楚， 他妈的又用手机注册了。 手机号被占用了， 现在手机号在pc上用不了手机号登录。</p>
 ]]></content>
       <categories>
@@ -1029,7 +1029,7 @@
   </entry>
   <entry>
     <title>2016-08-20 wordpress搬家呀</title>
-    <url>/supremew/2016/08/20/wordpress%E6%90%AC%E5%AE%B6%E5%91%80/</url>
+    <url>/2016/08/20/wordpress%E6%90%AC%E5%AE%B6%E5%91%80/</url>
     <content><![CDATA[<p>搞了一天一夜，终于把博客从国外给请回来了。现在就来说说曲折的经历吧。 由于服务器太慢和及其不稳定导致了很多错误的操作。 在原数据库中直接备份导出， 时没有注意到编码的问题， 导致了在新的数据库中中文出现了乱码和字体不能识别， 数据操作语言的不兼容。我最终是通过如下解决问题的，首先在原数据库中使用操作菜单下的整理功能， 也就是整理字体， 字体选择utf-8-genar-ci， 然后才导出。再导入到新的数据库中。 导入过后， 还需要通过sql命令将原来的域名替换为现在的域名， 或者在安装好后再wordpress的仪表盘里的设置中将原来的域名改为新的域名。</p>
 ]]></content>
       <categories>
@@ -1038,7 +1038,7 @@
   </entry>
   <entry>
     <title>2016-08-20 测试七牛插件</title>
-    <url>/supremew/2016/08/21/%E6%B5%8B%E8%AF%95%E4%B8%83%E7%89%9B%E6%8F%92%E4%BB%B6/</url>
+    <url>/2016/08/21/%E6%B5%8B%E8%AF%95%E4%B8%83%E7%89%9B%E6%8F%92%E4%BB%B6/</url>
     <content><![CDATA[<p><a href="http://supermew.top/wordpress/wp-content/uploads/2016/08/marong.jpg"><img src="http://supermew.top/wordpress/wp-content/uploads/2016/08/marong-250x300.jpg" alt="marong"></a> 这就是我们熟知的马蓉了哦。</p>
 ]]></content>
       <categories>
@@ -1047,7 +1047,7 @@
   </entry>
   <entry>
     <title>2016-08-21 写博客时，应该注意这些</title>
-    <url>/supremew/2016/08/21/%E5%86%99%E5%8D%9A%E5%AE%A2%E6%97%B6%EF%BC%8C%E5%BA%94%E8%AF%A5%E6%B3%A8%E6%84%8F%E8%BF%99%E4%BA%9B/</url>
+    <url>/2016/08/21/%E5%86%99%E5%8D%9A%E5%AE%A2%E6%97%B6%EF%BC%8C%E5%BA%94%E8%AF%A5%E6%B3%A8%E6%84%8F%E8%BF%99%E4%BA%9B/</url>
     <content><![CDATA[<p>第一， 在发布图片时， 一定要经过图片处理， 使他成为比较合适网络发布的图片。再次进入可视编辑， 才能应用七牛图床来进行发图片。 第二， 不要有事没事都发一些带有图片的博文， 因为自建博客网站， 的网络空间有限， 图片等流量有限。 第三， 一定要记录一些有意义的事情， 不要记录一些煤球有意义的事</p>
 ]]></content>
       <categories>
@@ -1056,7 +1056,7 @@
   </entry>
   <entry>
     <title>2016-08-21 刚学会用软件美化软件</title>
-    <url>/supremew/2016/08/21/%E5%88%9A%E5%AD%A6%E4%BC%9A%E7%94%A8%E8%BD%AF%E4%BB%B6%E7%BE%8E%E5%8C%96%E8%BD%AF%E4%BB%B6/</url>
+    <url>/2016/08/21/%E5%88%9A%E5%AD%A6%E4%BC%9A%E7%94%A8%E8%BD%AF%E4%BB%B6%E7%BE%8E%E5%8C%96%E8%BD%AF%E4%BB%B6/</url>
     <content><![CDATA[<p>这里打一下广告啊，poco是很不错的选择哟 <a href="http://supermew.qiniudn.com/wp/2016/08/21/MA201608210621380060-01-0003060b1.jpg"><img src="http://supermew.qiniudn.com/wp/2016/08/21/MA201608210621380060-01-0003060b1.jpg" alt="2016-08-21 刚学会用软件美化软件" title="2016-08-21 刚学会用软件美化软件"></a></p>
 ]]></content>
       <categories>
@@ -1065,7 +1065,7 @@
   </entry>
   <entry>
     <title>2016-08-21 测试经过改进后的七牛图床</title>
-    <url>/supremew/2016/08/21/%E6%B5%8B%E8%AF%95%E7%BB%8F%E8%BF%87%E6%94%B9%E8%BF%9B%E5%90%8E%E7%9A%84%E4%B8%83%E7%89%9B%E5%9B%BE%E5%BA%8A/</url>
+    <url>/2016/08/21/%E6%B5%8B%E8%AF%95%E7%BB%8F%E8%BF%87%E6%94%B9%E8%BF%9B%E5%90%8E%E7%9A%84%E4%B8%83%E7%89%9B%E5%9B%BE%E5%BA%8A/</url>
     <content><![CDATA[<p>我将七牛图床插件中的uptoken.php文件作了一个小小修改， 级将option变量中加入了一个日期 <a href="http://supermew.qiniudn.com/wp/2016/08/21/liebao.jpg"><img src="http://supermew.qiniudn.com/wp/2016/08/21/liebao.jpg" alt="2016-08-21 测试经过改进后的七牛图床" title="2016-08-21 测试经过改进后的七牛图床"></a> 这张图， 就是用来测试我加入时间是否有误的， 通过测试， 好像是没有什么错误。</p>
 ]]></content>
       <categories>
@@ -1074,7 +1074,7 @@
   </entry>
   <entry>
     <title>2016-08-21 测试经过编辑后的图片</title>
-    <url>/supremew/2016/08/21/%E6%B5%8B%E8%AF%95%E7%BB%8F%E8%BF%87%E7%BC%96%E8%BE%91%E5%90%8E%E7%9A%84%E5%9B%BE%E7%89%87/</url>
+    <url>/2016/08/21/%E6%B5%8B%E8%AF%95%E7%BB%8F%E8%BF%87%E7%BC%96%E8%BE%91%E5%90%8E%E7%9A%84%E5%9B%BE%E7%89%87/</url>
     <content><![CDATA[<p>再来看看<a href="http://supermew.qiniudn.com/wp/2016/08/21/IMG_20160818_215705.jpg"><img src="http://supermew.qiniudn.com/wp/2016/08/21/IMG_20160818_215705.jpg" alt="2016-08-21 测试经过编辑后的图片" title="2016-08-21 测试经过编辑后的图片"></a> <a href="http://supermew.qiniudn.com/wp/2016/08/21/MA201608210618570066-52-000000000.jpg"><img src="http://supermew.qiniudn.com/wp/2016/08/21/MA201608210618570066-52-000000000.jpg" alt="2016-08-21 测试经过编辑后的图片" title="2016-08-21 测试经过编辑后的图片"></a></p>
 ]]></content>
       <categories>
@@ -1083,7 +1083,7 @@
   </entry>
   <entry>
     <title>2016-08-21 测试通过手机写博客</title>
-    <url>/supremew/2016/08/21/%E6%B5%8B%E8%AF%95%E9%80%9A%E8%BF%87%E6%89%8B%E6%9C%BA%E5%86%99%E5%8D%9A%E5%AE%A2/</url>
+    <url>/2016/08/21/%E6%B5%8B%E8%AF%95%E9%80%9A%E8%BF%87%E6%89%8B%E6%9C%BA%E5%86%99%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<p>先输入一段文字。 <a href="http://supermew.qiniudn.com/wp/2016/08/21/MA201608201943000065-01-000073000.jpg"><img src="http://supermew.qiniudn.com/wp/2016/08/21/MA201608201943000065-01-000073000.jpg" alt="2016-08-21 测试通过手机写博客" title="2016-08-21 测试通过手机写博客"></a></p>
 ]]></content>
       <categories>
@@ -1092,7 +1092,7 @@
   </entry>
   <entry>
     <title>2016-08-21  美图秀秀修改后的图片</title>
-    <url>/supremew/2016/08/21/%E7%BE%8E%E5%9B%BE%E7%A7%80%E7%A7%80%E4%BF%AE%E6%94%B9%E5%90%8E%E7%9A%84%E5%9B%BE%E7%89%87/</url>
+    <url>/2016/08/21/%E7%BE%8E%E5%9B%BE%E7%A7%80%E7%A7%80%E4%BF%AE%E6%94%B9%E5%90%8E%E7%9A%84%E5%9B%BE%E7%89%87/</url>
     <content><![CDATA[<p>来一段文字 <img src="http://supermew.qiniudn.com/wp/2016/08/21/mt1.jpg" alt="2016-08-21  美图秀秀修改后的图片" title="2016-08-21  美图秀秀修改后的图片"><img src="http://supermew.qiniudn.com/wp/2016/08/21/mt2.jpg" alt="2016-08-21  美图秀秀修改后的图片" title="2016-08-21  美图秀秀修改后的图片"><img src="http://supermew.qiniudn.com/wp/2016/08/21/mt3.jpg" alt="2016-08-21  美图秀秀修改后的图片" title="2016-08-21  美图秀秀修改后的图片"><img src="http://supermew.qiniudn.com/wp/2016/08/21/mt4.jpg" alt="2016-08-21  美图秀秀修改后的图片" title="2016-08-21  美图秀秀修改后的图片"></p>
 ]]></content>
       <categories>
@@ -1101,7 +1101,7 @@
   </entry>
   <entry>
     <title>2016-08-22 wordpress发送邮件的问题</title>
-    <url>/supremew/2016/08/22/wordpress%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <url>/2016/08/22/wordpress%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>在想让他人在自己的wordpress博客上注册账号的时候遇上了一个问题， 就是别人注册了但是不能收到邮件， 遇上去问度娘， 得到一个config stmp。 但是我到wordpress的插件站去看， 发现这个东西已经过时了， 已经有5年没有更新了， 同时也发现一个叫bws-smtp的插件， 时最近一个月更新的， 看了一下介绍， 好像是跟config stmp功能差不多的， 于是下载下来安装到自己的wordpress上去测试了一下， 发下完全可以。 于是我绑定了我qq邮箱的stmp， 然后就可以发送email出去了。</p>
 ]]></content>
       <categories>
@@ -1110,7 +1110,7 @@
   </entry>
   <entry>
     <title>2016-08-22 努比亚手机联系人问题</title>
-    <url>/supremew/2016/08/22/%E5%8A%AA%E6%AF%94%E4%BA%9A%E6%89%8B%E6%9C%BA%E8%81%94%E7%B3%BB%E4%BA%BA%E9%97%AE%E9%A2%98/</url>
+    <url>/2016/08/22/%E5%8A%AA%E6%AF%94%E4%BA%9A%E6%89%8B%E6%9C%BA%E8%81%94%E7%B3%BB%E4%BA%BA%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>努比亚联系人， 在刚刷玩了几， 恢复了联系人之后， 发现联系人有些不能进行编辑， 特别是那些有微信的联系人， 一编辑就提示没有什么权限。 这个问题经过多次尝试， 发现可以通过在联系人的设置，账户， 里面把微信的账户删掉， 就行了。</p>
 ]]></content>
       <categories>
@@ -1119,7 +1119,7 @@
   </entry>
   <entry>
     <title>2016-08-22  如果这样可以完成很好的</title>
-    <url>/supremew/2016/08/22/%E5%A6%82%E6%9E%9C%E8%BF%99%E6%A0%B7%E5%8F%AF%E4%BB%A5%E5%AE%8C%E6%88%90%E5%BE%88%E5%A5%BD%E7%9A%84/</url>
+    <url>/2016/08/22/%E5%A6%82%E6%9E%9C%E8%BF%99%E6%A0%B7%E5%8F%AF%E4%BB%A5%E5%AE%8C%E6%88%90%E5%BE%88%E5%A5%BD%E7%9A%84/</url>
     <content><![CDATA[<p>如果这样能够很好的， 写博客， 这多好啊！ 现在来发一张图片试试看 <img src="http://supermew.qiniudn.com/wp/2016/08/22/mt1.jpg" alt="2016-08-22 如果这样可以完成很好的" title="2016-08-22 如果这样可以完成很好的"></p>
 ]]></content>
       <categories>
@@ -1128,7 +1128,7 @@
   </entry>
   <entry>
     <title>2016-08-22 手机上第一篇</title>
-    <url>/supremew/2016/08/22/%E6%89%8B%E6%9C%BA%E4%B8%8A%E7%AC%AC%E4%B8%80%E7%AF%87/</url>
+    <url>/2016/08/22/%E6%89%8B%E6%9C%BA%E4%B8%8A%E7%AC%AC%E4%B8%80%E7%AF%87/</url>
     <content><![CDATA[<p>测试能不能发成功<img src="http://supermew.top/wordpress/wp-content/uploads/2016/08/20140728185131_KrGS3.jpg"></p>
 ]]></content>
       <categories>
@@ -1137,7 +1137,7 @@
   </entry>
   <entry>
     <title>2016-08-22 测试通过网易新闻， 来发现素材</title>
-    <url>/supremew/2016/08/22/%E6%B5%8B%E8%AF%95%E9%80%9A%E8%BF%87%E7%BD%91%E6%98%93%E6%96%B0%E9%97%BB%EF%BC%8C-%E6%9D%A5%E5%8F%91%E7%8E%B0%E7%B4%A0%E6%9D%90/</url>
+    <url>/2016/08/22/%E6%B5%8B%E8%AF%95%E9%80%9A%E8%BF%87%E7%BD%91%E6%98%93%E6%96%B0%E9%97%BB%EF%BC%8C-%E6%9D%A5%E5%8F%91%E7%8E%B0%E7%B4%A0%E6%9D%90/</url>
     <content><![CDATA[<p>里约奥运略够哦。<a href="http://2016.163.com/photoview/6TT00005/147561.html#p=BUUS1IPM6TT00005"><img src="http://img5.cache.netease.com/photo/0005/2016-08-20/BUUS1IPM6TT00005.jpg"></a></p>
 ]]></content>
       <categories>
@@ -1146,7 +1146,7 @@
   </entry>
   <entry>
     <title>2016-08-22 非流通股与流通股之比</title>
-    <url>/supremew/2016/08/22/%E9%9D%9E%E6%B5%81%E9%80%9A%E8%82%A1%E4%B8%8E%E6%B5%81%E9%80%9A%E8%82%A1%E4%B9%8B%E6%AF%94/</url>
+    <url>/2016/08/22/%E9%9D%9E%E6%B5%81%E9%80%9A%E8%82%A1%E4%B8%8E%E6%B5%81%E9%80%9A%E8%82%A1%E4%B9%8B%E6%AF%94/</url>
     <content><![CDATA[<p>关于这个比例值， 就目前来分析， 发现这个比值根本没有实际用途的。 个人觉着， 在同样的偏离度下， 现价与平均价的比值越大越好， 越大说明股价上涨速率也就越大， 短时间盈利也就越大。</p>
 ]]></content>
       <categories>
@@ -1155,7 +1155,7 @@
   </entry>
   <entry>
     <title>2016-08-23 又被关了！</title>
-    <url>/supremew/2016/08/23/%E5%8F%88%E8%A2%AB%E5%85%B3%E4%BA%86%EF%BC%81/</url>
+    <url>/2016/08/23/%E5%8F%88%E8%A2%AB%E5%85%B3%E4%BA%86%EF%BC%81/</url>
     <content><![CDATA[<p><img src="http://supermew.qiniudn.com/wp/2016/08/23/Screenshot_2016-08-23-19-58-42.png" alt="2016-08-23 又被关了！" title="2016-08-23 又被关了！"></p>
 ]]></content>
       <categories>
@@ -1164,7 +1164,7 @@
   </entry>
   <entry>
     <title>2016-08-25 二八定律</title>
-    <url>/supremew/2016/08/25/%E4%BA%8C%E5%85%AB%E5%AE%9A%E5%BE%8B/</url>
+    <url>/2016/08/25/%E4%BA%8C%E5%85%AB%E5%AE%9A%E5%BE%8B/</url>
     <content><![CDATA[<p>不错， 最近真的发现了， 二八定律是真的啊， 能够在股市上挣钱的就只有20%， 抛弃年利率， 只有15%的人能够真正盈利哟。</p>
 ]]></content>
       <categories>
@@ -1173,7 +1173,7 @@
   </entry>
   <entry>
     <title>2016-08-26 这也免费？</title>
-    <url>/supremew/2016/08/26/%E8%BF%99%E4%B9%9F%E5%85%8D%E8%B4%B9%EF%BC%9F/</url>
+    <url>/2016/08/26/%E8%BF%99%E4%B9%9F%E5%85%8D%E8%B4%B9%EF%BC%9F/</url>
     <content><![CDATA[<p><img src="http://supermew.qiniudn.com/wp/2016/08/26/34fae6cd7b899e513369a8d040a7d933c9950d0a.jpg" alt="2016-08-26 这也免费？" title="2016-08-26 这也免费？"></p>
 ]]></content>
       <categories>
@@ -1182,7 +1182,7 @@
   </entry>
   <entry>
     <title>2016-08-27 还我一个清爽夏天</title>
-    <url>/supremew/2016/08/28/%E8%BF%98%E6%88%91%E4%B8%80%E4%B8%AA%E6%B8%85%E7%88%BD%E5%A4%8F%E5%A4%A9/</url>
+    <url>/2016/08/28/%E8%BF%98%E6%88%91%E4%B8%80%E4%B8%AA%E6%B8%85%E7%88%BD%E5%A4%8F%E5%A4%A9/</url>
     <content><![CDATA[<p><img src="http://supermew.qiniudn.com/wp/2016/08/28/Screenshot_2016-08-28-11-44-41.png" alt="2016-08-27 还我一个清爽夏天" title="2016-08-27 还我一个清爽夏天"></p>
 ]]></content>
       <categories>
@@ -1191,7 +1191,7 @@
   </entry>
   <entry>
     <title>2016-09-02 酒店</title>
-    <url>/supremew/2016/09/02/%E9%85%92%E5%BA%97/</url>
+    <url>/2016/09/02/%E9%85%92%E5%BA%97/</url>
     <content><![CDATA[<p>8623， 住在管家酒店， 这个酒店妈的， 贵还不用说， 条件还非常的差</p>
 ]]></content>
       <categories>
@@ -1200,7 +1200,7 @@
   </entry>
   <entry>
     <title>2016-10-01 wordpress重新搭建！</title>
-    <url>/supremew/2016/10/01/wordpress%E9%87%8D%E6%96%B0%E6%90%AD%E5%BB%BA%EF%BC%81/</url>
+    <url>/2016/10/01/wordpress%E9%87%8D%E6%96%B0%E6%90%AD%E5%BB%BA%EF%BC%81/</url>
     <content><![CDATA[<ol>
 <li> 图片测试，修改七牛图床插件的uptoken文件中的option变量中的savekey变量， 加入时间函数。<img src="http://supermew.qiniudn.com/wp2016/10/01/%E6%88%AA%E5%9B%BE.png" alt="2016-10-01 wordpress重新搭建！" title="2016-10-01 wordpress重新搭建！"></li>
 <li> 说说博客在搬到另外一个地方时， 当通过sql导入原来所备份的资料后， 还需要将wp_option中的site和home进行相应的修改， 才能进行顺利的登陆！（百度上有很多搬家的资料很多， 但是应该选择通过sql进行备份（在进行备份是得注意在本分文件名中著名原来sql数据表中的字集， 一般选择utf-8-uinicode-ci， 进行搬家， 这样才不会出现乱码等问题， 和兼容问题）。</li>
@@ -1214,7 +1214,7 @@
   </entry>
   <entry>
     <title>2016-10-02 php学习笔记1</title>
-    <url>/supremew/2016/10/02/php%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/</url>
+    <url>/2016/10/02/php%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/</url>
     <content><![CDATA[<p>在代码中，引用正在执行的文件的文件名用 <code>__FILE__</code> 常量。 <code>__LINE__</code> 当前运行的行; 在用simplexml进行xml操作时， 在写xml时， 他是将xml进行了url编码后才保存的。 在采用DOM来创建xml文件时。 </p>
 <figure class="highlight php"><figcaption><span>title:php</span></figcaption><table><tr><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$dom</span> = <span class="hljs-keyword">new</span> <span class="hljs-title class_">DOMDocument</span>(); <br><span class="hljs-variable">$nameElement</span> = <span class="hljs-variable">$dom</span>-&gt;<span class="hljs-title function_ invoke__">createElemnt</span>(<span class="hljs-string">&quot;name&quot;</span>); <br><br><span class="hljs-comment">//这时可以向name添加子元素 </span><br><span class="hljs-comment">//如果采用new DOMElement来创建一个元素时, 在没有加入 </span><br><span class="hljs-comment">//没有将新创建的元素添加到某个元素， 将新创建的元素作为某个元素的 </span><br><span class="hljs-comment">//子元素的话， 是不能向新创建的元素添加子元素的， 否则会出现致命错误 </span><br><span class="hljs-comment">//用上面的方法创建元素时， 就没有这个限制。 </span><br><span class="hljs-comment">//如下面的代码就是错误的 </span><br><br><span class="hljs-variable">$element</span> = <span class="hljs-keyword">new</span> <span class="hljs-title class_">DOMElement</span>(<span class="hljs-string">&quot;xy&quot;</span>);<br><span class="hljs-variable">$element</span>-&gt;<span class="hljs-title function_ invoke__">appendChild</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">DOMElement</span>(<span class="hljs-string">&quot;dfkj&quot;</span>)); <br><span class="hljs-variable">$dom</span>-&gt;<span class="hljs-title function_ invoke__">appendChild</span>(<span class="hljs-variable">$element</span>); <span class="hljs-comment">//如果修改成这样就不会出现这个错误了 </span><br><span class="hljs-variable">$element</span> = <span class="hljs-keyword">new</span> <span class="hljs-title class_">DOMElement</span>(<span class="hljs-string">&quot;xy&quot;</span>); <br><span class="hljs-variable">$dom</span>-&gt;<span class="hljs-title function_ invoke__">appendChild</span>(<span class="hljs-variable">$element</span>); <br><span class="hljs-variable">$element</span>-&gt;<span class="hljs-title function_ invoke__">appendChild</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">DOMElement</span>(<span class="hljs-string">&quot;dfkj&quot;</span>)); <br></code></pre></td></tr></table></figure>
 
@@ -1228,7 +1228,7 @@
   </entry>
   <entry>
     <title>2016-10-07 php中require和include的区别</title>
-    <url>/supremew/2016/10/07/php%E4%B8%ADrequire%E5%92%8Cinclude%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
+    <url>/2016/10/07/php%E4%B8%ADrequire%E5%92%8Cinclude%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
     <content><![CDATA[<p>require 和include 的工作方式都是一样， 唯一的区别就是：他们处理错误的方式不同。require当遇到错误时， 直接抛出fatal 错误； 而include抛出的却是warning错误。 include和require跟C语言中的include区别是： php中的include和require将引用的文件运行一次； 而C语言则是将引用的文件简单的复制到引用文件。</p>
 ]]></content>
       <categories>
@@ -1238,7 +1238,7 @@
   </entry>
   <entry>
     <title>2016-10-10 今天去开飞报到了</title>
-    <url>/supremew/2016/10/10/%E4%BB%8A%E5%A4%A9%E5%8E%BB%E5%BC%80%E9%A3%9E%E6%8A%A5%E5%88%B0%E4%BA%86/</url>
+    <url>/2016/10/10/%E4%BB%8A%E5%A4%A9%E5%8E%BB%E5%BC%80%E9%A3%9E%E6%8A%A5%E5%88%B0%E4%BA%86/</url>
     <content><![CDATA[<p>1. 见了一下李总， 领导等。 感觉开飞， 还是有一些变化。 直观感觉而已。 2.想找李总， 谈一下工资问题。 也征求了一下， 蔡领导的意见。 就还没有找李总谈了。</p>
 ]]></content>
       <categories>
@@ -1247,7 +1247,7 @@
   </entry>
   <entry>
     <title>2016-10-11 请假后第二天上班</title>
-    <url>/supremew/2016/10/11/%E8%AF%B7%E5%81%87%E5%90%8E%E7%AC%AC%E4%BA%8C%E5%A4%A9%E4%B8%8A%E7%8F%AD/</url>
+    <url>/2016/10/11/%E8%AF%B7%E5%81%87%E5%90%8E%E7%AC%AC%E4%BA%8C%E5%A4%A9%E4%B8%8A%E7%8F%AD/</url>
     <content><![CDATA[<p>1.  上午没有具体事情， 东一下， 西一下， 说白了就是等着吃中午饭 2. 下午也是同样的情况 3. 据安排， 我的工作任务还是磷酸铁锂， 据说合成方式改了， 经碳酸亚铁， 加磷酸， 氢氧化锂直接合成前驱体， 然后通过喷雾干燥得到磷酸铁锂前驱体</p>
 ]]></content>
       <categories>
@@ -1256,7 +1256,7 @@
   </entry>
   <entry>
     <title>2016-10-11 风机选型</title>
-    <url>/supremew/2016/10/11/%E9%A3%8E%E6%9C%BA%E9%80%89%E5%9E%8B/</url>
+    <url>/2016/10/11/%E9%A3%8E%E6%9C%BA%E9%80%89%E5%9E%8B/</url>
     <content><![CDATA[<p>行程 20m， 空间5000m3， 水帘宽1.75, 高1.6m。 进气间间宽2.4m， 高2.25m。 选型过程计算 初定风速为0.5m/s（软风， 能够带走um级的风尘）， 车间通风截面积为车间通风向的截面积的60%。 初步计算需要2台 18000m3/h的排风扇（能够达到使混料产生的粉尘， 但是这样大的排风扇， 需要一个不小的空气净化器） 选型后， 出现下列问题 1. 通过了解水帘是用于降温的， 而对于除尘是没有多大的效果， 对于除尘型的水帘（见过专利有提过， 但是没有见过有卖家） 2. 两台排风扇的排风量比较大， 在密闭的生产环境下， 水帘的处的风速很大， 并且湿度比较大， 有影响混料后的水分的； 风速过大让本来具有很弱的除尘效果的水帘， 更没有除尘效果了。 有如下建议：</p>
 <ol>
 <li> 购入一台空气净化器， 防尘服具， 排风扇；</li>
@@ -1272,7 +1272,7 @@
   </entry>
   <entry>
     <title>2016-10-13-1 新工艺磷酸铁锂样品</title>
-    <url>/supremew/2016/10/13/1-%E6%96%B0%E5%B7%A5%E8%89%BA%E7%A3%B7%E9%85%B8%E9%93%81%E9%94%82%E6%A0%B7%E5%93%81/</url>
+    <url>/2016/10/13/1-%E6%96%B0%E5%B7%A5%E8%89%BA%E7%A3%B7%E9%85%B8%E9%93%81%E9%94%82%E6%A0%B7%E5%93%81/</url>
     <content><![CDATA[<blockquote>
 <p>今天看见了新工艺的磷酸铁锂乳液样品。 <img src="http://supermew.qiniudn.com/wp/2016/10/13/2016101301.jpg" alt="2016-10-13-1 新工艺磷酸铁锂样品" title="2016-10-13-1 新工艺磷酸铁锂样品"></p>
 </blockquote>
@@ -1283,7 +1283,7 @@
   </entry>
   <entry>
     <title>2016-10-13 腾邦国际终于回本了</title>
-    <url>/supremew/2016/10/13/%E8%85%BE%E9%82%A6%E5%9B%BD%E9%99%85%E7%BB%88%E4%BA%8E%E5%9B%9E%E6%9C%AC%E4%BA%86/</url>
+    <url>/2016/10/13/%E8%85%BE%E9%82%A6%E5%9B%BD%E9%99%85%E7%BB%88%E4%BA%8E%E5%9B%9E%E6%9C%AC%E4%BA%86/</url>
     <content><![CDATA[<p>如题， 经过53天的持股！ 终于回本了<img src="http://supermew.qiniudn.com/wp/2016/10/13/Screenshot_2016-10-13-13-48-24.png" alt="2016-10-13 腾邦国际终于回本了" title="2016-10-13 腾邦国际终于回本了"></p>
 ]]></content>
       <categories>
@@ -1292,7 +1292,7 @@
   </entry>
   <entry>
     <title>2016-11-10 合成磷酸铁锂过程中， 保护气氮气和二氧化碳的区别</title>
-    <url>/supremew/2016/11/10/%E5%90%88%E6%88%90%E7%A3%B7%E9%85%B8%E9%93%81%E9%94%82%E8%BF%87%E7%A8%8B%E4%B8%AD%EF%BC%8C-%E4%BF%9D%E6%8A%A4%E6%B0%94%E6%B0%AE%E6%B0%94%E5%92%8C%E4%BA%8C%E6%B0%A7%E5%8C%96%E7%A2%B3/</url>
+    <url>/2016/11/10/%E5%90%88%E6%88%90%E7%A3%B7%E9%85%B8%E9%93%81%E9%94%82%E8%BF%87%E7%A8%8B%E4%B8%AD%EF%BC%8C-%E4%BF%9D%E6%8A%A4%E6%B0%94%E6%B0%AE%E6%B0%94%E5%92%8C%E4%BA%8C%E6%B0%A7%E5%8C%96%E7%A2%B3/</url>
     <content><![CDATA[<p>目前发现， 用二氧化碳作为保护气比用氮气时， 母液中的铁含量要高一些。 采用氮气时， 铁损失率小于0.01； 采用二氧化碳时， 铁损失率在0.02~0.05。 目前， 磷酸铁锂合成的基本情况， 比例为1.00:1.:1.00</p>
 ]]></content>
       <categories>
@@ -1301,7 +1301,7 @@
   </entry>
   <entry>
     <title>2016-11-11 测试</title>
-    <url>/supremew/2016/11/11/%E6%B5%8B%E8%AF%95/</url>
+    <url>/2016/11/11/%E6%B5%8B%E8%AF%95/</url>
     <content><![CDATA[<p>看看， 怎么了， 气场变了！<img src="http://supermew.qiniudn.com/wp/2016/11/11/UC_Photo_001.jpg" alt="2016-11-11 测试" title="2016-11-11 测试"></p>
 ]]></content>
       <categories>
@@ -1310,7 +1310,7 @@
   </entry>
   <entry>
     <title>2016-11-14 老板回复</title>
-    <url>/supremew/2016/11/14/%E6%88%B4%E8%80%81%E6%9D%BF%E5%91%A8%E6%8A%A5%E5%9B%9E%E5%A4%8D/</url>
+    <url>/2016/11/14/%E6%88%B4%E8%80%81%E6%9D%BF%E5%91%A8%E6%8A%A5%E5%9B%9E%E5%A4%8D/</url>
     <content><![CDATA[<p><img src="http://supermew.qiniudn.com/wp/2016/11/14/mmexport1479103016376.jpg" alt="2016-11-14 戴老板周报回复" title="2016-11-14 戴老板周报回复"></p>
 ]]></content>
       <categories>
@@ -1319,7 +1319,7 @@
   </entry>
   <entry>
     <title>2016-11-14 股票心得</title>
-    <url>/supremew/2016/11/14/%E8%82%A1%E7%A5%A8%E5%BF%83%E5%BE%97/</url>
+    <url>/2016/11/14/%E8%82%A1%E7%A5%A8%E5%BF%83%E5%BE%97/</url>
     <content><![CDATA[<p>紧密度要大于40，换手率应该采用7天或者10天的平均换手。</p>
 ]]></content>
       <categories>
@@ -1328,7 +1328,7 @@
   </entry>
   <entry>
     <title>2016-12-01 通过安卓自带联系人同步的相关设置</title>
-    <url>/supremew/2016/12/01/%E9%80%9A%E8%BF%87%E5%AE%89%E5%8D%93%E8%87%AA%E5%B8%A6%E8%81%94%E7%B3%BB%E4%BA%BA%E5%90%8C%E6%AD%A5%E7%9A%84%E7%9B%B8%E5%85%B3%E8%AE%BE%E7%BD%AE/</url>
+    <url>/2016/12/01/%E9%80%9A%E8%BF%87%E5%AE%89%E5%8D%93%E8%87%AA%E5%B8%A6%E8%81%94%E7%B3%BB%E4%BA%BA%E5%90%8C%E6%AD%A5%E7%9A%84%E7%9B%B8%E5%85%B3%E8%AE%BE%E7%BD%AE/</url>
     <content><![CDATA[<p>安卓联系人里面， 姓名的输入框里面， 应该将姓和名中间输入一个空格。 在联系人的通用设置中将储存地址设置成qq邮箱。</p>
 <p><img src="http://supermew.qiniudn.com/wp/2016/12/01/Screenshot_2016-12-01-20-24-28.png" alt="2016-12-01 通过安卓自带联系人同步的相关设置" title="2016-12-01 通过安卓自带联系人同步的相关设置"></p>
 <span id="more"></span>
@@ -1340,7 +1340,7 @@
   </entry>
   <entry>
     <title>2016-12-02 喷雾干燥</title>
-    <url>/supremew/2016/12/02/%E5%96%B7%E9%9B%BE%E5%B9%B2%E7%87%A5/</url>
+    <url>/2016/12/02/%E5%96%B7%E9%9B%BE%E5%B9%B2%E7%87%A5/</url>
     <content><![CDATA[<p>1. 喷雾干燥能够制造10-200um的粉粒 2. 容积传热系数低， 58-116w每平米每k</p>
 ]]></content>
       <categories>
@@ -1349,7 +1349,7 @@
   </entry>
   <entry>
     <title>2016-12-07 磷酸铁锂电池组装全过程</title>
-    <url>/supremew/2016/12/07/%E7%A3%B7%E9%85%B8%E9%93%81%E9%94%82%E7%94%B5%E6%B1%A0%E7%BB%84%E8%A3%85%E5%85%A8%E8%BF%87%E7%A8%8B/</url>
+    <url>/2016/12/07/%E7%A3%B7%E9%85%B8%E9%93%81%E9%94%82%E7%94%B5%E6%B1%A0%E7%BB%84%E8%A3%85%E5%85%A8%E8%BF%87%E7%A8%8B/</url>
     <content><![CDATA[<ol>
 <li> 准备正极材料浆料</li>
 <li> 使用相关设备对正极材料浆料进行干燥造粒（粒径最好在10－１００ｕｍ），　可以选择用喷雾干燥设备，　或其他设备。</li>
@@ -1370,7 +1370,7 @@
   </entry>
   <entry>
     <title>20160619--20160623 日志.md</title>
-    <url>/supremew/2017/06/19/20160619-20160623-%E6%97%A5%E5%BF%97-md/</url>
+    <url>/2017/06/19/20160619-20160623-%E6%97%A5%E5%BF%97-md/</url>
     <content><![CDATA[<p><a href="http://note.youdao.com/noteshare?id=11405c7eb4291350bc3a85f533ab5660">http://note.youdao.com/noteshare?id=11405c7eb4291350bc3a85f533ab5660</a></p>
 ]]></content>
       <categories>
@@ -1379,7 +1379,7 @@
   </entry>
   <entry>
     <title>2017-03-12   创建ubuntu快捷方式遇到的问题， 及解决办法</title>
-    <url>/supremew/2017/03/12/%E5%88%9B%E5%BB%BAubuntu%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%EF%BC%8C-%E5%8F%8A%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
+    <url>/2017/03/12/%E5%88%9B%E5%BB%BAubuntu%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%EF%BC%8C-%E5%8F%8A%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
     <content><![CDATA[<p>1. 当创建快捷方式时， 如果该程序有 gtk, gnome 等命令时， 建议把 Terminal 设呈 false, 2. 如果要创建快捷方式的程序本来就是命令行工具的话， 建议把 Terminal 设成 true, 否则会不能成功的打开， 3. 如果出现提示不信任等错误时， 多半是因为创建的快捷方式文件 (.desktop) 没有执行权限</p>
 ]]></content>
       <categories>
@@ -1388,7 +1388,7 @@
   </entry>
   <entry>
     <title>2017-03-13-2 vim， ubuntu 使用笔记</title>
-    <url>/supremew/2017/03/13/vim%EF%BC%8C-ubuntu-%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/</url>
+    <url>/2017/03/13/vim%EF%BC%8C-ubuntu-%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p>ubuntu 在 8.04 开始就已经将 /dev/sda 和 /dev/hdb 和二唯一了， 现在没有 /dev/hda 这样的 的表达式了。而且建议在以后的分区表达过程中尽量用 uuid 表示。 在 grub2 不管时 ide 还是 scis 等都只有 (hd0）或者什么来表示硬盘。 找到了一个小工具， 可以更改 ubuntu 的默认字体其名字为 Unity Tweaty Tool 。 目前 我将我的字体大多都改成了文泉驿字体， 只有窗口标题的字体还保留为 ubuntu 字体。 vim 今天在而然的机会中发现了中文在指定列后自动插入换行符， 那就是通过在 formatoptions 的后面加上小写的 m。 wordpress 在撰写博客的时候要适时的加入 more 标签。这是为了防止过长的首页博客文章看起来很烦 人。这样也会给来看你博客的人一种厌烦的感觉。 因此在适当的时候加入 more 标签。</p>
 ]]></content>
       <categories>
@@ -1398,7 +1398,7 @@
   </entry>
   <entry>
     <title>2017-03-14  我的vim基本配置文件</title>
-    <url>/supremew/2017/03/14/%E6%88%91%E7%9A%84vim%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</url>
+    <url>/2017/03/14/%E6%88%91%E7%9A%84vim%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</url>
     <content><![CDATA[<p>配置文件内容如下 <code>&quot;显示行号 set number &quot;设置文本宽度 set textwidth=80 &quot;设置文本编码 &quot;set fileencodings=utf-8 set encoding=utf-8 set fileencoding=utf-8 set fileencodings=utf-8,default,ucs-bom,latin1 &quot;解决gvim菜单栏出现乱码的问题 &quot;自动对中文文档进行规范化 autocmd BufWritePre *.markdown,*.md,*.text,*.txt,*.wiki,*.cnx call PanGuSpacing() &quot;设定默认工作路径 cd ~/Documents/note &quot;设定不备份文件 &quot;set nobackup &quot;:au BufWritePre * let &amp;bex = &#39;-&#39; . strftime(&quot;%Y%b%d%X&quot;) . &#39;~&#39; &quot;设定不高亮显示搜索 set nohlsearch &quot;在输入多字节字符时(unicode编码超过255的， 如中文）， 也段行插入换行， 这是我以 &quot;前想找的功能终于找到 &quot;了 &quot;在链接行时， 如果行前， 行后是unicode超过255的字符， 那么就不在中间加入空格。 set formatoptions+=mM set expandtab set softtabstop=8 set shiftwidth=8 &quot;设定开启文件类型检测功能 filetype on &quot;设置标尺 set ruler &quot;设置gvim的字体， 字号 set guifont=WenQuanYi\ Micro\ Hei\ Mono\ 16 &quot;设置语法高亮 syntax on</code></p>
 ]]></content>
       <categories>
@@ -1408,7 +1408,7 @@
   </entry>
   <entry>
     <title>2017-03-15-1  /etc/rc.local 中部分命令无法执行</title>
-    <url>/supremew/2017/03/15/1-etcrc-local-%E4%B8%AD%E9%83%A8%E5%88%86%E5%91%BD%E4%BB%A4%E6%97%A0%E6%B3%95%E6%89%A7%E8%A1%8C/</url>
+    <url>/2017/03/15/1-etcrc-local-%E4%B8%AD%E9%83%A8%E5%88%86%E5%91%BD%E4%BB%A4%E6%97%A0%E6%B3%95%E6%89%A7%E8%A1%8C/</url>
     <content><![CDATA[<p>大家都知道，在 Linux 发行版本中，如需添加随系统启动而自动运行的服务，只需在 /etc/rc.local 脚本文件中添加即可，但如果其运行的命令或程序不带路径，如下 <code>#!/bin/bash distccd --user nobody --allow 10.10.98.0/24 --log-file=/var/log/distcc.log --verbose --daemon loadavg -s 10.10.98.20 &gt;/dev/null 2&gt;&amp;1</code> 注：distccd、loadavg 命令存放在 /usr/local/bin/ 目录下 在系统执行这些命令时将报错，无法正常执行！究其原因：由于在执行 rc.local 脚本时， PATH 环境变量未全部初始化，目录 /usr/local/bin/ 需在执行 /etc/profile 后才被添加 到环境变量 PATH 中。故，在 /etc/rc.local 执行 /usr/local/bin/ 目录中的命令需要使 用绝对路径。 现在要设置登录自启动， 已经不用在rc.local中写命令了。具体看下面的文档。 <a href="https://specifications.freedesktop.org/autostart-spec/autostart-spec-latest.html">auto start spection</a></p>
 ]]></content>
       <categories>
@@ -1417,7 +1417,7 @@
   </entry>
   <entry>
     <title>2017-03-15 ubuntu 设置开机自启动程序</title>
-    <url>/supremew/2017/03/15/ubuntu-%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E5%8A%A8%E7%A8%8B%E5%BA%8F/</url>
+    <url>/2017/03/15/ubuntu-%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E5%8A%A8%E7%A8%8B%E5%BA%8F/</url>
     <content><![CDATA[<p>系统：ubuntu 16.04 LTS 在网上收到通过在 /etc/rc.local 中加入要自启动的命令， 但是我加入了好像没有作用。 因此我又在网上找到了这么一个工具， 其实就是 ubuntu 16.04 LTS 自带的程序， 因此到 网上去找办法时， 应该现在自己机器上找找有没有相应的程序可以办到。 方法就是：在 dash 中， 搜索 startup 就会出现你想要的工具， 通过搜索 gnome session 也可以办到的。</p>
 ]]></content>
       <categories>
@@ -1426,7 +1426,7 @@
   </entry>
   <entry>
     <title>2017-04-27 draftsight 2017 或者 draftsight 2018输入法问题</title>
-    <url>/supremew/2017/04/27/draftsight-%E8%BE%93%E5%85%A5%E6%B3%95%E9%97%AE%E9%A2%98/</url>
+    <url>/2017/04/27/draftsight-%E8%BE%93%E5%85%A5%E6%B3%95%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<h3 id="draftsight-2017输入法问题"><a href="#draftsight-2017输入法问题" class="headerlink" title="draftsight 2017输入法问题"></a>draftsight 2017输入法问题</h3><p>最近为了搞定 draftsight 2017 1 版，在网上查了好几周的资料也没有解决了。但是我 <a href="http://www.fcitx-im.org/">www.fcitx-im.org</a> 找到了原因，因为 draftsight 绑定的是 draftsight 自己的 qt 库。 同时也提供了解决办法的线索，但是因为自己的智商问题，没能解决。 今天我翻墙去 google 查看到了解决加法。</p>
 <blockquote>
 <p>Ok it’s an app bundle with its own qt, so it’s not surprise it doesn’t work with systems fcitx qt5 plugin. I tried to analyze the path and library it used, seems it can work with xenial’s fcitx-qt5. You can try to get two required files from libfcitx-qt5-1 and fcitx-fronted-qt5 and put them under : /opt/dassault-systemes/DraftSight/Libraries/libFcitxQt5DBusAddons.so.1 /opt/dassault-systemes/DraftSight/QtPlugIns/platforminputcontexts/libfcitxplatforminputcontextplugin.so I can use fcitx in draftsight on my system. It works. Thank you very much.</p>
@@ -1455,7 +1455,7 @@
   </entry>
   <entry>
     <title>2017-04-28 fcitx五笔会出现乱码的情况</title>
-    <url>/supremew/2017/04/28/fcitx%E4%BA%94%E7%AC%94%E4%BC%9A%E5%87%BA%E7%8E%B0%E4%B9%B1%E7%A0%81%E7%9A%84%E6%83%85%E5%86%B5/</url>
+    <url>/2017/04/28/fcitx%E4%BA%94%E7%AC%94%E4%BC%9A%E5%87%BA%E7%8E%B0%E4%B9%B1%E7%A0%81%E7%9A%84%E6%83%85%E5%86%B5/</url>
     <content><![CDATA[<p>通过查阅多方信息后得知， 可能是因为我采用了wubi-large-table， 这个码表包含了cjk字符， 而我采用的文泉驿还没有完全包含cjk字符。 今天晚上验证了我的想法, 将wubi-large给purge掉, 然后找到了~/.config/fcitx/table目录下, 发现了它们的配置文件, 然后我就将它们做了适当的调整后就再没有发现出现个别侯选词出现方框的现象了.</p>
 ]]></content>
       <categories>
@@ -1464,7 +1464,7 @@
   </entry>
   <entry>
     <title>2017-05-09  股市心得</title>
-    <url>/supremew/2017/05/05/%E6%B5%8B%E8%AF%95/</url>
+    <url>/2017/05/05/%E6%B5%8B%E8%AF%95/</url>
     <content><![CDATA[<p>什么样的行情采用什么样的手段 1）整体行情在暴跌的情况下可以采用抄底的做法。 2）在慢牛或者慢熊的情况下， 应该顺势而为。采用相对较长的周期考虑可以利用均线系统</p>
 ]]></content>
       <categories>
@@ -1473,7 +1473,7 @@
   </entry>
   <entry>
     <title>2017-05-05 磷酸铁锂</title>
-    <url>/supremew/2017/05/05/%E7%A3%B7%E9%85%B8%E9%93%81%E9%94%82/</url>
+    <url>/2017/05/05/%E7%A3%B7%E9%85%B8%E9%93%81%E9%94%82/</url>
     <content><![CDATA[<p>测试</p>
 ]]></content>
       <categories>
@@ -1482,7 +1482,7 @@
   </entry>
   <entry>
     <title>2017-05-26 docbook5 转换pdf 过程中遇见的中文不能正常显示的问题</title>
-    <url>/supremew/2017/05/26/docbook5-%E8%BD%AC%E6%8D%A2pdf-%E8%BF%87%E7%A8%8B%E4%B8%AD%E9%81%87%E8%A7%81%E7%9A%84%E4%B8%AD%E6%96%87%E4%B8%8D%E8%83%BD%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <url>/2017/05/26/docbook5-%E8%BD%AC%E6%8D%A2pdf-%E8%BF%87%E7%A8%8B%E4%B8%AD%E9%81%87%E8%A7%81%E7%9A%84%E4%B8%AD%E6%96%87%E4%B8%8D%E8%83%BD%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>首先说说Docbook5转换的过程. 1. ubuntu环境下下载运行如下命令. <code>sudo apt-get install docbook5-xml docboot-xsl-ns xsltproc fop</code> 2. 简单按照docbook5的写法, 写个简单的书, 作为操作例子. 3. 运行如下命令将书转换为.fo, 其中的**代表合适的文件名 <code>xsltproc **.xsl **.fo</code> 4. 运行如下命令将**.fo文件转换为**.pdf <code>fop -c **.xml **.fo **.pdf</code> 注意**.xml是一个以xml形式写的一个配制文件, 在你安装了fop时, 它会送一个配置文件, 其名为fop.xconf(这里的fop.xconf文件就是xml文件, 你也可以像上面那样用其它的**.xml代替), 其中是一个配置文件, 说明得很清楚. 就采用该配制文件. 在上面的fop -c **.xml的命令中需要指明这个配制文件. 只要你采用的字体是你系统你面自带的话, 就用不着配置什么了. 如果你要自己配置**.xml这个配制文件的话, 或者是向其中注册新的字体的话(其实也不用, 只要将要注册的字体安装到你的系统里, 就采用他的示例配置文件fop.xconf就可以了.). 就需要用fop-ttfreader程序了(这个程序会在你安装fop的时候自动的安装的)来生成metrics-xml文件, 在配制字体的时候需要用到. 具体命令如下: <code>fop-ttfreader **.ttf **.xml; 如果是采用**.ttc这样的多字体文件的话, 需要这样用. fop-ttfreader **.ttc **.xml; 然后它就会提示你, 这个文件中包含几种字体, 它们分别叫什么名字(输出的信息中会出现一些警告信息, 这个信息不用管, 只要提到了包含几种字体, 分别是什么就行了. ) fop-ttfreader -ttcname fontname **.ttc **.xml 这样就可以了.</code> 我以前玩过fop, 当时也是这样解决问题的, 但是久了久了没有用, 导致今天又花了这么多时间去解决这个问题, 主要当时的记录笔记没有写到一个永久的博文上, 才使今天浪费这么时间, 可见平时还是应该多记录. 以便以后少浪费时间. 多提一下, 在配置文件中提到的术语简单说一下. metrics-url:字体矩阵文件,根据ttc文件生成,kerning为是否允许字间矩调整 font-triplet:字体三元组:名字,样式,重量 更具体的配制文件有说明(fop.xconf中是英文的说明), 有个文章作过作过仔细的研究, <a href="http://www.vtimes.net/blog/article/add-chinese-font-for-fop-summary.html">对配置文件的仔细研究</a> fop的man中提到的三个配置文件是不能用的， 主要是没有事例， 因此最好不要用。还有在linux下， 中文字体一般采用ttc的格式， 并且其中含有多个字体。</p>
 ]]></content>
       <categories>
@@ -1491,7 +1491,7 @@
   </entry>
   <entry>
     <title>2017-06-20 20170619-20170623 日志</title>
-    <url>/supremew/2017/06/20/20170619-20170623-%E6%97%A5%E5%BF%97/</url>
+    <url>/2017/06/20/20170619-20170623-%E6%97%A5%E5%BF%97/</url>
     <content><![CDATA[<hr>
 <h2 id="星期一"><a href="#星期一" class="headerlink" title="星期一"></a>星期一</h2><p><strong>日期：</strong> 2017-06-19<br><strong>作者：</strong> 王兴龙<br><strong>记录：</strong></p>
 <h3 id="1-硫酸铵浓缩实验"><a href="#1-硫酸铵浓缩实验" class="headerlink" title="1. 硫酸铵浓缩实验"></a>1. 硫酸铵浓缩实验</h3><h4 id="1-1-实验装置"><a href="#1-1-实验装置" class="headerlink" title="1.1 实验装置"></a>1.1 实验装置</h4><ul>
@@ -1580,7 +1580,7 @@
   </entry>
   <entry>
     <title>2017-06-20 磷酸锂涂布</title>
-    <url>/supremew/2017/06/20/%E7%A3%B7%E9%85%B8%E9%94%82%E6%B6%82%E5%B8%83/</url>
+    <url>/2017/06/20/%E7%A3%B7%E9%85%B8%E9%94%82%E6%B6%82%E5%B8%83/</url>
     <content><![CDATA[<h3 id="磷酸铁锂油性"><a href="#磷酸铁锂油性" class="headerlink" title="磷酸铁锂油性"></a>磷酸铁锂油性</h3><h4 id="溶剂"><a href="#溶剂" class="headerlink" title="溶剂"></a>溶剂</h4><ul>
 <li><p>n-甲基吡络烷酮</p>
 <ul>
@@ -1653,7 +1653,7 @@
   </entry>
   <entry>
     <title>2017-06-22  实验过滤机型的验证实验</title>
-    <url>/supremew/2017/06/22/%E5%AE%9E%E9%AA%8C%E8%BF%87%E6%BB%A4%E6%9C%BA%E5%9E%8B%E7%9A%84%E9%AA%8C%E8%AF%81%E5%AE%9E%E9%AA%8C/</url>
+    <url>/2017/06/22/%E5%AE%9E%E9%AA%8C%E8%BF%87%E6%BB%A4%E6%9C%BA%E5%9E%8B%E7%9A%84%E9%AA%8C%E8%AF%81%E5%AE%9E%E9%AA%8C/</url>
     <content><![CDATA[<h3 id="0-验证实验"><a href="#0-验证实验" class="headerlink" title="0. 验证实验"></a>0. 验证实验</h3><p>验证上海五研提供的实验设备， 看是否能够满足过滤钽酸亚铁母液处理液， 和氢氧化锂结晶母液， 氢氧化锂碳化母液。</p>
 <span id="more"></span>
 <h3 id="1-待处理母液及设备"><a href="#1-待处理母液及设备" class="headerlink" title="1. 待处理母液及设备"></a>1. 待处理母液及设备</h3><ul>
@@ -1788,7 +1788,7 @@
   </entry>
   <entry>
     <title>2017-07-11 域名解决和搬家心得</title>
-    <url>/supremew/2017/07/11/%E5%9F%9F%E5%90%8D%E8%A7%A3%E5%86%B3%E5%92%8C%E6%90%AC%E5%AE%B6%E5%BF%83%E5%BE%97/</url>
+    <url>/2017/07/11/%E5%9F%9F%E5%90%8D%E8%A7%A3%E5%86%B3%E5%92%8C%E6%90%AC%E5%AE%B6%E5%BF%83%E5%BE%97/</url>
     <content><![CDATA[<h3 id="1-域名解决"><a href="#1-域名解决" class="headerlink" title="1 域名解决"></a>1 域名解决</h3><p>由于之前我的域名是在主机屋买的域名， 然后该域名是新网的。 由于实名制的原因， 在主机网实名认证， 一直处于审核中， 最后得知， .top域名需要将域名的管理权转到新网才能通过实名认证， 因此本人最后将域名通过主机屋的前台小妹转到了新网， 整个过程简单， 没有任何阻力。 但是在域名解析时遇到了问题， 下面就将具体问题， 和解决办法记录下来。</p>
 <span id="more"></span>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs null">在新网的域名解析参数如下填写的<br>CName www.supermew.top  服务器地址<br>本来我想通过再增加如下的参数， 但是新网添加不了<br>CName supermew.top 服务器地址<br><br>最后通过客服得知要这样写就可以了<br>CName *.supermew.top 服务器地址<br>但是后来我通过验证后， 得知不行， 在新网的官网中关于*号的解释也不对。 他的解释是将所有的子域名都解析到某个服务器地址上， 除了特别指定的子域名。<br></code></pre></td></tr></table></figure>
@@ -1813,7 +1813,7 @@
   </entry>
   <entry>
     <title>2017-07-11 转型后的锂辉石矿提锂的想法</title>
-    <url>/supremew/2017/07/11/%E8%BD%AC%E5%9E%8B%E5%90%8E%E7%9A%84%E9%94%82%E8%BE%89%E7%9F%B3%E7%9F%BF%E6%8F%90%E9%94%82%E7%9A%84%E6%83%B3%E6%B3%95/</url>
+    <url>/2017/07/11/%E8%BD%AC%E5%9E%8B%E5%90%8E%E7%9A%84%E9%94%82%E8%BE%89%E7%9F%B3%E7%9F%BF%E6%8F%90%E9%94%82%E7%9A%84%E6%83%B3%E6%B3%95/</url>
     <content><![CDATA[<h3 id="0-简单构想"><a href="#0-简单构想" class="headerlink" title="0. 简单构想"></a>0. 简单构想</h3><ol>
 <li> 将通过煅烧转型后的锂辉石精矿通过球磨机磨细。</li>
 <li> 将磨细后的精矿粉和碳酸钠溶液或者氢氧化钙溶液混合</li>
@@ -1828,7 +1828,7 @@
   </entry>
   <entry>
     <title>2017-07-11 这里简单的规定一下， 以后撰写博客的规定。</title>
-    <url>/supremew/2017/07/11/%E8%BF%99%E9%87%8C%E7%AE%80%E5%8D%95%E7%9A%84%E8%A7%84%E5%AE%9A%E4%B8%80%E4%B8%8B%EF%BC%8C-%E4%BB%A5%E5%90%8E%E6%92%B0%E5%86%99%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%A7%84%E5%AE%9A%E3%80%82/</url>
+    <url>/2017/07/11/%E8%BF%99%E9%87%8C%E7%AE%80%E5%8D%95%E7%9A%84%E8%A7%84%E5%AE%9A%E4%B8%80%E4%B8%8B%EF%BC%8C-%E4%BB%A5%E5%90%8E%E6%92%B0%E5%86%99%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%A7%84%E5%AE%9A%E3%80%82/</url>
     <content><![CDATA[<h3 id="0-简单的撰写规则"><a href="#0-简单的撰写规则" class="headerlink" title="0 简单的撰写规则"></a>0 简单的撰写规则</h3><p>简单的规定一下博客的规则： 1. 如果博文比较长的话， 先写一个三号标题， 以0 开始编号， 把博文要说的事大致描述一下， 然后再后面继续详细的描述问题。</p>
 <ol>
 <li>博文在撰写过程中， 不写大标题， 小的标题都采用 3 号标贴来撰写。</li>
@@ -1841,7 +1841,7 @@
   </entry>
   <entry>
     <title>2017-07-21 markdown中的三线表格</title>
-    <url>/supremew/2017/07/21/markdown%E4%B8%AD%E7%9A%84%E4%B8%89%E7%BA%BF%E8%A1%A8%E6%A0%BC/</url>
+    <url>/2017/07/21/markdown%E4%B8%AD%E7%9A%84%E4%B8%89%E7%BA%BF%E8%A1%A8%E6%A0%BC/</url>
     <content><![CDATA[<p>title1</p>
 <p>title2</p>
 <p>title3</p>
@@ -1864,7 +1864,7 @@
   </entry>
   <entry>
     <title>2017-07-22 磷酸铁锂正极材料的电性能的提高</title>
-    <url>/supremew/2017/07/22/%E7%A3%B7%E9%85%B8%E9%93%81%E9%94%82%E6%AD%A3%E6%9E%81%E6%9D%90%E6%96%99%E7%9A%84%E7%94%B5%E6%80%A7%E8%83%BD%E7%9A%84%E6%8F%90%E9%AB%98/</url>
+    <url>/2017/07/22/%E7%A3%B7%E9%85%B8%E9%93%81%E9%94%82%E6%AD%A3%E6%9E%81%E6%9D%90%E6%96%99%E7%9A%84%E7%94%B5%E6%80%A7%E8%83%BD%E7%9A%84%E6%8F%90%E9%AB%98/</url>
     <content><![CDATA[<h3 id="简单描述"><a href="#简单描述" class="headerlink" title="简单描述"></a>简单描述</h3><p>提高磷酸铁锂正极材料的电性能， 正对目前这种工艺， 有两种措施可以大大的提高其性能。 一、 可以通过某种手段， 除去经砂磨后的物料中的磁性物质（主要是铁）， 磁性物质的存在对其电性能影响是非常大的。 二、 可以在磷酸铁锂初次充电时， 采用恒压充电， 将其电压稳定在3.4V左右或略高于3.4V， 比如3.4~3.5 在接近放电平台附近进行长时间的冲电， 知道电流减少为0， 或充电电量基本无变化为止。</p>
 <span id="more"></span>
 <h3 id="除去磁性物质"><a href="#除去磁性物质" class="headerlink" title="除去磁性物质"></a>除去磁性物质</h3><p>可以采用高磁场的电磁铁， 进行除磁， 目前市面上有成熟的除磁设备。 在除去磁性物质时， 不能将磷酸铁锂前驱体浆料的固含量调的太高， 否则会导致除磁性物质时， 除不干净。</p>
@@ -1876,7 +1876,7 @@
   </entry>
   <entry>
     <title>2017-08-04 转型后的锂辉石精矿提锂实验</title>
-    <url>/supremew/2017/08/04/%E8%BD%AC%E5%9E%8B%E5%90%8E%E7%9A%84%E9%94%82%E8%BE%89%E7%9F%B3%E7%B2%BE%E7%9F%BF%E6%8F%90%E9%94%82%E5%AE%9E%E9%AA%8C/</url>
+    <url>/2017/08/04/%E8%BD%AC%E5%9E%8B%E5%90%8E%E7%9A%84%E9%94%82%E8%BE%89%E7%9F%B3%E7%B2%BE%E7%9F%BF%E6%8F%90%E9%94%82%E5%AE%9E%E9%AA%8C/</url>
     <content><![CDATA[<h3 id="1-基本原理"><a href="#1-基本原理" class="headerlink" title="1. 基本原理"></a>1. 基本原理</h3><p>将氢氧化钠、石灰、水、转型后的锂辉石精矿粉体调成浆， 然后在高温（120度<del>250度）， 高压（0.2MPA</del>3MPA）下反应， 进行转换反应， 提取出锂（氢氧化锂）</p>
 <span id="more"></span>
 <h3 id="2-实验方案一"><a href="#2-实验方案一" class="headerlink" title="2. 实验方案一"></a>2. 实验方案一</h3><h4 id="2-1-操作过程"><a href="#2-1-操作过程" class="headerlink" title="2.1 操作过程"></a>2.1 操作过程</h4><ol>
@@ -1894,7 +1894,7 @@
   </entry>
   <entry>
     <title>2017-08-09 高温压煮从转型后的锂辉石中提取锂的想法</title>
-    <url>/supremew/2017/08/09/%E9%AB%98%E6%B8%A9%E5%8E%8B%E7%85%AE%E4%BB%8E%E8%BD%AC%E5%9E%8B%E5%90%8E%E7%9A%84%E9%94%82%E8%BE%89%E7%9F%B3%E4%B8%AD%E6%8F%90%E5%8F%96%E9%94%82%E7%9A%84%E6%83%B3%E6%B3%95/</url>
+    <url>/2017/08/09/%E9%AB%98%E6%B8%A9%E5%8E%8B%E7%85%AE%E4%BB%8E%E8%BD%AC%E5%9E%8B%E5%90%8E%E7%9A%84%E9%94%82%E8%BE%89%E7%9F%B3%E4%B8%AD%E6%8F%90%E5%8F%96%E9%94%82%E7%9A%84%E6%83%B3%E6%B3%95/</url>
     <content><![CDATA[<h3 id="想法概述"><a href="#想法概述" class="headerlink" title="想法概述"></a>想法概述</h3><p>从目前的实验数据来看， 在高温、高压下通过加入氧化钙、氢氧化钠等作为添加剂将转型后的锂辉石中的锂以氢氧化锂的形式提取出来的过程中， 其实高温高压下进行压煮， 只是其中一个不是很重要的一步， 关键还是在压煮后， 稀释溶解出锂才是关键。（目前锂的提取率最高才达到 37% ， 而专利上给的数据为 90% 以上， 因此我想压煮根本就不是重要环节。）</p>
 <span id="more"></span>
 <h3 id="详细描述"><a href="#详细描述" class="headerlink" title="详细描述"></a>详细描述</h3><p>因此我想通过压煮以后的物料， 在通过加水将固含量调到 30% 左右以后， 再将物料进入砂磨机进行砂磨， 最后通过禁止分离， 抽滤来提高锂的提取率。 同时我更想尝试， 直接在砂磨下进行反应， 不通过高温压煮， 但是这个想法， 领导们根本就不支持， 不让做。</p>
@@ -1905,7 +1905,7 @@
   </entry>
   <entry>
     <title>2017-08-11 测试视屏</title>
-    <url>/supremew/2017/08/11/%E6%B5%8B%E8%AF%95%E8%A7%86%E5%B1%8F/</url>
+    <url>/2017/08/11/%E6%B5%8B%E8%AF%95%E8%A7%86%E5%B1%8F/</url>
     <content><![CDATA[<h3 id="0-概述"><a href="#0-概述" class="headerlink" title="0 概述"></a>0 概述</h3><p>主要是说在博文中引入视频， 以及遇到的问题。</p>
 <span id="more"></span>
 <h3 id="1-采用html5的-video标签，-插入mp4视频"><a href="#1-采用html5的-video标签，-插入mp4视频" class="headerlink" title="1. 采用html5的 video标签， 插入mp4视频"></a>1. 采用html5的 video标签， 插入mp4视频</h3><p>kan bu jian</p>
@@ -1919,7 +1919,7 @@
   </entry>
   <entry>
     <title>2017-08-12 ubuntu 的桌面管理系统坏掉了。</title>
-    <url>/supremew/2017/08/12/ubuntu-%E7%9A%84%E6%A1%8C%E9%9D%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E5%9D%8F%E6%8E%89%E4%BA%86%E3%80%82/</url>
+    <url>/2017/08/12/ubuntu-%E7%9A%84%E6%A1%8C%E9%9D%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E5%9D%8F%E6%8E%89%E4%BA%86%E3%80%82/</url>
     <content><![CDATA[<h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>昨天晚上， 为了删除wine wine-stable wine* 什么的， 不知道怎么就unity就坏了， 出现的问题是在登陆界面输入密码那个界面循环。通过尝试了很多方法， 都没有解决（包括.xAuth)。 后来一想， 不就unity坏了吗， 我只需要重新安装unity就行了， 下面就是按照这个思路来解决这个问题的。</p>
 <span id="more"></span>
 <h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs null">//由于在解决这个问题时， 我错以为ubuntu的默认桌面系统是gnome， 因此我安装了gnome。 因此这里首先卸载gnome<br>sudo apt-get purge gnome gnome-shell<br><br>//现在是重新安装 unity<br>sudo apt-get install -reinstall ubuntu-desktop unity unity-lens* unity-services unity-asset-pool<br><br>//删除多于的包和库<br>sudo apt-get autoremove<br>sudo apt-get autoclean<br><br>//更新软件源数据， 并升级所有软件。 其实这一步没有必要做。<br>sudo apt-get update<br>sudo apt-get upgrade<br><br></code></pre></td></tr></table></figure>]]></content>
@@ -1929,7 +1929,7 @@
   </entry>
   <entry>
     <title>2017-08-12 插入电子表格</title>
-    <url>/supremew/2017/08/12/%E6%8F%92%E5%85%A5%E7%94%B5%E5%AD%90%E8%A1%A8%E6%A0%BC/</url>
+    <url>/2017/08/12/%E6%8F%92%E5%85%A5%E7%94%B5%E5%AD%90%E8%A1%A8%E6%A0%BC/</url>
     <content><![CDATA[<h3 id="方法概述"><a href="#方法概述" class="headerlink" title="方法概述"></a>方法概述</h3><p>在博文中插入电子表格， word文档。 注意必需是openoffice 的文档格式如， .dot， .ods 。</p>
 <span id="more"></span>
 <h3 id="插入电子表格"><a href="#插入电子表格" class="headerlink" title="插入电子表格"></a>插入电子表格</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs null">&lt;docxpresso file=&quot;http://blog.supermew.top/v/wordpress/wp-content/uploads/2017/08/压煮实验数据-.ods&quot;&gt;<br>//上面的尖括号需要改成方括号。<br></code></pre></td></tr></table></figure>
@@ -1946,7 +1946,7 @@
   </entry>
   <entry>
     <title>2017-08-16 磷酸铁锂池小进步</title>
-    <url>/supremew/2017/08/16/%E7%A3%B7%E9%85%B8%E9%93%81%E9%94%82%E6%B1%A0%E5%B0%8F%E8%BF%9B%E6%AD%A5/</url>
+    <url>/2017/08/16/%E7%A3%B7%E9%85%B8%E9%93%81%E9%94%82%E6%B1%A0%E5%B0%8F%E8%BF%9B%E6%AD%A5/</url>
     <content><![CDATA[<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><ol>
 <li> 0527 加入PVA 4%，</li>
 <li> CVD 通2h</li>
@@ -1960,7 +1960,7 @@
   </entry>
   <entry>
     <title>2017-08-30 ubuntu中卸载软件包时， 存在的问题。</title>
-    <url>/supremew/2017/08/30/ubuntu%E4%B8%AD%E5%8D%B8%E8%BD%BD%E8%BD%AF%E4%BB%B6%E5%8C%85%E6%97%B6%EF%BC%8C-%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98%E3%80%82/</url>
+    <url>/2017/08/30/ubuntu%E4%B8%AD%E5%8D%B8%E8%BD%BD%E8%BD%AF%E4%BB%B6%E5%8C%85%E6%97%B6%EF%BC%8C-%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98%E3%80%82/</url>
     <content><![CDATA[<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>在 ubuntu 中卸载软件包时，采用 <code>sudo apt-get purge XXX</code> 命令卸载， 该命令虽然能够将该软件包卸载完全（包括配制文件等）， 但是它不会卸载依赖包。 因此需要采用 <code>sudo apt-get autoremove</code> ， 但它不会删除配制文件。 想要卸载这些东西 <code>dpkg -l grep ^rcawk &#39;&#123;print $2&#125;&#39;sudo xargs apt-get -y purge</code></p>
 <span id="more"></span>
 ]]></content>
@@ -1970,7 +1970,7 @@
   </entry>
   <entry>
     <title>2017-08-30 心得</title>
-    <url>/supremew/2017/08/30/%E5%BF%83%E5%BE%97/</url>
+    <url>/2017/08/30/%E5%BF%83%E5%BE%97/</url>
     <content><![CDATA[<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>在选择股票时， 应该选择强势的股票。 这是因为强势的股票的上涨概率要大一些， 而求交易活跃， 多空分歧比较大， 因此从概率上讲， 上涨和下跌的概率可以认为是50% 那如何选择强势的股票呢， 下面会进一步说明。</p>
 <span id="more"></span>
 <h3 id="如何选择强势股票"><a href="#如何选择强势股票" class="headerlink" title="如何选择强势股票"></a>如何选择强势股票</h3><ol>
@@ -1992,7 +1992,7 @@
   </entry>
   <entry>
     <title>2017-08-31 测试分类发布博客</title>
-    <url>/supremew/2017/08/31/%E6%B5%8B%E8%AF%95%E5%88%86%E7%B1%BB%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2/</url>
+    <url>/2017/08/31/%E6%B5%8B%E8%AF%95%E5%88%86%E7%B1%BB%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>就是为了， 测试在发表博客时， 时候能够分类发表。</p>
 ]]></content>
       <categories>
@@ -2001,7 +2001,7 @@
   </entry>
   <entry>
     <title>2017-08-31 魔趣关于抽屉的模糊效果</title>
-    <url>/supremew/2017/08/31/%E9%AD%94%E8%B6%A3%E5%85%B3%E4%BA%8E%E6%8A%BD%E5%B1%89%E7%9A%84%E6%A8%A1%E7%B3%8A%E6%95%88%E6%9E%9C/</url>
+    <url>/2017/08/31/%E9%AD%94%E8%B6%A3%E5%85%B3%E4%BA%8E%E6%8A%BD%E5%B1%89%E7%9A%84%E6%A8%A1%E7%B3%8A%E6%95%88%E6%9E%9C/</url>
     <content><![CDATA[<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>在将手机的桌面进行扩展后， 然后再将标题栏的阴影功能关闭后， 就会导致抽屉的模糊效果消失。</p>
 <span id="more"></span>
 <h3 id="新发现"><a href="#新发现" class="headerlink" title="新发现"></a>新发现</h3><p>后来， 在使用过程中， 发现不是上面提到的原因， 而是魔趣自身的问题， 可能是未被发现的 bug ， 因此昨天晚上的忙碌时没有用的。</p>
@@ -2013,7 +2013,7 @@
   </entry>
   <entry>
     <title>2017-09-01 转型后的原矿分析</title>
-    <url>/supremew/2017/09/01/%E8%BD%AC%E5%9E%8B%E5%90%8E%E7%9A%84%E5%8E%9F%E7%9F%BF%E5%88%86%E6%9E%90/</url>
+    <url>/2017/09/01/%E8%BD%AC%E5%9E%8B%E5%90%8E%E7%9A%84%E5%8E%9F%E7%9F%BF%E5%88%86%E6%9E%90/</url>
     <content><![CDATA[<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>转型后原矿分析， 送样编号：O-4； 分析全锂3.65%。</p>
 <span id="more"></span>
 ]]></content>
@@ -2023,7 +2023,7 @@
   </entry>
   <entry>
     <title>2017-09-16 溶胶凝胶法合成磷酸铁锂</title>
-    <url>/supremew/2017/10/19/%E6%BA%B6%E8%83%B6%E5%87%9D%E8%83%B6%E6%B3%95%E5%90%88%E6%88%90%E7%A3%B7%E9%85%B8%E9%93%81%E9%94%82/</url>
+    <url>/2017/10/19/%E6%BA%B6%E8%83%B6%E5%87%9D%E8%83%B6%E6%B3%95%E5%90%88%E6%88%90%E7%A3%B7%E9%85%B8%E9%93%81%E9%94%82/</url>
     <content><![CDATA[<h3 id="一种溶胶凝胶法合成磷酸铁锂的方法"><a href="#一种溶胶凝胶法合成磷酸铁锂的方法" class="headerlink" title="一种溶胶凝胶法合成磷酸铁锂的方法"></a>一种溶胶凝胶法合成磷酸铁锂的方法</h3><p>将磷酸， 氢氧化锂按1.03:1混合成磷酸</p>
 ]]></content>
       <categories>
@@ -2032,7 +2032,7 @@
   </entry>
   <entry>
     <title>2017-10-20 大多数人都在做什么</title>
-    <url>/supremew/2017/10/20/%E5%A4%A7%E5%A4%9A%E6%95%B0%E4%BA%BA%E9%83%BD%E5%9C%A8%E5%81%9A%E4%BB%80%E4%B9%88/</url>
+    <url>/2017/10/20/%E5%A4%A7%E5%A4%9A%E6%95%B0%E4%BA%BA%E9%83%BD%E5%9C%A8%E5%81%9A%E4%BB%80%E4%B9%88/</url>
     <content><![CDATA[<h3 id="大多数人都在做什么？"><a href="#大多数人都在做什么？" class="headerlink" title="大多数人都在做什么？"></a>大多数人都在做什么？</h3><ul>
 <li>  一直在计划，一直在将所作的计划推迟实施。</li>
 <li>  一直在等待机会，但一次一次的将到来的机会给丢掉。</li>
@@ -2045,7 +2045,7 @@
   </entry>
   <entry>
     <title>2017-10-23 wordpress xml-rpc api 参数的发现</title>
-    <url>/supremew/2017/10/23/wordpress-xml-rpc-api-%E5%8F%82%E6%95%B0%E7%9A%84%E5%8F%91%E7%8E%B0/</url>
+    <url>/2017/10/23/wordpress-xml-rpc-api-%E5%8F%82%E6%95%B0%E7%9A%84%E5%8F%91%E7%8E%B0/</url>
     <content><![CDATA[<h3 id="wordprerss-xml-rpc-api-详细参数的发现"><a href="#wordprerss-xml-rpc-api-详细参数的发现" class="headerlink" title="wordprerss xml-rpc api 详细参数的发现"></a>wordprerss xml-rpc api 详细参数的发现</h3><p>今天早上，我坐在去公司的车上的时候，用手机继续搜索到 <a href="https://codex.wordpress.org/XML-RPC_WordPress_API" title="wordpress xml-rpc api">wordpress xml-rpc api</a> 在好奇心的指引下，点击了 <a href="https://codex.wordpress.org/XML-RPC_WordPress_API/Posts" title="wordpress xml-rpc post 详细参数说明">post</a> 后进入到了 wordpress wxml-rpc 的关于 <a href="https://codex.wordpress.org/XML-RPC_WordPress_API/Posts" title="wordpress xml-rpc post 详细参数说明">post</a> 的相关函数的详细介绍。以同样的方法可以在 <a href="https://codex.wordpress.org/XML-RPC_WordPress_API" title="wordpress xml-rpc api">wordpress xml-rpc api</a> 得到其他的相关参数，比如 page 等等类型。其他的不明白地方可以继续问 <a href="http://www.baidu.com/" title="baidu">度娘</a> .</p>
 <span id="more"></span>
 ]]></content>
@@ -2055,7 +2055,7 @@
   </entry>
   <entry>
     <title>2017-10-25 目前盐湖提锂的方法。</title>
-    <url>/supremew/2017/10/25/%E7%9B%AE%E5%89%8D%E7%9B%90%E6%B9%96%E6%8F%90%E9%94%82%E7%9A%84%E6%96%B9%E6%B3%95%E3%80%82/</url>
+    <url>/2017/10/25/%E7%9B%AE%E5%89%8D%E7%9B%90%E6%B9%96%E6%8F%90%E9%94%82%E7%9A%84%E6%96%B9%E6%B3%95%E3%80%82/</url>
     <content><![CDATA[<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>本文从文献得到目前盐湖提锂的基本方法， 主要方法包括：沉淀法、萃取, 离子筛, 离子液体</p>
 <span id="more"></span>
 <h3 id="试用于低美锂比的卤水的碳酸盐沉淀法"><a href="#试用于低美锂比的卤水的碳酸盐沉淀法" class="headerlink" title="试用于低美锂比的卤水的碳酸盐沉淀法"></a>试用于低美锂比的卤水的碳酸盐沉淀法</h3><h4 id="SQM-生产工艺"><a href="#SQM-生产工艺" class="headerlink" title="SQM 生产工艺"></a>SQM 生产工艺</h4><ol>
@@ -2099,7 +2099,7 @@
   </entry>
   <entry>
     <title>2017-10-30 wordpress 的 xmlrpc 的 api (wp.getPost) 有误</title>
-    <url>/supremew/2017/10/30/wordpress-%E7%9A%84-xmlrpc-%E7%9A%84-api-wp-getpost-%E6%9C%89%E8%AF%AF/</url>
+    <url>/2017/10/30/wordpress-%E7%9A%84-xmlrpc-%E7%9A%84-api-wp-getpost-%E6%9C%89%E8%AF%AF/</url>
     <content><![CDATA[<h3 id="简单概述"><a href="#简单概述" class="headerlink" title="简单概述"></a>简单概述</h3><p>这几天一直在研究 xmlrpc-c ， 主要是想通过研究它来实现在vim 在发布wordpress. 但是我在通过xmlrpc-c的例子程序xmlrpc进行wordperss的xmlrpc的api（wp.getPost）测试时发现它的接口介绍是少写了blogid这个参数导致得不到返回结果。 下面是wordpress的xmlrpc接口的原文如下：</p>
 <p> wp.getPost<br> Retrieve a post of any registered post type.</p>
 <p> Added in WordPress 3.4.<br> Parameters</p>
@@ -2150,7 +2150,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2017-11-08 压煮实验取得突破性进展</title>
-    <url>/supremew/2017/11/08/%E5%8E%8B%E7%85%AE%E5%AE%9E%E9%AA%8C%E5%8F%96%E5%BE%97%E7%AA%81%E7%A0%B4%E6%80%A7%E8%BF%9B%E5%B1%95/</url>
+    <url>/2017/11/08/%E5%8E%8B%E7%85%AE%E5%AE%9E%E9%AA%8C%E5%8F%96%E5%BE%97%E7%AA%81%E7%A0%B4%E6%80%A7%E8%BF%9B%E5%B1%95/</url>
     <content><![CDATA[<h3 id="压煮实验取得突破性进展"><a href="#压煮实验取得突破性进展" class="headerlink" title="压煮实验取得突破性进展"></a>压煮实验取得突破性进展</h3><p>压煮配方如下：</p>
 <ol>
 <li> 转型后的矿（品位 3.4) 1</li>
@@ -2172,7 +2172,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2017-11-30 我们国家是怎么了？</title>
-    <url>/supremew/2017/11/30/%E6%88%91%E4%BB%AC%E5%9B%BD%E5%AE%B6%E6%98%AF%E6%80%8E%E4%B9%88%E4%BA%86%EF%BC%9F/</url>
+    <url>/2017/11/30/%E6%88%91%E4%BB%AC%E5%9B%BD%E5%AE%B6%E6%98%AF%E6%80%8E%E4%B9%88%E4%BA%86%EF%BC%9F/</url>
     <content><![CDATA[<p>我们的国家是怎么了？ 要晚清？ 要闭关？ 要锁国？ 互联网成为了全球最大的互联网！</p>
 ]]></content>
       <categories>
@@ -2181,7 +2181,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2017-12-06 科学文献搜索和下载</title>
-    <url>/supremew/2017/12/06/%E7%A7%91%E5%AD%A6%E6%96%87%E7%8C%AE%E6%90%9C%E7%B4%A2%E5%92%8C%E4%B8%8B%E8%BD%BD/</url>
+    <url>/2017/12/06/%E7%A7%91%E5%AD%A6%E6%96%87%E7%8C%AE%E6%90%9C%E7%B4%A2%E5%92%8C%E4%B8%8B%E8%BD%BD/</url>
     <content><![CDATA[<h3 id="科学文献的搜索"><a href="#科学文献的搜索" class="headerlink" title="科学文献的搜索"></a>科学文献的搜索</h3><h4 id="采用-google-文献搜索"><a href="#采用-google-文献搜索" class="headerlink" title="采用 google 文献搜索"></a>采用 google 文献搜索</h4><p>由于我们国家对 google 的封锁，导致国内的文献检索成为了困难，因此目前我们采用 google 的文献搜索，只能使用 google 文献的镜像站点进行检索。 在百度上搜索 <strong>google 镜像</strong> , 可以找到相应的网站。</p>
 <span id="more"></span>
 <h4 id="采用-sciencedirect-搜索"><a href="#采用-sciencedirect-搜索" class="headerlink" title="采用 sciencedirect 搜索"></a>采用 sciencedirect 搜索</h4><ol>
@@ -2212,7 +2212,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2017-12-08 β双酮提取碱性卤水中的锂</title>
-    <url>/supremew/2017/12/08/%CE%B2%E5%8F%8C%E9%85%AE%E6%8F%90%E5%8F%96%E7%A2%B1%E6%80%A7%E5%8D%A4%E6%B0%B4%E4%B8%AD%E7%9A%84%E9%94%82/</url>
+    <url>/2017/12/08/%CE%B2%E5%8F%8C%E9%85%AE%E6%8F%90%E5%8F%96%E7%A2%B1%E6%80%A7%E5%8D%A4%E6%B0%B4%E4%B8%AD%E7%9A%84%E9%94%82/</url>
     <content><![CDATA[<h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4><p><strong>该文中所用卤水不是高镁锂比的卤水，参考价值并不高.</strong> 在该文中，通过比较了提锂的辅助萃取剂和稀释剂，最终确定了以 <strong>羟基苯并三唑 - 氧化三辛基膦 - 煤油</strong> 为萃取体系来进行萃取提锂。 提取过程中，以 <strong>0.4mol 羟基苯并三唑 -0.3mol/L 氧化三辛基膦 - 煤油</strong> 为萃取体系，要达到提取 95% 的锂需要 3 步提取。1mol/L HCl 作为洗涤剂，3mol/L HCl 作为反萃剂。 经过多次试验，表明各个步骤需要的次数如下</p>
 <ol>
 <li> 萃取需要 3 次。</li>
@@ -2228,7 +2228,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2017-12-08 被嵌入铁的锂离子筛</title>
-    <url>/supremew/2017/12/08/%E8%A2%AB%E5%B5%8C%E5%85%A5%E9%93%81%E7%9A%84%E9%94%82%E7%A6%BB%E5%AD%90%E7%AD%9B/</url>
+    <url>/2017/12/08/%E8%A2%AB%E5%B5%8C%E5%85%A5%E9%93%81%E7%9A%84%E9%94%82%E7%A6%BB%E5%AD%90%E7%AD%9B/</url>
     <content><![CDATA[<h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4><p>该文中合成了一种被嵌入了铁的太酸锂作为卤水中提取锂的锂离子筛进行卤水提锂，该种离子筛能够在含 1.8g/L 的氢氧化锂溶液 (ph 12) 中选择性的吸附锂，离子筛的吸附能力为 53mg/g . 个人认为这种材料最大只能应用于锂的富集。 <strong>该文的 doi:</strong> 10.1016/j.cej.2017.09.055</p>
 ]]></content>
       <categories>
@@ -2237,7 +2237,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2017-12-11 采用锰酸锂电对进行卤水提锂</title>
-    <url>/supremew/2017/12/11/%E9%87%87%E7%94%A8%E9%94%B0%E9%85%B8%E9%94%82%E7%94%B5%E5%AF%B9%E8%BF%9B%E8%A1%8C%E5%8D%A4%E6%B0%B4%E6%8F%90%E9%94%82/</url>
+    <url>/2017/12/11/%E9%87%87%E7%94%A8%E9%94%B0%E9%85%B8%E9%94%82%E7%94%B5%E5%AF%B9%E8%BF%9B%E8%A1%8C%E5%8D%A4%E6%B0%B4%E6%8F%90%E9%94%82/</url>
     <content><![CDATA[<h3 id="文章信息"><a href="#文章信息" class="headerlink" title="文章信息"></a>文章信息</h3><h4 id="文章-doi"><a href="#文章-doi" class="headerlink" title="文章 doi"></a>文章 doi</h4><p><strong>doi:</strong> 10.1016/j.electacta.2017.08.178</p>
 <h4 id="文章出处"><a href="#文章出处" class="headerlink" title="文章出处"></a>文章出处</h4><p>由河北工业大学大学写的。</p>
 <h3 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h3><ol>
@@ -2271,7 +2271,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2017-12-20 几种卤水提锂方法的大致比较</title>
-    <url>/supremew/2017/12/21/%E5%87%A0%E7%A7%8D%E5%8D%A4%E6%B0%B4%E6%8F%90%E9%94%82%E6%96%B9%E6%B3%95%E7%9A%84%E5%A4%A7%E8%87%B4%E6%AF%94%E8%BE%83/</url>
+    <url>/2017/12/21/%E5%87%A0%E7%A7%8D%E5%8D%A4%E6%B0%B4%E6%8F%90%E9%94%82%E6%96%B9%E6%B3%95%E7%9A%84%E5%A4%A7%E8%87%B4%E6%AF%94%E8%BE%83/</url>
     <content><![CDATA[<ol>
 <li> <strong>煅烧法</strong> 煅烧分离法以中信国安为代表，主要的优点是能够分离高镁锂比的卤水成分， 且有利于综合利用锂镁等资源， 原料消耗少； 但镁的提取使流程复杂， 设备腐蚀严重， 需要蒸发的水量较大、 能源消耗大， 在生产实际当中尾气方面出现严重的环境污染问题。 青海国安采用的提升老卤浓度的办法， 由于镁盐沉淀夹带影响， 回收率将受到影响。 另外， 公司的发电和煅烧全部采用天然气， 天然气成本仍将提升。</li>
 <li> <strong>膜法</strong> 膜法以青海锂业为代表， 目前青海锂业 3000t/y 碳酸锂装置还在调试中， 其工艺路线是利用多级膜分离技术， 将老卤中镁： 锂比由 20∶1， 提高到 1∶2 左右。 存在的主要问题是在反渗透浓缩过程中， 浓相部分盐的析出不好控制， 容易堵塞或损坏膜， 需要进一步扩大操作参数范围， 稳定工艺条件。</li>
@@ -2285,7 +2285,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2017-12-26 管道等级代号组成</title>
-    <url>/supremew/2017/12/26/%E7%AE%A1%E9%81%93%E7%AD%89%E7%BA%A7%E4%BB%A3%E5%8F%B7%E7%BB%84%E6%88%90/</url>
+    <url>/2017/12/26/%E7%AE%A1%E9%81%93%E7%AD%89%E7%BA%A7%E4%BB%A3%E5%8F%B7%E7%BB%84%E6%88%90/</url>
     <content><![CDATA[<h3 id="管道等级代号组成"><a href="#管道等级代号组成" class="headerlink" title="管道等级代号组成"></a>管道等级代号组成</h3><p>例：L 1 B L ：管道公称压力等级代号 1：管道材料等级顺序号 B ：管道材质类别代号</p>
 <h3 id="管道工称压力等级代号用大写英文字母表示，A-——G-用于-ASME-标准压力等级代号"><a href="#管道工称压力等级代号用大写英文字母表示，A-——G-用于-ASME-标准压力等级代号" class="headerlink" title="管道工称压力等级代号用大写英文字母表示，A ——G 用于 ASME 标准压力等级代号"></a>管道工称压力等级代号用大写英文字母表示，A ——G 用于 ASME 标准压力等级代号</h3><p>A ：150LB （2Mpa ）B ：300LB （5Mpa ）C ：400LB D ：600LB （11Mpa ）E ：900LB （15Mpa ）F ：1500LB （26Mpa ）G ：2500LB （42Mpa ） H ——Z 用于国内标准压力等级代号 (I J O X 不用） 低压：H ：0.25Mpa K ：0.6Mpa L ：1.0Mpa M ：1.6Mpa 中压：N ：2.5 Mpa P ：4.0 Mpa Q ：6.4 Mpa R ：10.0 Mpa 高压：S ：16.0 Mpa T ：20.0 Mpa U ：22.0 Mpa V ：25.0 Mpa W ：32.0 Mpa 管道材料等级顺序号，用阿拉伯数字表示，有 1——9 组成。在管道公称压力等级等级和材质类别代号相同的情况下，可以有九个不同系列的管道材料等级</p>
 <h3 id="管道材质类别代号"><a href="#管道材质类别代号" class="headerlink" title="管道材质类别代号"></a>管道材质类别代号</h3><p>A ：铸铁 B ：碳钢 C ：普通低合金钢 D ：合金钢 E ：不锈钢 F ：有色金属 G ：非金属 H ：衬里及内防腐</p>
@@ -2297,7 +2297,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2017-12-27 ubuntu 17.10 输入法问题</title>
-    <url>/supremew/2017/12/27/ubuntu-17-10-%E8%BE%93%E5%85%A5%E6%B3%95%E9%97%AE%E9%A2%98/</url>
+    <url>/2017/12/27/ubuntu-17-10-%E8%BE%93%E5%85%A5%E6%B3%95%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>如在使用过程中遇到了输入法不能使用的话。 建议大家在设置language中先将汉语删除， 然后重新安装就可以了。 我原来在使用fcitx输入法的， 但是经过更新后发现fcitx和ibus都不能用。 后来通过多次实验， 发现先将输入法设置管理器选择， 设置好， 我是选择的是fcitx， 然后将汉语删除， 再安装回来。 就可以使用了。</p>
 ]]></content>
       <categories>
@@ -2306,7 +2306,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2018-01-20 C语言中特殊宏</title>
-    <url>/supremew/2018/01/20/c%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%89%B9%E6%AE%8A%E5%AE%8F/</url>
+    <url>/2018/01/20/c%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%89%B9%E6%AE%8A%E5%AE%8F/</url>
     <content><![CDATA[<figure class="highlight c"><table><tr><td class="code"><pre><code class="hljs C">__FILE__  <span class="hljs-comment">//取得文件名</span><br>__func__  <span class="hljs-comment">//函数名</span><br>__LINE__ <span class="hljs-comment">//行号</span><br></code></pre></td></tr></table></figure>
 
 <figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">cpp -dM /dev/null <span class="hljs-comment">#查看gcc得特殊宏， 但是这些宏不包括__FILE__</span><br></code></pre></td></tr></table></figure>]]></content>
@@ -2316,7 +2316,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2018-01-30 学习git过程中遇到的问题。</title>
-    <url>/supremew/2018/01/30/%E5%AD%A6%E4%B9%A0git%E8%BF%87%E7%A8%8B%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E3%80%82/</url>
+    <url>/2018/01/30/%E5%AD%A6%E4%B9%A0git%E8%BF%87%E7%A8%8B%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E3%80%82/</url>
     <content><![CDATA[<h3 id="关联gitee"><a href="#关联gitee" class="headerlink" title="关联gitee"></a>关联gitee</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">git remote add origin git@gitee.com:supermew/learngit.git<br></code></pre></td></tr></table></figure>
 
 <h3 id="push"><a href="#push" class="headerlink" title="push"></a>push</h3><p>在gitee上建立项目的时候， 它会自动创建一个文件， 而本地没有相应的文件， 会导致push失败， 因此需要先执行如下命令。</p>
@@ -2330,7 +2330,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2018-02-21 uefi模式下安装ubuntu17.10 详细记录</title>
-    <url>/supremew/2018/02/21/uefi%E6%A8%A1%E5%BC%8F%E4%B8%8B%E5%AE%89%E8%A3%85ubuntu17-10-%E8%AF%A6%E7%BB%86%E8%AE%B0%E5%BD%95/</url>
+    <url>/2018/02/21/uefi%E6%A8%A1%E5%BC%8F%E4%B8%8B%E5%AE%89%E8%A3%85ubuntu17-10-%E8%AF%A6%E7%BB%86%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<p>目前越来越多的笔记本， 或者是台式机都支持uefi模式， 甚至很多已经默认在uefi模式下工作， 有的已经不在兼容传统模式了。现我就将我在新买的联想本本上折腾安装ubuntu17.10的过程记录下来， 希望能够帮助后来人。（网上很多教程， 但是大部分的教程都是将你往坑里面带的， 但是我希望这教程不会将你带入坑！）</p>
 <ol>
 <li> 配置优盘， 准备一个至少4g的优盘。 采用gdisk或者fdisk分区工具将u盘的分区表改成gpt格式， 并创建两个分区（u盘总计两个分区）， 第一个分区格式为fat32， 第二个分区为fat32（这个分区也可以是ntfs格式的）——-注意分区表格式一定得是gpt， 第一个分区的文件系统格式必须是vfat也就是fat32。 我采用的分区工具是fdisk， 现我将具体命令列出， 供参考。</li>
@@ -2355,7 +2355,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2018-06-02 cmake 的 pkg-config 使用问题。</title>
-    <url>/supremew/2018/06/02/cmake-%E7%9A%84-pkg-config-%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98%E3%80%82/</url>
+    <url>/2018/06/02/cmake-%E7%9A%84-pkg-config-%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98%E3%80%82/</url>
     <content><![CDATA[<p>由于历史的原因， 不是所有库都有相关的 **.cmake 文件， 因此不能用 find_package 函数。有的时候需要通过 pkg-config 工具实现。 如下例的使用.</p>
 <figure class="highlight cmake"><table><tr><td class="code"><pre><code class="hljs cmake"><span class="hljs-keyword">find_package</span>(PkgConfig REQUIRED)<br><span class="hljs-keyword">if</span> (PKGCONFIG_FOUND)<br>    <span class="hljs-keyword">message</span> (<span class="hljs-string">&quot;Find pkg-config module.&quot;</span>)<br><span class="hljs-keyword">endif</span> (PKGCONFIG_FOUND)<br><br>pkg_check_modules (JSON_C REQUIRED json-c)<br><span class="hljs-keyword">if</span> (JSON_C_FOUND) <br>    <span class="hljs-comment">#message (&quot;the json-c version:$&#123;JSON_C_VERSION&#125;&quot;)</span><br>    <span class="hljs-comment">#message (&quot;the prefix-directory of the module $&#123;JSON_C_PREFIX&#125;&quot;)</span><br>    <span class="hljs-comment">#message (&quot;JSON_C&#x27;s libraries is $&#123;JSON_C_LIBRARIES&#125;&quot;)</span><br>    <span class="hljs-keyword">set</span> (EXTRA_LIBS <span class="hljs-variable">$&#123;EXTRA_LIBS&#125;</span> <span class="hljs-variable">$&#123;JSON_C_LIBRARIES&#125;</span>)<br>    <span class="hljs-comment">#message (&quot;JSON_C&#x27;s head file directories is $&#123;JSON_C_INCLUDE_DIRS&#125;&quot;)</span><br>    <span class="hljs-keyword">set</span> (INCLUDE_DIRS <span class="hljs-variable">$&#123;INCLUDE_DIRS&#125;</span> <span class="hljs-variable">$&#123;JSON_C_INCLUDE_DIRS&#125;</span>)<br><span class="hljs-keyword">endif</span> (JSON_C_FOUND)<br></code></pre></td></tr></table></figure>
 
@@ -2379,7 +2379,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2018-06-03 在编写 CMakeLists.txt 过程中新手遇到的问题</title>
-    <url>/supremew/2018/06/03/%E5%9C%A8%E7%BC%96%E5%86%99-cmakelists-txt-%E8%BF%87%E7%A8%8B%E4%B8%AD%E6%96%B0%E6%89%8B%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <url>/2018/06/03/%E5%9C%A8%E7%BC%96%E5%86%99-cmakelists-txt-%E8%BF%87%E7%A8%8B%E4%B8%AD%E6%96%B0%E6%89%8B%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>在使用 <code>add_excutable()</code> 和 <code>target_link_libraries1()</code> 中容易漏写 target 名称。比如我想编译的目标是aa， 新手会这样写</p>
 <figure class="highlight cmake"><table><tr><td class="code"><pre><code class="hljs cmake">add_excutable(aa b.c c.c )<br><span class="hljs-keyword">target_link_libraries</span>(a b)<br></code></pre></td></tr></table></figure>
 
@@ -2394,7 +2394,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2018-06-05 unicode 编码的问题</title>
-    <url>/supremew/2018/06/05/unicode-%E7%BC%96%E7%A0%81%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <url>/2018/06/05/unicode-%E7%BC%96%E7%A0%81%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>最近几天， 被 unicode 编码给折磨惨了， 如今知道是什么原因 。。 我用了 wordpress json api 插件， 开启了 wordpress 的 json api, 我通过 libcurl 得到的 json 中的中文 都以 \uXXXX 这样的形式表示的。 在今天看帮助文档的时候， 发现了这是 json api 的输出控制了的， 是故意让它输出这样的 unicode 编码， 以提高谦容性。 可以在发 url中加入这样的参数， 就可以让它以 utf-8 的格式输出 ， 而非 unicode escape 编码。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs url">http://www.example.com/?jsong=get_post&amp;post_id=1234&amp;json_unescaped_unicode<br></code></pre></td></tr></table></figure>
 
@@ -2406,7 +2406,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2018-08-24 qutebrowser 的安装与使用</title>
-    <url>/supremew/2018/08/24/qutebrowser-%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
+    <url>/2018/08/24/qutebrowser-%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<ol>
 <li> 首先去 github.com 下载源代码， 可以通过下面的命令进行获得源代马并进行安装。</li>
 </ol>
@@ -2430,7 +2430,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2018-09-06 关于 deepin linux 的看法</title>
-    <url>/supremew/2018/09/06/%E5%85%B3%E4%BA%8E-deepin-linux-%E7%9A%84%E7%9C%8B%E6%B3%95/</url>
+    <url>/2018/09/06/%E5%85%B3%E4%BA%8E-deepin-linux-%E7%9A%84%E7%9C%8B%E6%B3%95/</url>
     <content><![CDATA[<p>前段时间适用了一下 deepin linux 15.7 发现该 linux 还是可以， 桌面制作的非常的华丽， 感觉上还是相当的不错。 deepin linux 根 ubuntu 一样，均是由 debian 再次开发而来。 不过 deepin linux 跟那些有大社区支持的 linux 版本不能比， deepin linux 的开发社区还不强大。 这体现在如下方面： * 更新源的版本不是最新 * 有时候必须依赖的包版本过低。(好像是一个 lib6c-dev 的安装包的依赖问题， 该问题可以通过重新安装一下该包就可以了， 如<code>sudo apt-get install --reinstall lib6c-dev</code>) 下面我讲在安装 deepin linux ， 和使用他时遇到的问题进行记录一下。</p>
 <ol>
 <li>像我这样， 经常在英文环境下使用， 但是又需要输入中文的， 你就需要这样进行安装. 首先安装 deepin linux 时， 先在中文环境下安装完成， 待安装好了之后再讲环境（languge and keyboard）设置成英文的就好了。 否则会遇见在英文环境下怎么也不能用fcitx进行中文输入， 必安装下才能进行输入。</li>
@@ -2450,7 +2450,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2018-09-09 qutebrowser 的编译与安装</title>
-    <url>/supremew/2018/09/09/pyqt5-%E7%BC%96%E8%AF%91%E4%BB%A5%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8A%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
+    <url>/2018/09/09/pyqt5-%E7%BC%96%E8%AF%91%E4%BB%A5%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8A%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
     <content><![CDATA[<p>Qutebrowser 完全不像其他这些浏览器。如果你遇到过 Vim 这样的轻量级浏览器，它基本上就是这样子――简单的界面、简约的设计，而且只要使用键盘就能够处理任何事务。 尽管 qutebrowser 的作者推荐我们使用 qt 5.11.1， pyqt 5.10.1， 但是通过相当长的一段时间的使用后， 还是推荐大家使用 qt 5.10.1 , pyqt5 5.10.1。 （推荐使用 qt 5.10.1， pyqt5 5.10.1 的主要原因是 adobe 公司已经宣布将在 2020 年停止对 adobe flash player 的支持， adobe 即将退出历史舞台。 然后现在我们的大部分视频网站还在使用 adobe flash player 技术， 因此如果使用 qt 5.11 以后的版本将会遇到一些小问题， 比如视频不能全屏播放。） 由于不同 linux 版本的更新进度不同， 因此所使用的 qt 版本也有高低不同， 因此需要源代码编译。 下面就是一个简单的编译过程。（因为 qutebrowser 的作者写的代码是遵守开源标准的， 因此要源代码编译时相当的简单。） 其步骤为：</p>
 <ol>
 <li>到 qt 官网下载最新版的 qt 5.10, 并安装。如下载下来的文件为： qt-opensource-linux-x64-5.10.1.run<ul>
@@ -2503,7 +2503,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2018-10-18 美股就是应该这样跌！</title>
-    <url>/supremew/2018/10/18/%E7%BE%8E%E8%82%A1%E5%B0%B1%E6%98%AF%E5%BA%94%E8%AF%A5%E8%BF%99%E6%A0%B7%E8%B7%8C%EF%BC%81/</url>
+    <url>/2018/10/18/%E7%BE%8E%E8%82%A1%E5%B0%B1%E6%98%AF%E5%BA%94%E8%AF%A5%E8%BF%99%E6%A0%B7%E8%B7%8C%EF%BC%81/</url>
     <content><![CDATA[<p>就是， 继续跌！ 跌死那些龟孙子。</p>
 ]]></content>
       <categories>
@@ -2512,7 +2512,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2019-01-01 虚拟机安装 win7 过程中遇到的问题</title>
-    <url>/supremew/2019/01/14/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85-win7-%E8%BF%87%E7%A8%8B%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <url>/2019/01/14/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85-win7-%E8%BF%87%E7%A8%8B%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>需要学习西门子的 <strong>wincc</strong> ， 需要在虚拟机上安装一个 win7 ， 理论上将安装 win7 不是什么问题。但是确实遇到了很多的问题。</p>
 <ul>
 <li>目前在网络上下载 ghost 版的 win7 镜像文件， 都不能在虚拟机上通过虚拟光驱进行引导启动。 这在之前是没有问题的， 应该是现在的镜像制作者在制作的时候没有将其制作好的问题。</li>
@@ -2545,7 +2545,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2019-01-14《六西格玛》读后感</title>
-    <url>/supremew/2019/01/14/2019-01-14%E3%80%8A%E5%85%AD%E8%A5%BF%E6%A0%BC%E7%8E%9B%E3%80%8B%E8%AF%BB%E5%90%8E%E6%84%9F/</url>
+    <url>/2019/01/14/2019-01-14%E3%80%8A%E5%85%AD%E8%A5%BF%E6%A0%BC%E7%8E%9B%E3%80%8B%E8%AF%BB%E5%90%8E%E6%84%9F/</url>
     <content><![CDATA[<p>读了《六西格玛》的介绍后， 发现《六西格玛》是一个好东西， 它给我了如下启示： * 在生产过程中我们应该建立一个模拟的小生产线， 进行参数改变之前的一个模拟。 比如在跟换原料之前我们应该在采购原料之前， 先采购该原料的一部分样品回来， 在我们的这个小的模拟系统上进行模拟， 验证我们欲采购的原料是否满足我们生产线的使用要求。 * 生产过程中， 我们做任何一个动作之前，我们应该考虑能否在该动作的同时完成其他对生成工艺有改进的动作。如果这样的话， 我们可以一步一步的向六西格玛的目标靠近。 从目前的状况来看， 我们成都开飞高能化学有限公司离六西格玛还很遥远， 我初步估计我们在二西格玛左右。</p>
 ]]></content>
       <categories>
@@ -2554,7 +2554,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2019-08-26 测试 markdown 语法</title>
-    <url>/supremew/2019/08/26/%E6%B5%8B%E8%AF%95-markdown-%E8%AF%AD%E6%B3%95/</url>
+    <url>/2019/08/26/%E6%B5%8B%E8%AF%95-markdown-%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<p>这就是传说中的白塔。 <img src="http://mt.supermew.top/test/IMG_20180818_083845.jpg-markdown_image"></p>
 <span id="more"></span>
 <p>图二 <img src="http://mt.supermew.top/test/IMG_20180818_103429.jpg-markdown_image">; 图三 <img src="http://mt.supermew.top/test/IMG_20180818_103429.jpg-markdown_image" alt="美女"> 图片4 这是本人， 看样子需要健身了哦。 <img src="http://mt.supermew.top/test/IMG_20180818_160357.jpg-markdown_image" alt="要健身了哦"></p>
@@ -2565,7 +2565,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2019-08-29 vim 的写markdown 文档的 vim-oss-image-uploader 插件调试</title>
-    <url>/supremew/2019/08/27/vim-%E7%9A%84%E5%86%99markdown-%E6%96%87%E6%A1%A3%E7%9A%84-vim-oss-image-uploader-%E6%8F%92%E4%BB%B6%E8%B0%83%E8%AF%95/</url>
+    <url>/2019/08/27/vim-%E7%9A%84%E5%86%99markdown-%E6%96%87%E6%A1%A3%E7%9A%84-vim-oss-image-uploader-%E6%8F%92%E4%BB%B6%E8%B0%83%E8%AF%95/</url>
     <content><![CDATA[<p>这几天在调试 wordpress 的图床， 经过半天的调试， 已经把 wordpress 的图床调试成功了（其图床是采用七牛云储存的）。</p>
 <ul>
 <li>  七牛云储存</li>
@@ -2601,7 +2601,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2019-08-30 今天特别的累</title>
-    <url>/supremew/2019/08/30/%E4%BB%8A%E5%A4%A9%E7%89%B9%E5%88%AB%E7%9A%84%E7%B4%AF/</url>
+    <url>/2019/08/30/%E4%BB%8A%E5%A4%A9%E7%89%B9%E5%88%AB%E7%9A%84%E7%B4%AF/</url>
     <content><![CDATA[<p>最近熬夜太多， 感觉身体已经透支了。 每天上班感觉很疲惫。</p>
 ]]></content>
       <categories>
@@ -2610,7 +2610,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2019-09-02 天府广场一游</title>
-    <url>/supremew/2019/09/03/%E5%A4%A9%E5%BA%9C%E5%B9%BF%E5%9C%BA%E4%B8%80%E6%B8%B8/</url>
+    <url>/2019/09/03/%E5%A4%A9%E5%BA%9C%E5%B9%BF%E5%9C%BA%E4%B8%80%E6%B8%B8/</url>
     <content><![CDATA[<p>天府广场照片， 从照片效果来看， 天气不怎么好哦。 <img src="http://tuchuang.supermew.top/366927968.jpg-WordpressWater" alt="图1"> <img src="http://tuchuang.supermew.top/630746806.jpg-WordpressWater" alt="图2"></p>
 <span id="more"></span>
 <p><img src="http://tuchuang.supermew.top/1272661620.jpg-WordpressWater" alt="图3"> <img src="http://tuchuang.supermew.top/1665874692.jpg-WordpressWater" alt="图4"></p>
@@ -2621,7 +2621,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2019-09-06 注化考试复习开始了</title>
-    <url>/supremew/2019/09/06/%E6%B3%A8%E5%8C%96%E8%80%83%E8%AF%95%E5%A4%8D%E4%B9%A0%E5%BC%80%E5%A7%8B%E4%BA%86/</url>
+    <url>/2019/09/06/%E6%B3%A8%E5%8C%96%E8%80%83%E8%AF%95%E5%A4%8D%E4%B9%A0%E5%BC%80%E5%A7%8B%E4%BA%86/</url>
     <content><![CDATA[<p>计划在接下来的近两个月， 每天看书联系至少 5 个小时， 并且看防火防盗规程1个小时</p>
 ]]></content>
       <categories>
@@ -2630,7 +2630,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2019-09-06 测试 makedown 编辑器</title>
-    <url>/supremew/2019/09/06/%E6%B5%8B%E8%AF%95-makedown-%E7%BC%96%E8%BE%91%E5%99%A8/</url>
+    <url>/2019/09/06/%E6%B5%8B%E8%AF%95-makedown-%E7%BC%96%E8%BE%91%E5%99%A8/</url>
     <content><![CDATA[<p><a href="http://tuchuang.supermew.top/IMG_20180818_162239.jpg-WordpressWater"><img src="http://tuchuang.supermew.top/IMG_20180818_162239.jpg-WordpressWater"></a> 经测试， 发现该该编辑器能够将 wordpress 自带的媒体库中的图片等插入文章中， 而不能将 七牛图床的图片插入到文章中。</p>
 <span id="more"></span>
 ]]></content>
@@ -2640,7 +2640,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2019-09-07 今天没有复习功课</title>
-    <url>/supremew/2019/09/08/%E4%BB%8A%E5%A4%A9%E6%B2%A1%E6%9C%89%E5%A4%8D%E4%B9%A0%E5%8A%9F%E8%AF%BE/</url>
+    <url>/2019/09/08/%E4%BB%8A%E5%A4%A9%E6%B2%A1%E6%9C%89%E5%A4%8D%E4%B9%A0%E5%8A%9F%E8%AF%BE/</url>
     <content><![CDATA[<p><strong>今天实在对不起自己， 没有复习功课</strong> 接下来， 想办法将今天晚上的功课给不会来。 <a href="http://tuchuang.supermew.top/1564142369.jpg-WordpressWater"><img src="http://tuchuang.supermew.top/1564142369.jpg-WordpressWater"></a> <a href="http://tuchuang.supermew.top/2109846202.jpg-WordpressWater"><img src="http://tuchuang.supermew.top/2109846202.jpg-WordpressWater"></a></p>
 <span id="more"></span>
 ]]></content>
@@ -2650,7 +2650,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2019-10-08 Qt5.12.0 编译过程记录</title>
-    <url>/supremew/2018/10/08/qt5-12-0-%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/</url>
+    <url>/2018/10/08/qt5-12-0-%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<p>搞了两个通宵，终于把 Qt5.12.0 编译成功了，虽然 Qt5.12.0 还有很多功能没有编译进去， 但是对于我的 qutebrowser 已经够用， 也知道了该如何编译了。 那为什么非得要自己来编译 Qt5.12.0 呢 ?</p>
 <ol>
 <li> 想体验一下高版本的 Qt5 有什么新的感觉。</li>
@@ -2671,7 +2671,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2019-12-16 pyqt5 安装与编译</title>
-    <url>/supremew/2019/12/16/pyqt5-%E5%AE%89%E8%A3%85%E4%B8%8E%E7%BC%96%E8%AF%91/</url>
+    <url>/2019/12/16/pyqt5-%E5%AE%89%E8%A3%85%E4%B8%8E%E7%BC%96%E8%AF%91/</url>
     <content><![CDATA[<p>pyqt5 目前更新到了 5.13.2 版本， 并且引入了 sip5 编译系统， sip5 与 sip4 区别挺大的， 所以 sip5 把我给引入了一个不小的坑， 花了差不多3天的时间才从 该坑爬出来。 先说说， 导致有这个坑的原因是： sip5 安装 pyqt5-sip 时的默认安装路劲为 <strong>/usr/local/lib/python3.5/dist-packages</strong>， 然而 pyqt5 的默认安装路径为 <strong>/usr/lib/python3/dist-packages/</strong> 。 这就是坑，<strong>pyqt5-sip ， pyqt5 ， pyqtwebengine</strong> 必须要安装在同一个目录下。 在下面的安装过程中我选择将其安装在 <strong>/usr/local/lib/python3.5/dist-packages</strong> 中。 下面为具体安装过程。</p>
 <span id="more"></span>
 <figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk">sudo pip3 install sip<br>pip3 show sip <span class="hljs-comment"># 查看 sip 是否是 5.0 以上版本</span><br>tar xzf pyqt5.**.tar.gz -C .<br>cd PyQt5**<br><br><span class="hljs-comment"># 生成pyqt5-sip 包 </span><br>sip-build --sdist PyQt5.sip<br><br><span class="hljs-comment"># 安装 pyqt5-sip 包</span><br>sudo pip3 install PyQt5.sip<br><br><span class="hljs-comment"># 确认 pyqt5-sip 安装目录是不是我们希望的目录</span><br>pip3 show pyqt5-sip<br><br><span class="hljs-comment"># 构建 pyqt5</span><br>sudo sip-build --no-make --qmake <span class="hljs-regexp">/opt/</span>Qt5<span class="hljs-regexp">/bin/</span>qmake --target-dir <span class="hljs-regexp">/usr/</span>local<span class="hljs-regexp">/lib/</span>python3.<span class="hljs-number">5</span><span class="hljs-regexp">/dist-packages/</span> --build-dir build<br>cd build<br>sudo make -j8<br>sudo make install<br>cd ..<span class="hljs-regexp">/../</span><br><br><span class="hljs-comment"># 构建安装 pyqtwebengine</span><br>tar xzf pyqt5webengine.*.tar.gz -C .<br>cd pyqt5webengine**<br>sudo sip-build --no-make --qmake <span class="hljs-regexp">/opt/</span>Qt5<span class="hljs-regexp">/bin/</span>qmake --target-dir <span class="hljs-regexp">/usr/</span>local<span class="hljs-regexp">/lib/</span>python3.<span class="hljs-number">5</span><span class="hljs-regexp">/dist-packages/</span> --build-dir build<br>cd build<br>sudo make -j8<br>sudo make install<br><br><span class="hljs-comment">#这样就安装结束了， 至于验证是否成功， 网上有很多教程， 可以看看。</span><br></code></pre></td></tr></table></figure>
@@ -2684,7 +2684,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2019-12-23 内核编译与安装</title>
-    <url>/supremew/2019/12/23/%E5%86%85%E6%A0%B8%E7%BC%96%E8%AF%91%E4%B8%8E%E5%AE%89%E8%A3%85/</url>
+    <url>/2019/12/23/%E5%86%85%E6%A0%B8%E7%BC%96%E8%AF%91%E4%B8%8E%E5%AE%89%E8%A3%85/</url>
     <content><![CDATA[<ol>
 <li> 内核配置</li>
 </ol>
@@ -2719,7 +2719,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2019-12-24 测试</title>
-    <url>/supremew/2019/12/25/%E6%B5%8B%E8%AF%95/</url>
+    <url>/2019/12/25/%E6%B5%8B%E8%AF%95/</url>
     <content><![CDATA[<p>document.write(“ -editor插件开发\n -思维导字\n -构思如何开发 3m\n -查看新插件的提交代码修改量\n -查看修改文件列表\n -比对单个文件主要修改位置\n -插件开发格式要求\n -测试 6m\n”);</p>
 <span id="more"></span>
 <figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">&gt;&gt; <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;hello world&quot;</span><br>hello world<br>&gt;&gt; <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;hyz&quot;</span><br>hyz<br><br></code></pre></td></tr></table></figure>
@@ -2732,7 +2732,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2019-12-25 archlinux 的安装</title>
-    <url>/supremew/2019/12/25/archlinux-%E7%9A%84%E5%AE%89%E8%A3%85/</url>
+    <url>/2019/12/25/archlinux-%E7%9A%84%E5%AE%89%E8%A3%85/</url>
     <content><![CDATA[<p>总的来说， archlinux 的安装还是比较顺利的， 现在来说说在安装过程遇到的几个问题及解决办法。</p>
 <ol>
 <li>具体的安装过程得参考 <a href="https://wiki.archlinux.org/index.php/Installation_guide_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)">archlinux wiki</a></li>
@@ -2863,7 +2863,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2020-06-26 archlinux 中文问题</title>
-    <url>/supremew/2020/06/23/archlinux-%E4%B8%AD%E6%96%87%E9%97%AE%E9%A2%98/</url>
+    <url>/2020/06/23/archlinux-%E4%B8%AD%E6%96%87%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>首先说， 在 archlinux 的 wiki 中已经说的很清楚了， 但是在实际操作中还是会遇到中文的问题 archlinux 中安装了 deepin deepin - extra 在终端中粘贴入中文， 不显示中文， 在vim 中粘贴入中文显示问号， 检查终端设置是正常的， vim 设置也是正常的， 看了 wiki 后， 觉着是 locale 的问题， 现在就说一哈解决办法。 再终端中执行 locale ， 看是否是与模拟终端中执行的结果相同。</p>
 <ol>
 <li> 我在 /etc/locale.conf 中设置成</li>
@@ -2886,7 +2886,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2020-07-13 测试网站</title>
-    <url>/supremew/2020/07/13/%E6%B5%8B%E8%AF%95%E7%BD%91%E7%AB%99/</url>
+    <url>/2020/07/13/%E6%B5%8B%E8%AF%95%E7%BD%91%E7%AB%99/</url>
     <content><![CDATA[<p><img src="http://tuchuang.supermew.top/IMG_20180819_081158.jpg-WordpressWater" alt="image"></p>
 <span id="more"></span>
 <p><img src="http://tuchuang.supermew.top/IMG_20180818_063528.jpg-WordpressWater" alt="image2"> <img src="http://tuchuang.supermew.top/odfdfd.jpg-WordpressWater" alt="image3"> <img src="http://tuchuang.supermew.top/typora/IMG_20180818_103429.jpg-WordpressWater" alt="image4"></p>
@@ -2897,7 +2897,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2020-07-29 qutebrowser 不能播放 drm 内容的解决办法</title>
-    <url>/supremew/2020/07/29/qutebrowser-%E4%B8%8D%E8%83%BD%E6%92%AD%E6%94%BE-drm-%E5%86%85%E5%AE%B9%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
+    <url>/2020/07/29/qutebrowser-%E4%B8%8D%E8%83%BD%E6%92%AD%E6%94%BE-drm-%E5%86%85%E5%AE%B9%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
     <content><![CDATA[<ol>
 <li>我系统基本情况<ul>
 <li>  我的系统， 安装的是源里面的 nvidia 驱动</li>
@@ -2947,7 +2947,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2020-08-22 纳滤膜的清洗规程</title>
-    <url>/supremew/2020/08/22/%E7%BA%B3%E6%BB%A4%E8%86%9C%E7%9A%84%E6%B8%85%E6%B4%97%E8%A7%84%E7%A8%8B/</url>
+    <url>/2020/08/22/%E7%BA%B3%E6%BB%A4%E8%86%9C%E7%9A%84%E6%B8%85%E6%B4%97%E8%A7%84%E7%A8%8B/</url>
     <content><![CDATA[<p>本公司采用科氏纳滤膜, 其型号为 <strong>spiral selro 8040-mps34-nyhn</strong> ， 约 5W/支 <img src="http://tuchuang.supermew.top/IMG_20191102_085347.jpg-WordpressWater" alt="科氏纳滤膜 8040"></p>
 <span id="more"></span>
 <ol>
@@ -2978,7 +2978,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2020-08-30 关于 deepin 桌面没有背景，且全黑</title>
-    <url>/supremew/2020/08/30/%E5%85%B3%E4%BA%8E-deepin-%E6%A1%8C%E9%9D%A2%E6%B2%A1%E6%9C%89%E8%83%8C%E6%99%AF%EF%BC%8C%E4%B8%94%E5%85%A8%E9%BB%91/</url>
+    <url>/2020/08/30/%E5%85%B3%E4%BA%8E-deepin-%E6%A1%8C%E9%9D%A2%E6%B2%A1%E6%9C%89%E8%83%8C%E6%99%AF%EF%BC%8C%E4%B8%94%E5%85%A8%E9%BB%91/</url>
     <content><![CDATA[<p>如题： 在不知道什么操作后， 桌面的背景图片没有了， 出现了全黑的， 且不管怎么设置背景多没有背景图片。 为解决该问题， 我尝试了如下命令， 没想到修复了。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs terminal">archlinux &gt;&gt;&gt;  sudo pacman -Syu deepin deepin-extra<br></code></pre></td></tr></table></figure>]]></content>
       <categories>
@@ -2987,7 +2987,7 @@ dieIfFaultOccured(&amp;env);
   </entry>
   <entry>
     <title>2020-09-14 python 项目的打包</title>
-    <url>/supremew/2020/09/14/python-%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%89%93%E5%8C%85/</url>
+    <url>/2020/09/14/python-%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%89%93%E5%8C%85/</url>
     <content><![CDATA[<p>在 pipenv 虚拟环境中开发的项目， 要拿到生产现场去部署。</p>
 <ol>
 <li><pre><code class="hljs"> pipenv lock -r &gt; requirements.txt
@@ -3005,7 +3005,7 @@ pip install -r requirements.txt
   </entry>
   <entry>
     <title>2020-09-19 python-mode 一打开就报错的问题</title>
-    <url>/supremew/2020/09/19/python-mode-%E4%B8%80%E6%89%93%E5%BC%80%E5%B0%B1%E6%8A%A5%E9%94%99%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <url>/2020/09/19/python-mode-%E4%B8%80%E6%89%93%E5%BC%80%E5%B0%B1%E6%8A%A5%E9%94%99%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p><strong>问题(坑爹的货,还是改源码)</strong></p>
 <figure class="highlight subunit"><table><tr><td class="code"><pre><code class="hljs subunit"><span class="hljs-keyword">Error </span>detected while processing function pymode#breakpoint#init:<br>line   22:<br>/must&gt;not&amp;exist/foo:2: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module&#x27;s documentation for alternative uses<br>Press ENTER or type command to continue<br></code></pre></td></tr></table></figure>
 
@@ -3021,7 +3021,7 @@ pip install -r requirements.txt
   </entry>
   <entry>
     <title>2020-10-14 archlinux 不能自动识别安卓手机/mtp</title>
-    <url>/supremew/2020/10/14/archlinux-%E4%B8%8D%E8%83%BD%E8%87%AA%E5%8A%A8%E8%AF%86%E5%88%AB%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA-mtp/</url>
+    <url>/2020/10/14/archlinux-%E4%B8%8D%E8%83%BD%E8%87%AA%E5%8A%A8%E8%AF%86%E5%88%AB%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA-mtp/</url>
     <content><![CDATA[<p>安装如下软件包，重启后就行</p>
 <ul>
 <li>  gvfs-mtp</li>
@@ -3035,7 +3035,7 @@ pip install -r requirements.txt
   </entry>
   <entry>
     <title>2020-11-08 archlinux 安装 i3 过程</title>
-    <url>/supremew/2020/11/08/archlinux-%E5%AE%89%E8%A3%85-i3-%E8%BF%87%E7%A8%8B/</url>
+    <url>/2020/11/08/archlinux-%E5%AE%89%E8%A3%85-i3-%E8%BF%87%E7%A8%8B/</url>
     <content><![CDATA[<p>下面是安装办法</p>
 <figure class="highlight pgsql"><table><tr><td class="code"><pre><code class="hljs pgsql">sudo pacman -S lightdm accountsservice lightdm-gtk-greeter xorg-<span class="hljs-keyword">server</span>-xephyr<br>sudo pacman -S i3-gaps<br>sudo pacman -S feh ranger<br>sudo pacman -S variety<br></code></pre></td></tr></table></figure>
 
@@ -3058,7 +3058,7 @@ pip install -r requirements.txt
   </entry>
   <entry>
     <title>2021-01-20 archlinux 打印机的安装与使用</title>
-    <url>/supremew/2021/01/20/archlinux-%E6%89%93%E5%8D%B0%E6%9C%BA%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
+    <url>/2021/01/20/archlinux-%E6%89%93%E5%8D%B0%E6%9C%BA%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<p>由于长时间的使用 archlinux 办公， 习惯了archlinux 的操作方式， 之前一直打印资料都是将资料发送到朋友那里，让其帮忙打印， 但是最近需要自己打印资料后， 发现打印资料还挺困难的。 现在将解决办法记录余下。</p>
 <ol>
 <li> 安装 cups (<strong>common unix print system</strong>)</li>
@@ -3086,7 +3086,7 @@ pip install -r requirements.txt
   </entry>
   <entry>
     <title>2021-02-15 npm 或 yarn 的相关镜像设置</title>
-    <url>/supremew/2021/02/15/npm-%E6%88%96-yarn-%E7%9A%84%E7%9B%B8%E5%85%B3%E9%95%9C%E5%83%8F%E8%AE%BE%E7%BD%AE/</url>
+    <url>/2021/02/15/npm-%E6%88%96-yarn-%E7%9A%84%E7%9B%B8%E5%85%B3%E9%95%9C%E5%83%8F%E8%AE%BE%E7%BD%AE/</url>
     <content><![CDATA[<p>使用 Electron-builder 打包，有时会在下载Electron、nsis、winCodeSign的过程中 Timeout 导致打包失败（鉴于国内的网络情况）。 可以进行如下设置, 其中有一部分是淘宝镜像，　一部分是华为镜像。</p>
 <figure class="highlight arduino"><table><tr><td class="code"><pre><code class="hljs arduino">yarn config set registry https:<span class="hljs-comment">//registry.npm.taobao.org</span><br>yarn config set disturl https:<span class="hljs-comment">//npm.taobao.org/dist</span><br>yarn config set electron_mirror https:<span class="hljs-comment">//npm.taobao.org/mirrors/electron/</span><br>yarn config set electron-builder-binaries_mirror https:<span class="hljs-comment">//repo.huaweicloud.com/electron-builder-binaries/</span><br></code></pre></td></tr></table></figure>
 
@@ -3104,7 +3104,7 @@ pip install -r requirements.txt
   </entry>
   <entry>
     <title>2021-02-15 关于在　archlinux　安装　xx.pacman　文件的问题</title>
-    <url>/supremew/2021/02/15/%E5%85%B3%E4%BA%8E%E5%9C%A8-archlinux-%E5%AE%89%E8%A3%85-xx-pacman-%E6%96%87%E4%BB%B6%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <url>/2021/02/15/%E5%85%B3%E4%BA%8E%E5%9C%A8-archlinux-%E5%AE%89%E8%A3%85-xx-pacman-%E6%96%87%E4%BB%B6%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p><strong>xx.pacman</strong> 一般情况下是为　archlinux 系列的系统开发的 abs 包，　该种类型的包可以通过如下命令进行安装。</p>
 <figure class="highlight nginx"><table><tr><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">sudo</span> pacman -U xx.pacman<br></code></pre></td></tr></table></figure>]]></content>
       <categories>
@@ -3113,7 +3113,7 @@ pip install -r requirements.txt
   </entry>
   <entry>
     <title>2021-02-22 getaddrinfo EAI_AGAIN 错误的一个可能原因</title>
-    <url>/supremew/2021/02/22/getaddrinfo-eai-again-%E9%94%99%E8%AF%AF%E7%9A%84%E4%B8%80%E4%B8%AA%E5%8F%AF%E8%83%BD%E5%8E%9F%E5%9B%A0/</url>
+    <url>/2021/02/22/getaddrinfo-eai-again-%E9%94%99%E8%AF%AF%E7%9A%84%E4%B8%80%E4%B8%AA%E5%8F%AF%E8%83%BD%E5%8E%9F%E5%9B%A0/</url>
     <content><![CDATA[<p>Linux系统，刚装好没多久，运行Node.js程序倒是看起来没啥问题，只是浏览器上打不开对应地址，然后过一会程序报错退出：</p>
 <figure class="highlight subunit"><table><tr><td class="code"><pre><code class="hljs subunit"><span class="hljs-keyword">Error: </span>getaddrinfo EAI_AGAIN localhost.localdomain<br></code></pre></td></tr></table></figure>
 
@@ -3132,7 +3132,7 @@ pip install -r requirements.txt
   </entry>
   <entry>
     <title>2021-05-19 hosts 修改后，手动刷新 dns</title>
-    <url>/supremew/2021/05/19/hosts-%E4%BF%AE%E6%94%B9%E5%90%8E%EF%BC%8C%E6%89%8B%E5%8A%A8%E5%88%B7%E6%96%B0-dns/</url>
+    <url>/2021/05/19/hosts-%E4%BF%AE%E6%94%B9%E5%90%8E%EF%BC%8C%E6%89%8B%E5%8A%A8%E5%88%B7%E6%96%B0-dns/</url>
     <content><![CDATA[<h4 id="Mac-OS-X"><a href="#Mac-OS-X" class="headerlink" title="Mac OS X"></a>Mac OS X</h4><figure class="highlight sas"><table><tr><td class="code"><pre><code class="hljs sas">sudo killall -HUP mDNSResponder <span class="hljs-variable">&amp;&amp;</span> echo macOS DNS Cache <span class="hljs-keyword">Reset</span><br></code></pre></td></tr></table></figure>
 
 <h4 id="CentOS"><a href="#CentOS" class="headerlink" title="CentOS"></a>CentOS</h4><figure class="highlight css"><table><tr><td class="code"><pre><code class="hljs css">nscd -<span class="hljs-selector-tag">i</span> hosts<br>service nscd restart<br></code></pre></td></tr></table></figure>
@@ -3148,7 +3148,7 @@ pip install -r requirements.txt
   </entry>
   <entry>
     <title>2021-06-28 当只升级了某一个软件导致部分软件的依赖问题。</title>
-    <url>/supremew/2021/06/28/%E5%BD%93%E5%8F%AA%E5%8D%87%E7%BA%A7%E4%BA%86%E6%9F%90%E4%B8%80%E4%B8%AA%E8%BD%AF%E4%BB%B6%E5%AF%BC%E8%87%B4%E9%83%A8%E5%88%86%E8%BD%AF%E4%BB%B6%E7%9A%84%E4%BE%9D%E8%B5%96%E9%97%AE%E9%A2%98/</url>
+    <url>/2021/06/28/%E5%BD%93%E5%8F%AA%E5%8D%87%E7%BA%A7%E4%BA%86%E6%9F%90%E4%B8%80%E4%B8%AA%E8%BD%AF%E4%BB%B6%E5%AF%BC%E8%87%B4%E9%83%A8%E5%88%86%E8%BD%AF%E4%BB%B6%E7%9A%84%E4%BE%9D%E8%B5%96%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>当升级某个软件后，会导致依赖于该软件包的软件无法正常使用， 本尊就遇到了这样的问题， 现下就来说说如何破解该问题。 本人升级了 icu 这个软件包， 然后发现 pyqt5 pyqt-webengine qutebrowser 等软件不能正常使用， 解决该问题可以有如下办法。</p>
 <figure class="highlight nginx"><table><tr><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">pacman</span> -Qi icu<br>pacman -S 依赖于icu的软件包<br></code></pre></td></tr></table></figure>
 <span id="more"></span>
@@ -3166,7 +3166,7 @@ pip install -r requirements.txt
   </entry>
   <entry>
     <title>2021-07-09 还款日</title>
-    <url>/supremew/2021/07/09/%E8%BF%98%E6%AC%BE%E6%97%A5/</url>
+    <url>/2021/07/09/%E8%BF%98%E6%AC%BE%E6%97%A5/</url>
     <content><![CDATA[<p>今天是还款日，今日还款项目为：</p>
 <ul>
 <li>花呗 2200.00。</li>
@@ -3178,7 +3178,7 @@ pip install -r requirements.txt
   </entry>
   <entry>
     <title>EX3BT 实验双极膜膜堆安装流程</title>
-    <url>/supremew/2021/07/13/EX3BT-%E5%AE%9E%E9%AA%8C%E5%8F%8C%E6%9E%81%E8%86%9C%E8%86%9C%E5%A0%86%E5%AE%89%E8%A3%85%E6%B5%81%E7%A8%8B/</url>
+    <url>/2021/07/13/EX3BT-%E5%AE%9E%E9%AA%8C%E5%8F%8C%E6%9E%81%E8%86%9C%E8%86%9C%E5%A0%86%E5%AE%89%E8%A3%85%E6%B5%81%E7%A8%8B/</url>
     <content><![CDATA[<ol>
 <li>将从 ex3bt 上拆下来的膜堆浸泡在水里面， 让其充分湿润， 否则会出现膜与隔板之间相互粘连，很难取下来。</li>
 <li>将膜堆拆分， 按照膜片的型号分类摆放与湿润的水里， 清点膜片的张数，并保存。</li>
@@ -3200,7 +3200,7 @@ pip install -r requirements.txt
   </entry>
   <entry>
     <title>2021-07-15 双极膜碱液硫酸根异常研究</title>
-    <url>/supremew/2021/07/15/%E5%8F%8C%E6%9E%81%E8%86%9C%E7%A2%B1%E6%B6%B2%E7%A1%AB%E9%85%B8%E6%A0%B9%E5%BC%82%E5%B8%B8%E7%A0%94%E7%A9%B6/</url>
+    <url>/2021/07/15/%E5%8F%8C%E6%9E%81%E8%86%9C%E7%A2%B1%E6%B6%B2%E7%A1%AB%E9%85%B8%E6%A0%B9%E5%BC%82%E5%B8%B8%E7%A0%94%E7%A9%B6/</url>
     <content><![CDATA[<p>硫酸根 5000+ ppm 异常， 平时正常境况下的硫酸根为 1000 ~ 2000 ppm，对双极膜出现的这样的情况进行研究。　</p>
 <ol>
 <li>分拆双极膜膜堆，　检查阳膜、双极膜是否与破损。　检查破损的方法，手电筒照射待检查的膜，让光透过照射在白色的墙壁上，观察是否有一样。　检查结果为，　<strong>膜没有异常破损</strong>。</li>
@@ -3219,7 +3219,7 @@ pip install -r requirements.txt
   </entry>
   <entry>
     <title>2021-07-23 三室双极膜</title>
-    <url>/supremew/2021/07/23/%E4%B8%89%E5%AE%A4%E5%8F%8C%E6%9E%81%E8%86%9C/</url>
+    <url>/2021/07/23/%E4%B8%89%E5%AE%A4%E5%8F%8C%E6%9E%81%E8%86%9C/</url>
     <content><![CDATA[<p>三室双极膜是指含有三个腔室，其中包括酸、碱、盐室。盐室在阴膜、阳膜之间，　酸室是在阴膜与双极膜之间，　碱室是在阳膜与双极膜之间。　下图为硫酸钠的三室双极膜的示意图。</p>
 <p><img src="/supremew/2021/07/23/%E4%B8%89%E5%AE%A4%E5%8F%8C%E6%9E%81%E8%86%9C/1.png"></p>
 ]]></content>
@@ -3233,7 +3233,7 @@ pip install -r requirements.txt
   </entry>
   <entry>
     <title>2021-07-23 两室双极膜</title>
-    <url>/supremew/2021/07/23/%E4%B8%A4%E5%AE%A4%E5%8F%8C%E6%9E%81%E8%86%9C/</url>
+    <url>/2021/07/23/%E4%B8%A4%E5%AE%A4%E5%8F%8C%E6%9E%81%E8%86%9C/</url>
     <content><![CDATA[<p><img src="/supremew/2021/07/23/%E4%B8%A4%E5%AE%A4%E5%8F%8C%E6%9E%81%E8%86%9C/1.png"></p>
 <p>双极膜产生的氢离子进入酸室与有机酸离子结合成有机酸，　有机酸盐离子与氢离子的结合能力较强（形成氢氧共价键，而很难被电离），　并且有机酸的分子较大而被阻留在了酸室。</p>
 <p>双极膜产生的氢氧根离子在电场力的推动下进入碱室，与从酸室过来的阳离子结合成碱液。</p>
@@ -3249,7 +3249,7 @@ pip install -r requirements.txt
   </entry>
   <entry>
     <title>电渗析技术的应用</title>
-    <url>/supremew/2021/07/23/%E7%94%B5%E6%B8%97%E6%9E%90%E6%8A%80%E6%9C%AF%E7%9A%84%E5%BA%94%E7%94%A8/</url>
+    <url>/2021/07/23/%E7%94%B5%E6%B8%97%E6%9E%90%E6%8A%80%E6%9C%AF%E7%9A%84%E5%BA%94%E7%94%A8/</url>
     <content><![CDATA[<h4 id="双极膜"><a href="#双极膜" class="headerlink" title="双极膜"></a>双极膜</h4><ul>
 <li>在低电压下将水分裂为酸 (H＋)和碱(OH－)。</li>
 <li><em>因没有电极反应而不产生氧化还原反应。因此没有副产物的产生。</em> (这一点描述错误，　实际上电极上是有氧化还原反应的)</li>
@@ -3285,7 +3285,7 @@ pip install -r requirements.txt
   </entry>
   <entry>
     <title>2021-08-13 浅秋</title>
-    <url>/supremew/2021/08/13/%E6%B5%85%E7%A7%8B/</url>
+    <url>/2021/08/13/%E6%B5%85%E7%A7%8B/</url>
     <content><![CDATA[<p>浅秋，<br>薄念，<br>风却懂。</p>
 <p>你看!<br>匆匆一年又是冬，<br>岁月不堪数，<br>故人不如初。</p>
 ]]></content>
@@ -3295,7 +3295,7 @@ pip install -r requirements.txt
   </entry>
   <entry>
     <title>2021-08-15 钓鱼心得</title>
-    <url>/supremew/2021/08/15/%E9%92%93%E9%B1%BC%E5%BF%83%E5%BE%97/</url>
+    <url>/2021/08/15/%E9%92%93%E9%B1%BC%E5%BF%83%E5%BE%97/</url>
     <content><![CDATA[<p>这里说的钓鱼心得主要是一些失败的心得。</p>
 <ol>
 <li>子线断了导致中了大鱼后， 子线瞬间断线。 这里得到一个教训为， 直线或者主线有损伤的话， 就应该更换。</li>
@@ -3308,7 +3308,7 @@ pip install -r requirements.txt
   </entry>
   <entry>
     <title>2021-08-20 八月的风</title>
-    <url>/supremew/2021/08/20/%E5%85%AB%E6%9C%88%E7%9A%84%E9%A3%8E/</url>
+    <url>/2021/08/20/%E5%85%AB%E6%9C%88%E7%9A%84%E9%A3%8E/</url>
     <content><![CDATA[<p><img src="/supremew/2021/08/20/%E5%85%AB%E6%9C%88%E7%9A%84%E9%A3%8E/1.jpg"><br>飞过山林<br>飞过乡村<br>八月的风<br>迢递着成熟的感动</p>
 <p><img src="/supremew/2021/08/20/%E5%85%AB%E6%9C%88%E7%9A%84%E9%A3%8E/2.jpg"><br>阳春河畔<br>惯看春花的娇美烂漫<br>吐火的夏垄<br>迷醉于夏花的热烈多情<br>你终于放慢了脚步<br>在秋的路口转身<br>平心静气而行</p>
 <p><img src="/supremew/2021/08/20/%E5%85%AB%E6%9C%88%E7%9A%84%E9%A3%8E/3.jpg"><br>瑟瑟萧萧<br>弹拨着赤金润染的生命<br>黄叶伴舞果披红<br>你的脚步</p>
@@ -3321,7 +3321,7 @@ pip install -r requirements.txt
   </entry>
   <entry>
     <title>2021-08-20 杨柳依依</title>
-    <url>/supremew/2021/08/20/%E6%9D%A8%E6%9F%B3%E4%BE%9D%E4%BE%9D/</url>
+    <url>/2021/08/20/%E6%9D%A8%E6%9F%B3%E4%BE%9D%E4%BE%9D/</url>
     <content><![CDATA[<p>惜我往矣，<br>杨柳依依，<br>今我来思，<br>雨雪霏霏，<br>行道迟迟，<br>载渴载饥,<br>我心伤悲，<br>上天莫知。</p>
 <p><img src="/supremew/2021/08/20/%E6%9D%A8%E6%9F%B3%E4%BE%9D%E4%BE%9D/1.jpg"></p>
 ]]></content>
@@ -3331,7 +3331,7 @@ pip install -r requirements.txt
   </entry>
   <entry>
     <title>2021-08-20 雪</title>
-    <url>/supremew/2021/08/20/%E9%9B%AA/</url>
+    <url>/2021/08/20/%E9%9B%AA/</url>
     <content><![CDATA[<p>雪原营涛，<br>铁马冰河，<br>关山四固，<br>我心何缺，</p>
 ]]></content>
       <categories>
@@ -3340,7 +3340,7 @@ pip install -r requirements.txt
   </entry>
   <entry>
     <title>测试图片</title>
-    <url>/supremew/2021/08/21/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87/</url>
+    <url>/2021/08/21/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87/</url>
     <content><![CDATA[<p><img src="/supremew/2021/08/21/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87/1.jpg" alt="1.jpg"></p>
 <p>测试图片</p>
 ]]></content>
@@ -3350,7 +3350,7 @@ pip install -r requirements.txt
   </entry>
   <entry>
     <title>2021-08-22 测试二</title>
-    <url>/supremew/2021/08/22/%E6%B5%8B%E8%AF%95%E4%BA%8C/</url>
+    <url>/2021/08/22/%E6%B5%8B%E8%AF%95%E4%BA%8C/</url>
     <content><![CDATA[<p>测试后期发表。</p>
 ]]></content>
       <categories>
@@ -3359,7 +3359,7 @@ pip install -r requirements.txt
   </entry>
   <entry>
     <title>spyder 的安装以及中文输入的解决办法</title>
-    <url>/supremew/2021/08/25/spyder-%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
+    <url>/2021/08/25/spyder-%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
     <content><![CDATA[<h5 id="spyder-的安装。"><a href="#spyder-的安装。" class="headerlink" title="spyder 的安装。"></a>spyder 的安装。</h5><h6 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h6><figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">pacman -S spyder</span><br></code></pre></td></tr></table></figure>
 
 <p>但是 <em>pacman</em>　安装的 spyder 的版本为 <em>spyder 5.0.1</em> ，版本较低，　并且在安装的时候需要对 <em>python-decorator</em> 进行降级处理。</p>
@@ -3393,7 +3393,7 @@ pip install -r requirements.txt
   </entry>
   <entry>
     <title>2021-08-26 秋雨</title>
-    <url>/supremew/2021/08/26/%E7%A7%8B%E9%9B%A8/</url>
+    <url>/2021/08/26/%E7%A7%8B%E9%9B%A8/</url>
     <content><![CDATA[<p>秋雨不像春的蒙蒙细雨，<br>也不像夏的嚎啕大雨，<br>秋雨飘飘洒洒，<br>像一片幕布，<br>无边无际，<br>朦朦胧胧。</p>
 <p>秋雨是五彩缤纷的，<br>在稻田里，<br>秋雨是金黄色的;<br>在洒落的土地上，<br>秋雨是红火的;<br>在山上，秋雨是浓绿的。</p>
 <p>秋雨如烟如雾， 无声地飘洒在那空地的瓦栎堆里、枯枝败叶上，淋湿了地，淋湿了房，淋湿了树。</p>
@@ -3410,7 +3410,7 @@ pip install -r requirements.txt
   </entry>
   <entry>
     <title>2021-08-27 鱼杆的选择</title>
-    <url>/supremew/2021/08/27/%E9%B1%BC%E6%9D%86%E7%9A%84%E9%80%89%E6%8B%A9/</url>
+    <url>/2021/08/27/%E9%B1%BC%E6%9D%86%E7%9A%84%E9%80%89%E6%8B%A9/</url>
     <content><![CDATA[<p>目前市面上主要有 37、28、19 调鱼杆(这三种调性的鱼杆均属于硬钓竿， 46 或 55 控鱼性很差基本被淘汰)， 选择什么样的鱼杆主要是看钓鱼场景以及钓鱼让人的经验。</p>
 <p>37 调对线组的保护比较到位，不容易切线，起鱼时更容易将杆立起来。适合新手或鱼情较为复杂的场景, 比较适合野钓。</p>
 <p>28 调具有起鱼快速、控鱼有力的有时，可使用长竿短线、垂线钓法，适用于竞技赛中快速垂钓以及遛鱼，也适用于有水草以及障碍物的水域中使用，可以令鱼快速出水入护，适合钓大鱼时使用。但是这种调性的钓竿韧性较差，易发生断竿的现象，这也是其缺点所在。 比较适合有一定的钓鱼经验的人使用。</p>
@@ -3431,7 +3431,7 @@ pip install -r requirements.txt
   </entry>
   <entry>
     <title>2021-09-03 vimspector 安装与使用</title>
-    <url>/supremew/2021/09/03/vimspector-%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
+    <url>/2021/09/03/vimspector-%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h4 id="vimspector-的安装"><a href="#vimspector-的安装" class="headerlink" title="vimspector 的安装"></a>vimspector 的安装</h4><ol>
 <li>如果是 vim-plug 管理 vim 插件的， 就简单的编辑 ~/.vimrc。在相应的位置增加如下行。</li>
 </ol>
@@ -3461,7 +3461,7 @@ pip install -r requirements.txt
   </entry>
   <entry>
     <title>2021-09-08 python 类属性和对象属性的区别</title>
-    <url>/supremew/2021/09/08/python-%E7%B1%BB%E5%B1%9E%E6%80%A7%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
+    <url>/2021/09/08/python-%E7%B1%BB%E5%B1%9E%E6%80%A7%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
     <content><![CDATA[<p>之前对 python 的类属性和对象属性理解的不是准确，以致写出的代码有小 bug。</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">a</span>:<br>	names = []<br>	<span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self</span>):<br>		self.b = []<br></code></pre></td></tr></table></figure>
 
@@ -3487,7 +3487,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2021-09-10 戒烟</title>
-    <url>/supremew/2021/09/10/%E6%88%92%E7%83%9F/</url>
+    <url>/2021/09/10/%E6%88%92%E7%83%9F/</url>
     <content><![CDATA[<p>现在，烟瘾确实也越来越大了， 一天几乎要抽两包烟。 感觉身体越来越不如前了， 尤其是喉哝上的痰是越来越多，而且经常让人恶心。（在抽烟之前，喉哝上基本没有痰。）</p>
 <p>这次是下定决心，要戒掉吸烟这个坏习惯。</p>
 ]]></content>
@@ -3497,7 +3497,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>飞书的试用情况</title>
-    <url>/supremew/2021/09/10/%E9%A3%9E%E4%B9%A6%E7%9A%84%E8%AF%95%E7%94%A8%E6%83%85%E5%86%B5/</url>
+    <url>/2021/09/10/%E9%A3%9E%E4%B9%A6%E7%9A%84%E8%AF%95%E7%94%A8%E6%83%85%E5%86%B5/</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>日常生活</category>
@@ -3508,7 +3508,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2021-11-30 arch 升级失败后修复过程</title>
-    <url>/supremew/2021/11/30/arch-%E5%8D%87%E7%BA%A7%E5%A4%B1%E8%B4%A5%E5%90%8E%E4%BF%AE%E5%A4%8D%E8%BF%87%E7%A8%8B/</url>
+    <url>/2021/11/30/arch-%E5%8D%87%E7%BA%A7%E5%A4%B1%E8%B4%A5%E5%90%8E%E4%BF%AE%E5%A4%8D%E8%BF%87%E7%A8%8B/</url>
     <content><![CDATA[<p>在 2021-11-29 因升级系统过程中出现电脑卡死，不得不重新启动，　最终导致升级失败，　重启后无法正常进入程序。　主要问题体现问 /boot 目录下没有相应的内核以及启动镜像的存在。</p>
 <p>下面为解决办法</p>
 <ol>
@@ -3551,7 +3551,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2021-12-07 mlocate 的使用</title>
-    <url>/supremew/2021/12/07/mlocate/</url>
+    <url>/2021/12/07/mlocate/</url>
     <content><![CDATA[<p>大家都知道 linux 系统中的 find 命令，在查找文件的时候是比较慢的，因此我们尽量避免使用 find 命令，　那怎么查找文件呢？</p>
 <p>那就是 locate 命令。</p>
 <figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">sudo pacman -Sy mlocate</span><br></code></pre></td></tr></table></figure>
@@ -3572,7 +3572,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2021-12-13 git 的默认编辑器的修改</title>
-    <url>/supremew/2021/12/13/git-%E7%9A%84%E9%BB%98%E8%AE%A4%E7%BC%96%E8%BE%91%E5%99%A8%E7%9A%84%E4%BF%AE%E6%94%B9/</url>
+    <url>/2021/12/13/git-%E7%9A%84%E9%BB%98%E8%AE%A4%E7%BC%96%E8%BE%91%E5%99%A8%E7%9A%84%E4%BF%AE%E6%94%B9/</url>
     <content><![CDATA[<h4 id="git-commit"><a href="#git-commit" class="headerlink" title="git commit"></a>git commit</h4><p>此时是进入GUN nano编辑器。在这里可以添加你的commit imformation 然后ctrl+o,回车保存，再ctrl+x退出。 因为对Nano编辑器很不熟悉，在这里我想将默认编辑器改为vim。打开.git/config文件，在core中添加 editor=vim即可。<br>或者运行命令 <code>git config –global core.editor vim</code> 修改更加方便。</p>
 <h4 id="git-commit-a"><a href="#git-commit-a" class="headerlink" title="git commit -a"></a>git commit -a</h4><p>把所有add了的文件都加入commit，然后进入编辑器编辑commit信息。</p>
 <h4 id="git-commit-m-“commit-imformation”"><a href="#git-commit-m-“commit-imformation”" class="headerlink" title="git commit -m  “commit imformation”"></a>git commit -m  “commit imformation”</h4><p>直接在后面添加commit 信息然后提交commit，与gitcommit相比快捷方便，但是就是commit信息格式无法控制。</p>
@@ -3587,7 +3587,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2021-12-23 archlinux 升级后，启动 lightdm 失败</title>
-    <url>/supremew/2021/12/23/archlinux-%E5%8D%87%E7%BA%A7%E5%90%8E%EF%BC%8C%E5%90%AF%E5%8A%A8-lightdm-%E5%A4%B1%E8%B4%A5/</url>
+    <url>/2021/12/23/archlinux-%E5%8D%87%E7%BA%A7%E5%90%8E%EF%BC%8C%E5%90%AF%E5%8A%A8-lightdm-%E5%A4%B1%E8%B4%A5/</url>
     <content><![CDATA[<p>先来说说， 如何出现 lightdm 启动失败的问题的过程。</p>
 <ol>
 <li>在发现 qutebrowser 浏览器有新版本后， 于是单独升级了 qutebrowser.</li>
@@ -3609,7 +3609,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2021-12-26 明月皎夜光</title>
-    <url>/supremew/2021/12/26/%E6%98%8E%E6%9C%88%E7%9A%8E%E5%A4%9C%E5%85%89/</url>
+    <url>/2021/12/26/%E6%98%8E%E6%9C%88%E7%9A%8E%E5%A4%9C%E5%85%89/</url>
     <content><![CDATA[<p>明月皎夜光，促织鸣东壁。玉衡指孟冬，众星何历历。</p>
 <p>白露沾野草，时节忽复易。秋蝉鸣树间，玄鸟逝安适？</p>
 <p>昔我同门友，高举振六翮。不念携手好，弃我如遗迹。</p>
@@ -3626,7 +3626,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2021-12-26 春江花月夜</title>
-    <url>/supremew/2021/12/26/%E6%98%A5%E6%B1%9F%E8%8A%B1%E6%9C%88%E5%A4%9C/</url>
+    <url>/2021/12/26/%E6%98%A5%E6%B1%9F%E8%8A%B1%E6%9C%88%E5%A4%9C/</url>
     <content><![CDATA[<p>江畔何人初见月？江月何年初照人？人生代代无穷已，江月年年望相似。</p>
 <p>不知江月待何人，但见长江送流水。白云一片去悠悠，青枫浦上不胜愁。</p>
 <p>谁家今夜扁舟子？何处相思明月楼？可怜楼上月徘徊，应照离人妆镜台。</p>
@@ -3643,7 +3643,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2021-12-26 涉江采芙蓉</title>
-    <url>/supremew/2021/12/26/%E6%B6%89%E6%B1%9F%E9%87%87%E8%8A%99%E8%93%89/</url>
+    <url>/2021/12/26/%E6%B6%89%E6%B1%9F%E9%87%87%E8%8A%99%E8%93%89/</url>
     <content><![CDATA[<p>涉江采芙蓉，兰泽多芳草。</p>
 <p>采之欲遗谁，所思在远道。</p>
 <p>还顾望旧乡，长路漫浩浩。</p>
@@ -3660,7 +3660,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2021-12-26 迢迢牵牛星</title>
-    <url>/supremew/2021/12/26/%E8%BF%A2%E8%BF%A2%E7%89%B5%E7%89%9B%E6%98%9F/</url>
+    <url>/2021/12/26/%E8%BF%A2%E8%BF%A2%E7%89%B5%E7%89%9B%E6%98%9F/</url>
     <content><![CDATA[<p>迢迢牵牛星，</p>
 <p>皎皎河汉女。</p>
 <p>纤纤擢素手，</p>
@@ -3677,7 +3677,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2021-12-27 梅花</title>
-    <url>/supremew/2021/12/27/%E6%A2%85%E8%8A%B1/</url>
+    <url>/2021/12/27/%E6%A2%85%E8%8A%B1/</url>
     <content><![CDATA[<p>梅花爱雪雪不知，</p>
 <p>开在雪中做情痴。</p>
 <p>芳心醉落三千辦，</p>
@@ -3694,7 +3694,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2022-01-03 archlinux 无线网络频繁断网</title>
-    <url>/supremew/2022/01/03/archlinux-%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C%E9%A2%91%E7%B9%81%E6%96%AD%E7%BD%91/</url>
+    <url>/2022/01/03/archlinux-%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C%E9%A2%91%E7%B9%81%E6%96%AD%E7%BD%91/</url>
     <content><![CDATA[<p>最近发现无线网络老是断网，经过多方查找，未能找到明确的原因以及解决办法，　今天闲来无事尝试解决，　没想到还真让我给解决了，　现在几下解决该问题的办法与步骤。</p>
 <ol>
 <li>确保 dhcpcd 服务正常启动，并且要保证是随着机器启动时启动。</li>
@@ -3721,7 +3721,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2022-01-12 平凡的世界</title>
-    <url>/supremew/2022/01/12/%E5%B9%B3%E5%87%A1%E7%9A%84%E4%B8%96%E7%95%8C/</url>
+    <url>/2022/01/12/%E5%B9%B3%E5%87%A1%E7%9A%84%E4%B8%96%E7%95%8C/</url>
     <content><![CDATA[<p>晓霞，我像你了。</p>
 <p>张利，我也想你了。</p>
 <p>张利， 今天我又看《平凡的世界》了，虽然看着电视剧，但是也依稀回到了我们一起看这小说的那段时光， 想着想着，我哭了。 张利， 不知道你现在过得怎么样了， 你还好吗？ 真的希望能够再见到你， 尽管我知道现在已经为人母了，但是我还是抑制不住想你。 我也从来没有怨过你。。。。</p>
@@ -3739,7 +3739,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2022-01-12 我的坟墓</title>
-    <url>/supremew/2022/01/12/%E6%88%91%E7%9A%84%E5%9D%9F%E5%A2%93/</url>
+    <url>/2022/01/12/%E6%88%91%E7%9A%84%E5%9D%9F%E5%A2%93/</url>
     <content><![CDATA[<p>我的坟墓， 我的墓因该是这样的。</p>
 <p>一个小瓦房， 瓦房的前面有几棵梨树， 而我的墓就因该在这几棵的中间， 不需要墓碑， 不需要任何标志。</p>
 <p>我想啊， 每逢春天，烟雨蒙浓的小雨中，梨花盛开， 远远望去，白蒙蒙的一片，什么也看不见， 丝丝细雨飘在这几棵梨树上， 滋滋的滋润着。。。。</p>
@@ -3755,7 +3755,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2022-01-26 python3 匿名函数</title>
-    <url>/supremew/2022/01/26/python3-%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0/</url>
+    <url>/2022/01/26/python3-%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0/</url>
     <content><![CDATA[<p>python3 中的匿名函数是通过 lambda 关键字实现的， 使用匿名函数有如下有点：</p>
 <ul>
 <li>匿名函数没有名称，因此定义函数时，不需要费力给函数取个名字。</li>
@@ -3774,7 +3774,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2022-02-06 这难道就是春雨</title>
-    <url>/supremew/2022/02/06/%E8%BF%99%E9%9A%BE%E9%81%93%E5%B0%B1%E6%98%AF%E6%98%A5%E9%9B%A8/</url>
+    <url>/2022/02/06/%E8%BF%99%E9%9A%BE%E9%81%93%E5%B0%B1%E6%98%AF%E6%98%A5%E9%9B%A8/</url>
     <content><![CDATA[<p>窗外雨雾蒙蒙的，还在下着小雨， 听着车轮压在湿润的公路上发出索索的声响。 </p>
 <p>这难道是就是今年的第一场春雨吗？</p>
 <p>但是看着远处的李子树或梨树并没有开花或是发芽， 桃树也没有开花，这就让人感觉很是困惑。</p>
@@ -3789,7 +3789,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2022-02-10 AttributeError: module __main__ has no attribute __file__</title>
-    <url>/supremew/2022/02/10/AttributeError-module-main-has-no-attribute-file/</url>
+    <url>/2022/02/10/AttributeError-module-main-has-no-attribute-file/</url>
     <content><![CDATA[<p>在打一个 python 软件包时出现了问题。</p>
 <figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">python -m build</span><br></code></pre></td></tr></table></figure>
 <p>产生了如下错误。</p>
@@ -3813,7 +3813,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2022-02-19 ranger 配置</title>
-    <url>/supremew/2022/02/19/ranger-%E9%85%8D%E7%BD%AE/</url>
+    <url>/2022/02/19/ranger-%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<h4 id="只能修改文件夹-cw"><a href="#只能修改文件夹-cw" class="headerlink" title="只能修改文件夹 cw"></a>只能修改文件夹 cw</h4><p>在 rc.conf 中找到 <code>map cw ...</code> 这一行， 注释掉， 加入如下行：</p>
 <figure class="highlight stylus"><table><tr><td class="code"><pre><code class="hljs stylus">map cw eval fm<span class="hljs-selector-class">.execute_console</span>(<span class="hljs-string">&quot;bulkrename&quot;</span>) <span class="hljs-keyword">if</span> fm<span class="hljs-selector-class">.thisdir</span><span class="hljs-selector-class">.marked_items</span> <span class="hljs-keyword">else</span> fm<span class="hljs-selector-class">.open_console</span>(<span class="hljs-string">&quot;rename &quot;</span>)<br></code></pre></td></tr></table></figure>
 
@@ -3846,7 +3846,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2022-02-21 vim 中文乱码问题</title>
-    <url>/supremew/2022/02/21/vim-%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</url>
+    <url>/2022/02/21/vim-%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>在 vim 中出现中文乱码的问题是比较正常的， 现在来分析 vim 中会出现乱码的原因。</p>
 <p>vim 变量的意义:</p>
 <ul>
@@ -3873,7 +3873,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2022-03-02 mysql 中的特殊字符.的处理</title>
-    <url>/supremew/2022/03/02/mysql-%E4%B8%AD%E7%9A%84%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6-%E7%9A%84%E5%A4%84%E7%90%86/</url>
+    <url>/2022/03/02/mysql-%E4%B8%AD%E7%9A%84%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6-%E7%9A%84%E5%A4%84%E7%90%86/</url>
     <content><![CDATA[<p>在使用 mysql 过程中遇到表名中出现的 ‘.’ 的情况， 让人很是恼火， 在百度上翻了个遍， 终于找到了办法。</p>
 <p>在使用 mysql 是需要在表格名的左右两边加上1左边的特殊字符。 如下:</p>
 <figure class="highlight n1ql"><table><tr><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> <span class="hljs-symbol">`1.xy`</span><br></code></pre></td></tr></table></figure>
@@ -3890,7 +3890,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2022-03-02 sqlalchemy 模块时遇到困惑的问题</title>
-    <url>/supremew/2022/03/02/sqlalchemy-%E6%A8%A1%E5%9D%97%E6%97%B6%E9%81%87%E5%88%B0%E5%9B%B0%E6%83%91%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <url>/2022/03/02/sqlalchemy-%E6%A8%A1%E5%9D%97%E6%97%B6%E9%81%87%E5%88%B0%E5%9B%B0%E6%83%91%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>在 python 中使用 sqlalchemy 时， 不要忘了建模， 不管是查询还是更新或创建表格都需要建模; 现举例如下：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs python3">#！/urs/bin/env python3<br># filename: 1.py<br><br><br>from sqlalchemy import Column, String, create_engine, Integer<br>from sqlalchemy.orm import sessionmaker<br>from sqlalchemy.ext.declarative import declarative_base<br><br>Base = declarative_base()<br><br>def class student(Base):<br>	id = Column(Integer)<br>	name = Column(String(20))<br>	age = Column(Integer(20))<br><br><br><br></code></pre></td></tr></table></figure>
 ]]></content>
@@ -3904,7 +3904,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2022-03-10 github 访问的问题</title>
-    <url>/supremew/2022/03/10/github-%E8%AE%BF%E9%97%AE%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <url>/2022/03/10/github-%E8%AE%BF%E9%97%AE%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>github 经常出现访问速度慢， 尤其在下载 github 上的压缩包， 图片等等。 经过多方探访，总算找到了解决办法。<br>hello the world<br>通过 ipaddress.com 查询关于 github 的域名的 IP, 然后将所查到的相应 IP 添加到 hosts 中。比较简单的办法就是在 gitee.com 上搜索 github hosts 关键词，找到最新的 hosts 配置， 直接添加到 hosts 中就是了。</p>
 <p><a href="https://gitee.com/ineo6/hosts?_from=gitee_search">ineo6 就是一个不错的选择</a></p>
 ]]></content>
@@ -3918,7 +3918,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2022-04-13 python 程序打包</title>
-    <url>/supremew/2022/04/13/python-%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85/</url>
+    <url>/2022/04/13/python-%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85/</url>
     <content><![CDATA[<ol>
 <li>需要安装 setuptools , build</li>
 </ol>
@@ -3941,7 +3941,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2022-05-13 python 编写 vim 插件</title>
-    <url>/supremew/2022/05/13/python-%E7%BC%96%E5%86%99-vim-%E6%8F%92%E4%BB%B6/</url>
+    <url>/2022/05/13/python-%E7%BC%96%E5%86%99-vim-%E6%8F%92%E4%BB%B6/</url>
     <content><![CDATA[<p><img src="/supremew/2022-05-13-python-%E7%BC%96%E5%86%99-vim-%E6%8F%92%E4%BB%B6/"><br><img src="/supremew/2022-05-13-python-%E7%BC%96%E5%86%99-vim-%E6%8F%92%E4%BB%B6/"><br><img src="/supremew/2022-05-13-python-%E7%BC%96%E5%86%99-vim-%E6%8F%92%E4%BB%B6/"><br><img src="/supremew/2022-05-13-python-%E7%BC%96%E5%86%99-vim-%E6%8F%92%E4%BB%B6/"><br><img src="https://www.picturebed.com/2022-05-13-python-%E7%BC%96%E5%86%99-vim-%E6%8F%92%E4%BB%B6/"><br><img src="https://www.picturebed.com/2022-05-13-python-%E7%BC%96%E5%86%99-vim-%E6%8F%92%E4%BB%B6/"><br><img src="https://www.picturebed.com/2022-05-13-python-%E7%BC%96%E5%86%99-vim-%E6%8F%92%E4%BB%B6/"><br><img src="/supremew/2022-05-13-python-%E7%BC%96%E5%86%99-vim-%E6%8F%92%E4%BB%B6/"></p>
 ]]></content>
       <categories>
@@ -3950,7 +3950,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2022-06-05 archlinux 本地话设置</title>
-    <url>/supremew/2022/06/05/archlinux-%E6%9C%AC%E5%9C%B0%E8%AF%9D%E8%AE%BE%E7%BD%AE/</url>
+    <url>/2022/06/05/archlinux-%E6%9C%AC%E5%9C%B0%E8%AF%9D%E8%AE%BE%E7%BD%AE/</url>
     <content><![CDATA[<h3 id="中文环境-英文界面"><a href="#中文环境-英文界面" class="headerlink" title="中文环境/英文界面"></a>中文环境/英文界面</h3><p>完美支持 <em>archlinux</em> 中文环境，但是以英文显示界面。</p>
 <p>/etc/locale.conf:</p>
 <figure class="highlight ini"><table><tr><td class="code"><pre><code class="hljs ini"><span class="hljs-attr">LANG</span>=zh_CN.utf8<br><span class="hljs-attr">LC_MESSAGES</span>=en_US.utf8<br></code></pre></td></tr></table></figure>
@@ -3969,7 +3969,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2017-03-13-1 Linux Desktop Entry 文件深入解析</title>
-    <url>/supremew/2017/03/13/986/</url>
+    <url>/2017/03/13/986/</url>
     <content><![CDATA[<p>Linux Desktop Entry 文件深入解析 『日期：2011-08-10] 来源：IBM 作者：龚奕平 ——————————————————————————– 1．Desktop Entry 文件标准简介 在 Windows 平台上，用户可以通过点击位于桌面或菜单上的快捷方式轻松打开目标应用程 序。现代 Linux 桌面系统也提供了此项功能。目前，Linux KDE 和 Linux GNOME 桌面系统 都使用 Desktop Entry 文件标准来描述程序启动配置信息。Desktop Entry 文件标准是由 FreeDesktop.org（<a href="http://freedesktop.org/wiki/%EF%BC%89">http://freedesktop.org/wiki/）</a> 制定的，目前最新的版本是”Desktop Entry Specification 1.0”[1]。 2．Desktop Entry 文件 Desktop Entry 文件以”.desktop”为后缀名。以 Linux GNOME 桌面系统为例，用户打开应 用程序浏览器后（见图 1）会看见很多应用程序快捷方式。事实上，每个应用程序快捷方式 都和一个 Desktop Entry 文件相对应。这些 Desktop Entry 文件通常被存放在 /usr/share/applications/ /opt/gnome/share/applications/ 等目录下。从文件浏览器进 入这些目录，点击相应的 Desktop Entry 文件同样可以启动相对应的应用程序。 假设当前”/usr/share/applications/“目录下有一文件”cbt.desktop”，用任意文件编辑软 件（如 vi 或 gedit）打开”cbt.desktop”，将得到如下内容：</p>
 <span id="more"></span>
 <p>清单 1 “cbt.desktop”文件内容 [Desktop Entry] Version = 1.0 Encoding = UTF-8 Name = Quick Start Tour GenericName = User Tutorial Comment = Computer Based Training tutorial to \ guide and help you learn how to use the Desktop Exec = gnome-open /usr/share/doc/manual/sled-gnome-cbt_en/index.html Icon = cbt StartupNotify = true Terminal = false Type = Application Categories = GNOME;Application;Documentation; OnlyShowIn = GNOME; X-SUSE-translate = true Name[cs] = Rychlá prohlídka systému Comment[cs] = V?ukov? program seznamující u?ivatele se základy pracovního prost?edí GenericName[cs] = U?ivatelsk? tutoriál Name[hu] = Rendszerbemutató Comment[hu] = A munkaállomés használatát bemutató segédlet GenericName[hu] = Felhasználói segédlet 本文将在下一节中结合上述”cbt.desktop”文件内容重点解析 Desktop Entry 的文件结构。 读者可以从中深入领会上述各条语句的具体含义。 3．Desktop Entry 文件结构 Desktop Entry 文件通常以字符串”[Desktop Entry]“开始。由清单可以得知，Desktop Entry 文件的内容是由若干{关键字，数值}配对的 Entry 组成的。例如，”Version”就是一 个关键字，关键字”Version”对应的数值是”1.0”。Desktop Entry 文件标准定义了一系列标 准关键字。标准关键字分为必选和可选两种：必选标准关键字必须在 .desktop 文件中被定 义；而可选关键字则不必。以下是对重点关键字的解析。 “Version” 『可选』 该数值指定了当前 Desktop Entry 文件所遵循的 Desktop Entry 文件标准版本。 “Encoding”： [1.0 版本不推荐使用』 该数值指定了当前 Desktop Entry 文件中特定字符串所使用的编 码方式。尽管 Desktop Entry 文件标准 1.0 不再推荐使用该关键字，但由于历史原因该关 键字仍然广泛出现在现有的 Desktop Entry 文件中。 “Name”：『必选』 该数值指定了相关应用程序的名称。其中，快捷方式的显示名称由关键字”Name”的数值所决 定，快捷方式所使用的图标由下文中将要介绍的关键字”Icon”的数值来决定。当然，这些定 义在应用程序浏览器中同样适用。 关键字”GenericName”：『可选』 该数值指定了相关应用程序的通用名称。 关键字”Comment”：『可选』 该数值是对当前 Desktop Entry 的简单描述。 关键字”Type”：『必选』 关键字”Type”定义了 Desktop Entry 文件的类型。常见的”Type”数值是”Application”和 “Link”。”Type = Application”表示当前 Desktop Entry 文件指向了一个应用程序；而 “Type = Link”表示当前 Desktop Entry 文件指向了一个 URL (Uniform Resource Locator)。 关键字”Exec”：『可选』 关键字”Exec”只有在”Type”类型是”Application”时才有意义。”Exec”的数值定义了启动指 定应用程序所要执行的命令，在此命令是可以带参数的。在本例中，关键字”Exec”的数值是 字符串”gnome-open /usr/share/doc/manual/sled-gnome-cbt_en/index.html”。在 shell 中输入该字符串并按回车键同样可以启动指定应用程序。 关键字”URL”：『可选』 关键字”URL”只有在”Type”类型是”Link”时才有意义。”URL”的数值定义了该 Desktop Entry 文件指向的 URL。 关键字”Icon”：『可选』 该数值定义了当前 Desktop Entry 文件在应用程序浏览器或是在文件浏览器中所显示的图 标。如果关键字”Icon”的数值是以绝对路径的格式给出，那么其数值所指定图标文件将被使 用；反之，Linux 系统将使用”Icon Theme Specification”[2] 在系统指定图标目录下定位 所需要使用的图标文件。比如在本例中关键字”Icon”的数值是”cbt”，它实际对应着系统指 定图标目录下的图片文件”cbt.png”cbt.png 。 关键字”StartupNotify”：『可选』 关键字”StartupNotify”的数值是布尔值（true 或是 false）。该关键字只有在”Type”类型 是”Application”时才有意义。其数值的含义由规范”Startup Notification Protocol Specifications”[3] 定义，在此不再详述。 关键字”Terminal”：『可选』和”StartupNotify”一样，关键字”StartupNotify”的数值也是 布尔值，并且该关键字只有在”Type”类型是”Application”时才有意义。其数值指出了相关 应用程序（即关键字”Exec”的数值）是否需要在终端窗口中运行。本文将在下一节中给出关 键字”Terminal”的具体使用方法。 关键字”Categories”：『可选』关键字”Categories”只有在”Type”类型是”Application”时 才有意义。”Categories”的数值指出了相关应用程序在菜单中显示的类别。具体菜单分类由 规范”Desktop Specification Menu”具体定。 关键字”OnlyShowIn”和”NotShowIn”：『可选』 这两个关键字分别定义了当前 Desktop Entry 是否在特定 Linux 桌面系统（例如：Linux GNOME 或 Linux KDE）下显示（由”OnlyShowIn”定义），或不显示（由”NotShowIn”定义） 。具体定义请参考”Desktop Specification Menu”[4]。 关键字”X-SuSE-translate”：[SUSE Linux 特有』 关键字”X-SuSE-translate”是 SUSE Linux（<a href="http://www.novell.com/linux/%EF%BC%89%E7%89%B9%E6%9C%89%E7%9A%84%E3%80%82">http://www.novell.com/linux/）特有的。</a> “X-SuSE-translate”符合 SUSE RPM Package 风格。”X-SuSE-translate”数值表示是否要对 关键字”Name”和”GenericName”进行翻译。详情请参考”SUSE Package Conventions”[5]。 本地化关键字”[LOCALE]“ 根据”Desktop Entry Specification”规范 [1]，在关键字后加上字符串”[LOCALE]“就可以 对该关键字进行特定的本地化定义。”LOCALE”的合法取值为： LOCALE= lang_COUNTRY.ENCODING@MODIFIER 在此，域”_COUNTRY”，”.ENCODING”和”@MODIFIER”是可以被忽略的。当指定 Desktop Entry 文件被解析时，解析器应当根据当前 POSIX locale 来正确获取本地化的关键字数值。例如 清单 1 就分别定义了在”cs”和”hu”语言环境下关键字”Name”，”Comment” 和”GenericName” 的不同数值。其余关键字除了上述在清单 1 中出现的关键字外，”Desktop Entry Specification”还定义了”Hidden”，”TryExec”，”MimeType”等可选关键字。用户可以根据 需要进行选取。 4．分析运行 Desktop Entry 文件 Desktop Entry 文件是一种常见的 Linux 文件格式，很多 Linux 程序需要对该种文件提供 支持。在此，本文给出分析运行 Desktop Entry 文件的基本编成思路。 4.1 分析 Desktop Entry 文件内容 操作 Desktop Entry 文件的第一步是获取文件的内容。假设有一 Desktop Entry 文件，其 路径信息存储在变量 pPath 中： 关于作者 龚奕平，软件工程师，IBM 中国软件开发中心 WPLC 部。现主要从事 Notes Linux 产品的 研究及开发。研究兴趣包括 Windows 应用程序跨平台移植、GDI 开发、网络设备开发和调 度算法研究。联系方式：<a href="mailto:&#x67;&#x6f;&#x6e;&#103;&#121;&#112;&#64;&#x63;&#x6e;&#46;&#x69;&#98;&#x6d;&#x2e;&#99;&#x6f;&#109;">&#x67;&#x6f;&#x6e;&#103;&#121;&#112;&#64;&#x63;&#x6e;&#46;&#x69;&#98;&#x6d;&#x2e;&#99;&#x6f;&#109;</a>. <a href="https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html">desktop entry 标准</a></p>
@@ -3980,7 +3980,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>c语言</title>
-    <url>/supremew/2013/11/07/c%E8%AF%AD%E8%A8%80/</url>
+    <url>/2013/11/07/c%E8%AF%AD%E8%A8%80/</url>
     <content><![CDATA[<p>关于c 语言的学习 对于单纯的c学习是非常简单的， 一个月你就可以成为c高手， 但是你紧紧是c高手。 而不是用c完成项目的高手， 因为你这会不会基本数据结构， 你不会使用软件库， 你不懂基本软件框架， 不懂怎样编写可移植的项目！</p>
 ]]></content>
       <categories>
@@ -3989,7 +3989,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>testing</title>
-    <url>/supremew/2014/04/16/testing/</url>
+    <url>/2014/04/16/testing/</url>
     <content><![CDATA[<p>testing <img src="http://supermew.u.qiniudn.com/%E6%B9%96%E9%9D%A2%E5%A4%9C%E7%A9%BA.jpg"></p>
 ]]></content>
       <categories>
@@ -3998,7 +3998,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2017-03-13 Ubuntu16.04与Windows时间同步问题</title>
-    <url>/supremew/2017/03/12/ubuntu16-04%E4%B8%8Ewindows%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98/</url>
+    <url>/2017/03/12/ubuntu16-04%E4%B8%8Ewindows%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>刚装完双系统后发现Ubuntu与Windows系统时间总会差8小时，这是因为Ubuntu将BIOS时间认为是世界标准时间，而Windows认为是当地时间。 网上很多解决方法都是修改/etc/default/rcS文件，将UTC=yes改为UTC=no，但是在16.04中，时间由timedatectl管理，修改rcS文件是无效的，现在的方法是： 打开终端，运行命令： timedatectl set-local-rtc 1 –adjust-system-clock timedatectl set-ntp 0 将硬件时钟使用本地时间。 还可以将硬件时钟使用UTC，运行命令： timedatectl set-local-rtc 0 timedatectl set-ntp 1 接着在Windows下修改注册表： Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1</p>
 ]]></content>
       <categories>
@@ -4007,7 +4007,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2017-10-19 vimrepress 的一些问题</title>
-    <url>/supremew/2017/10/19/vimrepress-%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</url>
+    <url>/2017/10/19/vimrepress-%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<h3 id="vimrepress-的概述"><a href="#vimrepress-的概述" class="headerlink" title="vimrepress 的概述"></a>vimrepress 的概述</h3><p>vimrepress 这个插件主要是用于管理 wordpress 博客，据介绍他可以新建 post, page, 删除 post, page. 但是就目前的使用的情况，并不是这样，目前就只有新建 post, page 能够有效，其他的功能都无效。</p>
 <h3 id="vimrepress-还需要修正一下代码"><a href="#vimrepress-还需要修正一下代码" class="headerlink" title="vimrepress 还需要修正一下代码"></a>vimrepress 还需要修正一下代码</h3><p>要想使用新建功能，还得需要修正一下代码才行。需要将 plugin 下 blog.vim 文件中的 blog_guess_open(what) 中以下代码删除。</p>
 <p>for i, p in enumerate(vim.eval(“VIMPRESS”)):<br>    if what.startswith(p[“blog_url”]):<br>        blog_index = i</p>
@@ -4020,7 +4020,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>中式小平台设计</title>
-    <url>/supremew/2017/03/10/%E4%B8%AD%E5%BC%8F%E5%B0%8F%E5%B9%B3%E5%8F%B0%E8%AE%BE%E8%AE%A1/</url>
+    <url>/2017/03/10/%E4%B8%AD%E5%BC%8F%E5%B0%8F%E5%B9%B3%E5%8F%B0%E8%AE%BE%E8%AE%A1/</url>
     <content><![CDATA[<p>基本尺寸:  反应釜1: 高60cm（43）， 直径60cm（40） ，底部阀门30 带电机高， 30cm。 反应釜2:同样大小的还有2个 高65, 直径60， 釜底阀门高30,  反应釜3:  高100cm，直径 110cm，  反应釜4: 同釜3</p>
 ]]></content>
       <categories>
@@ -4030,7 +4030,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>敢不敢说，今天为着梦想奋斗过！</title>
-    <url>/supremew/2014/02/21/%E4%B8%BA%E7%9D%80%E6%A2%A6%E6%83%B3%E5%A5%8B%E6%96%97%E4%BA%86%E6%B2%A1%EF%BC%9F/</url>
+    <url>/2014/02/21/%E4%B8%BA%E7%9D%80%E6%A2%A6%E6%83%B3%E5%A5%8B%E6%96%97%E4%BA%86%E6%B2%A1%EF%BC%9F/</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>日常生活</category>
@@ -4038,7 +4038,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>买注册化工工程师复习资料， 两周后</title>
-    <url>/supremew/2012/11/02/%E4%B9%B0%E6%B3%A8%E5%86%8C%E5%8C%96%E5%B7%A5%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%A4%8D%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%8C-%E4%B8%A4%E5%91%A8%E5%90%8E/</url>
+    <url>/2012/11/02/%E4%B9%B0%E6%B3%A8%E5%86%8C%E5%8C%96%E5%B7%A5%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%A4%8D%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%8C-%E4%B8%A4%E5%91%A8%E5%90%8E/</url>
     <content><![CDATA[<p>前两天， 还可以， 每天看了将近四个小时得书，</p>
 <p>但是， 后面就坚持不下去了。</p>
 <p>今天， 写这个东东就是来进行繁星得。</p>
@@ -4049,7 +4049,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>今天体重多少？</title>
-    <url>/supremew/2014/02/21/%E4%BB%8A%E5%A4%A9%E4%BD%93%E9%87%8D%E5%A4%9A%E5%B0%91%EF%BC%9F/</url>
+    <url>/2014/02/21/%E4%BB%8A%E5%A4%A9%E4%BD%93%E9%87%8D%E5%A4%9A%E5%B0%91%EF%BC%9F/</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>日常生活</category>
@@ -4057,7 +4057,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>今天打游戏否？</title>
-    <url>/supremew/2014/02/08/%E4%BB%8A%E5%A4%A9%E6%89%93%E6%B8%B8%E6%88%8F%E5%90%A6%EF%BC%9F/</url>
+    <url>/2014/02/08/%E4%BB%8A%E5%A4%A9%E6%89%93%E6%B8%B8%E6%88%8F%E5%90%A6%EF%BC%9F/</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>日常生活</category>
@@ -4065,7 +4065,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>今天执行学习计划否？</title>
-    <url>/supremew/2014/02/08/%E4%BB%8A%E5%A4%A9%E6%89%A7%E8%A1%8C%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92%E5%90%A6%EF%BC%9F/</url>
+    <url>/2014/02/08/%E4%BB%8A%E5%A4%A9%E6%89%A7%E8%A1%8C%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92%E5%90%A6%EF%BC%9F/</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>日常生活</category>
@@ -4073,7 +4073,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>今天， 老子痔疮翻了， 明天要做手术</title>
-    <url>/supremew/2012/10/03/%E4%BB%8A%E5%A4%A9%EF%BC%8C-%E8%80%81%E5%AD%90%E7%97%94%E7%96%AE%E7%BF%BB%E4%BA%86%EF%BC%8C-%E6%98%8E%E5%A4%A9%E8%A6%81%E5%81%9A%E6%89%8B%E6%9C%AF/</url>
+    <url>/2012/10/03/%E4%BB%8A%E5%A4%A9%EF%BC%8C-%E8%80%81%E5%AD%90%E7%97%94%E7%96%AE%E7%BF%BB%E4%BA%86%EF%BC%8C-%E6%98%8E%E5%A4%A9%E8%A6%81%E5%81%9A%E6%89%8B%E6%9C%AF/</url>
     <content><![CDATA[<p>狗日的！狗日的！狗日的！ 狗日的！ 狗日的！</p>
 ]]></content>
       <categories>
@@ -4082,13 +4082,13 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>八月的风</title>
-    <url>/supremew/2021/07/07/%E5%85%AB%E6%9C%88%E7%9A%84%E9%A3%8E/</url>
+    <url>/2021/07/07/%E5%85%AB%E6%9C%88%E7%9A%84%E9%A3%8E/</url>
     <content><![CDATA[<p>昔年八月十五夜，<br/>曲江池畔杏园边。<br/>今年八月十五夜，<br/>湓浦沙头水馆前。<br/>西北望乡何处是，<br/>东南见月几回圆。<br/>昨风一吹无人会，<br/>今夜清光似往年。<br/></p>
 ]]></content>
   </entry>
   <entry>
     <title>六月27 准备外送样</title>
-    <url>/supremew/2013/06/28/%E5%85%AD%E6%9C%8827-%E5%87%86%E5%A4%87%E5%A4%96%E9%80%81%E6%A0%B7/</url>
+    <url>/2013/06/28/%E5%85%AD%E6%9C%8827-%E5%87%86%E5%A4%87%E5%A4%96%E9%80%81%E6%A0%B7/</url>
     <content><![CDATA[<p>目前：准备送两个样出去。 1，在加入vc 前，加入10ml , 自制纳米铜粉成核剂。但不加pvp .  2,  在1的基础上加入pvp. 需要注意的是，送样编号根上面序列号一致 published by wordpress for android</p>
 ]]></content>
       <categories>
@@ -4097,7 +4097,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>关于2014年度的学习计划</title>
-    <url>/supremew/2014/01/14/%E5%85%B3%E4%BA%8E2014%E5%B9%B4%E5%BA%A6%E7%9A%84%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/</url>
+    <url>/2014/01/14/%E5%85%B3%E4%BA%8E2014%E5%B9%B4%E5%BA%A6%E7%9A%84%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/</url>
     <content><![CDATA[<p>1. 学好autocad制图软件 2. 学好注册化工工程师的专业知识， 其中包括专业案例。 下面是时间安排 1， autocad制图软件学习 安排在6：30—-9：00 2， 洗澡和漱口等问题9：00—–10：00 3， 注册化工工程师的专业知识学习 安排在10：00—- 下面说说， 为什么这样安排： 1， 学习autocad安排在， 下班后的一个半小时后。只给自己下班一个半小时的吃饭和上班后的休息时间，在这个时间段， 一般会有人来打扰， 还有一些人情世故， 所以把这个时间段来学习autocad是比较合适的， autocad在注册化工工程师考试中的比例不是很大。 那为什么autocad软件学习安排这么长了？ 因为我刚刚对了关于学习方法的文章， 据里面的大神说， 学习主要是靠专注， 怎么才能专注呢？ 那就是，在足够长的时间里学习一样东西， 时间太短， 也专不起来呀。 2， 在学习autocad之后安排了一个小时时间， 这个时间， 主要是用于洗澡之内的， 对了， 在这一年中， 还有一个目标， 那就是要做到修身养性的目的， 把自己养成一个有品位的人， 养成一个有人格魅力的人。 所以自己的个人卫生是第一个得抓的问题， 然后是穿着。 说话， 也得锻炼一下， 要求就是， 话可以不说， 但是说的话， 一定要经过大脑。 3， 把注册化工工程师的专业知识学习安排在这个时间段里， 最主要的是要达到对这个专业知识的专的目的， 所以需要的时间会更长一点， 但是有一个要求就是不能超过1：00， 对于这个要求一定要坚定的执行。 现在， 就来说说， 星期六和星期天的安排， 没什麽好说的， 这两天就是做题， 什么书， 我也不看。 做题要求： 星期六：将这一周所看过的书的习题做一篇， 当然还得包括这一周所做过的习题。 星期天： 上午做上周的综合习题， 如果时间充足的话， 还可以做做上上周的练习题， 下午做一套专业知识综合习题。</p>
 ]]></content>
       <categories>
@@ -4106,7 +4106,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>出院第二天</title>
-    <url>/supremew/2012/10/13/%E5%87%BA%E9%99%A2%E7%AC%AC%E4%BA%8C%E5%A4%A9/</url>
+    <url>/2012/10/13/%E5%87%BA%E9%99%A2%E7%AC%AC%E4%BA%8C%E5%A4%A9/</url>
     <content><![CDATA[<p>今天， 是我出院第二天了。</p>
 <p>早上， 去五医院换药，  刚一进门诊室， 发现人很多，我就问医生， 出院换药是这个时候换吧， 医生说是在这里换， 但是你得等等，</p>
 <p>等了一会医生就给我开了个缴费得单子， 我就拿着单子一看， 发现费用是250，</p>
@@ -4123,7 +4123,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>制备铜粉感想</title>
-    <url>/supremew/2013/06/26/%E5%88%B6%E5%A4%87%E9%93%9C%E7%B2%89%E6%84%9F%E6%83%B3/</url>
+    <url>/2013/06/26/%E5%88%B6%E5%A4%87%E9%93%9C%E7%B2%89%E6%84%9F%E6%83%B3/</url>
     <content><![CDATA[<p>从打回来的铜粉电镜看， 还是比较均匀。 大约3um ,而以前的铜粉是300nm published by wordpress for android</p>
 ]]></content>
       <categories>
@@ -4132,7 +4132,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>制备铜粉的一些经验</title>
-    <url>/supremew/2013/06/06/%E5%88%B6%E5%A4%87%E9%93%9C%E7%B2%89%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%8F%E9%AA%8C/</url>
+    <url>/2013/06/06/%E5%88%B6%E5%A4%87%E9%93%9C%E7%B2%89%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%8F%E9%AA%8C/</url>
     <content><![CDATA[<p>在铜粉的制备过程中，反应的程度控制，由于在反应过程中会产生酸，所以可以通过监控溶液的酸度来控制反应程度。刚发现铜粉在清洗过程中容易被氧化，我师傅给我建议在洗的溶液中加入少许水合肼，来防止铜粉被氧化。</p>
 ]]></content>
       <categories>
@@ -4141,7 +4141,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>制备铜粉详细过程</title>
-    <url>/supremew/2013/06/28/%E5%88%B6%E5%A4%87%E9%93%9C%E7%B2%89%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/</url>
+    <url>/2013/06/28/%E5%88%B6%E5%A4%87%E9%93%9C%E7%B2%89%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/</url>
     <content><![CDATA[<p>硫酸铜溶液80克每升， 自制成核剂0.02毫升硫酸铜溶液， 适量的水合肼， 400毫升水。溶液成中性，金黄色。 1，取硫酸铜溶液100毫升，与400毫升水混合， 并向其中加入35克葡萄糖，带溶清 2，将温度升到80-90， 加入14.5克氢氧化钠/50毫升水的碱溶液， 待溶液成砖红色 3，向溶液中加入10毫升自制成核剂， 迅速加入35克vc /175毫升水的90度溶液。 4，最后反应到深红色溶液，有点偏黑。 published by wordpress for android</p>
 ]]></content>
       <categories>
@@ -4150,7 +4150,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>外送样，电镜</title>
-    <url>/supremew/2013/07/09/%E5%A4%96%E9%80%81%E6%A0%B7%EF%BC%8C%E7%94%B5%E9%95%9C/</url>
+    <url>/2013/07/09/%E5%A4%96%E9%80%81%E6%A0%B7%EF%BC%8C%E7%94%B5%E9%95%9C/</url>
     <content><![CDATA[<p>1 溶解葡萄糖后，2克pvp， 10毫升硝酸银(4.5 10-5 mol/l， 在还原成铜的时候加) , 90-100度</p>
 <p><a href="http://supermew.ixiezi.com/files/2013/07/130709-1-5.jpg"><img src="http://supermew.ixiezi.com/files/2013/07/130709-1-5-300x225.jpg" alt="130709-1-5"></a></p>
 <p><a href="http://supermew.ixiezi.com/files/2013/07/130709-1-4.jpg"><img src="http://supermew.ixiezi.com/files/2013/07/130709-1-4-300x225.jpg" alt="130709-1-4"></a></p>
@@ -4181,7 +4181,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>宏基 aspre 5750g 散热问题的解决</title>
-    <url>/supremew/2013/06/12/%E5%AE%8F%E5%9F%BA-aspre-5750g-%E6%95%A3%E7%83%AD%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/</url>
+    <url>/2013/06/12/%E5%AE%8F%E5%9F%BA-aspre-5750g-%E6%95%A3%E7%83%AD%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/</url>
     <content><![CDATA[<p>前段时间， 我的宏基5750g 打坦克世界游戏时， 先是半个小时自动关一次机， 后来越来越频繁， 我通过杀毒， 查木马， 什么都没有查到， 于是， 我就怀疑是本本硬件的问题， 我想冬天的时候， 我都能玩坦克世界， 但是， 怎么到了夏天就不行了呢。 于是我就猜测，是散热的问题。 于是， 本人就开始想器要拆机清洗本本。</p>
 <p>1， 按照网上的拆机教程<a href="http://wenku.baidu.com/view/89e6eed980eb6294dd886cfa.html">http://wenku.baidu.com/view/89e6eed980eb6294dd886cfa.html</a>， 将其拆下。</p>
 <p>2， 发现里面的排风口有很多灰， 拆下， 清洗干净。</p>
@@ -4195,7 +4195,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2015-03-27 成品油价下跌 对 股市的影响</title>
-    <url>/supremew/2015/03/26/%E6%88%90%E5%93%81%E6%B2%B9%E4%BB%B7%E4%B8%8B%E8%B7%8C-%E5%AF%B9-%E8%82%A1%E5%B8%82%E7%9A%84%E5%BD%B1%E5%93%8D/</url>
+    <url>/2015/03/26/%E6%88%90%E5%93%81%E6%B2%B9%E4%BB%B7%E4%B8%8B%E8%B7%8C-%E5%AF%B9-%E8%82%A1%E5%B8%82%E7%9A%84%E5%BD%B1%E5%93%8D/</url>
     <content><![CDATA[<p>成品油价下跌导致以下影响 航空运输、交通运输业的成本、 火电、 汽车的消费</p>
 ]]></content>
       <categories>
@@ -4204,7 +4204,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>成核剂</title>
-    <url>/supremew/2013/06/26/%E6%88%90%E6%A0%B8%E5%89%82/</url>
+    <url>/2013/06/26/%E6%88%90%E6%A0%B8%E5%89%82/</url>
     <content><![CDATA[<p>成核剂， 以前认为成核剂，是把晶体做大的， 然而不是这样的。 在铜粉中， 可以适当加入一些比铜更容易被还原的金属来做成核剂。 今天我自制铜粉作为成核剂。 published by wordpress for android</p>
 ]]></content>
       <categories>
@@ -4213,7 +4213,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>我的天啊， 什么时候才能好啊， 我的屁股。</title>
-    <url>/supremew/2012/10/09/%E6%88%91%E7%9A%84%E5%A4%A9%E5%95%8A%EF%BC%8C-%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E6%89%8D%E8%83%BD%E5%A5%BD%E5%95%8A%EF%BC%8C-%E6%88%91%E7%9A%84%E5%B1%81%E8%82%A1%E3%80%82/</url>
+    <url>/2012/10/09/%E6%88%91%E7%9A%84%E5%A4%A9%E5%95%8A%EF%BC%8C-%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E6%89%8D%E8%83%BD%E5%A5%BD%E5%95%8A%EF%BC%8C-%E6%88%91%E7%9A%84%E5%B1%81%E8%82%A1%E3%80%82/</url>
     <content><![CDATA[<p><strong>谁来告诉我， 我的屁股什么时候才能好？ 谁能告诉我？</strong></p>
 ]]></content>
       <categories>
@@ -4222,7 +4222,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>我试着发个帖子</title>
-    <url>/supremew/2012/06/08/%E6%88%91%E8%AF%95%E7%9D%80%E5%8F%91%E4%B8%AA%E5%B8%96%E5%AD%90/</url>
+    <url>/2012/06/08/%E6%88%91%E8%AF%95%E7%9D%80%E5%8F%91%E4%B8%AA%E5%B8%96%E5%AD%90/</url>
     <content><![CDATA[<p>十一下</p>
 ]]></content>
       <categories>
@@ -4231,7 +4231,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>新的时间纪元</title>
-    <url>/supremew/2018/09/24/%E6%96%B0%E7%9A%84%E6%97%B6%E9%97%B4%E7%BA%AA%E5%85%83/</url>
+    <url>/2018/09/24/%E6%96%B0%E7%9A%84%E6%97%B6%E9%97%B4%E7%BA%AA%E5%85%83/</url>
     <content><![CDATA[<p>起始时间 1501-01-26 00:00:00（tm_wday=5, tm_day=26,tm_isdst=0）</p>
 ]]></content>
       <categories>
@@ -4240,7 +4240,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>注册化工工程师  基础考试成绩 单领取</title>
-    <url>/supremew/2014/03/06/%E6%B3%A8%E5%86%8C%E5%8C%96%E5%B7%A5%E5%B7%A5%E7%A8%8B%E5%B8%88-%E5%9F%BA%E7%A1%80%E8%80%83%E8%AF%95%E6%88%90%E7%BB%A9-%E5%8D%95%E9%A2%86%E5%8F%96/</url>
+    <url>/2014/03/06/%E6%B3%A8%E5%86%8C%E5%8C%96%E5%B7%A5%E5%B7%A5%E7%A8%8B%E5%B8%88-%E5%9F%BA%E7%A1%80%E8%80%83%E8%AF%95%E6%88%90%E7%BB%A9-%E5%8D%95%E9%A2%86%E5%8F%96/</url>
     <content><![CDATA[<p>地址：成都市致民路21号四川建设人才大楼，咨询电话：028-85222456、85453202、85439923），不需再到四川省人事人才考试测评基地领取考试成绩单。</p>
 ]]></content>
       <categories>
@@ -4249,7 +4249,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2017-10-23 对 vim 的 vimrepress 的改造</title>
-    <url>/supremew/2017/10/23/%E6%B5%8B%E8%AF%95%E6%88%91%E7%9A%84%E6%96%B0%E5%87%BD%E6%95%B0/</url>
+    <url>/2017/10/23/%E6%B5%8B%E8%AF%95%E6%88%91%E7%9A%84%E6%96%B0%E5%87%BD%E6%95%B0/</url>
     <content><![CDATA[<h3 id="主要改进地方"><a href="#主要改进地方" class="headerlink" title="主要改进地方"></a>主要改进地方</h3><ol>
 <li> 在 bloglist 回车打开博文, 并自动进入将filetype设置成markdown</li>
 <li> 在 blogSave 时, 通过pangu将博文书写进行规范化.</li>
@@ -4261,7 +4261,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2017-08-02 股票心得</title>
-    <url>/supremew/2017/08/02/%E6%B5%8B%E8%AF%95%E6%96%B0%E7%BC%96%E8%BE%91%E5%99%A8/</url>
+    <url>/2017/08/02/%E6%B5%8B%E8%AF%95%E6%96%B0%E7%BC%96%E8%BE%91%E5%99%A8/</url>
     <content><![CDATA[<h3 id="心得概述"><a href="#心得概述" class="headerlink" title="心得概述"></a>心得概述</h3><p>买股票， 就应该买强势股， -0.05~0.20为止损止盈， 如果达到止损止盈点， 还看好所持股票， 那么就应该算到下一次的投资， 继续止损止盈。</p>
 <span id="more"></span>
 ]]></content>
@@ -4271,7 +4271,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>烧料并喷料 2013-11-6</title>
-    <url>/supremew/2013/11/06/%E7%83%A7%E6%96%99%E5%B9%B6%E5%96%B7%E6%96%99-2013-11-6/</url>
+    <url>/2013/11/06/%E7%83%A7%E6%96%99%E5%B9%B6%E5%96%B7%E6%96%99-2013-11-6/</url>
     <content><![CDATA[<p>烧偏硼， 采用新新的刚玉锅。 published by wordpress for android</p>
 ]]></content>
       <categories>
@@ -4280,7 +4280,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>现在，能够确定最基本的反应条件是：1 加料顺序，先将葡萄糖在水溶液中溶解，然后加入硫酸铜溶液，反应添加剂，升温到90度。加入碱， 带反应完全后，加入溶解的抗坏血酸，带反应完全。2， 硫酸铜100ml ，碱14.5 ， vc 35, 葡萄糖35。 3456789</title>
-    <url>/supremew/2013/06/26/%E7%8E%B0%E5%9C%A8%EF%BC%8C%E8%83%BD%E5%A4%9F%E7%A1%AE%E5%AE%9A%E6%9C%80%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%8F%8D%E5%BA%94%E6%9D%A1%E4%BB%B6%E6%98%AF%EF%BC%9A1-%E5%8A%A0%E6%96%99%E9%A1%BA%E5%BA%8F%EF%BC%8C/</url>
+    <url>/2013/06/26/%E7%8E%B0%E5%9C%A8%EF%BC%8C%E8%83%BD%E5%A4%9F%E7%A1%AE%E5%AE%9A%E6%9C%80%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%8F%8D%E5%BA%94%E6%9D%A1%E4%BB%B6%E6%98%AF%EF%BC%9A1-%E5%8A%A0%E6%96%99%E9%A1%BA%E5%BA%8F%EF%BC%8C/</url>
     <content><![CDATA[<p>呵呵 published by wordpress for android</p>
 ]]></content>
       <categories>
@@ -4289,7 +4289,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2014-01-13 硝酸锂， 硝酸钠， 混合高密度偏硼酸锂</title>
-    <url>/supremew/2014/01/13/%E7%A1%9D%E9%85%B8%E9%94%82%EF%BC%8C-%E7%A1%9D%E9%85%B8%E9%92%A0%EF%BC%8C-%E6%B7%B7%E5%90%88%E9%AB%98%E5%AF%86%E5%BA%A6%E5%81%8F%E7%A1%BC%E9%85%B8%E9%94%82/</url>
+    <url>/2014/01/13/%E7%A1%9D%E9%85%B8%E9%94%82%EF%BC%8C-%E7%A1%9D%E9%85%B8%E9%92%A0%EF%BC%8C-%E6%B7%B7%E5%90%88%E9%AB%98%E5%AF%86%E5%BA%A6%E5%81%8F%E7%A1%BC%E9%85%B8%E9%94%82/</url>
     <content><![CDATA[<p>1, 用酒精溶解硝酸锂， 与高密度偏硼酸锂混合， 其比例分数为占偏硼酸锂的11.5%。 2. 硝酸钠， 。。。其他同上。</p>
 ]]></content>
       <categories>
@@ -4298,7 +4298,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>硫酸铜 原料</title>
-    <url>/supremew/2013/06/19/%E7%A1%AB%E9%85%B8%E9%93%9C-%E5%8E%9F%E6%96%99/</url>
+    <url>/2013/06/19/%E7%A1%AB%E9%85%B8%E9%93%9C-%E5%8E%9F%E6%96%99/</url>
     <content><![CDATA[<p>铜含量：22% published by wordpress for android</p>
 ]]></content>
       <categories>
@@ -4307,7 +4307,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>硫酸铜溶液的配制</title>
-    <url>/supremew/2013/11/04/%E7%A1%AB%E9%85%B8%E9%93%9C%E6%BA%B6%E6%B6%B2%E7%9A%84%E9%85%8D%E5%88%B6/</url>
+    <url>/2013/11/04/%E7%A1%AB%E9%85%B8%E9%93%9C%E6%BA%B6%E6%B6%B2%E7%9A%84%E9%85%8D%E5%88%B6/</url>
     <content><![CDATA[<p>铜含量为22%的硫酸铜，配制成含铜66.67克每升。 span class=”post_sig”published by wordpress for android /span</p>
 ]]></content>
       <categories>
@@ -4316,7 +4316,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2015-03-11 磷酸亚铁锂中碳酸氢铵的替换</title>
-    <url>/supremew/2015/03/11/%E7%A3%B7%E9%85%B8%E4%BA%9A%E9%93%81%E9%94%82%E4%B8%AD%E7%A2%B3%E9%85%B8%E6%B0%A2%E9%93%B5%E7%9A%84%E6%9B%BF%E6%8D%A2/</url>
+    <url>/2015/03/11/%E7%A3%B7%E9%85%B8%E4%BA%9A%E9%93%81%E9%94%82%E4%B8%AD%E7%A2%B3%E9%85%B8%E6%B0%A2%E9%93%B5%E7%9A%84%E6%9B%BF%E6%8D%A2/</url>
     <content><![CDATA[<p>在这个过程中， 要注意控制浆料中的铁含量要控制在60克铁每升。 硫酸亚铁中， 铁含量控制在70克每升 水浴温度40下合成碳酸亚铁。 硫酸亚铁 150克， 500ml水 碳酸钠 70克 常温下反应合成碳酸亚铁 磷酸40克， 含量82%， 后续补入5ml磷酸。 最后测得: 硫酸根 350ppm； 铁 24%； 钠 3500</p>
 ]]></content>
       <categories>
@@ -4325,7 +4325,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>要考试了</title>
-    <url>/supremew/2013/08/12/%E8%A6%81%E8%80%83%E8%AF%95%E4%BA%86/</url>
+    <url>/2013/08/12/%E8%A6%81%E8%80%83%E8%AF%95%E4%BA%86/</url>
     <content><![CDATA[<p>要考试了， 得抱佛脚。。</p>
 <p>这次过的几率很小， 但是， 还得努力啊</p>
 <p>还是只能怪我， 报了名， 没有认真看书的过啊。</p>
@@ -4337,7 +4337,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>超细铜粉项目进展</title>
-    <url>/supremew/2013/05/23/%E8%B6%85%E7%BB%86%E9%93%9C%E7%B2%89%E9%A1%B9%E7%9B%AE%E8%BF%9B%E5%B1%95/</url>
+    <url>/2013/05/23/%E8%B6%85%E7%BB%86%E9%93%9C%E7%B2%89%E9%A1%B9%E7%9B%AE%E8%BF%9B%E5%B1%95/</url>
     <content><![CDATA[<p>本人， 在本项目中采用葡萄糖预还原， 然后在用vc进行还原。</p>
 <p>1.硫酸铜+葡萄糖 溶液， 在其中加入适当的碱液， 将温度升到80度反应大约30分钟， 然后再加入vc进行还原。 该方法， 制得的铜粉颗粒小， 在水溶液中自然沉降太慢， 并且残余的葡萄糖， vc， 还有其反应副产物不容易从产品中洗尽。 并且测得的铜含量只有72.3%。</p>
 <p>2.硫酸铜+碱液和葡萄糖的溶液， 反应一段时间后， 再加入vc， 在温度80度下反应。 该方法得到的铜粉颗粒较大， 比较容易洗尽杂质。 铜含量还没有测过。</p>
@@ -4349,7 +4349,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>送外样2013，06，27</title>
-    <url>/supremew/2013/06/28/%E9%80%81%E5%A4%96%E6%A0%B72013%EF%BC%8C06%EF%BC%8C27/</url>
+    <url>/2013/06/28/%E9%80%81%E5%A4%96%E6%A0%B72013%EF%BC%8C06%EF%BC%8C27/</url>
     <content><![CDATA[<p>1，20130627-1， 工艺上面详细工艺， 2，20130627-2，同上，但加有pvp published by wordpress for android</p>
 ]]></content>
       <categories>
@@ -4358,7 +4358,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>铜粉感想</title>
-    <url>/supremew/2013/06/07/%E9%93%9C%E7%B2%89%E6%84%9F%E6%83%B3/</url>
+    <url>/2013/06/07/%E9%93%9C%E7%B2%89%E6%84%9F%E6%83%B3/</url>
     <content><![CDATA[<p>通过这一段时间做铜粉，也有了一定经验。 铜粉制备过程中一定要让其反应完全，要不不管你怎么晎，都会变黑，因为氧化亚铜会发生岐化反应</p>
 ]]></content>
       <categories>
@@ -4367,7 +4367,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>铜粉有了新，进展</title>
-    <url>/supremew/2013/06/14/%E9%93%9C%E7%B2%89%E6%9C%89%E4%BA%86%E6%96%B0%EF%BC%8C%E8%BF%9B%E5%B1%95/</url>
+    <url>/2013/06/14/%E9%93%9C%E7%B2%89%E6%9C%89%E4%BA%86%E6%96%B0%EF%BC%8C%E8%BF%9B%E5%B1%95/</url>
     <content><![CDATA[<p>通过在，还原溶液的氛围下，洗条铜粉，铜粉变黑的情况确实少了很多。20130609-2，为过量的碱液，并且溶液基本保持为9左右。 20130613-1，反应保持在7左右。 经测试分析，制得的两个铜粉样含量达到了99%。也就是，没有必要在最后过滤时用纯的丙酮溶液来洗条（洗条时，还是用水合肼的稀溶液，最后过滤时用纯丙酮）。 接下来就应该做怎么样提高合成量， 先考虑在经第一部后不再保持反应体系的ph</p>
 ]]></content>
       <categories>
@@ -4376,7 +4376,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>铜粉问题</title>
-    <url>/supremew/2013/06/06/%E9%93%9C%E7%B2%89%E9%97%AE%E9%A2%98/</url>
+    <url>/2013/06/06/%E9%93%9C%E7%B2%89%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>通过这几次的合成的铜粉，含量都偏低。引起偏低的可能性：1，氧化亚铜没有被还原完全； 或在烘干过程被氧化。2，其中水含量过高，或含有副产物过高。</p>
 ]]></content>
       <categories>
@@ -4385,7 +4385,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>铜粉项目今天有了进展</title>
-    <url>/supremew/2013/06/04/%E9%93%9C%E7%B2%89%E9%A1%B9%E7%9B%AE%E4%BB%8A%E5%A4%A9%E6%9C%89%E4%BA%86%E8%BF%9B%E5%B1%95/</url>
+    <url>/2013/06/04/%E9%93%9C%E7%B2%89%E9%A1%B9%E7%9B%AE%E4%BB%8A%E5%A4%A9%E6%9C%89%E4%BA%86%E8%BF%9B%E5%B1%95/</url>
     <content><![CDATA[<p>在进行葡萄糖制备氧化亚铜时， 碱不应该过量的多， 有可能氧化亚铜要和碱反应， 溶液有原来的红色变成黑色的溶液， 这肯定不是氧化亚铜。但是如果碱液不过量的话， 反应比较慢， 如果你想制备比较细的铜粉的话， 你可以选择适当的分散剂， 以防止反应过慢氧化亚铜团聚。 或者加入过量的碱（但是碱不能过的太多） 下一步， 本人打算在碱不过量的情况下， 加入适当量的分散剂， 在制备氧化亚铜这一步后， 如果碱液没有过量的话， 溶液应该显酸性， 因此应该用阳离子分散剂， 或者用非离子型分散剂。</p>
 ]]></content>
       <categories>
@@ -4394,7 +4394,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>铜粉项目有了新进展</title>
-    <url>/supremew/2013/06/04/%E9%93%9C%E7%B2%89%E9%A1%B9%E7%9B%AE%E6%9C%89%E4%BA%86%E6%96%B0%E8%BF%9B%E5%B1%95/</url>
+    <url>/2013/06/04/%E9%93%9C%E7%B2%89%E9%A1%B9%E7%9B%AE%E6%9C%89%E4%BA%86%E6%96%B0%E8%BF%9B%E5%B1%95/</url>
     <content><![CDATA[<p>今天下午， 验证了上午通过微博发的方法。得到了这样的结论， 在其他条件不变的情况下， 随着碱的增加， 葡萄糖还原铜的速度加快。 当碱不过量的话， 速度很慢， 制得的铜粉颗粒较大， 有团聚现象； 当碱量过量的话， 制得的铜粉颗粒较小， 也有团聚现象；为了解决团聚现象， 我想应该加入适当的分散剂来解决， 以后就得围绕找合适的分散剂开展工作！</p>
 ]]></content>
       <categories>
@@ -4403,7 +4403,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>铜粉项目续</title>
-    <url>/supremew/2013/05/24/%E9%93%9C%E7%B2%89%E9%A1%B9%E7%9B%AE%E7%BB%AD-2/</url>
+    <url>/2013/05/24/%E9%93%9C%E7%B2%89%E9%A1%B9%E7%9B%AE%E7%BB%AD-2/</url>
     <content><![CDATA[<p>方法： 硫酸铜溶液其中加入了5毫升的0。02的pvp, 加入碱液（29/400ml), 缓慢升温到80度（其中发现， 原来蓝色的沉淀慢慢的变成黑色， 想是氢氧化铜脱水成氧化铜， 在下次实验中加入碱液沉淀均匀就加葡萄糖， 以免氢氧化铜变成氧化铜）， 温度到80度， 加入葡萄糖， 待溶液成砖红色时加入vc。 发现在洗料时， 应该用含氧量较小的水洗， 自得的铜粉比较容易氧化。</p>
 ]]></content>
       <categories>
@@ -4412,7 +4412,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>铜粉项目续</title>
-    <url>/supremew/2013/05/23/%E9%93%9C%E7%B2%89%E9%A1%B9%E7%9B%AE%E7%BB%AD/</url>
+    <url>/2013/05/23/%E9%93%9C%E7%B2%89%E9%A1%B9%E7%9B%AE%E7%BB%AD/</url>
     <content><![CDATA[<p>在上面提到的第一个方法， 不管是否加入pvp都， 最后得到的铜粉都是细的粉体， 我想加了pvp可能会使得到的铜粉的颗粒会比较均匀， 并且不会出现团聚的现象</p>
 ]]></content>
       <categories>
@@ -4421,7 +4421,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>铜粉项目，新发现</title>
-    <url>/supremew/2013/06/05/%E9%93%9C%E7%B2%89%E9%A1%B9%E7%9B%AE%EF%BC%8C%E6%96%B0%E5%8F%91%E7%8E%B0/</url>
+    <url>/2013/06/05/%E9%93%9C%E7%B2%89%E9%A1%B9%E7%9B%AE%EF%BC%8C%E6%96%B0%E5%8F%91%E7%8E%B0/</url>
     <content><![CDATA[<p>从实验发现，不管是在碱过量，还是在不过量，都会在温度较低时反应缓慢，所以在反应过程中要控制好温度，不要让其波动太大！</p>
 ]]></content>
       <categories>
@@ -4430,7 +4430,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>铜粉，送样打电镜， 看分部。</title>
-    <url>/supremew/2013/06/21/%E9%93%9C%E7%B2%89%EF%BC%8C%E9%80%81%E6%A0%B7%E6%89%93%E7%94%B5%E9%95%9C%EF%BC%8C-%E7%9C%8B%E5%88%86%E9%83%A8%E3%80%82/</url>
+    <url>/2013/06/21/%E9%93%9C%E7%B2%89%EF%BC%8C%E9%80%81%E6%A0%B7%E6%89%93%E7%94%B5%E9%95%9C%EF%BC%8C-%E7%9C%8B%E5%88%86%E9%83%A8%E3%80%82/</url>
     <content><![CDATA[<p>0620-2#: 温度80-90， 加了pvp , 未调ph. 0620-1#: 温度80-90，没加pvp , 调了ph. published by wordpress for android</p>
 ]]></content>
       <categories>
@@ -4439,7 +4439,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2022-06-06 pacman 或 aura 安装不成功，提示包已锁定</title>
-    <url>/supremew/2022/06/06/pacman-%E6%88%96-aura-%E5%AE%89%E8%A3%85%E4%B8%8D%E6%88%90%E5%8A%9F%EF%BC%8C%E6%8F%90%E7%A4%BA%E5%8C%85%E5%B7%B2%E9%94%81%E5%AE%9A/</url>
+    <url>/2022/06/06/pacman-%E6%88%96-aura-%E5%AE%89%E8%A3%85%E4%B8%8D%E6%88%90%E5%8A%9F%EF%BC%8C%E6%8F%90%E7%A4%BA%E5%8C%85%E5%B7%B2%E9%94%81%E5%AE%9A/</url>
     <content><![CDATA[<p>在采用 aura 安装软件时提示，包锁定。 <a href="https://wiki.archlinux.org/title/Pacman#%22Failed_to_init_transaction_(unable_to_lock_database)%22_error">解决办法</a></p>
 <figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk">fuser <span class="hljs-regexp">/var/</span>lib<span class="hljs-regexp">/pacman/</span>db.lck<br>sudo rm <span class="hljs-regexp">/var/</span>lib<span class="hljs-regexp">/pacman/</span>db.lck<br></code></pre></td></tr></table></figure>
 ]]></content>
@@ -4450,7 +4450,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   </entry>
   <entry>
     <title>2022-06-06 夏天</title>
-    <url>/supremew/2022/06/06/%E5%A4%8F%E5%A4%A9/</url>
+    <url>/2022/06/06/%E5%A4%8F%E5%A4%A9/</url>
     <content><![CDATA[<p>夏天到了，闷热的夏天让人感觉烦闷，头昏，不想动。</p>
 ]]></content>
       <categories>
