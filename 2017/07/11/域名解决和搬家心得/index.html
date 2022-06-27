@@ -19,7 +19,7 @@
     <meta name="description" content="1 域名解决由于之前我的域名是在主机屋买的域名， 然后该域名是新网的。 由于实名制的原因， 在主机网实名认证， 一直处于审核中， 最后得知， .top域名需要将域名的管理权转到新网才能通过实名认证， 因此本人最后将域名通过主机屋的前台小妹转到了新网， 整个过程简单， 没有任何阻力。 但是在域名解析时遇到了问题， 下面就将具体问题， 和解决办法记录下来。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2017-07-11 域名解决和搬家心得">
-<meta property="og:url" content="https://supremew.github.io/2017/07/11/%E5%9F%9F%E5%90%8D%E8%A7%A3%E5%86%B3%E5%92%8C%E6%90%AC%E5%AE%B6%E5%BF%83%E5%BE%97/index.html">
+<meta property="og:url" content="https://www.supermew.top/2017/07/11/%E5%9F%9F%E5%90%8D%E8%A7%A3%E5%86%B3%E5%92%8C%E6%90%AC%E5%AE%B6%E5%BF%83%E5%BE%97/index.html">
 <meta property="og:site_name" content="八月的风">
 <meta property="og:description" content="1 域名解决由于之前我的域名是在主机屋买的域名， 然后该域名是新网的。 由于实名制的原因， 在主机网实名认证， 一直处于审核中， 最后得知， .top域名需要将域名的管理权转到新网才能通过实名认证， 因此本人最后将域名通过主机屋的前台小妹转到了新网， 整个过程简单， 没有任何阻力。 但是在域名解析时遇到了问题， 下面就将具体问题， 和解决办法记录下来。">
 <meta property="og:locale" content="zh_CN">
@@ -72,7 +72,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"supremew.github.io","root":"/supremew/","version":"1.9.1","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/supremew/local-search.xml"};
+    var CONFIG = {"hostname":"www.supermew.top","root":"/supremew/","version":"1.9.1","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/supremew/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -277,7 +277,7 @@
 <span id="more"></span>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs null">在新网的域名解析参数如下填写的<br>CName www.supermew.top  服务器地址<br>本来我想通过再增加如下的参数， 但是新网添加不了<br>CName supermew.top 服务器地址<br><br>最后通过客服得知要这样写就可以了<br>CName *.supermew.top 服务器地址<br>但是后来我通过验证后， 得知不行， 在新网的官网中关于*号的解释也不对。 他的解释是将所有的子域名都解析到某个服务器地址上， 除了特别指定的子域名。<br></code></pre></td></tr></table></figure>
 
-<p>通过解析， 才发现， 新网不能通过 <a target="_blank" rel="noopener" href="http://supermew.top/">http://supermew.top</a> （这个是ping不通的）直接访问博客， 也不能通过 <a target="_blank" rel="noopener" href="http://www.supermew.top/">http://www.supermew.top</a> （这个是可以通过 ping ping通的。）据主机屋的技术员说不管是通过 <a target="_blank" rel="noopener" href="http://supermew.top/">http://supermew.top</a> 还是通过 <a target="_blank" rel="noopener" href="http://www.supermew.top/">http://www.supermew.top</a> 都会自动跳转到 <a target="_blank" rel="noopener" href="http://supermew.top/">http://supermew.top</a> 来访问， 然后新网是不会直接解析顶级域名， 也就是不能 Ping 通 <a target="_blank" rel="noopener" href="http://supermew.top/">http://supermew.top</a> 这个域名的， 因此不管通过带www 还是不带， 都访问不了网站。 最后得到启示， 可以通过二级域名来实验， 上面提到的 <a target="_blank" rel="noopener" href="http://supermew.top/">http://supermew.top</a> 是顶级域名， 而 <a target="_blank" rel="noopener" href="http://www.supermew.top/">http://www.supermew.top</a> 却是二级域名， 因此我的博客就可以通过二级域名来访问。 这也就是我的解决方案。具体方案如下：</p>
+<p>通过解析， 才发现， 新网不能通过 <a target="_blank" rel="noopener" href="http://supermew.top/">http://supermew.top</a> （这个是ping不通的）直接访问博客， 也不能通过 <a href="http://www.supermew.top/">http://www.supermew.top</a> （这个是可以通过 ping ping通的。）据主机屋的技术员说不管是通过 <a target="_blank" rel="noopener" href="http://supermew.top/">http://supermew.top</a> 还是通过 <a href="http://www.supermew.top/">http://www.supermew.top</a> 都会自动跳转到 <a target="_blank" rel="noopener" href="http://supermew.top/">http://supermew.top</a> 来访问， 然后新网是不会直接解析顶级域名， 也就是不能 Ping 通 <a target="_blank" rel="noopener" href="http://supermew.top/">http://supermew.top</a> 这个域名的， 因此不管通过带www 还是不带， 都访问不了网站。 最后得到启示， 可以通过二级域名来实验， 上面提到的 <a target="_blank" rel="noopener" href="http://supermew.top/">http://supermew.top</a> 是顶级域名， 而 <a href="http://www.supermew.top/">http://www.supermew.top</a> 却是二级域名， 因此我的博客就可以通过二级域名来访问。 这也就是我的解决方案。具体方案如下：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs null">在新网的解析参数中设置如下参数<br>CName blog.supermew.top 服务器地址<br></code></pre></td></tr></table></figure>
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs null">在主机屋的域名绑定中将原有的所有域名删除， 重新添加如下的域名<br>blog.supermew.top <br>然后意见解析<br></code></pre></td></tr></table></figure>
@@ -328,7 +328,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>2017-07-11 域名解决和搬家心得</div>
-      <div>https://supremew.github.io/2017/07/11/域名解决和搬家心得/</div>
+      <div>https://www.supermew.top/2017/07/11/域名解决和搬家心得/</div>
     </div>
     <div class="license-meta">
       

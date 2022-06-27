@@ -3788,7 +3788,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
       </tags>
   </entry>
   <entry>
-    <title>AttributeError: module __main__ has no attribute __file__</title>
+    <title>2022-02-10 AttributeError: module __main__ has no attribute __file__</title>
     <url>/supremew/2022/02/10/AttributeError-module-main-has-no-attribute-file/</url>
     <content><![CDATA[<p>在打一个 python 软件包时出现了问题。</p>
 <figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">python -m build</span><br></code></pre></td></tr></table></figure>
@@ -3812,7 +3812,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
       </tags>
   </entry>
   <entry>
-    <title>ranger 配置</title>
+    <title>2022-02-19 ranger 配置</title>
     <url>/supremew/2022/02/19/ranger-%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<h4 id="只能修改文件夹-cw"><a href="#只能修改文件夹-cw" class="headerlink" title="只能修改文件夹 cw"></a>只能修改文件夹 cw</h4><p>在 rc.conf 中找到 <code>map cw ...</code> 这一行， 注释掉， 加入如下行：</p>
 <figure class="highlight stylus"><table><tr><td class="code"><pre><code class="hljs stylus">map cw eval fm<span class="hljs-selector-class">.execute_console</span>(<span class="hljs-string">&quot;bulkrename&quot;</span>) <span class="hljs-keyword">if</span> fm<span class="hljs-selector-class">.thisdir</span><span class="hljs-selector-class">.marked_items</span> <span class="hljs-keyword">else</span> fm<span class="hljs-selector-class">.open_console</span>(<span class="hljs-string">&quot;rename &quot;</span>)<br></code></pre></td></tr></table></figure>
@@ -3845,7 +3845,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
       </tags>
   </entry>
   <entry>
-    <title>vim 中文乱码问题</title>
+    <title>2022-02-21 vim 中文乱码问题</title>
     <url>/supremew/2022/02/21/vim-%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>在 vim 中出现中文乱码的问题是比较正常的， 现在来分析 vim 中会出现乱码的原因。</p>
 <p>vim 变量的意义:</p>
@@ -3872,7 +3872,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
       </tags>
   </entry>
   <entry>
-    <title>mysql 中的特殊字符.的处理</title>
+    <title>2022-03-02 mysql 中的特殊字符.的处理</title>
     <url>/supremew/2022/03/02/mysql-%E4%B8%AD%E7%9A%84%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6-%E7%9A%84%E5%A4%84%E7%90%86/</url>
     <content><![CDATA[<p>在使用 mysql 过程中遇到表名中出现的 ‘.’ 的情况， 让人很是恼火， 在百度上翻了个遍， 终于找到了办法。</p>
 <p>在使用 mysql 是需要在表格名的左右两边加上1左边的特殊字符。 如下:</p>
@@ -3889,7 +3889,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
       </tags>
   </entry>
   <entry>
-    <title>sqlalchemy 模块时遇到困惑的问题</title>
+    <title>2022-03-02 sqlalchemy 模块时遇到困惑的问题</title>
     <url>/supremew/2022/03/02/sqlalchemy-%E6%A8%A1%E5%9D%97%E6%97%B6%E9%81%87%E5%88%B0%E5%9B%B0%E6%83%91%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>在 python 中使用 sqlalchemy 时， 不要忘了建模， 不管是查询还是更新或创建表格都需要建模; 现举例如下：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs python3">#！/urs/bin/env python3<br># filename: 1.py<br><br><br>from sqlalchemy import Column, String, create_engine, Integer<br>from sqlalchemy.orm import sessionmaker<br>from sqlalchemy.ext.declarative import declarative_base<br><br>Base = declarative_base()<br><br>def class student(Base):<br>	id = Column(Integer)<br>	name = Column(String(20))<br>	age = Column(Integer(20))<br><br><br><br></code></pre></td></tr></table></figure>
@@ -3903,7 +3903,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
       </tags>
   </entry>
   <entry>
-    <title>github 访问的问题</title>
+    <title>2022-03-10 github 访问的问题</title>
     <url>/supremew/2022/03/10/github-%E8%AE%BF%E9%97%AE%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>github 经常出现访问速度慢， 尤其在下载 github 上的压缩包， 图片等等。 经过多方探访，总算找到了解决办法。<br>hello the world<br>通过 ipaddress.com 查询关于 github 的域名的 IP, 然后将所查到的相应 IP 添加到 hosts 中。比较简单的办法就是在 gitee.com 上搜索 github hosts 关键词，找到最新的 hosts 配置， 直接添加到 hosts 中就是了。</p>
 <p><a href="https://gitee.com/ineo6/hosts?_from=gitee_search">ineo6 就是一个不错的选择</a></p>
@@ -3917,7 +3917,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
       </tags>
   </entry>
   <entry>
-    <title>python 程序打包</title>
+    <title>2022-04-13 python 程序打包</title>
     <url>/supremew/2022/04/13/python-%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85/</url>
     <content><![CDATA[<ol>
 <li>需要安装 setuptools , build</li>
@@ -3940,7 +3940,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
       </tags>
   </entry>
   <entry>
-    <title>python 编写 vim 插件</title>
+    <title>2022-05-13 python 编写 vim 插件</title>
     <url>/supremew/2022/05/13/python-%E7%BC%96%E5%86%99-vim-%E6%8F%92%E4%BB%B6/</url>
     <content><![CDATA[<p><img src="/supremew/2022-05-13-python-%E7%BC%96%E5%86%99-vim-%E6%8F%92%E4%BB%B6/"><br><img src="/supremew/2022-05-13-python-%E7%BC%96%E5%86%99-vim-%E6%8F%92%E4%BB%B6/"><br><img src="/supremew/2022-05-13-python-%E7%BC%96%E5%86%99-vim-%E6%8F%92%E4%BB%B6/"><br><img src="/supremew/2022-05-13-python-%E7%BC%96%E5%86%99-vim-%E6%8F%92%E4%BB%B6/"><br><img src="https://www.picturebed.com/2022-05-13-python-%E7%BC%96%E5%86%99-vim-%E6%8F%92%E4%BB%B6/"><br><img src="https://www.picturebed.com/2022-05-13-python-%E7%BC%96%E5%86%99-vim-%E6%8F%92%E4%BB%B6/"><br><img src="https://www.picturebed.com/2022-05-13-python-%E7%BC%96%E5%86%99-vim-%E6%8F%92%E4%BB%B6/"><br><img src="/supremew/2022-05-13-python-%E7%BC%96%E5%86%99-vim-%E6%8F%92%E4%BB%B6/"></p>
 ]]></content>
@@ -3951,9 +3951,17 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
   <entry>
     <title>2022-06-05 archlinux 本地话设置</title>
     <url>/supremew/2022/06/05/archlinux-%E6%9C%AC%E5%9C%B0%E8%AF%9D%E8%AE%BE%E7%BD%AE/</url>
-    <content><![CDATA[<p>完美支持 <em>archlinux</em> 中文环境，但是以英文显示界面。</p>
+    <content><![CDATA[<h3 id="中文环境-英文界面"><a href="#中文环境-英文界面" class="headerlink" title="中文环境/英文界面"></a>中文环境/英文界面</h3><p>完美支持 <em>archlinux</em> 中文环境，但是以英文显示界面。</p>
 <p>/etc/locale.conf:</p>
 <figure class="highlight ini"><table><tr><td class="code"><pre><code class="hljs ini"><span class="hljs-attr">LANG</span>=zh_CN.utf8<br><span class="hljs-attr">LC_MESSAGES</span>=en_US.utf8<br></code></pre></td></tr></table></figure>
+
+
+<h3 id="全英文界面"><a href="#全英文界面" class="headerlink" title="全英文界面"></a>全英文界面</h3><p>如下设置也能很好的解决中文问题，如下配置也可以。</p>
+<p><code>/etc/locale.gen</code> 只开启: <code>en_US.UTF-8 UTF-8</code>  </p>
+<figure class="highlight apache"><table><tr><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">en_US</span>.UTF-<span class="hljs-number">8</span> UTF-<span class="hljs-number">8</span><br></code></pre></td></tr></table></figure>
+
+<p><code>/etc/locale.conf</code> </p>
+<figure class="highlight abnf"><table><tr><td class="code"><pre><code class="hljs abnf"><span class="hljs-attribute">LANG</span><span class="hljs-operator">=</span>en_US.utf8<br></code></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>日常生活</category>
@@ -4430,7 +4438,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
       </categories>
   </entry>
   <entry>
-    <title>pacman 或 aura 安装不成功，提示包已锁定</title>
+    <title>2022-06-06 pacman 或 aura 安装不成功，提示包已锁定</title>
     <url>/supremew/2022/06/06/pacman-%E6%88%96-aura-%E5%AE%89%E8%A3%85%E4%B8%8D%E6%88%90%E5%8A%9F%EF%BC%8C%E6%8F%90%E7%A4%BA%E5%8C%85%E5%B7%B2%E9%94%81%E5%AE%9A/</url>
     <content><![CDATA[<p>在采用 aura 安装软件时提示，包锁定。 <a href="https://wiki.archlinux.org/title/Pacman#%22Failed_to_init_transaction_(unable_to_lock_database)%22_error">解决办法</a></p>
 <figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk">fuser <span class="hljs-regexp">/var/</span>lib<span class="hljs-regexp">/pacman/</span>db.lck<br>sudo rm <span class="hljs-regexp">/var/</span>lib<span class="hljs-regexp">/pacman/</span>db.lck<br></code></pre></td></tr></table></figure>
@@ -4438,6 +4446,15 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
       <categories>
         <category>pacman</category>
         <category>aura</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>2022-06-06 夏天</title>
+    <url>/supremew/2022/06/06/%E5%A4%8F%E5%A4%A9/</url>
+    <content><![CDATA[<p>夏天到了，闷热的夏天让人感觉烦闷，头昏，不想动。</p>
+]]></content>
+      <categories>
+        <category>日常生活</category>
       </categories>
   </entry>
 </search>
