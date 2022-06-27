@@ -3996,7 +3996,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
 <figure class="highlight nestedtext"><table><tr><td class="code"><pre><code class="hljs nestedtext"><span class="hljs-attribute">这里填写你为博客准备的域名， 例如</span><span class="hljs-punctuation">:</span> <span class="hljs-string">blog.xxx.com</span><br></code></pre></td></tr></table></figure>
 
 <p>我的 CNAME 文件如下：</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><code class="hljs vim">xxx.<span class="hljs-keyword">com</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight stylus"><table><tr><td class="code"><pre><code class="hljs stylus">www<span class="hljs-selector-class">.xxx</span>.com<br></code></pre></td></tr></table></figure>
 
 
 <ol start="2">
