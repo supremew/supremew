@@ -4496,4 +4496,25 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
         <category>日常生活</category>
       </categories>
   </entry>
+  <entry>
+    <title>2022-06-30 lightdm启动失败</title>
+    <url>/2022/06/30/lightdm%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5/</url>
+    <content><![CDATA[<p>lightdm 启动不了，一般情况下是显卡驱动安装的问题。这次也不例外。 现在我就来说说我出现该问题的经过。</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">sudo pacman -Syu</span><br></code></pre></td></tr></table></figure>
+
+<p>经过升级后， 而显卡 nividia 驱动的dkms 模块没能正常升级, 经过多方尝试发现我的显卡 780 已经不再受支持了(18.5以后), 于是我尝试才有 nouvea 驱动进行;</p>
+<figure class="highlight axapta"><table><tr><td class="code"><pre><code class="hljs axapta">sudo pacman -S mesa plymouth xorg-<span class="hljs-keyword">server</span><br></code></pre></td></tr></table></figure>
+
+<p>重启就解决了。</p>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>lightdm</tag>
+        <tag>xorg-server</tag>
+        <tag>mesa</tag>
+        <tag>plymouth</tag>
+      </tags>
+  </entry>
 </search>
