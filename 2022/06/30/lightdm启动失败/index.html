@@ -23,14 +23,16 @@
 <meta property="og:site_name" content="八月的风">
 <meta property="og:description" content="lightdm 启动不了，一般情况下是显卡驱动安装的问题。这次也不例外。 现在我就来说说我出现该问题的经过。 1sudo pacman -Syu  经过升级后， 而显卡 nividia 驱动的dkms 模块没能正常升级, 经过多方尝试发现我的显卡 780 已经不再受支持了(18.5以后), 于是我尝试才有 nouvea 驱动进行; 1sudo pacman -S mesa plymouth xor">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.supermew.top/2022/06/30/lightdm%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5/screen.png">
 <meta property="article:published_time" content="2022-06-30T03:08:17.000Z">
-<meta property="article:modified_time" content="2022-06-30T03:16:54.361Z">
+<meta property="article:modified_time" content="2022-06-30T03:52:10.080Z">
 <meta property="article:author" content="八月">
 <meta property="article:tag" content="lightdm">
 <meta property="article:tag" content="xorg-server">
 <meta property="article:tag" content="mesa">
 <meta property="article:tag" content="plymouth">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.supermew.top/2022/06/30/lightdm%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5/screen.png">
   
   
   
@@ -220,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          192 字
+          705 字
         
       </span>
     
@@ -231,7 +233,7 @@
         
         
         
-          2 分钟
+          6 分钟
         
       </span>
     
@@ -280,6 +282,11 @@
 <figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs axapta">sudo pacman -S mesa plymouth xorg-<span class="hljs-keyword">server</span><br></code></pre></td></tr></table></figure>
 
 <p>重启就解决了。</p>
+<p><img src="/2022/06/30/lightdm%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5/screen.png" srcset="/img/loading.gif" lazyload></p>
+<p>xorg </p>
+<blockquote>
+<p>The X.Org project provides an open source implementation of the X Window System. The development work is being done in conjunction with the freedesktop.org community. The X.Org Foundation is the educational non-profit corporation whose Board serves this effort, and whose Members lead this work.<br>Xorg (commonly referred to as simply X) is the most popular display server among Linux users. Its ubiquity has led to making it an ever-present requisite for GUI applications, resulting in massive adoption from most distributions. See the Xorg Wikipedia article or visit the Xorg website for more details.</p>
+</blockquote>
 
               
             </div>
