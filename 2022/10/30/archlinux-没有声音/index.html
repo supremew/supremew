@@ -16,15 +16,15 @@
   <meta name="author" content="八月">
   <meta name="keywords" content="">
   
-    <meta name="description" content="今天 2022-10-30 重新将我的台式机重新安装好。(就是搬了一个地方。) 开机发现没有网络和没有声音。 解决没有网络的问题。 12systemctl status wpa_supplicantip link 发现 link 中的端口与 wpa_supplicant 中的端口没有一致的配对。 link 中的端口为u1, 而 wpa_supplicant 中的端口却为 u2; 因此将 wpa_s">
+    <meta name="description" content="今天 2022-10-30 重新将我的台式机重新安装好。(就是搬了一个地方。) 开机发现没有网络和没有声音。 解决没有网络的问题。 12systemctl status wpa_supplicantip link 发现 link 中的端口与 wpa_supplicant 中的端口没有一致的配对。 link 中的端口为 u1, 而 wpa_supplicant 中的端口却为 u2; 因此将 wpa_">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2022-10-30 archlinux 没有声音">
 <meta property="og:url" content="https://www.supermew.top/2022/10/30/archlinux-%E6%B2%A1%E6%9C%89%E5%A3%B0%E9%9F%B3/index.html">
 <meta property="og:site_name" content="八月的风">
-<meta property="og:description" content="今天 2022-10-30 重新将我的台式机重新安装好。(就是搬了一个地方。) 开机发现没有网络和没有声音。 解决没有网络的问题。 12systemctl status wpa_supplicantip link 发现 link 中的端口与 wpa_supplicant 中的端口没有一致的配对。 link 中的端口为u1, 而 wpa_supplicant 中的端口却为 u2; 因此将 wpa_s">
+<meta property="og:description" content="今天 2022-10-30 重新将我的台式机重新安装好。(就是搬了一个地方。) 开机发现没有网络和没有声音。 解决没有网络的问题。 12systemctl status wpa_supplicantip link 发现 link 中的端口与 wpa_supplicant 中的端口没有一致的配对。 link 中的端口为 u1, 而 wpa_supplicant 中的端口却为 u2; 因此将 wpa_">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-10-30T05:11:38.000Z">
-<meta property="article:modified_time" content="2022-10-30T05:32:44.652Z">
+<meta property="article:modified_time" content="2022-10-30T06:26:59.449Z">
 <meta property="article:author" content="八月">
 <meta property="article:tag" content="声音">
 <meta property="article:tag" content="没声音">
@@ -221,7 +221,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          356 字
+          360 字
         
       </span>
     
@@ -232,7 +232,7 @@
         
         
         
-          3 分钟
+          4 分钟
         
       </span>
     
@@ -278,11 +278,11 @@
 <p>开机发现没有网络和没有声音。</p>
 <p>解决没有网络的问题。</p>
 <figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs autohotkey">systemctl status wp<span class="hljs-built_in">a_supplicant</span><br>ip link<br></code></pre></td></tr></table></figure>
-<p>发现 link 中的端口与 wpa_supplicant 中的端口没有一致的配对。 link 中的端口为<br>u1, 而 wpa_supplicant 中的端口却为 u2; 因此将 wpa_supplicant.service 中的端口修改为 u1<br>重启， 没网络的问题得以解决。</p>
+<p>发现 link 中的端口与 wpa_supplicant 中的端口没有一致的配对。 link 中的端口为 u1, 而 wpa_supplicant 中的端口却为 u2; 因此将 wpa_supplicant.service 中的端口修改为 u1 重启， 没网络的问题得以解决。</p>
 <p>解决没有声音的问题。</p>
-<p>将打开音乐播放软件和网页中的音乐， 拔下连接到电脑上的接头，因此在没有接口上试了个遍<br>，当重新插回显卡的音频输出口，突然就有音声了。 这样太奇怪了。。。</p>
+<p>将打开音乐播放软件和网页中的音乐， 拔下连接到电脑上的接头，因此在没有接口上试了个遍，当重新插回显卡的音频输出口，突然就有音声了。 这样太奇怪了。。。</p>
 <p>哈哈问题终于解决了。</p>
-<p><a target="_blank" rel="noopener" href="https://wiki.archlinux.org/title/Wpa_supplicant_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)"> wpa_supplicant </a><br><a target="_blank" rel="noopener" href="https://wiki.archlinux.org/title/Advanced_Linux_Sound_Architecture_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)">Advanced Linux Sound Architecture</a></p>
+<p><strong>参考资料</strong><br><a target="_blank" rel="noopener" href="https://wiki.archlinux.org/title/Wpa_supplicant_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)"> wpa_supplicant </a><br><a target="_blank" rel="noopener" href="https://wiki.archlinux.org/title/Advanced_Linux_Sound_Architecture_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)">Advanced Linux Sound Architecture</a></p>
 
               
             </div>
@@ -377,6 +377,12 @@
                 <div class="post-prevnext my-3">
                   <article class="post-prev col-6">
                     
+                    
+                      <a href="/2022/10/30/vim-%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" title="2022-10-30 vim 配置与使用记录">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">2022-10-30 vim 配置与使用记录</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
                     
                   </article>
                   <article class="post-next col-6">
