@@ -16,19 +16,22 @@
   <meta name="author" content="八月">
   <meta name="keywords" content="">
   
-    <meta name="description" content="我的 archlinux 已经很久没有更新了， 今天心血来潮，打算更新一下。于是我使用了如下的命令。 1sudo pacman -Syu  更新未能完成， 出现关于签名不正确，有冲突的问题， 具体是什么错，这里未能记录。 出现这样的问题，我猜测是某些软件的维护人员更换了要么其维护人员的公共签证有所变化导致的。 在没有动这些方面的配置的话。 可以执行如下命令。 1sudo pacman -Sy ar">
+    <meta name="description" content="我的 archlinux 已经很久没有更新了， 今天心血来潮，打算更新一下。于是我使用了如下的命令。 1sudo pacman -Syu  更新未能完成， 出现关于签名不正确，有冲突的问题， 具体是什么错，这里未能记录。 出现这样的问题，我猜测是某些软件的维护人员更换了要么其维护人员的公共签证有所变化导致的。 在没有动这些方面的配置的话。 可以执行如下命令。 12sudo pacman -Sy a">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2022-08-12 archlinux 修复心得">
 <meta property="og:url" content="https://www.supermew.top/2022/08/12/archlinux-%E4%BF%AE%E5%A4%8D%E5%BF%83%E5%BE%97/index.html">
 <meta property="og:site_name" content="八月的风">
-<meta property="og:description" content="我的 archlinux 已经很久没有更新了， 今天心血来潮，打算更新一下。于是我使用了如下的命令。 1sudo pacman -Syu  更新未能完成， 出现关于签名不正确，有冲突的问题， 具体是什么错，这里未能记录。 出现这样的问题，我猜测是某些软件的维护人员更换了要么其维护人员的公共签证有所变化导致的。 在没有动这些方面的配置的话。 可以执行如下命令。 1sudo pacman -Sy ar">
+<meta property="og:description" content="我的 archlinux 已经很久没有更新了， 今天心血来潮，打算更新一下。于是我使用了如下的命令。 1sudo pacman -Syu  更新未能完成， 出现关于签名不正确，有冲突的问题， 具体是什么错，这里未能记录。 出现这样的问题，我猜测是某些软件的维护人员更换了要么其维护人员的公共签证有所变化导致的。 在没有动这些方面的配置的话。 可以执行如下命令。 12sudo pacman -Sy a">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-08-11T17:12:29.000Z">
-<meta property="article:modified_time" content="2022-10-30T05:24:52.765Z">
+<meta property="article:modified_time" content="2022-10-30T06:10:49.038Z">
 <meta property="article:author" content="八月">
 <meta property="article:tag" content="archlinux">
 <meta property="article:tag" content="不能启动">
 <meta property="article:tag" content="更新失败">
+<meta property="article:tag" content="keyring">
+<meta property="article:tag" content="archlinux-keyring">
+<meta property="article:tag" content="archlinuxcn-keyring">
 <meta name="twitter:card" content="summary_large_image">
   
   
@@ -219,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          686 字
+          719 字
         
       </span>
     
@@ -276,7 +279,7 @@
 <figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">sudo pacman -Syu</span><br></code></pre></td></tr></table></figure>
 
 <p>更新未能完成， 出现关于签名不正确，有冲突的问题， 具体是什么错，这里未能记录。 出现这样的问题，我猜测是某些软件的维护人员更换了要么其维护人员的公共签证有所变化导致的。 在没有动这些方面的配置的话。 可以执行如下命令。</p>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">sudo pacman -Sy archlinux-keyring</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">sudo pacman -Sy archlinux-keyring</span><br><span class="hljs-attribute">sudo pacman -Sy archlinuxcn-keyring</span><br></code></pre></td></tr></table></figure>
 
 <p>这个时候就可以正常的更行了。 <code>sudo pacman -Syu</code></p>
 <p>在更新过程出现了计算机卡死， 强制关机后， 重新启动进步了系统。 目前来看一边是因为 linux 包没有安装更新完成，导致系统在启动过程中不能正常的引导启动。 通过一下基本步骤解决。</p>
@@ -327,6 +330,12 @@
         <a href="/tags/%E4%B8%8D%E8%83%BD%E5%90%AF%E5%8A%A8/">#不能启动</a>
       
         <a href="/tags/%E6%9B%B4%E6%96%B0%E5%A4%B1%E8%B4%A5/">#更新失败</a>
+      
+        <a href="/tags/keyring/">#keyring</a>
+      
+        <a href="/tags/archlinux-keyring/">#archlinux-keyring</a>
+      
+        <a href="/tags/archlinuxcn-keyring/">#archlinuxcn-keyring</a>
       
     </div>
   

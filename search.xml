@@ -4655,7 +4655,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
 <figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">sudo pacman -Syu</span><br></code></pre></td></tr></table></figure>
 
 <p>更新未能完成， 出现关于签名不正确，有冲突的问题， 具体是什么错，这里未能记录。 出现这样的问题，我猜测是某些软件的维护人员更换了要么其维护人员的公共签证有所变化导致的。 在没有动这些方面的配置的话。 可以执行如下命令。</p>
-<figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">sudo pacman -Sy archlinux-keyring</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">sudo pacman -Sy archlinux-keyring</span><br><span class="hljs-attribute">sudo pacman -Sy archlinuxcn-keyring</span><br></code></pre></td></tr></table></figure>
 
 <p>这个时候就可以正常的更行了。 <code>sudo pacman -Syu</code></p>
 <p>在更新过程出现了计算机卡死， 强制关机后， 重新启动进步了系统。 目前来看一边是因为 linux 包没有安装更新完成，导致系统在启动过程中不能正常的引导启动。 通过一下基本步骤解决。</p>
@@ -4677,6 +4677,9 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
         <tag>archlinux</tag>
         <tag>不能启动</tag>
         <tag>更新失败</tag>
+        <tag>keyring</tag>
+        <tag>archlinux-keyring</tag>
+        <tag>archlinuxcn-keyring</tag>
       </tags>
   </entry>
 </search>
