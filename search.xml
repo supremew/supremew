@@ -4216,15 +4216,27 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
     <title>2022-10-30 vim 配置与使用记录</title>
     <url>/2022/10/30/vim-%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<h3 id="plugins"><a href="#plugins" class="headerlink" title="plugins"></a>plugins</h3><ol>
-<li>‘<a href="mailto:&#103;&#105;&#116;&#64;&#103;&#x69;&#x74;&#101;&#x65;&#x2e;&#99;&#111;&#x6d;">&#103;&#105;&#116;&#64;&#103;&#x69;&#x74;&#101;&#x65;&#x2e;&#99;&#111;&#x6d;</a>:supermew/vim-airline’, 漂亮的状态栏。</li>
+<li>‘<a href="mailto:&#x67;&#x69;&#116;&#x40;&#x67;&#105;&#x74;&#101;&#x65;&#x2e;&#99;&#x6f;&#109;">&#x67;&#x69;&#116;&#x40;&#x67;&#105;&#x74;&#101;&#x65;&#x2e;&#99;&#x6f;&#109;</a>:supermew/vim-airline’, 漂亮的状态栏。</li>
 <li>‘jmckiern/vim-venter’, 让编辑窗口居中。</li>
-<li>‘<a href="mailto:&#x67;&#x69;&#x74;&#x40;&#x67;&#105;&#116;&#101;&#x65;&#x2e;&#99;&#111;&#x6d;">&#x67;&#x69;&#x74;&#x40;&#x67;&#105;&#116;&#101;&#x65;&#x2e;&#99;&#111;&#x6d;</a>:supermew/coc.nvim.git’, {‘branch’: ‘release’}, 各种编程语言自动补全。</li>
+<li>‘<a href="mailto:&#103;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#101;&#x65;&#46;&#99;&#x6f;&#x6d;">&#103;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#101;&#x65;&#46;&#99;&#x6f;&#x6d;</a>:supermew/coc.nvim.git’, {‘branch’: ‘release’}, 各种编程语言自动补全。</li>
 </ol>
 <h3 id="使用过程中的问题"><a href="#使用过程中的问题" class="headerlink" title="使用过程中的问题"></a>使用过程中的问题</h3><ol>
 <li>设置 vim 的背景色为透明色</li>
 </ol>
 <p>在 vim.rc 中添加如下设置</p>
 <figure class="highlight routeros"><table><tr><td class="code"><pre><code class="hljs routeros">hi Normal <span class="hljs-attribute">ctermfg</span>=252 <span class="hljs-attribute">ctermbg</span>=none<br></code></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>连接行时，会在中文两端加入空格。</li>
+</ol>
+<p>在 vim.rc 中添加如下设置</p>
+<figure class="highlight routeros"><table><tr><td class="code"><pre><code class="hljs routeros"><span class="hljs-built_in">set</span> formatoptions+=M<br></code></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>有一部分特殊字符只显示一半。</li>
+</ol>
+<p>在 vim.rc 中添加如下设置</p>
+<figure class="highlight routeros"><table><tr><td class="code"><pre><code class="hljs routeros"><span class="hljs-built_in">set</span> <span class="hljs-attribute">ambw</span>=double<br></code></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>日常生活</category>
