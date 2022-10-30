@@ -4617,6 +4617,7 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
 <p>解决没有声音的问题。</p>
 <p>将打开音乐播放软件和网页中的音乐， 拔下连接到电脑上的接头，因此在没有接口上试了个遍<br>，当重新插回显卡的音频输出口，突然就有音声了。 这样太奇怪了。。。</p>
 <p>哈哈问题终于解决了。</p>
+<p><a href="https://wiki.archlinux.org/title/Wpa_supplicant_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)"> wpa_supplicant </a><br><a href="https://wiki.archlinux.org/title/Advanced_Linux_Sound_Architecture_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)">Advanced Linux Sound Architecture</a></p>
 ]]></content>
       <categories>
         <category>日常生活</category>
