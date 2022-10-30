@@ -134,7 +134,7 @@
   <entry>
     <title>2015-03-12 163邮箱</title>
     <url>/2015/03/12/163%E9%82%AE%E7%AE%B1/</url>
-    <content><![CDATA[<p><a href="mailto:&#x6d;&#x79;&#x67;&#x61;&#109;&#x6d;&#x40;&#x31;&#54;&#51;&#46;&#x63;&#x6f;&#x6d;">&#x6d;&#x79;&#x67;&#x61;&#109;&#x6d;&#x40;&#x31;&#54;&#51;&#46;&#x63;&#x6f;&#x6d;</a> wxl123456</p>
+    <content><![CDATA[<p><a href="mailto:&#109;&#x79;&#103;&#x61;&#x6d;&#109;&#64;&#x31;&#54;&#x33;&#x2e;&#x63;&#111;&#x6d;">&#109;&#x79;&#103;&#x61;&#x6d;&#109;&#64;&#x31;&#54;&#x33;&#x2e;&#x63;&#111;&#x6d;</a> wxl123456</p>
 ]]></content>
       <categories>
         <category>日常生活</category>
@@ -2347,7 +2347,7 @@ dieIfFaultOccured(&amp;env);
 <li>等后ubuntu加载, 后面就是一路next， 不过在分区时， 一定要注意不要将你的windows的分区以及其备分分区覆盖。一定要创建一个efi系统分区， 否则会启动不了的； 还择启动器时要选择你的磁盘，我的是/dev/sda, sda后面还能有数字。（分区说明， 现在已经没有必要像以前那样分很多分区了， 那已经成为了过去。 我就分了3个分区， / 根分区， /home 分区， efi类型的分区。）</li>
 <li>一路next</li>
 </ol>
-<p>如果在安装过程中遇到什么问题可以给我发邮件， 我会尽量帮助你的。 <a href="mailto:&#x39;&#x34;&#53;&#48;&#x31;&#53;&#54;&#x34;&#x40;&#x71;&#113;&#x2e;&#x63;&#x6f;&#109;">&#x39;&#x34;&#53;&#48;&#x31;&#53;&#54;&#x34;&#x40;&#x71;&#113;&#x2e;&#x63;&#x6f;&#109;</a></p>
+<p>如果在安装过程中遇到什么问题可以给我发邮件， 我会尽量帮助你的。 <a href="mailto:&#57;&#x34;&#53;&#48;&#x31;&#53;&#x36;&#x34;&#x40;&#x71;&#x71;&#x2e;&#99;&#x6f;&#109;">&#57;&#x34;&#53;&#48;&#x31;&#53;&#x36;&#x34;&#x40;&#x71;&#x71;&#x2e;&#99;&#x6f;&#109;</a></p>
 ]]></content>
       <categories>
         <category>日常生活</category>
@@ -4027,11 +4027,219 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
       </tags>
   </entry>
   <entry>
+    <title>2022-06-30 lightdm启动失败</title>
+    <url>/2022/06/30/lightdm%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5/</url>
+    <content><![CDATA[<p>lightdm 启动不了，一般情况下是显卡驱动安装的问题。这次也不例外。 现在我就来说说我出现该问题的经过。</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">sudo pacman -Syu</span><br></code></pre></td></tr></table></figure>
+
+<p>经过升级后， 而显卡 nividia 驱动的dkms 模块没能正常升级, 经过多方尝试发现我的显卡 780 已经不再受支持了(18.5以后), 于是我尝试才有 nouvea 驱动进行;</p>
+<figure class="highlight axapta"><table><tr><td class="code"><pre><code class="hljs axapta">sudo pacman -S mesa plymouth xorg-<span class="hljs-keyword">server</span><br></code></pre></td></tr></table></figure>
+
+<p>重启就解决了。</p>
+<p><img src="/2022/06/30/lightdm%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5/screen.png"></p>
+<p>xorg </p>
+<blockquote>
+<p>The X.Org project provides an open source implementation of the X Window System. The development work is being done in conjunction with the freedesktop.org community. The X.Org Foundation is the educational non-profit corporation whose Board serves this effort, and whose Members lead this work.<br>Xorg (commonly referred to as simply X) is the most popular display server among Linux users. Its ubiquity has led to making it an ever-present requisite for GUI applications, resulting in massive adoption from most distributions. See the Xorg Wikipedia article or visit the Xorg website for more details.</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>lightdm</tag>
+        <tag>xorg-server</tag>
+        <tag>mesa</tag>
+        <tag>plymouth</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2022-07-19 fcitx5 安装完成不能使用中文的问题</title>
+    <url>/2022/07/19/fcitx5-%E5%AE%89%E8%A3%85%E5%AE%8C%E6%88%90%E4%B8%8D%E8%83%BD%E4%BD%BF%E7%94%A8%E4%B8%AD%E6%96%87%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<p>在安装完成 fcitx5 fcitx5-chinese-addons fcitx5-gtk fcitx5-qt , 使用过程中出现了如下错误，已经错误的解决办法。</p>
+<ol>
+<li>相继出现了不能运行 fcitx5 和 不能输入中文的问题， 经过多次尝试后发现主要有系列问题导致。</li>
+</ol>
+<ul>
+<li>gcc-libs 的版本较低，导致 <strong>fcitx5</strong> 运行不了。</li>
+<li>boost-libs 的版本较低，导致 <strong>fcitx5</strong> 在通过 fcitx5-configure-qt 配置中文输入，也是不能输入中文的。</li>
+</ul>
+<ol start="2">
+<li>thunderbird 以及部分软件不能输入中文，但是像 wps-office 的qt的却可以输入中文，因此判断可能是fcitx gtk 的出了一些问题。</li>
+</ol>
+<ul>
+<li>重新安装 fcitx5-gtk</li>
+</ul>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>fcitx5</tag>
+        <tag>不能输入中文</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2022-07-24 systemd 休眠机器与苏醒机器</title>
+    <url>/2022/07/24/systemd-%E4%BC%91%E7%9C%A0%E6%9C%BA%E5%99%A8%E4%B8%8E%E8%8B%8F%E9%86%92%E6%9C%BA%E5%99%A8/</url>
+    <content><![CDATA[<p>通过 systemd 实现机器的休眠与苏醒， 在这个过程中遇到很多问题， 主要是因为自己阅读文档不仔细导致的， 现在我将自己的设置路径大概记录一下。</p>
+<ol>
+<li>查找用于电源管理的软件， 这些软件可能会导致恢复休眠不能稳定的工作， 我的是 tlp </li>
+</ol>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">sudo pacman -Rsn tlp</span><br></code></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>查看自己的 swap 分区的 uuid, 我用 fdisk 查找的 uuid 不对， 最后采用 gparted 分区工具可以查到相应的 uuid, 比如我的 uuid 为 <strong>7902e84c-cb6d-4362-b04b-ccb6c5dc8a99</strong> ，根据自己的 uuid 修改 grub 的默认参数。</li>
+</ol>
+<figure class="highlight ini"><table><tr><td class="code"><pre><code class="hljs ini"><span class="hljs-comment"># file: /etc/default/grub</span><br><span class="hljs-comment"># Written by com.deepin.daemon.Grub2</span><br><span class="hljs-attr">GRUB_BACKGROUND</span>=<span class="hljs-string">&quot;/boot/grub/themes/deepin/background.jpg&quot;</span><br><span class="hljs-attr">GRUB_CMDLINE_LINUX</span>=<span class="hljs-string">&quot;resume=UUID=7902e84c-cb6d-4362-b04b-ccb6c5dc8a99&quot;</span><br><span class="hljs-attr">GRUB_CMDLINE_LINUX_DEFAULT</span>=<span class="hljs-string">&quot;loglevel=3 quiet&quot;</span><br><span class="hljs-attr">GRUB_DEFAULT</span>=<span class="hljs-number">0</span><br><span class="hljs-attr">GRUB_DISABLE_RECOVERY</span>=<span class="hljs-literal">true</span><br><span class="hljs-attr">GRUB_DISTRIBUTOR</span>=<span class="hljs-string">&quot;Arch&quot;</span><br><span class="hljs-attr">GRUB_GFXMODE</span>=auto<br><span class="hljs-attr">GRUB_GFXPAYLOAD_LINUX</span>=keep<br><span class="hljs-attr">GRUB_PRELOAD_MODULES</span>=<span class="hljs-string">&quot;part_gpt part_msdos&quot;</span><br><span class="hljs-attr">GRUB_TERMINAL_INPUT</span>=console<br><span class="hljs-attr">GRUB_THEME</span>=<span class="hljs-string">&quot;/boot/grub/themes/deepin/theme.txt&quot;</span><br><span class="hljs-attr">GRUB_TIMEOUT</span>=<span class="hljs-number">5</span><br><span class="hljs-attr">GRUB_TIMEOUT_STYLE</span>=menu<br></code></pre></td></tr></table></figure>
+
+<p>然后生成 grub.cfg 。</p>
+<figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk">sudo grub-mkconfig -o <span class="hljs-regexp">/boot/g</span>rub/grub.cfg<br></code></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>修改 boot-image. 找到 /etc/mkinitcpio.conf 后修改相应的参数，其中修改 modules 和 hooks 设置， 下列是我的设置，其中 moudles, 要不会存在 capslock 按键不停的闪烁， 内核模块内存溢出。 </li>
+</ol>
+<figure class="highlight ini"><table><tr><td class="code"><pre><code class="hljs ini"><span class="hljs-comment"># file: /etc/mkinitcpio.conf</span><br><br><span class="hljs-comment"># vim:set ft=sh</span><br><span class="hljs-comment"># MODULES</span><br><span class="hljs-comment"># The following modules are loaded before any boot hooks are</span><br><span class="hljs-comment"># run.  Advanced users may wish to specify all system modules</span><br><span class="hljs-comment"># in this array.  For instance:</span><br><span class="hljs-comment">#     MODULES=(piix ide_disk reiserfs)</span><br><span class="hljs-attr">MODULES</span>=( intel_lpss_pci )  <br><br><span class="hljs-comment"># BINARIES</span><br><span class="hljs-comment"># This setting includes any additional binaries a given user may</span><br><span class="hljs-comment"># wish into the CPIO image.  This is run last, so it may be used to</span><br><span class="hljs-comment"># override the actual binaries included by a given hook</span><br><span class="hljs-comment"># BINARIES are dependency parsed, so you may safely ignore libraries</span><br><span class="hljs-attr">BINARIES</span>=()<br><br><span class="hljs-comment"># FILES</span><br><span class="hljs-comment"># This setting is similar to BINARIES above, however, files are added</span><br><span class="hljs-comment"># as-is and are not parsed in any way.  This is useful for config files.</span><br><span class="hljs-attr">FILES</span>=()<br><br><span class="hljs-comment"># HOOKS</span><br><span class="hljs-comment"># This is the most important setting in this file.  The HOOKS control the</span><br><span class="hljs-comment"># modules and scripts added to the image, and what happens at boot time.</span><br><span class="hljs-comment"># Order is important, and it is recommended that you do not change the</span><br><span class="hljs-comment"># order in which HOOKS are added.  Run &#x27;mkinitcpio -H &lt;hook name&gt;&#x27; for</span><br><span class="hljs-comment"># help on a given hook.</span><br><span class="hljs-comment"># &#x27;base&#x27; is _required_ unless you know precisely what you are doing.</span><br><span class="hljs-comment"># &#x27;udev&#x27; is _required_ in order to automatically load modules</span><br><span class="hljs-comment"># &#x27;filesystems&#x27; is _required_ unless you specify your fs modules in MODULES</span><br><span class="hljs-comment"># Examples:</span><br><span class="hljs-comment">##   This setup specifies all modules in the MODULES setting above.</span><br><span class="hljs-comment">##   No raid, lvm2, or encrypted root is needed.</span><br><span class="hljs-comment">#    HOOKS=(base)</span><br><span class="hljs-comment">#</span><br><span class="hljs-comment">##   This setup will autodetect all modules for your system and should</span><br><span class="hljs-comment">##   work as a sane default</span><br><span class="hljs-comment">#    HOOKS=(base udev autodetect block filesystems)</span><br><span class="hljs-comment">#</span><br><span class="hljs-comment">##   This setup will generate a &#x27;full&#x27; image which supports most systems.</span><br><span class="hljs-comment">##   No autodetection is done.</span><br><span class="hljs-comment">#    HOOKS=(base udev block filesystems)</span><br><span class="hljs-comment">#</span><br><span class="hljs-comment">##   This setup assembles a pata mdadm array with an encrypted root FS.</span><br><span class="hljs-comment">##   <span class="hljs-doctag">Note:</span> See &#x27;mkinitcpio -H mdadm&#x27; for more information on raid devices.</span><br><span class="hljs-comment">#    HOOKS=(base udev block mdadm encrypt filesystems)</span><br><span class="hljs-comment">#</span><br><span class="hljs-comment">##   This setup loads an lvm2 volume group on a usb device.</span><br><span class="hljs-comment">#    HOOKS=(base udev block lvm2 filesystems)</span><br><span class="hljs-comment">#</span><br><span class="hljs-comment">##   <span class="hljs-doctag">NOTE:</span> If you have /usr on a separate partition, you MUST include the</span><br><span class="hljs-comment">#    usr, fsck and shutdown hooks.</span><br><span class="hljs-attr">HOOKS</span>=(base udev systemd autodetect modconf block filesystems keyboard fsck)<br><br><span class="hljs-comment"># COMPRESSION</span><br><span class="hljs-comment"># Use this to compress the initramfs image. By default, zstd compression</span><br><span class="hljs-comment"># is used. Use &#x27;cat&#x27; to create an uncompressed image.</span><br><span class="hljs-comment">#COMPRESSION=&quot;zstd&quot;</span><br><span class="hljs-comment">#COMPRESSION=&quot;gzip&quot;</span><br><span class="hljs-comment">#COMPRESSION=&quot;bzip2&quot;</span><br><span class="hljs-comment">#COMPRESSION=&quot;lzma&quot;</span><br><span class="hljs-comment">#COMPRESSION=&quot;xz&quot;</span><br><span class="hljs-comment">#COMPRESSION=&quot;lzop&quot;</span><br><span class="hljs-comment">#COMPRESSION=&quot;lz4&quot;</span><br><br><span class="hljs-comment"># COMPRESSION_OPTIONS</span><br><span class="hljs-comment"># Additional options for the compressor</span><br><span class="hljs-comment">#COMPRESSION_OPTIONS=()</span><br></code></pre></td></tr></table></figure>
+
+<figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk">sudo mkinitcpio -P<br>sudo grub-mkconfig -o <span class="hljs-regexp">/boot/g</span>rub/grub.cfg<br></code></pre></td></tr></table></figure>
+
+<p>现在就可以实现休眠与苏醒了。 如果需要通过笔记本。</p>
+<ol start="4">
+<li>配置 systemd-logind ，本人配置如下.</li>
+</ol>
+<figure class="highlight ini"><table><tr><td class="code"><pre><code class="hljs ini"><span class="hljs-comment">#  This file is part of systemd.</span><br><span class="hljs-comment">#</span><br><span class="hljs-comment">#  systemd is free software; you can redistribute it and/or modify it under the</span><br><span class="hljs-comment">#  terms of the GNU Lesser General Public License as published by the Free</span><br><span class="hljs-comment">#  Software Foundation; either version 2.1 of the License, or (at your option)</span><br><span class="hljs-comment">#  any later version.</span><br><span class="hljs-comment">#</span><br><span class="hljs-comment"># Entries in this file show the compile time defaults. Local configuration</span><br><span class="hljs-comment"># should be created by either modifying this file, or by creating &quot;drop-ins&quot; in</span><br><span class="hljs-comment"># the logind.conf.d/ subdirectory. The latter is generally recommended.</span><br><span class="hljs-comment"># Defaults can be restored by simply deleting this file and all drop-ins.</span><br><span class="hljs-comment">#</span><br><span class="hljs-comment"># Use &#x27;systemd-analyze cat-config systemd/logind.conf&#x27; to display the full config.</span><br><span class="hljs-comment">#</span><br><span class="hljs-comment"># See logind.conf(5) for details.</span><br><br><span class="hljs-section">[Login]</span><br><span class="hljs-comment">#NAutoVTs=6</span><br><span class="hljs-comment">#ReserveVT=6</span><br><span class="hljs-comment">#KillUserProcesses=no</span><br><span class="hljs-comment">#KillOnlyUsers=</span><br><span class="hljs-comment">#KillExcludeUsers=root</span><br><span class="hljs-comment">#InhibitDelayMaxSec=5</span><br><span class="hljs-comment">#UserStopDelaySec=10</span><br><span class="hljs-comment">#按下电源键</span><br><span class="hljs-attr">HandlePowerKey</span>=hibernate <br><span class="hljs-comment">#HandleSuspendKey=suspend</span><br><span class="hljs-comment">#HandleHibernateKey=hibernate</span><br><span class="hljs-comment">#合上笔记本盖子</span><br><span class="hljs-attr">HandleLidSwitch</span>=hybird-sleep<br><span class="hljs-attr">HandleLidSwitchExternalPower</span>=hybird-sleep<br><span class="hljs-comment">#HandleLidSwitchDocked=ignore</span><br><span class="hljs-comment">#HandleRebootKey=reboot</span><br><span class="hljs-comment">#HandleRebootKeyLongPress=poweroff</span><br><span class="hljs-comment">#PowerKeyIgnoreInhibited=no</span><br><span class="hljs-comment">#SuspendKeyIgnoreInhibited=no</span><br><span class="hljs-comment">#HibernateKeyIgnoreInhibited=no</span><br><span class="hljs-comment">#LidSwitchIgnoreInhibited=yes</span><br><span class="hljs-comment">#RebootKeyIgnoreInhibited=no</span><br><span class="hljs-comment">#HoldoffTimeoutSec=30s</span><br><span class="hljs-comment">#IdleAction=ignore</span><br><span class="hljs-comment">#IdleActionSec=30min</span><br><span class="hljs-comment">#RuntimeDirectorySize=10%</span><br><span class="hljs-comment">#RuntimeDirectoryInodesMax=400k</span><br><span class="hljs-comment">#RemoveIPC=yes</span><br><span class="hljs-comment">#InhibitorsMax=8192</span><br><span class="hljs-comment">#SessionsMax=8192</span><br></code></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>hibernate</tag>
+        <tag>hybird sleep</tag>
+        <tag>systemd</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2022-07-29 linux启动不了进入initramfs 黑屏</title>
+    <url>/2022/07/29/linux%E5%90%AF%E5%8A%A8%E4%B8%8D%E4%BA%86%E8%BF%9B%E5%85%A5initramfs-%E9%BB%91%E5%B1%8F/</url>
+    <content><![CDATA[<p>如题问题， 一般是没有正常关机导致的， 尽管现在该情况几乎没有出现过了。</p>
+<ol>
+<li>采用 livecd 进入系统;</li>
+<li><code>ls /dev/sd*</code></li>
+<li>一次采用 fsck 检查和修复分区</li>
+</ol>
+<p>一般情况下就可以进入系统了。</p>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>initramfs</tag>
+        <tag>黑屏</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2022-08-03 vim 关于中文的设置</title>
+    <url>/2022/08/03/vim-%E5%85%B3%E4%BA%8E%E4%B8%AD%E6%96%87%E7%9A%84%E8%AE%BE%E7%BD%AE/</url>
+    <content><![CDATA[<p>在使用 vim 的过程中，发现中文或一些特殊字符显示一半的情况，这是关于显示字符的宽度有关系。 </p>
+<figure class="highlight routeros"><table><tr><td class="code"><pre><code class="hljs routeros"><span class="hljs-built_in">set</span> <span class="hljs-attribute">ambw</span>=double<br></code></pre></td></tr></table></figure>
+
+<p>在用 J 连接中文行的时候会在中间插入空格， 这是 formatoptions 没有设置对。</p>
+<figure class="highlight routeros"><table><tr><td class="code"><pre><code class="hljs routeros"><span class="hljs-built_in">set</span> formatoptions+=M<br></code></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+        <tag>join</tag>
+        <tag>中文字符宽度</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2022-08-12 archlinux 修复心得</title>
+    <url>/2022/08/12/archlinux-%E4%BF%AE%E5%A4%8D%E5%BF%83%E5%BE%97/</url>
+    <content><![CDATA[<p>我的 archlinux 已经很久没有更新了， 今天心血来潮，打算更新一下。于是我使用了如下的命令。</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">sudo pacman -Syu</span><br></code></pre></td></tr></table></figure>
+
+<p>更新未能完成， 出现关于签名不正确，有冲突的问题， 具体是什么错，这里未能记录。 出现这样的问题，我猜测是某些软件的维护人员更换了要么其维护人员的公共签证有所变化导致的。 在没有动这些方面的配置的话。 可以执行如下命令。</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">sudo pacman -Sy archlinux-keyring</span><br><span class="hljs-attribute">sudo pacman -Sy archlinuxcn-keyring</span><br></code></pre></td></tr></table></figure>
+
+<p>这个时候就可以正常的更行了。 <code>sudo pacman -Syu</code></p>
+<p>在更新过程出现了计算机卡死， 强制关机后， 重新启动进步了系统。 目前来看一边是因为 linux 包没有安装更新完成，导致系统在启动过程中不能正常的引导启动。 通过一下基本步骤解决。</p>
+<ol>
+<li>liveCD 启动进入系统。</li>
+<li>systemctl start iwd</li>
+<li>通过 iwctl 进行联网</li>
+<li>编辑 /etc/pacman.d/mirrorlist 根据自身条件选择合适的服务器。</li>
+<li>mount 根分区以及其他分区。</li>
+<li>通过下面的命令完成修复。</li>
+</ol>
+<figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk">cd /mnt<br>mkdir root<br>mount <span class="hljs-regexp">/dev/</span>sda1 root <span class="hljs-comment">#这里假定 /dev/sda1 为根分区。</span><br>cd root/<br>mount ... ... <span class="hljs-comment">#其他分区。</span><br>archlinux-chroot <span class="hljs-regexp">/mnt/</span>root <span class="hljs-comment">#这里需要检查一下各个分区挂载到位了没， 如果没有需要再次挂载。（我记得在之前 /mnt/ 文件夹作为根分区的挂载点时是 chroot 以后再此挂载。 今天可能是因为我采用其他挂载点作为根分区的挂载点。）</span><br>pacman -Sy linux<br>grub-mkconfig -o <span class="hljs-regexp">/boot/g</span>rub/grub.cfg<br><span class="hljs-keyword">exit</span><br>reboot<br></code></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>archlinux</tag>
+        <tag>不能启动</tag>
+        <tag>更新失败</tag>
+        <tag>keyring</tag>
+        <tag>archlinux-keyring</tag>
+        <tag>archlinuxcn-keyring</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2022-10-30 archlinux 没有声音</title>
+    <url>/2022/10/30/archlinux-%E6%B2%A1%E6%9C%89%E5%A3%B0%E9%9F%B3/</url>
+    <content><![CDATA[<p>今天 2022-10-30 重新将我的台式机重新安装好。(就是搬了一个地方。)</p>
+<p>开机发现没有网络和没有声音。</p>
+<p>解决没有网络的问题。</p>
+<figure class="highlight autohotkey"><table><tr><td class="code"><pre><code class="hljs autohotkey">systemctl status wp<span class="hljs-built_in">a_supplicant</span><br>ip link<br></code></pre></td></tr></table></figure>
+<p>发现 link 中的端口与 wpa_supplicant 中的端口没有一致的配对。 link 中的端口为 u1, 而 wpa_supplicant 中的端口却为 u2; 因此将 wpa_supplicant.service 中的端口修改为 u1 重启， 没网络的问题得以解决。</p>
+<p>解决没有声音的问题。</p>
+<p>将打开音乐播放软件和网页中的音乐， 拔下连接到电脑上的接头，因此在没有接口上试了个遍，当重新插回显卡的音频输出口，突然就有音声了。 这样太奇怪了。。。</p>
+<p>哈哈问题终于解决了。</p>
+<p><strong>参考资料</strong><br><a href="https://wiki.archlinux.org/title/Wpa_supplicant_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)"> wpa_supplicant </a><br><a href="https://wiki.archlinux.org/title/Advanced_Linux_Sound_Architecture_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)">Advanced Linux Sound Architecture</a></p>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>声音</tag>
+        <tag>没声音</tag>
+        <tag>没网络</tag>
+        <tag>网络</tag>
+        <tag>wpa_supplicant</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2022-10-30 vim 配置与使用记录</title>
+    <url>/2022/10/30/vim-%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<h3 id="plugins"><a href="#plugins" class="headerlink" title="plugins"></a>plugins</h3><ol>
+<li>‘<a href="mailto:&#103;&#105;&#116;&#64;&#103;&#x69;&#x74;&#101;&#x65;&#x2e;&#99;&#111;&#x6d;">&#103;&#105;&#116;&#64;&#103;&#x69;&#x74;&#101;&#x65;&#x2e;&#99;&#111;&#x6d;</a>:supermew/vim-airline’, 漂亮的状态栏。</li>
+<li>‘jmckiern/vim-venter’, 让编辑窗口居中。</li>
+<li>‘<a href="mailto:&#x67;&#x69;&#x74;&#x40;&#x67;&#105;&#116;&#101;&#x65;&#x2e;&#99;&#111;&#x6d;">&#x67;&#x69;&#x74;&#x40;&#x67;&#105;&#116;&#101;&#x65;&#x2e;&#99;&#111;&#x6d;</a>:supermew/coc.nvim.git’, {‘branch’: ‘release’}, 各种编程语言自动补全。</li>
+</ol>
+<h3 id="使用过程中的问题"><a href="#使用过程中的问题" class="headerlink" title="使用过程中的问题"></a>使用过程中的问题</h3><ol>
+<li>设置 vim 的背景色为透明色</li>
+</ol>
+<p>在 vim.rc 中添加如下设置</p>
+<figure class="highlight routeros"><table><tr><td class="code"><pre><code class="hljs routeros">hi Normal <span class="hljs-attribute">ctermfg</span>=252 <span class="hljs-attribute">ctermbg</span>=none<br></code></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+        <tag>vim 配置</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2017-03-13-1 Linux Desktop Entry 文件深入解析</title>
     <url>/2017/03/13/986/</url>
     <content><![CDATA[<p>Linux Desktop Entry 文件深入解析 『日期：2011-08-10] 来源：IBM 作者：龚奕平 ——————————————————————————– 1．Desktop Entry 文件标准简介 在 Windows 平台上，用户可以通过点击位于桌面或菜单上的快捷方式轻松打开目标应用程 序。现代 Linux 桌面系统也提供了此项功能。目前，Linux KDE 和 Linux GNOME 桌面系统 都使用 Desktop Entry 文件标准来描述程序启动配置信息。Desktop Entry 文件标准是由 FreeDesktop.org（<a href="http://freedesktop.org/wiki/%EF%BC%89">http://freedesktop.org/wiki/）</a> 制定的，目前最新的版本是”Desktop Entry Specification 1.0”[1]。 2．Desktop Entry 文件 Desktop Entry 文件以”.desktop”为后缀名。以 Linux GNOME 桌面系统为例，用户打开应 用程序浏览器后（见图 1）会看见很多应用程序快捷方式。事实上，每个应用程序快捷方式 都和一个 Desktop Entry 文件相对应。这些 Desktop Entry 文件通常被存放在 /usr/share/applications/ /opt/gnome/share/applications/ 等目录下。从文件浏览器进 入这些目录，点击相应的 Desktop Entry 文件同样可以启动相对应的应用程序。 假设当前”/usr/share/applications/“目录下有一文件”cbt.desktop”，用任意文件编辑软 件（如 vi 或 gedit）打开”cbt.desktop”，将得到如下内容：</p>
 <span id="more"></span>
-<p>清单 1 “cbt.desktop”文件内容 [Desktop Entry] Version = 1.0 Encoding = UTF-8 Name = Quick Start Tour GenericName = User Tutorial Comment = Computer Based Training tutorial to \ guide and help you learn how to use the Desktop Exec = gnome-open /usr/share/doc/manual/sled-gnome-cbt_en/index.html Icon = cbt StartupNotify = true Terminal = false Type = Application Categories = GNOME;Application;Documentation; OnlyShowIn = GNOME; X-SUSE-translate = true Name[cs] = Rychlá prohlídka systému Comment[cs] = V?ukov? program seznamující u?ivatele se základy pracovního prost?edí GenericName[cs] = U?ivatelsk? tutoriál Name[hu] = Rendszerbemutató Comment[hu] = A munkaállomés használatát bemutató segédlet GenericName[hu] = Felhasználói segédlet 本文将在下一节中结合上述”cbt.desktop”文件内容重点解析 Desktop Entry 的文件结构。 读者可以从中深入领会上述各条语句的具体含义。 3．Desktop Entry 文件结构 Desktop Entry 文件通常以字符串”[Desktop Entry]“开始。由清单可以得知，Desktop Entry 文件的内容是由若干{关键字，数值}配对的 Entry 组成的。例如，”Version”就是一 个关键字，关键字”Version”对应的数值是”1.0”。Desktop Entry 文件标准定义了一系列标 准关键字。标准关键字分为必选和可选两种：必选标准关键字必须在 .desktop 文件中被定 义；而可选关键字则不必。以下是对重点关键字的解析。 “Version” 『可选』 该数值指定了当前 Desktop Entry 文件所遵循的 Desktop Entry 文件标准版本。 “Encoding”： [1.0 版本不推荐使用』 该数值指定了当前 Desktop Entry 文件中特定字符串所使用的编 码方式。尽管 Desktop Entry 文件标准 1.0 不再推荐使用该关键字，但由于历史原因该关 键字仍然广泛出现在现有的 Desktop Entry 文件中。 “Name”：『必选』 该数值指定了相关应用程序的名称。其中，快捷方式的显示名称由关键字”Name”的数值所决 定，快捷方式所使用的图标由下文中将要介绍的关键字”Icon”的数值来决定。当然，这些定 义在应用程序浏览器中同样适用。 关键字”GenericName”：『可选』 该数值指定了相关应用程序的通用名称。 关键字”Comment”：『可选』 该数值是对当前 Desktop Entry 的简单描述。 关键字”Type”：『必选』 关键字”Type”定义了 Desktop Entry 文件的类型。常见的”Type”数值是”Application”和 “Link”。”Type = Application”表示当前 Desktop Entry 文件指向了一个应用程序；而 “Type = Link”表示当前 Desktop Entry 文件指向了一个 URL (Uniform Resource Locator)。 关键字”Exec”：『可选』 关键字”Exec”只有在”Type”类型是”Application”时才有意义。”Exec”的数值定义了启动指 定应用程序所要执行的命令，在此命令是可以带参数的。在本例中，关键字”Exec”的数值是 字符串”gnome-open /usr/share/doc/manual/sled-gnome-cbt_en/index.html”。在 shell 中输入该字符串并按回车键同样可以启动指定应用程序。 关键字”URL”：『可选』 关键字”URL”只有在”Type”类型是”Link”时才有意义。”URL”的数值定义了该 Desktop Entry 文件指向的 URL。 关键字”Icon”：『可选』 该数值定义了当前 Desktop Entry 文件在应用程序浏览器或是在文件浏览器中所显示的图 标。如果关键字”Icon”的数值是以绝对路径的格式给出，那么其数值所指定图标文件将被使 用；反之，Linux 系统将使用”Icon Theme Specification”[2] 在系统指定图标目录下定位 所需要使用的图标文件。比如在本例中关键字”Icon”的数值是”cbt”，它实际对应着系统指 定图标目录下的图片文件”cbt.png”cbt.png 。 关键字”StartupNotify”：『可选』 关键字”StartupNotify”的数值是布尔值（true 或是 false）。该关键字只有在”Type”类型 是”Application”时才有意义。其数值的含义由规范”Startup Notification Protocol Specifications”[3] 定义，在此不再详述。 关键字”Terminal”：『可选』和”StartupNotify”一样，关键字”StartupNotify”的数值也是 布尔值，并且该关键字只有在”Type”类型是”Application”时才有意义。其数值指出了相关 应用程序（即关键字”Exec”的数值）是否需要在终端窗口中运行。本文将在下一节中给出关 键字”Terminal”的具体使用方法。 关键字”Categories”：『可选』关键字”Categories”只有在”Type”类型是”Application”时 才有意义。”Categories”的数值指出了相关应用程序在菜单中显示的类别。具体菜单分类由 规范”Desktop Specification Menu”具体定。 关键字”OnlyShowIn”和”NotShowIn”：『可选』 这两个关键字分别定义了当前 Desktop Entry 是否在特定 Linux 桌面系统（例如：Linux GNOME 或 Linux KDE）下显示（由”OnlyShowIn”定义），或不显示（由”NotShowIn”定义） 。具体定义请参考”Desktop Specification Menu”[4]。 关键字”X-SuSE-translate”：[SUSE Linux 特有』 关键字”X-SuSE-translate”是 SUSE Linux（<a href="http://www.novell.com/linux/%EF%BC%89%E7%89%B9%E6%9C%89%E7%9A%84%E3%80%82">http://www.novell.com/linux/）特有的。</a> “X-SuSE-translate”符合 SUSE RPM Package 风格。”X-SuSE-translate”数值表示是否要对 关键字”Name”和”GenericName”进行翻译。详情请参考”SUSE Package Conventions”[5]。 本地化关键字”[LOCALE]“ 根据”Desktop Entry Specification”规范 [1]，在关键字后加上字符串”[LOCALE]“就可以 对该关键字进行特定的本地化定义。”LOCALE”的合法取值为： LOCALE= lang_COUNTRY.ENCODING@MODIFIER 在此，域”_COUNTRY”，”.ENCODING”和”@MODIFIER”是可以被忽略的。当指定 Desktop Entry 文件被解析时，解析器应当根据当前 POSIX locale 来正确获取本地化的关键字数值。例如 清单 1 就分别定义了在”cs”和”hu”语言环境下关键字”Name”，”Comment” 和”GenericName” 的不同数值。其余关键字除了上述在清单 1 中出现的关键字外，”Desktop Entry Specification”还定义了”Hidden”，”TryExec”，”MimeType”等可选关键字。用户可以根据 需要进行选取。 4．分析运行 Desktop Entry 文件 Desktop Entry 文件是一种常见的 Linux 文件格式，很多 Linux 程序需要对该种文件提供 支持。在此，本文给出分析运行 Desktop Entry 文件的基本编成思路。 4.1 分析 Desktop Entry 文件内容 操作 Desktop Entry 文件的第一步是获取文件的内容。假设有一 Desktop Entry 文件，其 路径信息存储在变量 pPath 中： 关于作者 龚奕平，软件工程师，IBM 中国软件开发中心 WPLC 部。现主要从事 Notes Linux 产品的 研究及开发。研究兴趣包括 Windows 应用程序跨平台移植、GDI 开发、网络设备开发和调 度算法研究。联系方式：<a href="mailto:&#x67;&#111;&#110;&#x67;&#x79;&#x70;&#64;&#x63;&#x6e;&#46;&#x69;&#98;&#x6d;&#x2e;&#99;&#111;&#109;">&#x67;&#111;&#110;&#x67;&#x79;&#x70;&#64;&#x63;&#x6e;&#46;&#x69;&#98;&#x6d;&#x2e;&#99;&#111;&#109;</a>. <a href="https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html">desktop entry 标准</a></p>
+<p>清单 1 “cbt.desktop”文件内容 [Desktop Entry] Version = 1.0 Encoding = UTF-8 Name = Quick Start Tour GenericName = User Tutorial Comment = Computer Based Training tutorial to \ guide and help you learn how to use the Desktop Exec = gnome-open /usr/share/doc/manual/sled-gnome-cbt_en/index.html Icon = cbt StartupNotify = true Terminal = false Type = Application Categories = GNOME;Application;Documentation; OnlyShowIn = GNOME; X-SUSE-translate = true Name[cs] = Rychlá prohlídka systému Comment[cs] = V?ukov? program seznamující u?ivatele se základy pracovního prost?edí GenericName[cs] = U?ivatelsk? tutoriál Name[hu] = Rendszerbemutató Comment[hu] = A munkaállomés használatát bemutató segédlet GenericName[hu] = Felhasználói segédlet 本文将在下一节中结合上述”cbt.desktop”文件内容重点解析 Desktop Entry 的文件结构。 读者可以从中深入领会上述各条语句的具体含义。 3．Desktop Entry 文件结构 Desktop Entry 文件通常以字符串”[Desktop Entry]“开始。由清单可以得知，Desktop Entry 文件的内容是由若干{关键字，数值}配对的 Entry 组成的。例如，”Version”就是一 个关键字，关键字”Version”对应的数值是”1.0”。Desktop Entry 文件标准定义了一系列标 准关键字。标准关键字分为必选和可选两种：必选标准关键字必须在 .desktop 文件中被定 义；而可选关键字则不必。以下是对重点关键字的解析。 “Version” 『可选』 该数值指定了当前 Desktop Entry 文件所遵循的 Desktop Entry 文件标准版本。 “Encoding”： [1.0 版本不推荐使用』 该数值指定了当前 Desktop Entry 文件中特定字符串所使用的编 码方式。尽管 Desktop Entry 文件标准 1.0 不再推荐使用该关键字，但由于历史原因该关 键字仍然广泛出现在现有的 Desktop Entry 文件中。 “Name”：『必选』 该数值指定了相关应用程序的名称。其中，快捷方式的显示名称由关键字”Name”的数值所决 定，快捷方式所使用的图标由下文中将要介绍的关键字”Icon”的数值来决定。当然，这些定 义在应用程序浏览器中同样适用。 关键字”GenericName”：『可选』 该数值指定了相关应用程序的通用名称。 关键字”Comment”：『可选』 该数值是对当前 Desktop Entry 的简单描述。 关键字”Type”：『必选』 关键字”Type”定义了 Desktop Entry 文件的类型。常见的”Type”数值是”Application”和 “Link”。”Type = Application”表示当前 Desktop Entry 文件指向了一个应用程序；而 “Type = Link”表示当前 Desktop Entry 文件指向了一个 URL (Uniform Resource Locator)。 关键字”Exec”：『可选』 关键字”Exec”只有在”Type”类型是”Application”时才有意义。”Exec”的数值定义了启动指 定应用程序所要执行的命令，在此命令是可以带参数的。在本例中，关键字”Exec”的数值是 字符串”gnome-open /usr/share/doc/manual/sled-gnome-cbt_en/index.html”。在 shell 中输入该字符串并按回车键同样可以启动指定应用程序。 关键字”URL”：『可选』 关键字”URL”只有在”Type”类型是”Link”时才有意义。”URL”的数值定义了该 Desktop Entry 文件指向的 URL。 关键字”Icon”：『可选』 该数值定义了当前 Desktop Entry 文件在应用程序浏览器或是在文件浏览器中所显示的图 标。如果关键字”Icon”的数值是以绝对路径的格式给出，那么其数值所指定图标文件将被使 用；反之，Linux 系统将使用”Icon Theme Specification”[2] 在系统指定图标目录下定位 所需要使用的图标文件。比如在本例中关键字”Icon”的数值是”cbt”，它实际对应着系统指 定图标目录下的图片文件”cbt.png”cbt.png 。 关键字”StartupNotify”：『可选』 关键字”StartupNotify”的数值是布尔值（true 或是 false）。该关键字只有在”Type”类型 是”Application”时才有意义。其数值的含义由规范”Startup Notification Protocol Specifications”[3] 定义，在此不再详述。 关键字”Terminal”：『可选』和”StartupNotify”一样，关键字”StartupNotify”的数值也是 布尔值，并且该关键字只有在”Type”类型是”Application”时才有意义。其数值指出了相关 应用程序（即关键字”Exec”的数值）是否需要在终端窗口中运行。本文将在下一节中给出关 键字”Terminal”的具体使用方法。 关键字”Categories”：『可选』关键字”Categories”只有在”Type”类型是”Application”时 才有意义。”Categories”的数值指出了相关应用程序在菜单中显示的类别。具体菜单分类由 规范”Desktop Specification Menu”具体定。 关键字”OnlyShowIn”和”NotShowIn”：『可选』 这两个关键字分别定义了当前 Desktop Entry 是否在特定 Linux 桌面系统（例如：Linux GNOME 或 Linux KDE）下显示（由”OnlyShowIn”定义），或不显示（由”NotShowIn”定义） 。具体定义请参考”Desktop Specification Menu”[4]。 关键字”X-SuSE-translate”：[SUSE Linux 特有』 关键字”X-SuSE-translate”是 SUSE Linux（<a href="http://www.novell.com/linux/%EF%BC%89%E7%89%B9%E6%9C%89%E7%9A%84%E3%80%82">http://www.novell.com/linux/）特有的。</a> “X-SuSE-translate”符合 SUSE RPM Package 风格。”X-SuSE-translate”数值表示是否要对 关键字”Name”和”GenericName”进行翻译。详情请参考”SUSE Package Conventions”[5]。 本地化关键字”[LOCALE]“ 根据”Desktop Entry Specification”规范 [1]，在关键字后加上字符串”[LOCALE]“就可以 对该关键字进行特定的本地化定义。”LOCALE”的合法取值为： LOCALE= lang_COUNTRY.ENCODING@MODIFIER 在此，域”_COUNTRY”，”.ENCODING”和”@MODIFIER”是可以被忽略的。当指定 Desktop Entry 文件被解析时，解析器应当根据当前 POSIX locale 来正确获取本地化的关键字数值。例如 清单 1 就分别定义了在”cs”和”hu”语言环境下关键字”Name”，”Comment” 和”GenericName” 的不同数值。其余关键字除了上述在清单 1 中出现的关键字外，”Desktop Entry Specification”还定义了”Hidden”，”TryExec”，”MimeType”等可选关键字。用户可以根据 需要进行选取。 4．分析运行 Desktop Entry 文件 Desktop Entry 文件是一种常见的 Linux 文件格式，很多 Linux 程序需要对该种文件提供 支持。在此，本文给出分析运行 Desktop Entry 文件的基本编成思路。 4.1 分析 Desktop Entry 文件内容 操作 Desktop Entry 文件的第一步是获取文件的内容。假设有一 Desktop Entry 文件，其 路径信息存储在变量 pPath 中： 关于作者 龚奕平，软件工程师，IBM 中国软件开发中心 WPLC 部。现主要从事 Notes Linux 产品的 研究及开发。研究兴趣包括 Windows 应用程序跨平台移植、GDI 开发、网络设备开发和调 度算法研究。联系方式：<a href="mailto:&#103;&#111;&#110;&#103;&#121;&#112;&#x40;&#99;&#x6e;&#x2e;&#x69;&#x62;&#109;&#x2e;&#x63;&#x6f;&#x6d;">&#103;&#111;&#110;&#103;&#121;&#112;&#x40;&#99;&#x6e;&#x2e;&#x69;&#x62;&#109;&#x2e;&#x63;&#x6f;&#x6d;</a>. <a href="https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html">desktop entry 标准</a></p>
 ]]></content>
       <categories>
         <category>ubuntu</category>
@@ -4495,208 +4703,5 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
       <categories>
         <category>日常生活</category>
       </categories>
-  </entry>
-  <entry>
-    <title>2022-06-30 lightdm启动失败</title>
-    <url>/2022/06/30/lightdm%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5/</url>
-    <content><![CDATA[<p>lightdm 启动不了，一般情况下是显卡驱动安装的问题。这次也不例外。 现在我就来说说我出现该问题的经过。</p>
-<figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">sudo pacman -Syu</span><br></code></pre></td></tr></table></figure>
-
-<p>经过升级后， 而显卡 nividia 驱动的dkms 模块没能正常升级, 经过多方尝试发现我的显卡 780 已经不再受支持了(18.5以后), 于是我尝试才有 nouvea 驱动进行;</p>
-<figure class="highlight axapta"><table><tr><td class="code"><pre><code class="hljs axapta">sudo pacman -S mesa plymouth xorg-<span class="hljs-keyword">server</span><br></code></pre></td></tr></table></figure>
-
-<p>重启就解决了。</p>
-<p><img src="/2022/06/30/lightdm%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5/screen.png"></p>
-<p>xorg </p>
-<blockquote>
-<p>The X.Org project provides an open source implementation of the X Window System. The development work is being done in conjunction with the freedesktop.org community. The X.Org Foundation is the educational non-profit corporation whose Board serves this effort, and whose Members lead this work.<br>Xorg (commonly referred to as simply X) is the most popular display server among Linux users. Its ubiquity has led to making it an ever-present requisite for GUI applications, resulting in massive adoption from most distributions. See the Xorg Wikipedia article or visit the Xorg website for more details.</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>日常生活</category>
-      </categories>
-      <tags>
-        <tag>lightdm</tag>
-        <tag>xorg-server</tag>
-        <tag>mesa</tag>
-        <tag>plymouth</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2022-07-19 fcitx5 安装完成不能使用中文的问题</title>
-    <url>/2022/07/19/fcitx5-%E5%AE%89%E8%A3%85%E5%AE%8C%E6%88%90%E4%B8%8D%E8%83%BD%E4%BD%BF%E7%94%A8%E4%B8%AD%E6%96%87%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<p>在安装完成 fcitx5 fcitx5-chinese-addons fcitx5-gtk fcitx5-qt , 使用过程中出现了如下错误，已经错误的解决办法。</p>
-<ol>
-<li>相继出现了不能运行 fcitx5 和 不能输入中文的问题， 经过多次尝试后发现主要有系列问题导致。</li>
-</ol>
-<ul>
-<li>gcc-libs 的版本较低，导致 <strong>fcitx5</strong> 运行不了。</li>
-<li>boost-libs 的版本较低，导致 <strong>fcitx5</strong> 在通过 fcitx5-configure-qt 配置中文输入，也是不能输入中文的。</li>
-</ul>
-<ol start="2">
-<li>thunderbird 以及部分软件不能输入中文，但是像 wps-office 的qt的却可以输入中文，因此判断可能是fcitx gtk 的出了一些问题。</li>
-</ol>
-<ul>
-<li>重新安装 fcitx5-gtk</li>
-</ul>
-]]></content>
-      <categories>
-        <category>日常生活</category>
-      </categories>
-      <tags>
-        <tag>fcitx5</tag>
-        <tag>不能输入中文</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2022-07-24 systemd 休眠机器与苏醒机器</title>
-    <url>/2022/07/24/systemd-%E4%BC%91%E7%9C%A0%E6%9C%BA%E5%99%A8%E4%B8%8E%E8%8B%8F%E9%86%92%E6%9C%BA%E5%99%A8/</url>
-    <content><![CDATA[<p>通过 systemd 实现机器的休眠与苏醒， 在这个过程中遇到很多问题， 主要是因为自己阅读文档不仔细导致的， 现在我将自己的设置路径大概记录一下。</p>
-<ol>
-<li>查找用于电源管理的软件， 这些软件可能会导致恢复休眠不能稳定的工作， 我的是 tlp </li>
-</ol>
-<figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">sudo pacman -Rsn tlp</span><br></code></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>查看自己的 swap 分区的 uuid, 我用 fdisk 查找的 uuid 不对， 最后采用 gparted 分区工具可以查到相应的 uuid, 比如我的 uuid 为 <strong>7902e84c-cb6d-4362-b04b-ccb6c5dc8a99</strong> ，根据自己的 uuid 修改 grub 的默认参数。</li>
-</ol>
-<figure class="highlight ini"><table><tr><td class="code"><pre><code class="hljs ini"><span class="hljs-comment"># file: /etc/default/grub</span><br><span class="hljs-comment"># Written by com.deepin.daemon.Grub2</span><br><span class="hljs-attr">GRUB_BACKGROUND</span>=<span class="hljs-string">&quot;/boot/grub/themes/deepin/background.jpg&quot;</span><br><span class="hljs-attr">GRUB_CMDLINE_LINUX</span>=<span class="hljs-string">&quot;resume=UUID=7902e84c-cb6d-4362-b04b-ccb6c5dc8a99&quot;</span><br><span class="hljs-attr">GRUB_CMDLINE_LINUX_DEFAULT</span>=<span class="hljs-string">&quot;loglevel=3 quiet&quot;</span><br><span class="hljs-attr">GRUB_DEFAULT</span>=<span class="hljs-number">0</span><br><span class="hljs-attr">GRUB_DISABLE_RECOVERY</span>=<span class="hljs-literal">true</span><br><span class="hljs-attr">GRUB_DISTRIBUTOR</span>=<span class="hljs-string">&quot;Arch&quot;</span><br><span class="hljs-attr">GRUB_GFXMODE</span>=auto<br><span class="hljs-attr">GRUB_GFXPAYLOAD_LINUX</span>=keep<br><span class="hljs-attr">GRUB_PRELOAD_MODULES</span>=<span class="hljs-string">&quot;part_gpt part_msdos&quot;</span><br><span class="hljs-attr">GRUB_TERMINAL_INPUT</span>=console<br><span class="hljs-attr">GRUB_THEME</span>=<span class="hljs-string">&quot;/boot/grub/themes/deepin/theme.txt&quot;</span><br><span class="hljs-attr">GRUB_TIMEOUT</span>=<span class="hljs-number">5</span><br><span class="hljs-attr">GRUB_TIMEOUT_STYLE</span>=menu<br></code></pre></td></tr></table></figure>
-
-<p>然后生成 grub.cfg 。</p>
-<figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk">sudo grub-mkconfig -o <span class="hljs-regexp">/boot/g</span>rub/grub.cfg<br></code></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>修改 boot-image. 找到 /etc/mkinitcpio.conf 后修改相应的参数，其中修改 modules 和 hooks 设置， 下列是我的设置，其中 moudles, 要不会存在 capslock 按键不停的闪烁， 内核模块内存溢出。 </li>
-</ol>
-<figure class="highlight ini"><table><tr><td class="code"><pre><code class="hljs ini"><span class="hljs-comment"># file: /etc/mkinitcpio.conf</span><br><br><span class="hljs-comment"># vim:set ft=sh</span><br><span class="hljs-comment"># MODULES</span><br><span class="hljs-comment"># The following modules are loaded before any boot hooks are</span><br><span class="hljs-comment"># run.  Advanced users may wish to specify all system modules</span><br><span class="hljs-comment"># in this array.  For instance:</span><br><span class="hljs-comment">#     MODULES=(piix ide_disk reiserfs)</span><br><span class="hljs-attr">MODULES</span>=( intel_lpss_pci )  <br><br><span class="hljs-comment"># BINARIES</span><br><span class="hljs-comment"># This setting includes any additional binaries a given user may</span><br><span class="hljs-comment"># wish into the CPIO image.  This is run last, so it may be used to</span><br><span class="hljs-comment"># override the actual binaries included by a given hook</span><br><span class="hljs-comment"># BINARIES are dependency parsed, so you may safely ignore libraries</span><br><span class="hljs-attr">BINARIES</span>=()<br><br><span class="hljs-comment"># FILES</span><br><span class="hljs-comment"># This setting is similar to BINARIES above, however, files are added</span><br><span class="hljs-comment"># as-is and are not parsed in any way.  This is useful for config files.</span><br><span class="hljs-attr">FILES</span>=()<br><br><span class="hljs-comment"># HOOKS</span><br><span class="hljs-comment"># This is the most important setting in this file.  The HOOKS control the</span><br><span class="hljs-comment"># modules and scripts added to the image, and what happens at boot time.</span><br><span class="hljs-comment"># Order is important, and it is recommended that you do not change the</span><br><span class="hljs-comment"># order in which HOOKS are added.  Run &#x27;mkinitcpio -H &lt;hook name&gt;&#x27; for</span><br><span class="hljs-comment"># help on a given hook.</span><br><span class="hljs-comment"># &#x27;base&#x27; is _required_ unless you know precisely what you are doing.</span><br><span class="hljs-comment"># &#x27;udev&#x27; is _required_ in order to automatically load modules</span><br><span class="hljs-comment"># &#x27;filesystems&#x27; is _required_ unless you specify your fs modules in MODULES</span><br><span class="hljs-comment"># Examples:</span><br><span class="hljs-comment">##   This setup specifies all modules in the MODULES setting above.</span><br><span class="hljs-comment">##   No raid, lvm2, or encrypted root is needed.</span><br><span class="hljs-comment">#    HOOKS=(base)</span><br><span class="hljs-comment">#</span><br><span class="hljs-comment">##   This setup will autodetect all modules for your system and should</span><br><span class="hljs-comment">##   work as a sane default</span><br><span class="hljs-comment">#    HOOKS=(base udev autodetect block filesystems)</span><br><span class="hljs-comment">#</span><br><span class="hljs-comment">##   This setup will generate a &#x27;full&#x27; image which supports most systems.</span><br><span class="hljs-comment">##   No autodetection is done.</span><br><span class="hljs-comment">#    HOOKS=(base udev block filesystems)</span><br><span class="hljs-comment">#</span><br><span class="hljs-comment">##   This setup assembles a pata mdadm array with an encrypted root FS.</span><br><span class="hljs-comment">##   <span class="hljs-doctag">Note:</span> See &#x27;mkinitcpio -H mdadm&#x27; for more information on raid devices.</span><br><span class="hljs-comment">#    HOOKS=(base udev block mdadm encrypt filesystems)</span><br><span class="hljs-comment">#</span><br><span class="hljs-comment">##   This setup loads an lvm2 volume group on a usb device.</span><br><span class="hljs-comment">#    HOOKS=(base udev block lvm2 filesystems)</span><br><span class="hljs-comment">#</span><br><span class="hljs-comment">##   <span class="hljs-doctag">NOTE:</span> If you have /usr on a separate partition, you MUST include the</span><br><span class="hljs-comment">#    usr, fsck and shutdown hooks.</span><br><span class="hljs-attr">HOOKS</span>=(base udev systemd autodetect modconf block filesystems keyboard fsck)<br><br><span class="hljs-comment"># COMPRESSION</span><br><span class="hljs-comment"># Use this to compress the initramfs image. By default, zstd compression</span><br><span class="hljs-comment"># is used. Use &#x27;cat&#x27; to create an uncompressed image.</span><br><span class="hljs-comment">#COMPRESSION=&quot;zstd&quot;</span><br><span class="hljs-comment">#COMPRESSION=&quot;gzip&quot;</span><br><span class="hljs-comment">#COMPRESSION=&quot;bzip2&quot;</span><br><span class="hljs-comment">#COMPRESSION=&quot;lzma&quot;</span><br><span class="hljs-comment">#COMPRESSION=&quot;xz&quot;</span><br><span class="hljs-comment">#COMPRESSION=&quot;lzop&quot;</span><br><span class="hljs-comment">#COMPRESSION=&quot;lz4&quot;</span><br><br><span class="hljs-comment"># COMPRESSION_OPTIONS</span><br><span class="hljs-comment"># Additional options for the compressor</span><br><span class="hljs-comment">#COMPRESSION_OPTIONS=()</span><br></code></pre></td></tr></table></figure>
-
-<figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk">sudo mkinitcpio -P<br>sudo grub-mkconfig -o <span class="hljs-regexp">/boot/g</span>rub/grub.cfg<br></code></pre></td></tr></table></figure>
-
-<p>现在就可以实现休眠与苏醒了。 如果需要通过笔记本。</p>
-<ol start="4">
-<li>配置 systemd-logind ，本人配置如下.</li>
-</ol>
-<figure class="highlight ini"><table><tr><td class="code"><pre><code class="hljs ini"><span class="hljs-comment">#  This file is part of systemd.</span><br><span class="hljs-comment">#</span><br><span class="hljs-comment">#  systemd is free software; you can redistribute it and/or modify it under the</span><br><span class="hljs-comment">#  terms of the GNU Lesser General Public License as published by the Free</span><br><span class="hljs-comment">#  Software Foundation; either version 2.1 of the License, or (at your option)</span><br><span class="hljs-comment">#  any later version.</span><br><span class="hljs-comment">#</span><br><span class="hljs-comment"># Entries in this file show the compile time defaults. Local configuration</span><br><span class="hljs-comment"># should be created by either modifying this file, or by creating &quot;drop-ins&quot; in</span><br><span class="hljs-comment"># the logind.conf.d/ subdirectory. The latter is generally recommended.</span><br><span class="hljs-comment"># Defaults can be restored by simply deleting this file and all drop-ins.</span><br><span class="hljs-comment">#</span><br><span class="hljs-comment"># Use &#x27;systemd-analyze cat-config systemd/logind.conf&#x27; to display the full config.</span><br><span class="hljs-comment">#</span><br><span class="hljs-comment"># See logind.conf(5) for details.</span><br><br><span class="hljs-section">[Login]</span><br><span class="hljs-comment">#NAutoVTs=6</span><br><span class="hljs-comment">#ReserveVT=6</span><br><span class="hljs-comment">#KillUserProcesses=no</span><br><span class="hljs-comment">#KillOnlyUsers=</span><br><span class="hljs-comment">#KillExcludeUsers=root</span><br><span class="hljs-comment">#InhibitDelayMaxSec=5</span><br><span class="hljs-comment">#UserStopDelaySec=10</span><br><span class="hljs-comment">#按下电源键</span><br><span class="hljs-attr">HandlePowerKey</span>=hibernate <br><span class="hljs-comment">#HandleSuspendKey=suspend</span><br><span class="hljs-comment">#HandleHibernateKey=hibernate</span><br><span class="hljs-comment">#合上笔记本盖子</span><br><span class="hljs-attr">HandleLidSwitch</span>=hybird-sleep<br><span class="hljs-attr">HandleLidSwitchExternalPower</span>=hybird-sleep<br><span class="hljs-comment">#HandleLidSwitchDocked=ignore</span><br><span class="hljs-comment">#HandleRebootKey=reboot</span><br><span class="hljs-comment">#HandleRebootKeyLongPress=poweroff</span><br><span class="hljs-comment">#PowerKeyIgnoreInhibited=no</span><br><span class="hljs-comment">#SuspendKeyIgnoreInhibited=no</span><br><span class="hljs-comment">#HibernateKeyIgnoreInhibited=no</span><br><span class="hljs-comment">#LidSwitchIgnoreInhibited=yes</span><br><span class="hljs-comment">#RebootKeyIgnoreInhibited=no</span><br><span class="hljs-comment">#HoldoffTimeoutSec=30s</span><br><span class="hljs-comment">#IdleAction=ignore</span><br><span class="hljs-comment">#IdleActionSec=30min</span><br><span class="hljs-comment">#RuntimeDirectorySize=10%</span><br><span class="hljs-comment">#RuntimeDirectoryInodesMax=400k</span><br><span class="hljs-comment">#RemoveIPC=yes</span><br><span class="hljs-comment">#InhibitorsMax=8192</span><br><span class="hljs-comment">#SessionsMax=8192</span><br></code></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>日常生活</category>
-      </categories>
-      <tags>
-        <tag>hibernate</tag>
-        <tag>hybird sleep</tag>
-        <tag>systemd</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2022-07-29 linux启动不了进入initramfs 黑屏</title>
-    <url>/2022/07/29/linux%E5%90%AF%E5%8A%A8%E4%B8%8D%E4%BA%86%E8%BF%9B%E5%85%A5initramfs-%E9%BB%91%E5%B1%8F/</url>
-    <content><![CDATA[<p>如题问题， 一般是没有正常关机导致的， 尽管现在该情况几乎没有出现过了。</p>
-<ol>
-<li>采用 livecd 进入系统;</li>
-<li><code>ls /dev/sd*</code></li>
-<li>一次采用 fsck 检查和修复分区</li>
-</ol>
-<p>一般情况下就可以进入系统了。</p>
-]]></content>
-      <categories>
-        <category>日常生活</category>
-      </categories>
-      <tags>
-        <tag>initramfs</tag>
-        <tag>黑屏</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2022-10-30 archlinux 没有声音</title>
-    <url>/2022/10/30/archlinux-%E6%B2%A1%E6%9C%89%E5%A3%B0%E9%9F%B3/</url>
-    <content><![CDATA[<p>今天 2022-10-30 重新将我的台式机重新安装好。(就是搬了一个地方。)</p>
-<p>开机发现没有网络和没有声音。</p>
-<p>解决没有网络的问题。</p>
-<figure class="highlight autohotkey"><table><tr><td class="code"><pre><code class="hljs autohotkey">systemctl status wp<span class="hljs-built_in">a_supplicant</span><br>ip link<br></code></pre></td></tr></table></figure>
-<p>发现 link 中的端口与 wpa_supplicant 中的端口没有一致的配对。 link 中的端口为 u1, 而 wpa_supplicant 中的端口却为 u2; 因此将 wpa_supplicant.service 中的端口修改为 u1 重启， 没网络的问题得以解决。</p>
-<p>解决没有声音的问题。</p>
-<p>将打开音乐播放软件和网页中的音乐， 拔下连接到电脑上的接头，因此在没有接口上试了个遍，当重新插回显卡的音频输出口，突然就有音声了。 这样太奇怪了。。。</p>
-<p>哈哈问题终于解决了。</p>
-<p><strong>参考资料</strong><br><a href="https://wiki.archlinux.org/title/Wpa_supplicant_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)"> wpa_supplicant </a><br><a href="https://wiki.archlinux.org/title/Advanced_Linux_Sound_Architecture_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)">Advanced Linux Sound Architecture</a></p>
-]]></content>
-      <categories>
-        <category>日常生活</category>
-      </categories>
-      <tags>
-        <tag>声音</tag>
-        <tag>没声音</tag>
-        <tag>没网络</tag>
-        <tag>网络</tag>
-        <tag>wpa_supplicant</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2022-08-03 vim 关于中文的设置</title>
-    <url>/2022/08/03/vim-%E5%85%B3%E4%BA%8E%E4%B8%AD%E6%96%87%E7%9A%84%E8%AE%BE%E7%BD%AE/</url>
-    <content><![CDATA[<p>在使用 vim 的过程中，发现中文或一些特殊字符显示一半的情况，这是关于显示字符的宽度有关系。 </p>
-<figure class="highlight routeros"><table><tr><td class="code"><pre><code class="hljs routeros"><span class="hljs-built_in">set</span> <span class="hljs-attribute">ambw</span>=double<br></code></pre></td></tr></table></figure>
-
-<p>在用 J 连接中文行的时候会在中间插入空格， 这是 formatoptions 没有设置对。</p>
-<figure class="highlight routeros"><table><tr><td class="code"><pre><code class="hljs routeros"><span class="hljs-built_in">set</span> formatoptions+=M<br></code></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>日常生活</category>
-      </categories>
-      <tags>
-        <tag>vim</tag>
-        <tag>join</tag>
-        <tag>中文字符宽度</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2022-08-12 archlinux 修复心得</title>
-    <url>/2022/08/12/archlinux-%E4%BF%AE%E5%A4%8D%E5%BF%83%E5%BE%97/</url>
-    <content><![CDATA[<p>我的 archlinux 已经很久没有更新了， 今天心血来潮，打算更新一下。于是我使用了如下的命令。</p>
-<figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">sudo pacman -Syu</span><br></code></pre></td></tr></table></figure>
-
-<p>更新未能完成， 出现关于签名不正确，有冲突的问题， 具体是什么错，这里未能记录。 出现这样的问题，我猜测是某些软件的维护人员更换了要么其维护人员的公共签证有所变化导致的。 在没有动这些方面的配置的话。 可以执行如下命令。</p>
-<figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">sudo pacman -Sy archlinux-keyring</span><br><span class="hljs-attribute">sudo pacman -Sy archlinuxcn-keyring</span><br></code></pre></td></tr></table></figure>
-
-<p>这个时候就可以正常的更行了。 <code>sudo pacman -Syu</code></p>
-<p>在更新过程出现了计算机卡死， 强制关机后， 重新启动进步了系统。 目前来看一边是因为 linux 包没有安装更新完成，导致系统在启动过程中不能正常的引导启动。 通过一下基本步骤解决。</p>
-<ol>
-<li>liveCD 启动进入系统。</li>
-<li>systemctl start iwd</li>
-<li>通过 iwctl 进行联网</li>
-<li>编辑 /etc/pacman.d/mirrorlist 根据自身条件选择合适的服务器。</li>
-<li>mount 根分区以及其他分区。</li>
-<li>通过下面的命令完成修复。</li>
-</ol>
-<figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk">cd /mnt<br>mkdir root<br>mount <span class="hljs-regexp">/dev/</span>sda1 root <span class="hljs-comment">#这里假定 /dev/sda1 为根分区。</span><br>cd root/<br>mount ... ... <span class="hljs-comment">#其他分区。</span><br>archlinux-chroot <span class="hljs-regexp">/mnt/</span>root <span class="hljs-comment">#这里需要检查一下各个分区挂载到位了没， 如果没有需要再次挂载。（我记得在之前 /mnt/ 文件夹作为根分区的挂载点时是 chroot 以后再此挂载。 今天可能是因为我采用其他挂载点作为根分区的挂载点。）</span><br>pacman -Sy linux<br>grub-mkconfig -o <span class="hljs-regexp">/boot/g</span>rub/grub.cfg<br><span class="hljs-keyword">exit</span><br>reboot<br></code></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>日常生活</category>
-      </categories>
-      <tags>
-        <tag>archlinux</tag>
-        <tag>不能启动</tag>
-        <tag>更新失败</tag>
-        <tag>keyring</tag>
-        <tag>archlinux-keyring</tag>
-        <tag>archlinuxcn-keyring</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2022-10-30 vim 配置与使用记录</title>
-    <url>/2022/10/30/vim-%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<h3 id="plugins"><a href="#plugins" class="headerlink" title="plugins"></a>plugins</h3><ol>
-<li>‘<a href="mailto:&#103;&#105;&#x74;&#64;&#x67;&#x69;&#x74;&#x65;&#101;&#x2e;&#99;&#111;&#109;">&#103;&#105;&#x74;&#64;&#x67;&#x69;&#x74;&#x65;&#101;&#x2e;&#99;&#111;&#109;</a>:supermew/vim-airline’, 漂亮的状态栏。</li>
-<li>‘jmckiern/vim-venter’, 让编辑窗口居中。</li>
-<li>‘<a href="mailto:&#103;&#x69;&#116;&#x40;&#x67;&#105;&#x74;&#x65;&#101;&#46;&#99;&#x6f;&#109;">&#103;&#x69;&#116;&#x40;&#x67;&#105;&#x74;&#x65;&#101;&#46;&#99;&#x6f;&#109;</a>:supermew/coc.nvim.git’, {‘branch’: ‘release’}, 各种编程语言自动补全。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>日常生活</category>
-      </categories>
-      <tags>
-        <tag>vim</tag>
-        <tag>vim 配置</tag>
-      </tags>
   </entry>
 </search>
