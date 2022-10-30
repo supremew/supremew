@@ -4629,4 +4629,53 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
         <tag>wpa_supplicant</tag>
       </tags>
   </entry>
+  <entry>
+    <title>2022-08-03 vim 关于中文的设置</title>
+    <url>/2022/08/03/vim-%E5%85%B3%E4%BA%8E%E4%B8%AD%E6%96%87%E7%9A%84%E8%AE%BE%E7%BD%AE/</url>
+    <content><![CDATA[<p>在使用 vim 的过程中，发现中文或一些特殊字符显示一半的情况，这是关于显示字符的宽度有关系。 </p>
+<figure class="highlight routeros"><table><tr><td class="code"><pre><code class="hljs routeros"><span class="hljs-built_in">set</span> <span class="hljs-attribute">ambw</span>=double<br></code></pre></td></tr></table></figure>
+
+<p>在用 J 连接中文行的时候会在中间插入空格， 这是 formatoptions 没有设置对。</p>
+<figure class="highlight routeros"><table><tr><td class="code"><pre><code class="hljs routeros"><span class="hljs-built_in">set</span> formatoptions+=M<br></code></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+        <tag>join</tag>
+        <tag>中文字符宽度</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2022-08-12 archlinux 修复心得</title>
+    <url>/2022/08/12/archlinux-%E4%BF%AE%E5%A4%8D%E5%BF%83%E5%BE%97/</url>
+    <content><![CDATA[<p>我的 archlinux 已经很久没有更新了， 今天心血来潮，打算更新一下。于是我使用了如下的命令。</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">sudo pacman -Syu</span><br></code></pre></td></tr></table></figure>
+
+<p>更新未能完成， 出现关于签名不正确，有冲突的问题， 具体是什么错，这里未能记录。 出现这样的问题，我猜测是某些软件的维护人员更换了要么其维护人员的公共签证有所变化导致的。 在没有动这些方面的配置的话。 可以执行如下命令。</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">sudo pacman -Sy archlinux-keyring</span><br></code></pre></td></tr></table></figure>
+
+<p>这个时候就可以正常的更行了。 <code>sudo pacman -Syu</code></p>
+<p>在更新过程出现了计算机卡死， 强制关机后， 重新启动进步了系统。 目前来看一边是因为 linux 包没有安装更新完成，导致系统在启动过程中不能正常的引导启动。 通过一下基本步骤解决。</p>
+<ol>
+<li>liveCD 启动进入系统。</li>
+<li>systemctl start iwd</li>
+<li>通过 iwctl 进行联网</li>
+<li>编辑 /etc/pacman.d/mirrorlist 根据自身条件选择合适的服务器。</li>
+<li>mount 根分区以及其他分区。</li>
+<li>通过下面的命令完成修复。</li>
+</ol>
+<figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk">cd /mnt<br>mkdir root<br>mount <span class="hljs-regexp">/dev/</span>sda1 root <span class="hljs-comment">#这里假定 /dev/sda1 为根分区。</span><br>cd root/<br>mount ... ... <span class="hljs-comment">#其他分区。</span><br>archlinux-chroot <span class="hljs-regexp">/mnt/</span>root <span class="hljs-comment">#这里需要检查一下各个分区挂载到位了没， 如果没有需要再次挂载。（我记得在之前 /mnt/ 文件夹作为根分区的挂载点时是 chroot 以后再此挂载。 今天可能是因为我采用其他挂载点作为根分区的挂载点。）</span><br>pacman -Sy linux<br>grub-mkconfig -o <span class="hljs-regexp">/boot/g</span>rub/grub.cfg<br><span class="hljs-keyword">exit</span><br>reboot<br></code></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>archlinux</tag>
+        <tag>不能启动</tag>
+        <tag>更新失败</tag>
+      </tags>
+  </entry>
 </search>
