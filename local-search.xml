@@ -4,6 +4,39 @@
   
   
   <entry>
+    <title>2022-10-30 archlinux 没有声音</title>
+    <link href="/2022/10/30/archlinux-%E6%B2%A1%E6%9C%89%E5%A3%B0%E9%9F%B3/"/>
+    <url>/2022/10/30/archlinux-%E6%B2%A1%E6%9C%89%E5%A3%B0%E9%9F%B3/</url>
+    
+    <content type="html"><![CDATA[<p>今天 2022-10-30 重新将我的台式机重新安装好。(就是搬了一个地方。)</p><p>开机发现没有网络和没有声音。</p><p>解决没有网络的问题。</p><figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs autohotkey">systemctl status wp<span class="hljs-built_in">a_supplicant</span><br>ip link<br></code></pre></td></tr></table></figure><p>发现 link 中的端口与 wpa_supplicant 中的端口没有一致的配对。 link 中的端口为<br>u1, 而 wpa_supplicant 中的端口却为 u2; 因此将 wpa_supplicant.service 中的端口修改为 u1<br>重启， 没网络的问题得以解决。</p><p>解决没有声音的问题。</p><p>将打开音乐播放软件和网页中的音乐， 拔下连接到电脑上的接头，因此在没有接口上试了个遍<br>，当重新插回显卡的音频输出口，突然就有音声了。 这样太奇怪了。。。</p><p>哈哈问题终于解决了。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>日常生活</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>声音</tag>
+      
+      <tag>没声音</tag>
+      
+      <tag>没网络</tag>
+      
+      <tag>网络</tag>
+      
+      <tag>wpa_supplicant</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>2022-07-29 linux启动不了进入initramfs 黑屏</title>
     <link href="/2022/07/29/linux%E5%90%AF%E5%8A%A8%E4%B8%8D%E4%BA%86%E8%BF%9B%E5%85%A5initramfs-%E9%BB%91%E5%B1%8F/"/>
     <url>/2022/07/29/linux%E5%90%AF%E5%8A%A8%E4%B8%8D%E4%BA%86%E8%BF%9B%E5%85%A5initramfs-%E9%BB%91%E5%B1%8F/</url>
