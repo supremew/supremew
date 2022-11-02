@@ -4718,4 +4718,24 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
         <category>日常生活</category>
       </categories>
   </entry>
+  <entry>
+    <title>linux 数据处理与作图</title>
+    <url>/2022/11/02/linux-%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E4%B8%8E%E4%BD%9C%E5%9B%BE/</url>
+    <content><![CDATA[<p>在 windows 下面有一个在大学里面应用的相对较广的软件较 origin, 而在 linux 平台上也是有相应的替代产品， 不过由于 linux 系统的开源性， 导致有很多的软件停更，又有新的软件来接替已经停更的软件。 </p>
+<ol>
+<li>scidavis-qt5, 为 qtiplot 的 fork 分支;</li>
+<li>qtiplot, 原为 origin 在 linux 下的最佳替代品， 但是已经停止了维护， 现有 scidavis-qt5 接替 qtiplot 的使命。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>origin</tag>
+        <tag>qtiplot</tag>
+        <tag>scidavis-qt5</tag>
+        <tag>数据分析</tag>
+        <tag>数据处理</tag>
+      </tags>
+  </entry>
 </search>
