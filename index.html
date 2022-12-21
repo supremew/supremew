@@ -58,7 +58,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"www.supermew.top","root":"/","version":"1.9.1","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"www.supermew.top","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -67,6 +67,8 @@
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
+  
+
 
   
 <meta name="generator" content="Hexo 5.4.2"></head>
@@ -221,6 +223,69 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
+        <a href="/2022/12/21/archlinux-%E5%AE%89%E8%A3%85-openssl-%E5%90%8E%E4%B8%8D%E8%83%BD%E5%90%AF%E5%8A%A8/" target="_self">
+          2022-12-21 archlinux 安装 openssl 后不能启动
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/12/21/archlinux-%E5%AE%89%E8%A3%85-openssl-%E5%90%8E%E4%B8%8D%E8%83%BD%E5%90%AF%E5%8A%A8/" target="_self">
+        <div>
+          当安装 openssl 后， pacman 等相关软件不能使用， 提示如下错误 1can&#x27;t open share lib &quot; libcrypto.1.1.so&quot; file.  从其系统后不能正常启动。其修复办法如下。   ventoy 制作 U 启动， 并下载最新的 archlinux 的镜像文件。 进入 archlinux 。 vim 编辑 pacman.conf
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-12-21 20:35" pubdate>
+              2022-12-21
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" class="category-chain-item">日常生活</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/openssl/">#openssl</a>
+            
+              <a href="/tags/openssl-1-1/">#openssl-1.1</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
         <a href="/2022/11/02/MVR-%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86/" target="_self">
           2022-11-02 MVR 相关知识
         </a>
@@ -229,7 +294,7 @@
       
       <a class="index-excerpt index-excerpt__noimg" href="/2022/11/02/MVR-%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86/" target="_self">
         <div>
-          MVR 相关知识整理  MVR 使用注意事项  主要介绍在使用过程出现的问题; MVR 喘振原因分析与预防措施 MVR 喘振分析与解决办法 MVR 蒸汽压缩机为什么为喘振 MVR 常见故障以及解决办法 MVR 产生喘振的条件以及应对办法 MVR 基础知识与分类 MVR 技术百度百科 MVR 分类（罗茨风机&#x2F;离心风机）
+          MVR 相关知识整理  MVR 使用注意事项  主要介绍在使用过程出现的问题; MVR 喘振原因分析与预防措施 MVR 喘振分析与解决办法 MVR 蒸汽压缩机为什么为喘振 MVR 常见故障以及解决办法 MVR 产生喘振的条件以及应对办法 MVR 基础知识与分类 MVR 技术百度百科 MVR 分类（罗茨风机/离心风机）
         </div>
       </a>
 
@@ -361,7 +426,7 @@
       
       <a class="index-excerpt index-excerpt__noimg" href="/2022/10/30/vim-%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" target="_self">
         <div>
-          plugins ‘&amp;#x67;&amp;#105;&amp;#116;&amp;#64;&amp;#103;&amp;#x69;&amp;#116;&amp;#x65;&amp;#101;&amp;#46;&amp;#99;&amp;#111;&amp;#x6d;:supermew&#x2F;vim-airline’, 漂亮的状态栏。 ‘jmckiern&#x2F;vim-venter’, 让编辑窗口居中。 ‘&amp;#103;&amp;#105;&amp;#116;&amp;#64;&amp;#103;&amp;#x69;&amp;#x74;&amp;#101;&amp;#10
+          plugins ‘&#x67;&#x69;&#x74;&#x40;&#103;&#105;&#x74;&#x65;&#x65;&#x2e;&#99;&#111;&#109;:supermew/vim-airline’, 漂亮的状态栏。 ‘jmckiern/vim-venter’, 让编辑窗口居中。 ‘&#x67;&#105;&#116;&#x40;&#x67;&#105;&#x74;&#101;&
         </div>
       </a>
 
@@ -564,7 +629,7 @@
       
       <a class="index-excerpt index-excerpt__noimg" href="/2022/08/03/vim-%E5%85%B3%E4%BA%8E%E4%B8%AD%E6%96%87%E7%9A%84%E8%AE%BE%E7%BD%AE/" target="_self">
         <div>
-          在使用 vim 的过程中，发现中文或一些特殊字符显示一半的情况，这是关于显示字符的宽度有关系。  1set ambw&#x3D;double  在用 J 连接中文行的时候会在中间插入空格， 这是 formatoptions 没有设置对。 1set formatoptions+&#x3D;M
+          在使用 vim 的过程中，发现中文或一些特殊字符显示一半的情况，这是关于显示字符的宽度有关系。  1set ambw=double  在用 J 连接中文行的时候会在中间插入空格， 这是 formatoptions 没有设置对。 1set formatoptions+=M
         </div>
       </a>
 
@@ -629,7 +694,7 @@
       
       <a class="index-excerpt index-excerpt__noimg" href="/2022/07/29/linux%E5%90%AF%E5%8A%A8%E4%B8%8D%E4%BA%86%E8%BF%9B%E5%85%A5initramfs-%E9%BB%91%E5%B1%8F/" target="_self">
         <div>
-          如题问题， 一般是没有正常关机导致的， 尽管现在该情况几乎没有出现过了。  采用 livecd 进入系统; ls &#x2F;dev&#x2F;sd* 一次采用 fsck 检查和修复分区  一般情况下就可以进入系统了。
+          如题问题， 一般是没有正常关机导致的， 尽管现在该情况几乎没有出现过了。  采用 livecd 进入系统; ls /dev/sd* 一次采用 fsck 检查和修复分区  一般情况下就可以进入系统了。
         </div>
       </a>
 
@@ -806,73 +871,6 @@
     </article>
   </div>
 
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/06/30/lightdm%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5/" target="_self">
-          2022-06-30 lightdm启动失败
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2022/06/30/lightdm%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5/" target="_self">
-        <div>
-          lightdm 启动不了，一般情况下是显卡驱动安装的问题。这次也不例外。 现在我就来说说我出现该问题的经过。 1sudo pacman -Syu  经过升级后， 而显卡 nividia 驱动的dkms 模块没能正常升级, 经过多方尝试发现我的显卡 780 已经不再受支持了(18.5以后), 于是我尝试才有 nouvea 驱动进行; 1sudo pacman -S mesa plymouth xor
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-06-30 11:08" pubdate>
-              2022-06-30
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" class="category-chain-item">日常生活</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/lightdm/">#lightdm</a>
-            
-              <a href="/tags/xorg-server/">#xorg-server</a>
-            
-              <a href="/tags/mesa/">#mesa</a>
-            
-              <a href="/tags/plymouth/">#plymouth</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
 
 
   <nav aria-label="navigation">
@@ -971,8 +969,6 @@
       
     })(window, document);
   </script>
-
-
 
 
 

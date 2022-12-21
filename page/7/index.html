@@ -58,7 +58,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"www.supermew.top","root":"/","version":"1.9.1","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"www.supermew.top","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -67,6 +67,8 @@
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
+  
+
 
   
 <meta name="generator" content="Hexo 5.4.2"></head>
@@ -221,6 +223,60 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
+        <a href="/2021/02/24/1930/" target="_self">
+          2021-02-24 pacman 安装过程中出现　ldconfig: file xxx is truncated
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2021/02/24/1930/" target="_self">
+        <div>
+          在通过　pacman 安装软件包时，经常出现如下提示。 123ldconfig: file /usr/lib/libwebkit2gtk-4.0.so.37 is truncatedldconfig: file /usr/lib/libwebkit2gtk-4.0.so.37.49.9 is truncatedldconfig: file /usr/lib/libwebkit2gtk-4.0.so
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-02-24 13:55" pubdate>
+              2021-02-24
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" class="category-chain-item">日常生活</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
         <a href="/2021/02/22/getaddrinfo-eai-again-%E9%94%99%E8%AF%AF%E7%9A%84%E4%B8%80%E4%B8%AA%E5%8F%AF%E8%83%BD%E5%8E%9F%E5%9B%A0/" target="_self">
           2021-02-22 getaddrinfo EAI_AGAIN 错误的一个可能原因
         </a>
@@ -229,7 +285,7 @@
       
       <a class="index-excerpt index-excerpt__noimg" href="/2021/02/22/getaddrinfo-eai-again-%E9%94%99%E8%AF%AF%E7%9A%84%E4%B8%80%E4%B8%AA%E5%8F%AF%E8%83%BD%E5%8E%9F%E5%9B%A0/" target="_self">
         <div>
-          Linux系统，刚装好没多久，运行Node.js程序倒是看起来没啥问题，只是浏览器上打不开对应地址，然后过一会程序报错退出： 1Error: getaddrinfo EAI_AGAIN localhost.localdomain  查了一下,是因为DNS问题。想了很久才明白是因为这个系统没有主机名，所以只要给系统加上主机名，就OK了。  我的是因为 &#x2F;etc&#x2F;hostname 文件中的 主机名 与
+          Linux系统，刚装好没多久，运行Node.js程序倒是看起来没啥问题，只是浏览器上打不开对应地址，然后过一会程序报错退出： 1Error: getaddrinfo EAI_AGAIN localhost.localdomain  查了一下,是因为DNS问题。想了很久才明白是因为这个系统没有主机名，所以只要给系统加上主机名，就OK了。  我的是因为 /etc/hostname 文件中的 主机名 与
         </div>
       </a>
 
@@ -337,7 +393,7 @@
       
       <a class="index-excerpt index-excerpt__noimg" href="/2021/02/15/npm-%E6%88%96-yarn-%E7%9A%84%E7%9B%B8%E5%85%B3%E9%95%9C%E5%83%8F%E8%AE%BE%E7%BD%AE/" target="_self">
         <div>
-          使用 Electron-builder 打包，有时会在下载Electron、nsis、winCodeSign的过程中 Timeout 导致打包失败（鉴于国内的网络情况）。 可以进行如下设置, 其中有一部分是淘宝镜像，　一部分是华为镜像。 1234yarn config set registry https:&#x2F;&#x2F;registry.npm.taobao.orgyarn config set distu
+          使用 Electron-builder 打包，有时会在下载Electron、nsis、winCodeSign的过程中 Timeout 导致打包失败（鉴于国内的网络情况）。 可以进行如下设置, 其中有一部分是淘宝镜像，　一部分是华为镜像。 1234yarn config set registry https://registry.npm.taobao.orgyarn config set distu
         </div>
       </a>
 
@@ -553,7 +609,7 @@
       
       <a class="index-excerpt index-excerpt__noimg" href="/2020/09/19/python-mode-%E4%B8%80%E6%89%93%E5%BC%80%E5%B0%B1%E6%8A%A5%E9%94%99%E7%9A%84%E9%97%AE%E9%A2%98/" target="_self">
         <div>
-          问题(坑爹的货,还是改源码) 1234Error detected while processing function pymode#breakpoint#init:line   22:&#x2F;must&gt;not&amp;exist&#x2F;foo:2: DeprecationWarning: the imp module is deprecated in favour of importlib; see
+          问题(坑爹的货,还是改源码) 1234Error detected while processing function pymode#breakpoint#init:line   22:/must&gt;not&amp;exist/foo:2: DeprecationWarning: the imp module is deprecated in favour of importlib; see
         </div>
       </a>
 
@@ -701,60 +757,6 @@
     </article>
   </div>
 
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2020/08/22/%E7%BA%B3%E6%BB%A4%E8%86%9C%E7%9A%84%E6%B8%85%E6%B4%97%E8%A7%84%E7%A8%8B/" target="_self">
-          2020-08-22 纳滤膜的清洗规程
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2020/08/22/%E7%BA%B3%E6%BB%A4%E8%86%9C%E7%9A%84%E6%B8%85%E6%B4%97%E8%A7%84%E7%A8%8B/" target="_self">
-        <div>
-          本公司采用科氏纳滤膜, 其型号为 spiral selro 8040-mps34-nyhn ， 约 5W&#x2F;支
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2020-08-22 10:43" pubdate>
-              2020-08-22
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" class="category-chain-item">日常生活</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-      </div>
-    </article>
-  </div>
-
 
 
   <nav aria-label="navigation">
@@ -853,8 +855,6 @@
       
     })(window, document);
   </script>
-
-
 
 
 

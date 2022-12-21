@@ -58,7 +58,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"www.supermew.top","root":"/","version":"1.9.1","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"www.supermew.top","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -67,6 +67,8 @@
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
+  
+
 
   
 <meta name="generator" content="Hexo 5.4.2"></head>
@@ -221,6 +223,60 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
+        <a href="/2017/03/15/ubuntu-%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E5%8A%A8%E7%A8%8B%E5%BA%8F/" target="_self">
+          2017-03-15 ubuntu 设置开机自启动程序
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2017/03/15/ubuntu-%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E5%8A%A8%E7%A8%8B%E5%BA%8F/" target="_self">
+        <div>
+          系统：ubuntu 16.04 LTS 在网上收到通过在 /etc/rc.local 中加入要自启动的命令， 但是我加入了好像没有作用。 因此我又在网上找到了这么一个工具， 其实就是 ubuntu 16.04 LTS 自带的程序， 因此到 网上去找办法时， 应该现在自己机器上找找有没有相应的程序可以办到。 方法就是：在 dash 中， 搜索 startup 就会出现你想要的工具， 通过搜索 gno
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2017-03-15 20:24" pubdate>
+              2017-03-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/ubuntu/" class="category-chain-item">ubuntu</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
         <a href="/2017/03/14/%E6%88%91%E7%9A%84vim%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/" target="_self">
           2017-03-14  我的vim基本配置文件
         </a>
@@ -229,7 +285,7 @@
       
       <a class="index-excerpt index-excerpt__noimg" href="/2017/03/14/%E6%88%91%E7%9A%84vim%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/" target="_self">
         <div>
-          配置文件内容如下 &quot;显示行号 set number &quot;设置文本宽度 set textwidth&#x3D;80 &quot;设置文本编码 &quot;set fileencodings&#x3D;utf-8 set encoding&#x3D;utf-8 set fileencoding&#x3D;utf-8 set fileencodings&#x3D;utf-8,default,ucs-bom,latin1 &quot;解
+          配置文件内容如下 &quot;显示行号 set number &quot;设置文本宽度 set textwidth=80 &quot;设置文本编码 &quot;set fileencodings=utf-8 set encoding=utf-8 set fileencoding=utf-8 set fileencodings=utf-8,default,ucs-bom,latin1 &quot;解
         </div>
       </a>
 
@@ -285,7 +341,7 @@
       
       <a class="index-excerpt index-excerpt__noimg" href="/2017/03/13/vim%EF%BC%8C-ubuntu-%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/" target="_self">
         <div>
-          ubuntu 在 8.04 开始就已经将 &#x2F;dev&#x2F;sda 和 &#x2F;dev&#x2F;hdb 和二唯一了， 现在没有 &#x2F;dev&#x2F;hda 这样的 的表达式了。而且建议在以后的分区表达过程中尽量用 uuid 表示。 在 grub2 不管时 ide 还是 scis 等都只有 (hd0）或者什么来表示硬盘。 找到了一个小工具， 可以更改 ubuntu 的默认字体其名字为 Unity Tweaty Tool 。 目前
+          ubuntu 在 8.04 开始就已经将 /dev/sda 和 /dev/hdb 和二唯一了， 现在没有 /dev/hda 这样的 的表达式了。而且建议在以后的分区表达过程中尽量用 uuid 表示。 在 grub2 不管时 ide 还是 scis 等都只有 (hd0）或者什么来表示硬盘。 找到了一个小工具， 可以更改 ubuntu 的默认字体其名字为 Unity Tweaty Tool 。 目前
         </div>
       </a>
 
@@ -333,60 +389,6 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2017/03/13/986/" target="_self">
-          2017-03-13-1 Linux Desktop Entry 文件深入解析
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2017/03/13/986/" target="_self">
-        <div>
-          Linux Desktop Entry 文件深入解析 『日期：2011-08-10] 来源：IBM 作者：龚奕平 ——————————————————————————– 1．Desktop Entry 文件标准简介 在 Windows 平台上，用户可以通过点击位于桌面或菜单上的快捷方式轻松打开目标应用程 序。现代 Linux 桌面系统也提供了此项功能。目前，Linux KDE 和 Linux GN
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2017-03-13 20:20" pubdate>
-              2017-03-13
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/ubuntu/" class="category-chain-item">ubuntu</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
         <a href="/2017/03/12/ubuntu16-04%E4%B8%8Ewindows%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98/" target="_self">
           2017-03-13 Ubuntu16.04与Windows时间同步问题
         </a>
@@ -395,7 +397,7 @@
       
       <a class="index-excerpt index-excerpt__noimg" href="/2017/03/12/ubuntu16-04%E4%B8%8Ewindows%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98/" target="_self">
         <div>
-          刚装完双系统后发现Ubuntu与Windows系统时间总会差8小时，这是因为Ubuntu将BIOS时间认为是世界标准时间，而Windows认为是当地时间。 网上很多解决方法都是修改&#x2F;etc&#x2F;default&#x2F;rcS文件，将UTC&#x3D;yes改为UTC&#x3D;no，但是在16.04中，时间由timedatectl管理，修改rcS文件是无效的，现在的方法是： 打开终端，运行命令： timedatectl set-
+          刚装完双系统后发现Ubuntu与Windows系统时间总会差8小时，这是因为Ubuntu将BIOS时间认为是世界标准时间，而Windows认为是当地时间。 网上很多解决方法都是修改/etc/default/rcS文件，将UTC=yes改为UTC=no，但是在16.04中，时间由timedatectl管理，修改rcS文件是无效的，现在的方法是： 打开终端，运行命令： timedatectl set-
         </div>
       </a>
 
@@ -859,8 +861,6 @@
       
     })(window, document);
   </script>
-
-
 
 
 

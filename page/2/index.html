@@ -58,7 +58,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"www.supermew.top","root":"/","version":"1.9.1","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"www.supermew.top","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -67,6 +67,8 @@
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
+  
+
 
   
 <meta name="generator" content="Hexo 5.4.2"></head>
@@ -221,6 +223,73 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
+        <a href="/2022/06/30/lightdm%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5/" target="_self">
+          2022-06-30 lightdm启动失败
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/06/30/lightdm%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5/" target="_self">
+        <div>
+          lightdm 启动不了，一般情况下是显卡驱动安装的问题。这次也不例外。 现在我就来说说我出现该问题的经过。 1sudo pacman -Syu  经过升级后， 而显卡 nividia 驱动的dkms 模块没能正常升级, 经过多方尝试发现我的显卡 780 已经不再受支持了(18.5以后), 于是我尝试才有 nouvea 驱动进行; 1sudo pacman -S mesa plymouth xor
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-30 11:08" pubdate>
+              2022-06-30
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" class="category-chain-item">日常生活</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/lightdm/">#lightdm</a>
+            
+              <a href="/tags/xorg-server/">#xorg-server</a>
+            
+              <a href="/tags/mesa/">#mesa</a>
+            
+              <a href="/tags/plymouth/">#plymouth</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
         <a href="/2022/06/27/github-pages-%E6%90%AD%E5%BB%BA%E7%9A%84-hexo-%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D%E7%BB%91%E5%AE%9A/" target="_self">
           2022-06-27 github pages 搭建的 hexo 博客绑定域名绑定
         </a>
@@ -229,7 +298,7 @@
       
       <a class="index-excerpt index-excerpt__noimg" href="/2022/06/27/github-pages-%E6%90%AD%E5%BB%BA%E7%9A%84-hexo-%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D%E7%BB%91%E5%AE%9A/" target="_self">
         <div>
-          在hexo创建的博客的 source 文件下创建 CNAME 文件。  1这里填写你为博客准备的域名， 例如: blog.xxx.com  我的 CNAME 文件如下： 1www.xxx.com    修改hexo 创建的博客的 _config.yml 文件。url配置行，进行修改。  12url: &amp;#x27;https:&#x2F;&#x2F;blog.xxx.com&amp;#x27;root: &amp;#x27;&amp;#x2
+          在hexo创建的博客的 source 文件下创建 CNAME 文件。  1这里填写你为博客准备的域名， 例如: blog.xxx.com  我的 CNAME 文件如下： 1www.xxx.com    修改hexo 创建的博客的 _config.yml 文件。url配置行，进行修改。  12url: &#x27;https://blog.xxx.com&#x27;root: &#x27;&#x2
         </div>
       </a>
 
@@ -296,7 +365,7 @@
       
       <a class="index-excerpt index-excerpt__noimg" href="/2022/06/06/pacman-%E6%88%96-aura-%E5%AE%89%E8%A3%85%E4%B8%8D%E6%88%90%E5%8A%9F%EF%BC%8C%E6%8F%90%E7%A4%BA%E5%8C%85%E5%B7%B2%E9%94%81%E5%AE%9A/" target="_self">
         <div>
-          在采用 aura 安装软件时提示，包锁定。 解决办法 12fuser &#x2F;var&#x2F;lib&#x2F;pacman&#x2F;db.lcksudo rm &#x2F;var&#x2F;lib&#x2F;pacman&#x2F;db.lck
+          在采用 aura 安装软件时提示，包锁定。 解决办法 12fuser /var/lib/pacman/db.lcksudo rm /var/lib/pacman/db.lck
         </div>
       </a>
 
@@ -406,7 +475,7 @@
       
       <a class="index-excerpt index-excerpt__noimg" href="/2022/06/05/archlinux-%E6%9C%AC%E5%9C%B0%E8%AF%9D%E8%AE%BE%E7%BD%AE/" target="_self">
         <div>
-          中文环境&#x2F;英文界面完美支持 archlinux 中文环境，但是以英文显示界面。 &#x2F;etc&#x2F;locale.conf: 12LANG&#x3D;zh_CN.utf8LC_MESSAGES&#x3D;en_US.utf8   全英文界面如下设置也能很好的解决中文问题，如下配置也可以。 &#x2F;etc&#x2F;locale.gen 只开启: en_US.UTF-8 UTF-8   1en_US.UTF-8 UTF-8  &#x2F;etc&#x2F;loca
+          中文环境/英文界面完美支持 archlinux 中文环境，但是以英文显示界面。 /etc/locale.conf: 12LANG=zh_CN.utf8LC_MESSAGES=en_US.utf8   全英文界面如下设置也能很好的解决中文问题，如下配置也可以。 /etc/locale.gen 只开启: en_US.UTF-8 UTF-8   1en_US.UTF-8 UTF-8  /etc/loca
         </div>
       </a>
 
@@ -640,7 +709,7 @@
       
       <a class="index-excerpt index-excerpt__noimg" href="/2022/03/02/sqlalchemy-%E6%A8%A1%E5%9D%97%E6%97%B6%E9%81%87%E5%88%B0%E5%9B%B0%E6%83%91%E7%9A%84%E9%97%AE%E9%A2%98/" target="_self">
         <div>
-          在 python 中使用 sqlalchemy 时， 不要忘了建模， 不管是查询还是更新或创建表格都需要建模; 现举例如下： 1234567891011121314151617#！&#x2F;urs&#x2F;bin&#x2F;env python3# filename: 1.pyfrom sqlalchemy import Column, String, create_engine, Integerfrom sqlalche
+          在 python 中使用 sqlalchemy 时， 不要忘了建模， 不管是查询还是更新或创建表格都需要建模; 现举例如下： 1234567891011121314151617#！/urs/bin/env python3# filename: 1.pyfrom sqlalchemy import Column, String, create_engine, Integerfrom sqlalche
         </div>
       </a>
 
@@ -703,7 +772,7 @@
       
       <a class="index-excerpt index-excerpt__noimg" href="/2022/03/02/mysql-%E4%B8%AD%E7%9A%84%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6-%E7%9A%84%E5%A4%84%E7%90%86/" target="_self">
         <div>
-          在使用 mysql 过程中遇到表名中出现的 ‘.’ 的情况， 让人很是恼火， 在百度上翻了个遍， 终于找到了办法。 在使用 mysql 是需要在表格名的左右两边加上1左边的特殊字符。 如下: 1select * from &#96;1.xy&#96;  其中 1.xy 为表格名。 因此表格取名时， 尽量不要用特殊字符。
+          在使用 mysql 过程中遇到表名中出现的 ‘.’ 的情况， 让人很是恼火， 在百度上翻了个遍， 终于找到了办法。 在使用 mysql 是需要在表格名的左右两边加上1左边的特殊字符。 如下: 1select * from `1.xy`  其中 1.xy 为表格名。 因此表格取名时， 尽量不要用特殊字符。
         </div>
       </a>
 
@@ -743,69 +812,6 @@
             <i class="iconfont icon-tags"></i>
             
               <a href="/tags/mysql/">#mysql</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/02/21/vim-%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/" target="_self">
-          2022-02-21 vim 中文乱码问题
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2022/02/21/vim-%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/" target="_self">
-        <div>
-          在 vim 中出现中文乱码的问题是比较正常的， 现在来分析 vim 中会出现乱码的原因。 vim 变量的意义:  encoding : vim 内部采用的编码。 一般情况下为 utf-8 termencoding : 终端采用的编码, 这时我的终端是指 alacritty. 意思是 vim 将处理后的数据发送到终端时的数据编码。 假如 vim 处理得到的数据的编码是 utf-8, 但是终端希望得到
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-02-21 21:15" pubdate>
-              2022-02-21
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" class="category-chain-item">日常生活</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/vim/">#vim</a>
-            
-              <a href="/tags/vim-%E4%B8%AD%E6%96%87%E9%97%AE%E9%A2%98/">#vim 中文问题</a>
             
           </div>
         
@@ -911,8 +917,6 @@
       
     })(window, document);
   </script>
-
-
 
 
 
