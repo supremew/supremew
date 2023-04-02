@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>2023-04-02 nvidia-470xx-dkms 安装失败</title>
+    <link href="/2023/04/02/nvidia-470xx-dkms-%E5%AE%89%E8%A3%85%E5%A4%B1%E8%B4%A5/"/>
+    <url>/2023/04/02/nvidia-470xx-dkms-%E5%AE%89%E8%A3%85%E5%A4%B1%E8%B4%A5/</url>
+    
+    <content type="html"><![CDATA[<p>安装 nvidia-470xx-dkms 时，出现如下问题。</p><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs asciidoc">loading packages...<br>resolving dependencies...<br>warning: cannot resolve &quot;nvidia-470xx-utils=470.182.03&quot;, a dependency of &quot;nvidia-470xx-dkms&quot;<br><span class="hljs-meta">:: The following package cannot be upgraded due to unresolvable dependencies:</span><br><span class="hljs-code">    nvidia-470xx-dkms</span><br>:: Do you want to skip the above package for this upgrade? [y/N]<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>日常生活</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>nvidia</tag>
+      
+      <tag>nvidia-470xx-dkms</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>2023-01-03 git 中文名乱码的问题</title>
     <link href="/2023/01/03/git-%E4%B8%AD%E6%96%87%E5%90%8D%E4%B9%B1%E7%A0%81%E7%9A%84%E9%97%AE%E9%A2%98/"/>
     <url>/2023/01/03/git-%E4%B8%AD%E6%96%87%E5%90%8D%E4%B9%B1%E7%A0%81%E7%9A%84%E9%97%AE%E9%A2%98/</url>

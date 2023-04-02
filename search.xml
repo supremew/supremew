@@ -4859,4 +4859,18 @@ xz = a() # 这时 xz.b 依然为 [], 空的数组。
         <tag>中文文件名乱码</tag>
       </tags>
   </entry>
+  <entry>
+    <title>2023-04-02 nvidia-470xx-dkms 安装失败</title>
+    <url>/2023/04/02/nvidia-470xx-dkms-%E5%AE%89%E8%A3%85%E5%A4%B1%E8%B4%A5/</url>
+    <content><![CDATA[<p>安装 nvidia-470xx-dkms 时，出现如下问题。</p>
+<figure class="highlight asciidoc"><table><tr><td class="code"><pre><code class="hljs asciidoc">loading packages...<br>resolving dependencies...<br>warning: cannot resolve &quot;nvidia-470xx-utils=470.182.03&quot;, a dependency of &quot;nvidia-470xx-dkms&quot;<br><span class="hljs-meta">:: The following package cannot be upgraded due to unresolvable dependencies:</span><br><span class="hljs-code">    nvidia-470xx-dkms</span><br>:: Do you want to skip the above package for this upgrade? [y/N]<br></code></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+      <tags>
+        <tag>nvidia</tag>
+        <tag>nvidia-470xx-dkms</tag>
+      </tags>
+  </entry>
 </search>
