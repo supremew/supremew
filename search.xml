@@ -4653,16 +4653,16 @@ dmesg  ##这里是查看报错信息;
     <title>2024-09-28 archlinux manajro 系统安装过程遇到的问题及解决办法</title>
     <url>/2024/09/28/archlinux-manajro-%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
     <content><![CDATA[<p>本人已经使用 archlinux/manjaro 快十年了， 在使用过程中遇到的问题以及解决办法记录下来， 以便以后查阅;</p>
-<h2 id="archlinux-manjaro-没有声音"><a href="#archlinux-manjaro-没有声音" class="headerlink" title="archlinux/manjaro 没有声音"></a>archlinux/manjaro 没有声音</h2><p>在安装完 archlinux/manjaro 经常遇到没有声音。 有如下情形：</p>
+<h2 id="1-archlinux-manjaro-没有声音"><a href="#1-archlinux-manjaro-没有声音" class="headerlink" title="1. archlinux/manjaro 没有声音"></a>1. archlinux/manjaro 没有声音</h2><p>在安装完 archlinux/manjaro 经常遇到没有声音。 有如下情形：</p>
 <ol>
 <li>台式机， 有主板、nvidia 显卡的 hdmi 转换接头自带的音声输出端口。</li>
 <li>huawei matebook 笔记本没有声音。</li>
 </ol>
-<h3 id="台式机没声音的解决办法"><a href="#台式机没声音的解决办法" class="headerlink" title="台式机没声音的解决办法"></a>台式机没声音的解决办法</h3><ol>
+<h3 id="1-1-台式机没声音的解决办法"><a href="#1-1-台式机没声音的解决办法" class="headerlink" title="1.1 台式机没声音的解决办法"></a>1.1 台式机没声音的解决办法</h3><ol>
 <li>尝试安装 alsa-utools ， alsamixer 用 m 将所有的都打开， 尝试播放音乐.<br>尝试安装 pavucontrols, 选择不同的声卡尝试;</li>
 <li>在安装了 nvidia-470xx-dkms 显卡后， 不能识别 nvidia 带的声卡， 因此就没有必要在去尝试通过显卡播放音乐， 就用主办自带的声卡就行了; </li>
 </ol>
-<h2 id="没有网络"><a href="#没有网络" class="headerlink" title="没有网络"></a>没有网络</h2><p>我的情况是经常使用 i3-wm 窗框管理器， usb 无线网卡 rtl8812au 经常需要安装驱动和网络连接管理器;</p>
+<h2 id="2-没有网络"><a href="#2-没有网络" class="headerlink" title="2. 没有网络"></a>2. 没有网络</h2><p>我的情况是经常使用 i3-wm 窗框管理器， usb 无线网卡 rtl8812au 经常需要安装驱动和网络连接管理器;</p>
 <figure class="highlight autohotkey"><table><tr><td class="code"><pre><code class="hljs autohotkey">sudo pacman -S wp<span class="hljs-built_in">a_supplicant</span> network-manager-applet networkmanager<br></code></pre></td></tr></table></figure>
 
 <p>今天重新安装了 archlinux 系统（听说 archlinux 系统要比 manjaro 系统更稳定， 更不容易滚挂）</p>
@@ -5127,6 +5127,65 @@ dmesg  ##这里是查看报错信息;
     <title>铜粉，送样打电镜， 看分部。</title>
     <url>/2013/06/21/%E9%93%9C%E7%B2%89%EF%BC%8C%E9%80%81%E6%A0%B7%E6%89%93%E7%94%B5%E9%95%9C%EF%BC%8C-%E7%9C%8B%E5%88%86%E9%83%A8%E3%80%82/</url>
     <content><![CDATA[<p>0620-2#: 温度80-90， 加了pvp , 未调ph. 0620-1#: 温度80-90，没加pvp , 调了ph. published by wordpress for android</p>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>含锂玻璃相关信息手机.md</title>
+    <url>/2025/03/27/%E5%90%AB%E9%94%82%E7%8E%BB%E7%92%83%E7%9B%B8%E5%85%B3%E4%BF%A1%E6%81%AF%E6%89%8B%E6%9C%BA-md/</url>
+    <content><![CDATA[<h2 id="1-锂硼硅酸盐玻璃-Li2O-B2O3-SiO2-LBS"><a href="#1-锂硼硅酸盐玻璃-Li2O-B2O3-SiO2-LBS" class="headerlink" title="1. 锂硼硅酸盐玻璃 (Li2O-B2O3-SiO2/LBS)"></a>1. 锂硼硅酸盐玻璃 (Li2O-B2O3-SiO2/LBS)</h2><ul>
+<li>SiO2 40-60%</li>
+<li>B2O3 15-30%</li>
+<li>Li2O 5-15%</li>
+<li>添加剂 Al2O3 (0-10%) 或 Na2O/K2O (0-5%)</li>
+</ul>
+<h3 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h3><ul>
+<li>低热膨胀系数 (20-50x10-7/摄氏度), 耐热震性优异;</li>
+<li>高电阻率 (&gt;10^12 欧.厘米）， 适合高频电子封装;</li>
+<li>可调折射率 (1.48-1.55), 适用于光学器件;</li>
+</ul>
+<h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><ul>
+<li>电子封装： 半导体基板、微波器件密封;</li>
+<li>光学玻璃： 透镜、光纤预制棒（如康宁公司低损耗光纤）</li>
+<li>核废料固化： 固化高放射性废液（硼吸收中子，锂降低熔点）</li>
+</ul>
+<p>电子封装， 英特尔 CPU 封装玻璃（低价电损耗）</p>
+<h2 id="2-锂硼铝酸盐玻璃（Li2O-B2O3-Al2O3"><a href="#2-锂硼铝酸盐玻璃（Li2O-B2O3-Al2O3" class="headerlink" title="2. 锂硼铝酸盐玻璃（Li2O-B2O3-Al2O3)"></a>2. 锂硼铝酸盐玻璃（Li2O-B2O3-Al2O3)</h2><h3 id="成分特点"><a href="#成分特点" class="headerlink" title="成分特点"></a>成分特点</h3><p>Al2O3 10-20% 替代 SiO2, 争强机械强度与耐碱性。</p>
+<h3 id="特性-1"><a href="#特性-1" class="headerlink" title="特性"></a>特性</h3><ul>
+<li>高硬度 (显微硬度&gt;6 GPa), 耐磨性提升;</li>
+<li>耐强碱腐蚀(PH &gt; 12 环境稳定）</li>
+</ul>
+<h3 id="应用-1"><a href="#应用-1" class="headerlink" title="应用"></a>应用</h3><ul>
+<li>电池电解液: 固态电解质(如 LiPON薄膜), 松下全固态电解质（高 Li 迁移数）</li>
+<li>化工设备衬里: 耐腐蚀反应釜内衬。</li>
+<li>蔡司低色散光学透镜。</li>
+</ul>
+<h2 id="3-锂硼磷酸盐玻璃-Li2O-B2O3-P2O5"><a href="#3-锂硼磷酸盐玻璃-Li2O-B2O3-P2O5" class="headerlink" title="3. 锂硼磷酸盐玻璃 (Li2O-B2O3-P2O5)"></a>3. 锂硼磷酸盐玻璃 (Li2O-B2O3-P2O5)</h2><h3 id="成分设计"><a href="#成分设计" class="headerlink" title="成分设计"></a>成分设计</h3><ul>
+<li>P2O5 20-40% 网路形成体</li>
+<li>Li2O 10-20% 调节离子迁移率</li>
+</ul>
+<h3 id="特性-2"><a href="#特性-2" class="headerlink" title="特性"></a>特性</h3><ul>
+<li>高离子导电性 （室温电导率 10^-5 西/厘米)</li>
+<li>生物或许能够： 可释放 Li 和 PO43-, 促进骨组织再生。</li>
+</ul>
+<h3 id="应用-2"><a href="#应用-2" class="headerlink" title="应用"></a>应用</h3><ul>
+<li>全固态电池： 电解质材料 (如 Li2O-B2O3-P2O5-SiO2)</li>
+<li>生物医学: 骨修复支架</li>
+</ul>
+<h2 id="4-应用"><a href="#4-应用" class="headerlink" title="4. 应用"></a>4. 应用</h2><ul>
+<li>柔性锂硼玻璃薄膜 厚度&lt;10um, 可弯曲半径&lt;5mm, 用于柔性显示屏盖板（三星折叠屏原型）</li>
+<li>锂硼氮氧化物玻璃 引入氮替代部分氧，硬度提升 30%(用于超硬涂层)</li>
+<li>自修复锂硼玻璃 含动态硼酸酯键，裂纹在 80 摄氏度下可自愈合。（应用于电池隔膜）</li>
+</ul>
+<h2 id="5-锂铝硅系统（LAS-–-微晶玻璃体系之一"><a href="#5-锂铝硅系统（LAS-–-微晶玻璃体系之一" class="headerlink" title="5. 锂铝硅系统（LAS) – 微晶玻璃体系之一"></a>5. 锂铝硅系统（LAS) – 微晶玻璃体系之一</h2><h3 id="成分"><a href="#成分" class="headerlink" title="成分"></a>成分</h3><ul>
+<li>SiO2 60-70%</li>
+<li>Al2O3 15-25%</li>
+<li>Li2O 2-4%</li>
+<li>TiO2+ZrO2 3-5%</li>
+</ul>
+<p>主晶相： beta-锂辉石、beta-石英固溶体。</p>
 ]]></content>
       <categories>
         <category>日常生活</category>
