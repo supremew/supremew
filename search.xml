@@ -5191,4 +5191,30 @@ dmesg  ##这里是查看报错信息;
         <category>日常生活</category>
       </categories>
   </entry>
+  <entry>
+    <title>2025-05-05 qutebrowser 运行异常</title>
+    <url>/2025/05/05/qutebrowser-%E8%BF%90%E8%A1%8C%E5%BC%82%E5%B8%B8/</url>
+    <content><![CDATA[<p>运行 qutebrowser 时，出现 </p>
+<figure class="highlight xl"><table><tr><td class="code"><pre><code class="hljs xl">backend <span class="hljs-built_in">texture</span> <span class="hljs-keyword">is</span> <span class="hljs-built_in">not</span> a vulkan <span class="hljs-built_in">texture</span>.<br></code></pre></td></tr></table></figure>
+
+<p>解决办法：</p>
+<ol>
+<li>显卡驱动 nouveau, 通过如下安装的</li>
+</ol>
+<figure class="highlight nginx"><table><tr><td class="code"><pre><code class="hljs nginx"><span class="hljs-comment"># 本人的显卡 4770k, 只能安装 nvidia-470xx-dkms, 但是下载连接有问题， 下载不了驱动。</span><br><span class="hljs-attribute">sudo</span> pacman -S mesa vulkan-mesa-layers xf86-video-nouveau<br></code></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>qt 支持 vulkan , 需要安装</li>
+</ol>
+<figure class="highlight nginx"><table><tr><td class="code"><pre><code class="hljs nginx"><span class="hljs-comment"># provides functionality for the shader pipeline that allows Qt quick to operate on Vulkan, Metal, and Direct3D, addition to OpenGL</span><br><span class="hljs-attribute">sudo</span> pacman -S qt6-shadertools<br></code></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>运行 qutebrowser , </li>
+</ol>
+<figure class="highlight routeros"><table><tr><td class="code"><pre><code class="hljs routeros"><span class="hljs-built_in">set</span> qt.<span class="hljs-attribute">force_sfotware_rendering</span>=<span class="hljs-string">&quot;qt-quick&quot;</span><br></code></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>日常生活</category>
+      </categories>
+  </entry>
 </search>
